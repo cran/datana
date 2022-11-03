@@ -1,0 +1,15 @@
+citHeader("To cite the datana package in publications use:")
+
+citEntry(entry = "Book",
+  title        = "{An{\\'a}lisis de datos con el programa estad{\\'i}stico R: una introducci{\\'o}n aplicada}",
+  author       = personList(as.person("C. Salas-Eljatib")),
+  year         = "2021",
+  publisher    = "Ediciones Universidad Mayor",
+  address      = "Santiago, Chile",
+  note         = "170 p.",
+
+  textVersion  =
+  paste("Salas-Eljatib, C. 2021.",
+        "Análisis de datos con el programa estadístico R: una introducción aplicada.",
+        "Ediciones Universidad Mayor, Santiago, Chile. 170 p.")
+)
