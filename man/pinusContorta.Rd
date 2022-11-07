@@ -3,7 +3,7 @@
 \docType{data}
 \name{pinusContorta}
 \alias{pinusContorta}
-\title{Contains information of invasive of Pinus contorta.}
+\title{Contains spatial location of Pinus contorta trees in sample plots.}
 \format{
 Contains 8 variables, as follows:
 \describe{
@@ -26,16 +26,18 @@ The data are provided courtesy of Drs. Anibal Pauchard and Rafael Garcia at the 
 data(pinusContorta)
 }
 \description{
-These are tree-lavel measurement data, with x,y location of each tree, from Pinus contorta invasion in 
-Patagonian steppe in Coyhaique in southhern Chile, measured in 2011. The plots area was 10000 square meters.
+These are tree-level measurement data, with cartesian location of each tree, from Pinus contorta invasion in 
+Patagonian steppe in Coyhaique in southhern Chile, measured in 2011. There are 3 plots, each
+ of 10.000 m\eqn{^{2}}{^2}.
 }
 \examples{
 data(pinusContorta)    
-head(pinusContorta) 
+head(pinusContorta)
+unique(pinusContorta$plot.id) 
 }
 \references{
 Pauchard A, Escudero A, Garcia RA, de la Cruz M, Langdon B, Cavieres LA, Esquivel J. 2016.
  Pine invasions in treeless environments: dispersal overruns microsite heterogeneity. 
- Ecology and Evolution. 6(2): 447 - 459
+ Ecology and Evolution. 6(2): 447-459.
 }
 \keyword{datasets}

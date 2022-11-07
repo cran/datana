@@ -27,7 +27,7 @@ data(crownradii)
 }
 \description{
 Crown radii measurements in cardinal directions for sample trees at the Rucamanque experimental forest, near Temuco, Chile.
- Data were collected within a sample plot of 250m^2, located in a secondary forest stand
+ Data were collected within a sample plot of 250m\eqn{^{2}}{^2}, located in a secondary forest stand
  dominated by Nothofagus obliqua.
 }
 \examples{

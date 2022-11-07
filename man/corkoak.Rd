@@ -35,6 +35,6 @@ head(corkoak)
 }
 \references{
 - Fonseca TJ, Parresol BR. 2001. A new model for cork weight estimation in northern Portugal with
-   methodology for construction of confidence intervals. For. Ecol. Manage. 152(1):131–139.
+   methodology for construction of confidence intervals. Forest Ecology and Management 152(1):131–139.
 }
 \keyword{datasets}

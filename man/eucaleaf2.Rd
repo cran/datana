@@ -12,7 +12,7 @@ Contiene variables a nivel de hoja, como sigue:
 \item{meristema}{descripcion del meristema}
 \item{largo}{largo de la hoja, en mm}
 \item{ancho}{ancho de la hoja, en mm}
-\item{area}{area foliar, en cm^2}
+\item{area}{area foliar, en cm\eqn{^{2}}{^2}}
  }
 }
 \source{

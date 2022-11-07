@@ -1,8 +1,8 @@
 Type: Package
 Package: datana
 Title: Data and Functions to Accompany Analisis De Datos Con R
-Version: 1.0.1
-Date: 2022-10-31
+Version: 1.0.2
+Date: 2022-11-05
 Authors@R: c(person("Christian", "Salas-Eljatib", role = c("aut", "cre","cph"),
                       email = "cseljatib@gmail.com", comment = c(ORCID = "0000-0002-8468-0829")),
                      person("Nicolas", "Pino", role = "aut"),
@@ -20,11 +20,11 @@ LazyData: true
 RoxygenNote: 7.2.1
 BuildResaveData: best
 NeedsCompilation: no
-Packaged: 2022-11-02 21:26:22 UTC; christian
+Packaged: 2022-11-05 12:51:22 UTC; christian
 Author: Christian Salas-Eljatib [aut, cre, cph]
     (<https://orcid.org/0000-0002-8468-0829>),
   Nicolas Pino [aut],
   Joaquin Riquelme [aut]
 Maintainer: Christian Salas-Eljatib <cseljatib@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-11-03 16:10:09 UTC
+Date/Publication: 2022-11-07 07:20:02 UTC

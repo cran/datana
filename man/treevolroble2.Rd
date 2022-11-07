@@ -5,18 +5,18 @@
 \alias{treevolroble2}
 \title{Variables alometricas a nivel de arbol para roble (Nothofagus obliqua) en el bosque de Rucamanque, cerca de Temuco, Chile.}
 \format{
-Contains tree-level variables, as follows:
+Las siguientes columnas son parte de la dataframe:
 \describe{
-  \item{tree.no}{Tree id}
-\item{dbh}{Diameter at breast height, in cm}
-\item{htot}{Total height (m)}
- \item{d6}{Upper-stem diameter at 6 m, in cm}
-\item{vtot}{Tree gross volume, in m^{3} with bark.}
+  \item{arbol}{Numero del arbol.}
+\item{especie}{Especie.}
+\item{dap}{Diametro a la altura del pecho, en cm.}
+\item{htot}{Altura total, en m.}
+ \item{d6}{Diametro fustal a los 6 m, en cm.}
+\item{vtot}{Volumen bruto total, en m\eqn{^{3}}{^3} with bark.}
  }
 }
 \source{
-The data are provided courtesy of Dr Christian Salas at
-the Universidad Mayor (Santiago, Chile).
+The data are provided courtesy of Dr Christian Salas-Eljatib (Chile).
 }
 \usage{
 data(treevolroble2)
@@ -29,10 +29,11 @@ species roble (Nothofagus obliqua).
 }
 \examples{
 data(treevolroble2)    
-head(treevolroble2) 
+head(treevolroble2)
+plot(vtot~dap, data=treevolroble2) 
 }
 \references{
-Salas C. 2002. Ajuste y validacion de ecuaciones de volumen para un relicto
- del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92.
+- Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92.  \url{https://eljatib.com/publication/2002-01-01_ajuste_y_validacion_/}
 }
 \keyword{datasets}

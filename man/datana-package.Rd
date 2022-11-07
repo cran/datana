@@ -6,10 +6,13 @@
 \packageTitle{datana}
 }
 \description{
-The datana package provides the data and functions that accompany the book 'Análisis de datos con el programa estadístico R: una introducción aplicada' by Salas-Eljatib (2021).
+The datana package provides the data and functions that accompany the book "Análisis de datos con el programa estadístico R: una introducción aplicada" by Salas-Eljatib (2021, ISBN: 9789566086109). You can visit the book's website at \url{https://eljatib.com/rlibro}.
 
+Notice that every dataframe has a similar one but using column names in Spanish. For instance,
+the dataframe 'pinaster' has column names in English, but 'pinaster2' has column names in Spanish. Both dataframes have the same data.
 %\packageDescription{datana}
 }
+
 \details{
 The package contains several datasets for exploratory data analysis in an array of disciplines. Furthermore, datana provides functions as tools for descriptive statistics and plotting. 
 

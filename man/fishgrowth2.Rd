@@ -5,15 +5,15 @@
 \alias{fishgrowth2}
 \title{Crecimiento de peces}
 \format{
-Contains 3 variables, as follows:
+Contiene tres variables, como sigue:
 \describe{
   \item{edad}{Year at capture.}
-  \item{largo}{Length at capture (mm).}
-\item{escala}{radius of a key scale (mm).}
+  \item{largo}{Length at capture, en mm.}
+\item{escala}{radius of a key scale, en mm.}
  }
 }
 \source{
-Datos obtenidos desde el paquete alr4 de R.
+Datos obtenidos desde el paquete 'alr4' de R.
 }
 \usage{
 data(fishgrowth2)

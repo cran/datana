@@ -29,9 +29,9 @@ plot(height ~ age, data = ptaeda, subset = seed.id == 329,
      xlab = "Tree age (yr)", las = 1,
      ylab = "Tree height (m)",
      main = "Loblolly data and fitted curve (seed.id 329 only)")
-fm1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
+m1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
            data = ptaeda, subset = seed.id == 329)
 age <- seq(0, 30, length.out = 101)
-lines(age, predict(fm1, list(age = age)))
+lines(age, predict(m1, list(age = age)))
 }
 \keyword{datasets}

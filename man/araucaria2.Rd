@@ -15,9 +15,9 @@ Contains plot-level variables as follows:
 \item{exposicion}{Aspect, in degrees}
     \item{altitud}{Elevation, in msnm}    
   \item{nha}{Densidad, en arb/ha}
- \item{gha}{Area basal, en m^{2}/ha}
+ \item{gha}{Area basal, en m\eqn{^{2}}{^2}/ha}
 \item{hdom}{Altura dominante, en m}
-\item{vha}{Volumen bruto, en m^{3}/ha} 
+\item{vha}{Volumen bruto, en m\eqn{^{3}}{^3}/ha} 
  \item{dg}{Diameter medio cuadratico, en cm}
  }
 }
@@ -31,7 +31,7 @@ data(araucaria)
 \description{
 Estos son variables a nivel de parcela para bosques Araucaria araucana  
  en el sur de Chile, medidos en 2009.  Estas variables se basan en mediciones
- realizadas en parcelas de muestreo de superficie fija de 1000 m^2.  Hay dos rodales.
+ realizadas en parcelas de muestreo de superficie fija de 1000 m\eqn{^{2}}{^2}.  Hay dos rodales.
 }
 \examples{
 data(araucaria2)    

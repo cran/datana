@@ -12,7 +12,7 @@ Contains leaf-level variables, as follows:
 \item{shoot}{shoot description}
 \item{l}{length of the leaf, in mm}
 \item{w}{width of the leaf, in mm}
-\item{la}{leaf area, in cm^2}
+\item{la}{leaf area, in cm\eqn{^{2}}{^2}}
  }
 }
 \source{

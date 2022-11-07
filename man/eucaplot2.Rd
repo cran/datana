@@ -15,7 +15,7 @@ The dataframe contains four variables as follows:
  }
 }
 \source{
-The data were provided courtesy of Dr Christian Salas (Universidad Mayor, Santiago, Chile).
+The data were provided courtesy of Dr Christian Salas-Eljatib (Chile).
 }
 \usage{
 data(eucaplot2)

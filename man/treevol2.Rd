@@ -20,7 +20,7 @@ data(treevol2)
 }
 \description{
 Estos datos provienen de mediciones de volumen, altura y diametro en 31 arboles volteados de black cherry (Prunus serotina).
-Son una modificacion la dataframe 'trees' del paquete datasets de R.
+Son una modificacion la dataframe 'trees' del paquete 'datasets' de R.
 }
 \examples{
 pairs(treevol2, panel = panel.smooth, main = "treevol dataframe")

@@ -3,7 +3,7 @@
 \docType{data}
 \name{treevolruca}
 \alias{treevolruca}
-\title{Contains tree-level variables of several species in the Rucamanque experimental forest, near Temuco, Chile.}
+\title{Contains tree-level variables of several species from the Rucamanque experimental forest, near Temuco, Chile.}
 \format{
 Contains tree-level variables, as follows:
 \describe{
@@ -12,11 +12,11 @@ Contains tree-level variables, as follows:
 \item{dbh}{Diameter at breast height, in cm.}
 \item{htot}{Total height, in m.}
  \item{d6}{Upper-stem diameter at 6 m, in cm.}
-\item{vtot}{Tree gross volume, in m^{3} with bark.}
+\item{vtot}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
  }
 }
 \source{
-The data were provided courtesy of Dr Christian Salas (Universidad Mayor, Santiago, Chile).
+The data were provided courtesy of Dr Christian Salas-Eljatib (Chile).
 }
 \usage{
 data(treevolruca)
@@ -32,8 +32,7 @@ data(treevolruca)
 head(treevolruca) 
 }
 \references{
-Salas C. 2002. Ajuste y validacion de ecuaciones de volumen para un relicto
- del bosque de Roble-Laurel-Lingue [Fitness and validation of volume equations for a relict forest of Roble-Laurel-Lingue].
-  Bosque 23(2): 81-92.
+- Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92.  \url{https://eljatib.com/publication/2002-01-01_ajuste_y_validacion_/}
 }
 \keyword{datasets}

@@ -15,22 +15,21 @@ Contains plot-level variables as follows:
 \item{aspect}{Aspect, in degrees}
     \item{eleva}{Elevation, in msnm}    
   \item{nha }{Tree density, in trees/ha}
- \item{gha }{Basal area, in m^{2}/ha}
+ \item{gha }{Basal area, in m\eqn{^{2}}{^2}/ha}
 \item{hdom}{Dominant height, in m}
-\item{vha }{Gross stand volume, in m^{3}/ha} 
+\item{vha }{Gross stand volume, m\eqn{^{3}}{^3}/ha} 
  \item{dg}{Diameter of the average basal area tree of the plot, in cm}
  }
 }
 \source{
-The data are provided courtesy of Dr Nelson Ojeda at
-the Universidad de La Frontera (Temuco, Chile).
+The data are provided courtesy of Dr Nelson Ojeda at Universidad de La Frontera (Temuco, Chile).
 }
 \usage{
 data(araucaria)
 }
 \description{
 These are plot-level measurement data from the Araucaria araucana forests 
- in southern Chile, measured in 2009.  The data  was based on fixed-area plots of 1000 m^2.  They are two forest stands.
+ in southern Chile, measured in 2009.  The data  was based on fixed-area plots of 1000 m\eqn{^{2}}{^2}.  They are two forest stands.
 }
 \examples{
 data(araucaria)    

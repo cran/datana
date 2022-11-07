@@ -16,7 +16,7 @@ Contiene cinco variables, como sigue:
  }
 }
 \source{
-Los datos fueron obtenidos desde la libreria alr4.
+Los datos fueron obtenidos desde la libreria 'alr4'.
 }
 \usage{
 data(idahohd2)

@@ -48,7 +48,7 @@ Data provided from \url{https://investigacion.conaf.cl/repositorio/documento/fic
 data(speciesList)
 }
 \description{
-This data set provides names (taxonomy), of plant species. Includes codes and name abbreviations used by the Biometrics group at the Center for Ecosystem Modeling (CEM), Universidad Mayor, Santiago, Chile.
+This data set provides names (taxonomy), of plant species. Includes codes and name abbreviations used by the Biometrics research group lead by Dr Christian Salas-Eljatib (Chile).
 }
 \references{
 Proyecto 004/2016 Lista sistematica actualizada de la flora vascular nativa de Chile, origen y distribucion geografica. VII Concurso del Fondo de Investigacion del Bosque Nativo

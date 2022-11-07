@@ -3,19 +3,19 @@
 \docType{data}
 \name{snaspeChile}
 \alias{snaspeChile}
-\title{On the National System of State Protected Wild Areas (SNASPE)}
+\title{On the National System of State Protected Wild Areas (SNASPE) of Chile.}
 \format{
-Contains of variables, as follows:
+Contains the following variables:
 \describe{
-\item{g.id}{Id.}
+\item{unit.id}{Number for the unit.}
 \item{unit}{Name of the protected area.}
 \item{category}{Category of the unit. It can be either a National Park, a National Reserve or a Natural Monument.}
 \item{commune}{Name of the commune (the smallest Chilean territorial division) where the unit is located.}
 \item{province}{Province where the comunne is located (one territorial division level above the commune).}
  \item{region}{Region where the province is located (one territorial division level above the province and the biggest Chilean territorial division).}
-\item{perim.km}{Perimeter of the unit in kilometers.}
-\item{area.ha}{Area of the unit in hectares.}
-\item{area.m2}{Area of the unit in square meters.}
+\item{perim.km}{Perimeter, in km.}
+\item{area.ha}{Area, in hectares.}
+\item{area.m2}{Area, in m\eqn{^{2}}{^2}.}
  }
 }
 \source{

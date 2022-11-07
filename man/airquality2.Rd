@@ -16,7 +16,7 @@ Contiene 6 variables:
  }
 }
 \source{
-Los datos fueron obtenidos desde la libreria datasets.
+Los datos fueron obtenidos desde la libreria 'datasets'.
 }
 \usage{
 data(airquality)
