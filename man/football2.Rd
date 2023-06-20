@@ -7,19 +7,19 @@
 \format{
 Contiene variables de nivel individual, como se describen a continuacion::
 \describe{
-\item{WPM}{}											
-\item{WPMk}{}
-\item{WPm}{}
-\item{WPmk}{}
-\item{WTT}{}
-\item{WTTk}{}
-\item{WIF}{}
-\item{W5}{}
-\item{W10}{}
-\item{W15}{}
-\item{W20}{}
-\item{W25}{}
-\item{W30}{}
+  \item{WPM}{Watt Peak Max.}											
+\item{WPMk}{Watt Peak Max relative.}
+\item{WPm}{Watt Peak media.}
+\item{WPmk}{Watt Peak media relative.}
+\item{WTT}{Watt Total Work.}
+\item{WTTk}{Watt Total Work relative.}
+\item{WIF}{Watt Index Fatigue.}
+\item{W5}{Watt 5 seg.}
+\item{W10}{Watt 10 seg.}
+\item{W15}{Watt 15 seg.}
+\item{W20}{Watt 20 seg.}
+\item{W25}{Watt 25 seg.}
+\item{W30}{Watt 30 seg.}
  }
 }
 \source{

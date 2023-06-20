@@ -5,7 +5,7 @@
 \alias{eucaplot}
 \title{Data from a Eucalyptus globulus plantation near Gorbea, Region de La Araucania, Chile.}
 \format{
-The dataframe contains four variables as follows:
+The data frame contains four variables as follows:
 \describe{
   \item{dbh}{Diameter at breast height, in cm.}
   \item{health}{health status (1: good, 2: medium, 3: bad).}
@@ -22,7 +22,7 @@ data(eucaplot)
 }
 \description{
 Tree-level data collected within a sample plot in a forestry plantation of Eucalyptus globulus near Gorbea, 
-Southern Chile. The plot size is 500 square meters. The plantation is 15 yr-old and
+Southern Chile. The plot size is 500 m\eqn{^{2}}{^2}. The plantation is 15 yr-old and
 had been subject to three thinnings.
 }
 \examples{

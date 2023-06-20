@@ -10,11 +10,11 @@
   \item{tolerancia.sombra}{Tolerancia a la sombra de la especie.}
   \item{nombre.cient}{Nombre cientifico.}
   \item{nom.cient.abre}{Nombre cientifico abreviado.}
-  \item{den.madera}{Densidad de la madera en kg/m3.}
+  \item{den.madera}{Densidad de la madera en kg/m\eqn{^{3}}{^3}.}
  }
 }
 \source{
-Parte de la informacion sobre tolerancia a la sombra se encuentra en Soto et al 2010
+Parte de la información sobre tolerancia a la sombra se encuentra en Soto et al 2010
 }
 \usage{
 data(traits2)

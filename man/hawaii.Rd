@@ -5,13 +5,13 @@
 \alias{hawaii}
 \title{Diameter growth increments of a tropical tree species in Hawaii}
 \format{
-The dataframe has the following columns:
+The data frame has the following columns:
 \describe{
   \item{tree.code}{Tree number identification. The first letter of the ID represents
   a cohort. Six cohorts representing a chronosequence were sampled.}
   \item{dbh}{Initial stem diameter, in cm.}
   \item{htot}{Total height, in m.}
-  \item{crown.area}{Crown outline area, in square meters.}
+  \item{crown.area}{Crown outline area, in m\eqn{^{2}}{^2}.}
   \item{comp.ind}{Competition index (Basal area of nearest neighbor divided by square of distance to nearest neighbor plus
          basal area of second nearest neighbor divided by square of distance to second nearest neighbor).}
   \item{cai.1986}{Current annual stem diameter increment during 1986, in mm.}

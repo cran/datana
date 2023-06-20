@@ -5,30 +5,28 @@
 \alias{presidentChile}
 \title{2021 presidential election in Chile.}
 \format{
-The dataframe contains the following columns:
+The data frame contains the following columns:
 \describe{
   \item{region.no}{Administrative region number of Chile.}
   \item{region}{Administrative region name.}
-  \item{provincia}{Province.}
-  \item{circu.senatorial}{Senatorial constituency.}
-  \item{distrito}{Distrit.}
-  \item{comuna}{County.}
-  \item{region}{Senatorial constituency.}
-  \item{provincia}{Province.}
-  \item{circu.elec}{Electoral constituency.}
+  \item{province}{Province.}
+  \item{circu.senate}{Senatorial constituency.}
+  \item{distrite}{Distrit.}
+  \item{county}{County.}
+  \item{elec.distri}{Electoral constituency.}
   \item{local}{Place.}
-  \item{no.mesa}{Voting table.}
-  \item{tipo.mesa}{Voting table type.}
-  \item{mesas.fusionadas}{Merged voting tables.}
-  \item{electores}{Electors.}
-  \item{nro.en.voto}{.}
-  \item{candidato}{Candidate. Gabriel Boric and Jose A. Kast}
-  \item{votos.tricel}{Total number of votes.}       
+  \item{table.no}{Voting table number.}
+  \item{table.type}{Voting table type: M (women), V (men).}
+  \item{merged.tables}{Merged voting tables.}
+  \item{electors}{Electors.}
+  \item{number.in.voto}{Numero del candidato en el voto.}
+  \item{candidate}{Candidate: Gabriel Boric, Jose A. Kast, Nule votes, Empty votes.}
+  \item{total.votes}{Total number of votes.}       
  }
 }
 \source{
 The data were obtained from the electoral service of the Chilean Government (SERVEL) at
- \url{https://www.servel.cl/resultados-definitivos-elecciones-segunda-votacion-presidencia-2021/}.
+ \url{https://www.servel.cl/centro-de-datos/procesos-electorales-detalle/?id=27}.
   The datafile name was "Resultados_mesa_presidencial_TRICEL_2v_2021-1.xlsx", and was downloaded
   on October 24, 2022.
 }

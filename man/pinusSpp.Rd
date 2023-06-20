@@ -23,7 +23,7 @@ Contains 8 variables, as follows:
 }
 \source{
 The data are provided courtesy of Drs. Anibal Pauchard and Rafael Garcia at the Laboratorio de Invasiones
- Biologicas, Universidad de Concepcion (Chile).
+ Biologicas, Universidad de Concepción (Chile).
 }
 \usage{
 data(pinusSpp)

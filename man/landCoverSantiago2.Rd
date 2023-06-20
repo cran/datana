@@ -12,15 +12,15 @@ Variables se describen a continuacion:
 \item{p.Vegetacion}{Porcentaje de superficie cubierta por vegetacion}
 \item{p.Desnudo}{Porcentaje de superficie cubierta por suelo desnudo}
 \item{p.Pasto}{Porcentaje de superficie cubierta por cesped}
-\item{p.Deciduo}{Porcentaje de superficie cubierta por vegetacion de hoja caduca}
-\item{p.Siempreverde}{Porcentaje de superficie cubierta por vegetacion siempre verde}
-\item{Temp Invierno}{Temperatura de la superficie terrestre en grados celsius a las 2 p.m.en un dia de invierno con 0\% de nubes}
-\item{Temp Verano}{Temperatura de la superficie de la tierra en grados celsius a las 2 p.m.en un dia de verano con 0\% de nubes}
+\item{p.Deciduo}{Porcentaje de superficie cubierta por vegetación de hoja caduca}
+\item{p.Siempreverde}{Porcentaje de superficie cubierta por vegetación siempre verde}
+\item{Temp Invierno}{Temperatura de la superficie terrestre en grados celsius a las 2 p.m. en un día de invierno con 0\% de nubes}
+\item{Temp Verano}{Temperatura de la superficie de la tierra en grados celsius a las 2 p.m. en un día de verano con 0\% de nubes}
 \item{PM10 Invierno}{Material particulado promedio de 10 micrones durante los meses de invierno}
 \item{PM10 Verano}{Material particulado promedio de 10 micrones durante los meses de verano}
-\item{p.pobreza 2017}{Porcentaje de personas por debajo de la linea de pobreza anho 2017}
+\item{p.pobreza 2017}{Porcentaje de personas por debajo de la linea de pobreza año 2017}
 \item{Altitud promedio}{Altitud media del termino municipal}
-\item{Poblacion}{poblacion total del municipio}
+\item{Poblacion}{población total del municipio}
  }
 }
 \source{
@@ -31,11 +31,11 @@ data(landCoverSantiago2)
 }
 \description{
 El conjunto de datos contiene 476 observaciones, 34 categoricas y 442 numericas. Los datos de cobertura 
-terrestre se generaron mediante tecnicas de clasificacion de teledeteccion utilizando imagenes de satelite 
-Sentinel-2 del anho 2016. Las temperaturas se obtuvieron de la banda TIRS 10 de las imagenes de los satelites 
+terrestre se generaron mediante tecnicas de clasificación de teledetección utilizando imagenes de satelite 
+Sentinel-2 del año 2016. Las temperaturas se obtuvieron de la banda TIRS 10 de las imagenes de los satelites 
 Landsat 8. Las concentraciones de material particulado se estimaron mediante tecnicas de modelado espacial 
-de 10 estaciones de contaminacion distribuidas en la ciudad. La altitud se genero a partir de un modelo de 
-elevacion digital. La poblacion y la pobreza se obtuvieron de la encuesta Casen 2017.
+de 10 estaciones de contaminación distribuidas en la ciudad. La altitud se genero a partir de un modelo de 
+elevación digital. La población y la pobreza se obtuvieron de la encuesta Casen 2017.
 }
 \examples{
 data(landCoverSantiago2)    

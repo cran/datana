@@ -14,7 +14,7 @@
  }
 }
 \source{
-Some of the information on shade tolerance can be found in Soto et al 2010.
+Some of the information on shade tolerance can be found in Soto et al (2010).
 }
 \usage{
 data(traits)

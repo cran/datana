@@ -5,11 +5,11 @@
 \alias{annualppCities2}
 \title{Serie de tiempo de precipitaciones anuales en Chile.}
 \format{
-The dataframe contains three variables as follows:
+La data frame tiene tres variables:
 \describe{
-  \item{ciudad}{Name of city.}
-  \item{anho}{Year of registry.}
-  \item{pp.anual}{Value of the annual precipitation of a given year (mm).}
+  \item{ciudad}{Nombre de la ciudad.}
+  \item{anho}{Año de registro.}
+  \item{pp.anual}{Valor de la precipitación anual (mm).}
  }
 }
 \source{
@@ -19,10 +19,12 @@ Los datos fueron obtenidos desde \url{https://explorador.cr2.cl/}.
 data(annualppCities2)
 }
 \description{
-Data contains annual precipitations in six cities in Chile (Santiago, Talca, Chillan, Temuco, Valdivia, and Puerto Montt) at different years.
+Precipitaciones anuales en seis ciudades de Chile (i.e., Santiago, Talca, 
+Chillan, Temuco, Valdivia, and Puerto Montt) registradas en distintos años, 
+desde 1950 al 2019.
 }
 \examples{
-data(annualppCities2)    
-head(annualppCities2) 
+head(annualppCities2)    
+range(annualppCities2$anho)
 }
 \keyword{datasets}

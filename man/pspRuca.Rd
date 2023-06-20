@@ -17,7 +17,8 @@ The data frame contains four variables as follows:
  }
 }
 \source{
-Data were provided by Dr Christian Salas-Eljatib (Universidad Mayor, Santiago, Chile).
+Data were provided by Dr Christian Salas-Eljatib (Chile). Further details can be 
+found at Salas et al (2006).
 }
 \usage{
 data(pspRuca)

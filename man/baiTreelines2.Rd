@@ -3,36 +3,37 @@
 \docType{data}
 \name{baiTreelines2}
 \alias{baiTreelines2}
-\title{Incremento anual en area basal de cuatro especies arboreas.}
+\title{Incremento anual en área basal de cuatro especies arboreas.}
 \format{
-Contains seven columns, as follows:
+Contiene siete columnas, como las siguientes:
 \describe{
-  \item{clima}{Climate of each location, mediterranean and temperate.}
-  \item{sitio}{Name of Location of study (termmas:Termas de Chillan , antillanca:Antillanca area within Puyehue National Park,
+  \item{clima}{Clase de clima de cada sitio: mediterraneano y templado.}
+  \item{sitio}{Nombre del sitio de estudio (termas:Termas de Chillan , antillanca:Antillanca area within Puyehue National Park,
               castillo:Cerro Castillo Natural Reserve, farellones:Farellones in Central Chile, 
               pyrenees: Sierra de Cutas area in Spanish Central Pyrenees,sierra:Sierra Nevada).}
-\item{especie}{name species of study (lenga: Nothofagus pumilio, frangel: Kageneckia angustifolia,
+\item{especie}{Nombre de la especie (lenga: Nothofagus pumilio, frangel: Kageneckia angustifolia,
                uncinata: Pinus uncinata, sylvestris: Pinus sylvestris).}
-\item{tipo.altitud}{Type of elevation. "Treeline", intermediate named as "inter", and closed or
-      montane forest named as low.}
-\item{arbol}{Id for tree.}
-\item{bai}{Value of annual basal area increment.}
-\item{bai.medio}{Mean of annual basal area increment.}
+\item{clase.altitud}{Clase de altitud. "Treeline", intermedia es "inter", y cercana a
+      bosque como bajo.}
+\item{arbol}{Código del árbol muestra.}
+\item{delta.g}{Incremento en área basal (en cm\eqn{^{2}}{^2}) durante los últimos 10 años.}
+\item{ipa.g}{Incremento periodico anual en área basal (en cm\eqn{^{2}}{^2}/año), durante los últimos 10 años.}
  }
 }
 \source{
-The data were obtained from the DRYAD repository at \doi{10.5061/dryad.ks97h}.
+Los datos fueron obtenidos desde el repisotorio DRYAD en \doi{10.5061/dryad.ks97h}.
 }
 \usage{
 data(baiTreelines2)
 }
 \description{
-Este set de datps contiene 157 observaciones, de los ultimos 10 anhos en 6-8 arboles adultos de cuatro especies 
+Este set de datps contiene 157 observaciones, de los ultimos 10 años en 6-8 árboles adultos de cuatro especies 
 en un gradiente altitudinal. Las muestras se distribuyeron en cuatro localidades o sitios de Chile y dos en Espanha.
 }
 \examples{
 data(baiTreelines2)    
 head(baiTreelines2) 
+with(baiTreelines2, tapply(ipa.g, list("Altitud"=clase.altitud, "Clima"=clima), mean))
 }
 \references{
 Piper F, Vinegla B, Linares J, Camarero J, Cavieres L, Fajardo A. 2016. Mediterranean and temperate treelines are 

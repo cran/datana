@@ -3,13 +3,13 @@
 \docType{data}
 \name{eucaleaf2}
 \alias{eucaleaf2}
-\title{Mediciones foliares para arboles de Eucalyptus nitens en Tasmania, Australia.}
+\title{Mediciones foliares para árboles de Eucalyptus nitens en Tasmania, Australia.}
 \format{
 Contiene variables a nivel de hoja, como sigue:
 \describe{
   \item{tiempo}{factor a dos niveles: Temprano o Tardio}
-\item{arbol}{un identificador del arbol muestra}
-\item{meristema}{descripcion del meristema}
+\item{arbol}{un identificador del árbol muestra}
+\item{meristema}{descripción del meristema}
 \item{largo}{largo de la hoja, en mm}
 \item{ancho}{ancho de la hoja, en mm}
 \item{area}{area foliar, en cm\eqn{^{2}}{^2}}

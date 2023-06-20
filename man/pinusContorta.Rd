@@ -20,7 +20,7 @@ Oreopulus glacialis, Acaena integerrima and others species.}
 }
 \source{
 The data are provided courtesy of Drs. Anibal Pauchard and Rafael Garcia at the Laboratorio de Invasiones Biologicas,
- Universidad de Concepcion (Chile).
+ Universidad de Concepción (Chile).
 }
 \usage{
 data(pinusContorta)

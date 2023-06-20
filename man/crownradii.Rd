@@ -20,7 +20,7 @@ Contains of variables, as follows:
  }
 }
 \source{
-Data were provided by Dr Christian Salas-Eljatib (Santiago, Chile).
+Data were provided by Dr Christian Salas-Eljatib (Chile).
 }
 \usage{
 data(crownradii)
@@ -35,10 +35,10 @@ data(crownradii)
 head(crownradii) 
 }
 \references{
-Salas C. 2001. Caracterizacion basica del relicto de biodiversidad Rucamanque [Basic characterization of the biodiversity remnant Rucamanque]. 
-Bosque Nativo 29: 3–9.
+- Salas C. 2001. Caracterización básica del relicto de Biodiversidad 
+Rucamanque. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 
 Salas C, and Garcia O. 2006. Modelling height development of mature Nothofagus obliqua. 
-Forest Ecology and Management 229 (1-3): 1–6.
+Forest Ecology and Management 229 (1-3): 1–6. \doi{10.1016/j.foreco.2006.04.015}
 }
 \keyword{datasets}

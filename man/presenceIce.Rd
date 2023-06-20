@@ -5,7 +5,7 @@
 \alias{presenceIce}
 \title{Presence or absence of sea ice from logbook records of annual cruises}
 \format{
-The dataframe contains the following columns:
+The data frame contains the following columns:
 \describe{
   \item{ship.id}{The code number for ships.}
   \item{move.type}{Type of movement of ships. 0 indicates a sail-powered vessel and 1 indicates an auxiliary-powered vessel.}

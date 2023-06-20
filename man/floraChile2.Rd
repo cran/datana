@@ -23,14 +23,14 @@ Datos cedidos por el  Dr Jan Bannister del Instituto Forestal (Chiloe, Chile).
 data(floraChile)
 }
 \description{
-Contiene informacion taxonomica segregada por latitude.
+Contiene información taxonomica segregada por latitude.
 }
 \examples{
 data(floraChile2)    
 head(floraChile2) 
 }
 \references{
-- Bannister JR, Vidal OJ, Teneb E, Sandoval V. 2012. Latitudinal patterns
+Bannister JR, Vidal OJ, Teneb E, Sandoval V. 2012. Latitudinal patterns
  and regionalization of plant diversity along a 4270‐km gradient in continental
   Chile. Austral Ecology, 37(4), 500-509.
 }

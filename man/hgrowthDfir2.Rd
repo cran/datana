@@ -3,17 +3,17 @@
 \docType{data}
 \name{hgrowthDfir2}
 \alias{hgrowthDfir2}
-\title{Crecimiento en altura de una muestra de arboles en los Estados Unidos}
+\title{Crecimiento en altura de una muestra de árboles en los Estados Unidos}
 \format{
 La data frame contiene siete variables:
 \describe{
   \item{bosque.id}{Codigo identificador del bosque.}
   \item{parcela}{Codigo identificador de la parcela.}
-  \item{arbol}{Numero de identificacion arbol.}
+  \item{arbol}{Numero de identificación árbol.}
   \item{dap}{Diametro a la altura del pecho, en  pulgadas.}
   \item{htot}{Altura total, en pies}
-  \item{edad}{Edad, en anhos}
-  \item{altura}{Altura para cada edad del arbol, en pies}
+  \item{edad}{Edad, en años}
+  \item{altura}{Altura para cada edad del árbol, en pies}
  }
 }
 \source{
@@ -23,7 +23,7 @@ La data fue cedida por el Dr Christian Salas-Eljatib.
 data(hgrowthDfir2)
 }
 \description{
-Data contiene 148 obserrvaciones sobre el crecimiento en altura de arboles dominantes de Pseudotsguga mensiezzi en el Nor-Oeste de los Estados Unidos
+Data contiene 148 obserrvaciones sobre el crecimiento en altura de árboles dominantes de Pseudotsguga mensiezzi en el Nor-Oeste de los Estados Unidos
 }
 \examples{
 data(hgrowthDfir2)    

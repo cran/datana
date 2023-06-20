@@ -33,6 +33,6 @@ head(treevolruca)
 }
 \references{
 - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
-del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92.  \url{https://eljatib.com/publication/2002-01-01_ajuste_y_validacion_/}
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009}
 }
 \keyword{datasets}

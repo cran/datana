@@ -6,15 +6,14 @@
 \packageTitle{datana}
 }
 \description{
-The datana package provides the data and functions that accompany the book "Análisis de datos con el programa estadístico R: una introducción aplicada" by Salas-Eljatib (2021, ISBN: 9789566086109). You can visit the book's website at \url{https://eljatib.com/rlibro}.
+The datana package provides the data and functions that accompany the book "Análisis de datos con el programa estadístico R: una introducción aplicada" by Salas-Eljatib (2021, ISBN: 9789566086109). You can visit the book's website at \url{https://eljatib.com/rlibro}. 
 
-Notice that every dataframe has a similar one but using column names in Spanish. For instance,
-the dataframe 'pinaster' has column names in English, but 'pinaster2' has column names in Spanish. Both dataframes have the same data.
+Notice that every data frame (with columns in English) has an identical one but has column names in Spanish. You just need to add '2' (i.e., number two) after the data frame, and you will find the Spanish version of the data. For instance, the data frame 'pinaster' has column names in English, but 'pinaster2' has column names in Spanish. Both data frames have the same data.
 %\packageDescription{datana}
 }
 
 \details{
-The package contains several datasets for exploratory data analysis in an array of disciplines. Furthermore, datana provides functions as tools for descriptive statistics and plotting. 
+The package contains several datasets for exploratory data analysis in various disciplines. Furthermore, datana provides functions as tools for descriptive statistics and plotting. 
 
 To see the preferable citation of the package, type citation("datana").
 
@@ -28,7 +27,7 @@ To see the preferable citation of the package, type citation("datana").
 %\packageAuthor{datana}
 
 %Maintainer: \packageMaintainer{datana}
-The datana development team is Christian Salas-Eljatib, Nicolas Pino and Joaquin Riquelme. Many other people have contributed to individual dataframes and functions: see credits in help pages.
+The datana development team is led by Christian Salas-Eljatib (\url{https://eljatib.com}), and Nicolas Pino and Joaquin Riquelme-Alarcon have contributed as well. Many others have also helped by providing data frames and enhancing functions: see credits in help pages.
 }
 
 \references{
@@ -43,9 +42,9 @@ Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una in
 library(datana)
 data(treevolroble)
 df <- treevolroble
-xyHist(x=df$dbh,y=df$htot, xlab="Variable X",  ylab="Variable Y")
+xyHist(x=df$dbh,y=df$htot, xlab="Variable X", ylab="Variable Y")
 
-##scatter-plot and box-plots 
+##scatter-plot and box-plots
 data(fishgrowth)
 df <- fishgrowth
 xyBoxplot(x=df$length,y=df$scale)

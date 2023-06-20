@@ -3,27 +3,28 @@
 \docType{data}
 \name{pspRuca2}
 \alias{pspRuca2}
-\title{Coordenadas espaciales y variables a nivel de arbol en parcela de muestreo en predio Rucamanque, Temuco, Chile}
+\title{Coordenadas espaciales y variables a nivel de árbol en parcela de muestreo en predio Rucamanque, Temuco, Chile}
 \format{
 Variables se describen a continuacion::
 \describe{
-\item{arbol}{Numero de arbol.}											
+\item{arbol}{Numero de árbol.}											
 \item{especie}{Nombre de la especie, "N. obliqua" es Nothofagus obliqua, "A. punctatum" es Aexitocicon puncatatum, etc.}
-\item{estado}{Estado del arbol: 1 vivo, 0 muerto en pie.}
+\item{estado}{Estado del árbol: 1 vivo, 0 muerto en pie.}
 \item{dap}{Diametro a la altura del pecho, en cm.}
-\item{coord.x}{Posicion cartesiana en el eje X, en m.}
-\item{coord.y}{Posicion cartesiana en el eje Y, en m.}
+\item{coord.x}{Posición cartesiana en el eje X, en m.}
+\item{coord.y}{Posición cartesiana en el eje Y, en m.}
 \item{clase.copa}{Clase de copa (1: superior, 2: intermedio, 3; inferior).}
  }
 }
 \source{
-Los datos fueron cedidos por el Dr Christian Salas-Eljatib (Santiago, Chile).
+Los datos fueron cedidos por el Dr Christian Salas-Eljatib. 
+Mayores detalles pueden encontrarse en Salas et al (2006).
 }
 \usage{
 data(pspRuca2)
 }
 \description{
-Medidas a nivel de arbol y coordenadas espaciales en un parcela de muestreo permanente de 1 ha (100 x 100m) en el 
+Medidas a nivel de árbol y coordenadas espaciales en un parcela de muestreo permanente de 1 ha (100 x 100m) en el 
  bosque de Rucamanque, cerca de Temuco, Chile.
 }
 \examples{

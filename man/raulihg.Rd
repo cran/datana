@@ -14,7 +14,7 @@ The data frame contains four variables as follows:
  }
 }
 \source{
-Data were provided by Dr Christian Salas-Eljatib (Santiago, Chile).
+Data were provided by Dr Christian Salas-Eljatib.
 }
 \usage{
 data(raulihg)

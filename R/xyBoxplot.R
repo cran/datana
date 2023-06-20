@@ -15,9 +15,9 @@
 # Date: jun9, 2021                                                   # 
 # Santiago, Chile                                                      #
 #----------------------------------------------------------------------#
-#' xyBoxplot: Function for a scatter-plot with boxplots
+#' Function for a scatter-plot with boxplots
 #'
-#' Creates a scatter-plot with boxplots for the Y-axis variable.
+#' This function creates a scatter-plot with boxplots for the Y-axis variable.
 #'
 #' @param x A numeric vector representing the X-axis variable
 #' @param y A numeric vector representing the Y-axis variable
@@ -33,31 +33,21 @@
 #' data(fishgrowth)
 #' df <- fishgrowth
 #' xyBoxplot(x=df$age,y=df$length)
-#' xyBoxplot(x=df$age,y=df$length)
+#' xyBoxplot(x=df$age,y=df$length,col="red")
 xyBoxplot<-function(x=x, y=y, col.dots="blue",
                  xlab=NULL, ylab=NULL){
   
   df <- data.frame(x,y)
   xrange <- x;  yrange <- y
-  
+  x.class <- NULL
   cls.x <- stats::quantile(df$x, seq(.1, .9, by=.1))
-  df$x.class <- findInterval(df$x, cls.x)
-  df$x.class <- as.factor(df$x.class)
+  df$x.class <- base::findInterval(df$x, cls.x)
+  df$x.class <- base::as.factor(df$x.class)
   
-  p <- ggplot2::ggplot(df, ggplot2::aes(x, y, group=df$x.class))+#, fill="green")) + 
-    ggplot2::geom_point(alpha = 0.10,col=col.dots)+ ggplot2::geom_boxplot(alpha = 0.10) 
-  p + ggplot2::theme(legend.position = "none")  + #xlab(d.lab) + ylab(v.lab) +
+  p <- ggplot2::ggplot(df, ggplot2::aes(x, y, group=x.class))+#, fill="green")) + 
+    ggplot2::geom_point(alpha=0.10,col=col.dots)+ ggplot2::geom_boxplot(alpha=0.10) 
+  p + ggplot2::theme(legend.position = "none")  + 
     ggplot2::xlab(xlab) + ggplot2::ylab(ylab) +
     ggplot2::theme(panel.grid.major = ggplot2::element_blank(), panel.grid.minor = ggplot2::element_blank(),
-                   panel.background = ggplot2::element_blank(), axis.line = ggplot2::element_line(colour = "black"))
+     panel.background = ggplot2::element_blank(), axis.line = ggplot2::element_line(colour = "black"))
 }
-#---------------------------
-##how to use this funcion?
-#
-#library(datana)
-#data(fishgrowth)
-#df <- fishgrowth
-#xyBoxplot(x=df$age,y=df$length)
-#xyBoxplot(x=df$length,y=df$scale, ylab="Variable Y",
-#          xlab="Variable X")
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

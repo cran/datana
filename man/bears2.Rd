@@ -17,7 +17,7 @@ Contiene variables de nivel individual, como se describen a continuacion:
 \item{length}{longitud del cuerpo, en cm}
 \item{chestG}{circunferencia del pecho, en cm}
 \item{weight}{peso corporal, en kg}
-\item{obs}{numero de observacion para el oso}
+\item{obs}{numero de observación para el oso}
 \item{name}{nombre dado al oso}
  }
 }
@@ -30,8 +30,8 @@ data(bears2)
 }
 \description{
 Los osos salvajes fueron anestesiados y sus cuerpos fueron medidos y pesados. Uno de los objetivos del estudio fue hacer una
-tabla (o quiz?s un conjunto de tablas) para las personas interesadas en estimar el peso de un oso bas?ndose en otras medidas. 
-Esto se usar?a porque en el bosque es m?s f?cil medir la longitud de un oso, por ejemplo, que pesarlo.
+tabla (o quizas un conjunto de tablas) para las personas interesadas en estimar el peso de un oso basandose en otras medidas. 
+Esto se usara porque en el bosque es mas facil medir la longitud de un oso, por ejemplo, que pesarlo.
 Observe que faltan valores para algunas de las variables.
 }
 \examples{

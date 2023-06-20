@@ -5,7 +5,7 @@
 \alias{sppAbundance}
 \title{Contains information of abundance of plant species in the central-southern Andes of Chile.}
 \format{
-Contains 6 variables, as follows:
+Contains six variables, as follows:
 \describe{
   \item{sp.name}{name of specie.}
   \item{sp.code.name}{code of specie}
@@ -23,7 +23,7 @@ of La Frontera (Temuco, Chile)
 data(sppAbundance)
 }
 \description{
-Abundance of plant species [50 total] (at parcel scale [100 m2]) in burned Araucaria-Nothofagus 
+Abundance of plant species [50 total] (at parcel scale [100 m\eqn{^{2}}{^2}]) in burned Araucaria-Nothofagus 
 forests with different levels of fire severity (ie, unburned = unburned, low_sev = low severity, 
 mid_sev = medium severity , high_sev = high severity) in the China Muerta National Reserve, 
 Andes of central-southern Chile.
@@ -33,8 +33,8 @@ data(sppAbundance)
 head(sppAbundance) 
 }
 \references{
-- Fuentes A, Salas C, Gonzalez M, Urrutia J, Arroyo P, Santibanez P. 2020. Initial response of understorey vegetation and tree
-  regeneration to a mixed-severity fire in old-growth Araucaria-Nothofagus forests.Applied 
-  Vegan Science. 23:210-222.
+- Fuentes A, Salas C, Gonzalez M, Urrutia J, Arroyo P, Santibanez P. 2020. Initial 
+ response of understorey vegetation and tree regeneration to a mixed-severity fire
+  in old-growth Araucaria-Nothofagus forests. Applied Vegetation Science 23:210-222.
 }
 \keyword{datasets}

@@ -7,25 +7,29 @@
 \format{
 Contains 15 variables, as follows:
 \describe{
-  \item{sp}{Name specie.}
-  \item{site}{Name of site of study.}
+\item{species}{Name specie.}
+\item{site}{Name of site of study.}
 \item{country}{Name of country.}
-\item{site.n}{Code of site.}
-\item{code}{Code of specie.}
-\item{genus}{Genus of specie.}
-\item{sps}{Abbreviated name specie.}
-\item{family}{Family of specie.}
-\item{phyl}{Type of phylogeny.}
-\item{l.hab}{Type of leaf habit.}
+\item{site.num}{Code of site.}
+\item{code}{Species code.}
+\item{genus}{Species genus.}
+\item{spp}{Abbreviated name of the species.}
+\item{family}{Family of the species.}
+\item{phyl}{Type of phylogeny: Angiosperm/Gymnosperm}
+\item{l.hab}{Leaf habit: Deciduous/Evergreen}
 \item{l.type}{.}
-\item{leaf}{Type of leaf.}
-\item{growth.l}{Growth at full light (time in years).}
-\item{growth.d}{Growth in shade.}
-\item{surv.d}{Survival in shade.}
+\item{leaf}{Combination of phylogeny and leaf habit: evergreen gymnosperms; deciduous
+ angiosperms and evergreen angiosperms.}
+\item{growth.l}{Growth at full light, in years. Defined as the time needed for
+ a sapling with DBH= 1cm to become an adult (DBH=7.5 cm) when light = 100\%.}
+\item{growth.d}{Growth in shade, in years. Defined as the time needed for a 
+sapling with DBH= 1cm to become an adult (DBH=7.5 cm) when light = 1\%}
+\item{surv.d}{Survival in shade, in \%. Defined as the 5-year survivorship of a sapling
+ with DBH = 1cm when light = 1\%.}
  }
 }
 \source{
-The data were obtained from the DRYAD repository.
+The data were obtained from the DRYAD repository \doi{10.5061/dryad.12b0h}.
 }
 \usage{
 data(demograph)
@@ -39,8 +43,8 @@ data(demograph)
 head(demograph) 
 }
 \references{
-- Ameztegui A, Paquette A, Shipley B, Heym M, Messier C, Gravel D. 2016 . Shade tolerance and 
- the functional trait: demography relationship in temperate and boreal forests. Functional Ecology, 
- 31: 821-830.
+- Ameztegui A, Paquette A, Shipley B, Heym M, Messier C, Gravel D. 2016. Shade 
+ tolerance and the functional trait: demography relationship in temperate
+  and boreal forests. Functional Ecology 31:821-830.
 }
 \keyword{datasets}

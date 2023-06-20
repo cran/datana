@@ -3,16 +3,16 @@
 \docType{data}
 \name{treegrowth2}
 \alias{treegrowth2}
-\title{Crecimiento en diametro y altura de arboles muestras de Grand-fir.}
+\title{Crecimiento en diámetro y altura de árboles muestras de Grand-fir.}
 \format{
 Contiene las siguientes siete columnas:
 \describe{
-  \item{num.arb}{Numero identificador del arbol. Unico para cada arbol muestra.}
+  \item{num.arb}{Numero identificador del árbol. Unico para cada árbol muestra.}
   \item{bosque}{Tipo forestal.}
-  \item{habitat}{Clasificacion de tipo de habitat.}
+  \item{habitat}{Clasificación de tipo de habitat.}
   \item{cod.arb}{Un codigo que combina a las siguientes columnas: num.arb-bosque-habitat}
-  \item{edad}{Edad, en anhos.}
-  \item{dap}{Diametro a la altura del pecho, en cm. Note que los decimales es debido a 
+  \item{edad}{Edad, en años.}
+  \item{dap}{diámetro a la altura del pecho, en cm. Note que los decimales es debido a 
     que esta variable originalmente fue medida en pulgadas.}
   \item{htot}{Altura total, in m. Note que los decimales es debido a que esta variable
    fue originalmente medida en pies.}
@@ -24,18 +24,18 @@ Originalmente los datos fueron cedidos por el Dr Albert Stage (Q.E.P.D) al Profe
  fue un estudiante de postgrado en estadistica del Prof. Robinson en la Univ. of Idaho.
 }
 \usage{
-data(treegrowth)
+data(treegrowth2)
 }
 \description{
-Crecimiento en diametro y altura de 66 arboles de Grand-fir. Los datos fueron derivados a partir
- de arboles muestras de analisis fustal colectados por el Dr Albert Stage (US Forest Service, Moscow, ID, USA.)
+Crecimiento en diámetro y altura de 66 árboles de Grand-fir. Los datos fueron derivados a partir
+ de árboles muestras de analisis fustal colectados por el Dr Albert Stage (US Forest Service, Moscow, ID, USA.)
 }
 \examples{
-data(treegrowth2)    
-head(treegrowth2) 
+head(treegrowth2)    
+unique(treegrowth2$cod.arb)
 }
 \references{
 Stage, A. R., 1963. A mathematical approach to polymorphic site index curves for 
- Grand fir. Forest Science 9 (2), 167–180.
+ Grand fir. Forest Science 9(2):167–180.
 }
 \keyword{datasets}

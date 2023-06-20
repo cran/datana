@@ -15,9 +15,9 @@ Contains seven columns, as follows:
                uncinata: Pinus uncinata, sylvestris: Pinus sylvestris).}
 \item{elevation}{Type of elevation. "Treeline", intermediate named as "inter", and closed or
       montane forest named as low.}
-\item{tree}{Id for tree.}
-\item{bai}{Value of annual basal area increment.}
-\item{mean.bai}{Mean of annual basal area increment.}
+\item{tree}{Sample tree code.}
+\item{delta.g}{Increment in basal area (in cm\eqn{^{2}}{^2}) during the last 10 years.}
+\item{pai.g}{Periodic annual increment of basal area (in cm\eqn{^{2}}{^2}/yr), during the last 10 years.}
  }
 }
 \source{
@@ -33,6 +33,7 @@ The dataset contains 157 observations of the last ten years in 6-8 adult trees o
 \examples{
 data(baiTreelines)    
 head(baiTreelines) 
+with(baiTreelines, tapply(pai.g, list("Elevation"=elevation.class, "Climate"=climate), mean))
 }
 \references{
 Piper F, Vinegla B, Linares J, Camarero J, Cavieres L, Fajardo A. 2016. Mediterranean and temperate treelines are 

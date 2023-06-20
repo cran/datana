@@ -3,15 +3,15 @@
 \docType{data}
 \name{airquality2}
 \alias{airquality2}
-\title{Contiene informacion de calidad del aire.}
+\title{Contiene información de calidad del aire.}
 \format{
-Contiene 6 variables:
+Contiene seis variables:
 \describe{
   \item{ozone}{Ozono (ppb).}
   \item{solar}{Solar R (largo).}
 \item{wind}{Viento (mph).}
 \item{temp}{Temperatura (grados F).}
-\item{month}{Mes del anho (1--12).}
+\item{month}{Mes del año (1--12).}
 \item{day}{Dia del mes (1--31).}
  }
 }
@@ -22,11 +22,12 @@ Los datos fueron obtenidos desde la libreria 'datasets'.
 data(airquality)
 }
 \description{
-Calidad del aire diario medido en New York, de Mayo a Septiembre de 1973.
+Calidad del aire diario medido en New York, de Mayo a Septiembre de 1973. 
+ Algunas variables tienes observaciones perdidas.
 }
 \examples{
 data(airquality2)    
-head(airquality2) 
+summary(airquality2) 
 }
 \references{
 Chambers J, Cleveland W, Kleiner B, Tukey P. 1983. Graphical Methods for Data Analysis. Belmont. CA: Wadsworth.

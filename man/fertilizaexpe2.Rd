@@ -8,7 +8,7 @@
 Contains three variables, as follows:
 \describe{
   \item{treat}{Treatment level.}
-  \item{volume}{Plot-level volume, in m3/plot.}
+  \item{volume}{Plot-level volume, in m\eqn{^{3}}{^3}/plot.}
  }
 }
 \source{

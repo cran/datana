@@ -3,11 +3,11 @@
 \docType{data}
 \name{treevolruca2}
 \alias{treevolruca2}
-\title{Variables alometricas a nivel de arbol para varias especies del bosque de Rucamanque, cerca de Temuco, Chile.}
+\title{Variables alometricas a nivel de árbol para varias especies del bosque de Rucamanque, cerca de Temuco, Chile.}
 \format{
-Las siguientes columnas son parte de la dataframe:
+Las siguientes columnas son parte de la data frame:
 \describe{
-  \item{arbol}{Numero del arbol.}
+  \item{arbol}{Numero del árbol.}
 \item{especie}{Especie.}
 \item{dap}{Diametro a la altura del pecho, en cm.}
 \item{htot}{Altura total, en m.}
@@ -22,7 +22,7 @@ Los datos fueron cedidos por el Dr Christian Salas-Eljatib (Chile).
 data(treevolruca2)
 }
 \description{
-Volumen, altura y diametro, entre otras para arboles muestra en el bosque de Rucamanque, cerca de Temuco, 
+Volumen, altura y diámetro, entre otras para árboles muestra en el bosque de Rucamanque, cerca de Temuco, 
 en la region de la Araucania, en el sur de Chile.  Las siguientes especies son parte de los datos: laurel (laurelia sempervirens), lingue (Persea lingue), olivillo (Aextocicon puncatum), 
  roble (Nothofagus obliqua), tepa (Laureliosis philippiana), y tineo (Weinmannia trichosperma).
 }
@@ -32,6 +32,6 @@ head(treevolruca2)
 }
 \references{
 - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
-del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \url{https://eljatib.com/publication/2002-01-01_ajuste_y_validacion_/}
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009}
 }
 \keyword{datasets}

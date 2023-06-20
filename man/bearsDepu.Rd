@@ -3,7 +3,7 @@
 \docType{data}
 \name{bearsDepu}
 \alias{bearsDepu}
-\title{Age and physical measurement data for wild bears. Dataframe same as "bears" but without missing values.}
+\title{Age and physical measurement data for wild bears. Data frame same as "bears" but without missing values.}
 \format{
 Contiene variables de nivel individual, como se describen a continuacion:
 \describe{

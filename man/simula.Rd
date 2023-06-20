@@ -15,10 +15,10 @@ Contains stand-level variables, as follows:
 \item{toph}{Dominant height, in m}
  \item{qmd}{quadratic mean diameter, in cm}
 \item{totvol}{gross stand volume, in m\eqn{^{3}}{^3}/ha} 
-\item{viu.10}{stand volume below an utilizacion index of 10 cm, in m\eqn{^{3}}{^3}/ha} 
-\item{viu.15}{stand volume below an utilizacion index of 15 cm, in m\eqn{^{3}}{^3}/ha} 
-\item{viu.20}{stand volume below an utilizacion index of 20 cm, in m\eqn{^{3}}{^3}/ha} 
-\item{viu.25}{stand volume below an utilizacion index of 25 cm, in m\eqn{^{3}}{^3}/ha} 
+\item{viu.10}{stand volume below an utilización index of 10 cm, in m\eqn{^{3}}{^3}/ha} 
+\item{viu.15}{stand volume below an utilización index of 15 cm, in m\eqn{^{3}}{^3}/ha} 
+\item{viu.20}{stand volume below an utilización index of 20 cm, in m\eqn{^{3}}{^3}/ha} 
+\item{viu.25}{stand volume below an utilización index of 25 cm, in m\eqn{^{3}}{^3}/ha} 
  }
 }
 \source{

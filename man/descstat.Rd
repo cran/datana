@@ -2,24 +2,21 @@
 % Please edit documentation in R/descstat.R
 \name{descstat}
 \alias{descstat}
-\title{A descriptive statistics table for continuous variables}
+\title{A function that prepares a descriptive statistics table for continuous variables.}
 \usage{
 descstat(data = data, decnum = NA)
 }
 \arguments{
-\item{data}{a dataframe containing variables as columns}
+\item{data}{a dataframe containing variables as columns.}
 
-\item{decnum}{the number of decimals to be used in the output}
+\item{decnum}{the number of decimals to be used in the output.}
 }
 \value{
 This function wraps descriptive statistics into a summarize table having the following
   descriptive statistics: sample size, minimum, maximum, mean, median, SD, and coefficient of variation (%).
 }
 \description{
-descstat: Function that creates a descriptive statistics table for all continuous variables in a dataframe excluding missing values.
-}
-\details{
-As always, please check the output after applying the function.
+Function that creates a descriptive statistics table for all continuous variables in a dataframe excluding missing values.
 }
 \examples{
 

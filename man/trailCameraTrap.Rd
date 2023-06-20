@@ -6,7 +6,7 @@
 \title{Contains information of Camera trap data on medium to large terrestrial mammals 
 collected at 54 camera stations in Ruaha National Park, southern Tanzania.}
 \format{
-Contains 6 variables, as follows:
+Contains six variables, as follows:
 \describe{
   \item{reference}{Number of observation od datasets.}
   \item{placement}{Type of "placement" placed in each station (random or trail).}

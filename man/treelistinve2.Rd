@@ -3,28 +3,29 @@
 \docType{data}
 \name{treelistinve2}
 \alias{treelistinve2}
-\title{Lista de arboles en un inventario forestal.}
+\title{Lista de árboles provienentes de un inventario forestal.}
 \format{
-Contiene variables a nivel de arbol dentro de parcelas.
+Contiene variables a nivel de árbol dentro de parcelas.
 \describe{
   \item{parcela}{Numero de la parcela de muestreo.}
   \item{sup.parce}{Superficie de la parcela, en m2.}
-  \item{arbol}{Numero identificador del arbol.}
+  \item{arbol}{Numero identificador del árbol.}
 \item{especie}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
-Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
+Lingue= Persea lingue, Coigue= Nothofagus dombeyi, Roble= Nothofagus obliqua, Other= Otra}
 \item{dap}{Diametro a la altura del pecho, en cm}
-\item{htot}{Altura total, en m. Solo medida en algunas arboles muestra.}
+\item{htot}{Altura total, en m. Solo medida en algunas árboles muestra.}
  }
 }
 \source{
-The data are provided courtesy of Prof. Christian Salas-Eljatib (Chile).
+Los datos son cortesia del Prof. Christian Salas-Eljatib (Chile). Mayores detalles
+  pueden encontrarse en Salas (2001, 2002).
 }
 \usage{
 data(treelistinve2)
 }
 \description{
-Variables a nivel de arbol medidos en 3 unidad de muestreo establecidas en un inventario forestal. 
- Note que las parcelas no tienen todas la misma superficie. Las parcelas
+Variables a nivel de árbol medidos en tres unidades de muestreo establecidas en un inventario forestal. 
+ Note que las parcelas no tienen la misma superficie. Las parcelas
  fueron establecidas en un bosque secundario de Nothofagus obliqua en las cercanias de Temuco.
 }
 \examples{
@@ -34,9 +35,9 @@ table(treelistinve2$parcela,treelistinve2$sup.parce)
 }
 \references{
 - Salas C. 2001. Caracterización básica del relicto de Biodiversidad 
-Rucamanque. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-01-01_caracterizacion_basi/}
+Rucamanque. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 
 - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
-del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \url{https://eljatib.com/publication/2002-01-01_ajuste_y_validacion_/}
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009.}
 }
 \keyword{datasets}

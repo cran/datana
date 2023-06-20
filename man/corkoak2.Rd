@@ -3,7 +3,7 @@
 \docType{data}
 \name{corkoak2}
 \alias{corkoak2}
-\title{Datos de biomasa de corcho en arboles de Encino en Portugal.}
+\title{Datos de biomasa de corcho en árboles de Encino en Portugal.}
 \format{
 \describe{
   \item{arbol}{A correlative number for each sample tree.}
@@ -27,7 +27,7 @@ Datos cedidos por Prof. Timothy Gregoire (Yale University)
 corkoak2
 }
 \description{
-Mediciones de peso de corcho en arboles muestra de Quercus suber en Portugal.
+Mediciones de peso de corcho en árboles muestra de Quercus suber en Portugal.
 }
 \examples{
 data(corkoak2)    

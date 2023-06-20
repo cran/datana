@@ -5,7 +5,7 @@
 \alias{plantsHawaii}
 \title{Maximum plant size in the Hawaiian archipelago.}
 \format{
-Contains 6 variables, as follows:
+Contains six variables, as follows:
 \describe{
   \item{scientific.name}{Genus and epithet of each individual following The Plant List v. 1.1 (2013).}
   \item{family}{Family of each individual following The Plant List v. 1.1 (2013).}
@@ -30,7 +30,7 @@ data(plantsHawaii)
 head(plantsHawaii) 
 }
 \references{
-- Craven D, Knight T, Barton K, Bialic-Murphy L, Cordell S, Giardina C, Gillespie T, Ostertag R, Sack L,Chase J.
+Craven D, Knight T, Barton K, Bialic-Murphy L, Cordell S, Giardina C, Gillespie T, Ostertag R, Sack L,Chase J.
 2018. OpenNahele: the open Hawaiian forest plot database. Biodiversity Data Journal 6: e28406.
 }
 \keyword{datasets}

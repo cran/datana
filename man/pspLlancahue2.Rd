@@ -3,17 +3,17 @@
 \docType{data}
 \name{pspLlancahue2}
 \alias{pspLlancahue2}
-\title{Ubicacion espacial de arboles dentro de una parcela de muestreo en el bosque de Llancahue, Valdivia, Chile.}
+\title{Ubicación espacial de árboles dentro de una parcela de muestreo en el bosque de Llancahue, Valdivia, Chile.}
 \format{
-Contiene las siguientes variables a nivel de arbol
+Contiene las siguientes variables a nivel de árbol
 \describe{
-\item{arbol}{Codigo identificador del arbol.}
-\item{especie}{Abreviacion de la especie: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+\item{arbol}{Codigo identificador del árbol.}
+\item{especie}{Abreviación de la especie: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
-\item{dap}{Diametro a la altura del pecho, en cm.}
-\item{coord.x}{Posicion cartesiana en el eje-X, en m.}
-\item{coord.y}{Posicion cartesiana en el eje-Y, en m.}
-\item{especie.ori}{Abreviacion original para las especies.}
+\item{dap}{diámetro a la altura del pecho, en cm.}
+\item{coord.x}{Posición cartesiana en el eje-X, en m.}
+\item{coord.y}{Posición cartesiana en el eje-Y, en m.}
+\item{especie.ori}{Abreviación original para las especies.}
  }
 }
 \source{
@@ -23,7 +23,7 @@ Los datos fueron cedidos por el Prof. Daniel Soto de la Universidad de Aysen (Co
 data(pspLlancahue2)
 }
 \description{
-Posicion cartesiana, especie, y diametro de arboles dentro de una parcela rectangular de 130 m por 70 m.
+Posición cartesiana, especie, y diámetro de árboles dentro de una parcela rectangular de 130 m por 70 m.
 }
 \examples{
 data(pspLlancahue2)    

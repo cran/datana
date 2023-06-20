@@ -3,16 +3,16 @@
 \docType{data}
 \name{airquality}
 \alias{airquality}
-\title{Airquality data, from the datasets library.}
+\title{Air quality data, from the 'datasets' library.}
 \format{
-Contains 6 variables, as follows:
+Contains six variables, as follows:
 \describe{
-  \item{ozone}{numeric	Ozone (ppb).}
-  \item{solar}{numeric	Solar R (lang).}
-\item{wind}{numeric	Wind (mph).}
-\item{temp}{numeric	Temperature (degrees F).}
-\item{month}{numeric	Month (1--12).}
-\item{day}{numeric	Day of month (1--31).}
+  \item{ozone}{Ozone (ppb).}
+  \item{solar}{Solar R (lang).}
+\item{wind}{Wind (mph).}
+\item{temp}{Temperature (degrees F).}
+\item{month}{Month (1--12).}
+\item{day}{Day of the month (1--31).}
  }
 }
 \source{
@@ -22,11 +22,12 @@ The data were obtained from the library 'datasets'.
 data(airquality)
 }
 \description{
-Daily air quality measurements in New York, May to September 1973.
+Daily air quality measurements in New York, May to September 1973. 
+ Be aware that some variables have missing values.
 }
 \examples{
 data(airquality)    
-head(airquality) 
+summary(airquality) 
 }
 \references{
 Chambers J, Cleveland W, Kleiner B, Tukey P. 1983. Graphical Methods for Data Analysis. Belmont. CA: Wadsworth.

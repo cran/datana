@@ -3,13 +3,13 @@
 \docType{data}
 \name{pinaster}
 \alias{pinaster}
-\title{Tree volume for Pinus pinaster in the Baixo-Mino, Galicia, Spain.}
+\title{Tree volume for Pinus pinaster in the Baixo-Miño, Galicia, Spain.}
 \format{
 Contains tree-level variables, as follows:
 \describe{
-  \item{stand}{stand number from the sample tree was selected.}
-\item{si}{Site index of the stand.}
-\item{tree.no}{tree number.}
+  \item{stand}{Stand from where the sample tree was collected.}
+\item{si}{Site index of the stand, in m.}
+\item{tree.no}{Tree number.}
 \item{dbh}{Diameter at breast height, in cm.}
 \item{htot}{Total height, in m.}
  \item{d4}{Upper-stem diameter at 4 m, in cm.}
@@ -18,13 +18,13 @@ Contains tree-level variables, as follows:
  }
 }
 \source{
-The data are provided courtesy of Dr Christian Salas-Eljatib (Chile).
+The data are provided courtesy of Dr Christian Salas-Eljatib.
 }
 \usage{
 data(pinaster)
 }
 \description{
-These are volume measurements data of sample trees in the Baixo-Mino region in Galicia, Spain.
+Tree-level volume data of sample trees in the Baixo-Miño region, Galicia, Spain.
 }
 \examples{
 data(pinaster)    
@@ -32,6 +32,6 @@ head(pinaster)
 }
 \references{
 - Salas C, Nieto L, Irisarri A. 2005. Modelos de volumen para Pinus pinaster Ait. en la comarca del Baixo Mino,
-  Galicia, Espana. Quebracho 12: 11-22. \url{https://eljatib.com/publication/2005-01-01_modelos_de_volumen_p/}
+  Galicia, Espana. Quebracho 12: 11-22. \url{https://eljatib.com/publication/2005-12-01_modelos_de_volumen_p/}
 }
 \keyword{datasets}

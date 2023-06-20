@@ -7,8 +7,8 @@
 \format{
 Contains 15 variables, as follows:
 \describe{
-  \item{site}{Id site of study.}
-  \item{plot}{Number of plot.}
+\item{site}{Id site of study.}
+\item{plot}{Number of plot.}
 \item{scar}{Scarification in percentage of total area.}
 \item{x.trans.total}{Transmitted radiation in percentage.}
 \item{kPa}{Soil resistance to penetration.}

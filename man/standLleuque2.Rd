@@ -10,21 +10,20 @@ Variables se describen a continuacion::
 \item{rodal}{Numero de rodal}											
 \item{plot.id}{Codigo de parcela}
 \item{nha}{Densidad de parcela}
-\item{gha}{Area basal de parcela}
+\item{gha}{Área basal de parcela}
 \item{qmd}{Diametro medio cuadratico}
 \item{toph}{Altura dominante}
 \item{estructura}{Estructura del bosque. Abiero, secundario adulto o puro}
  }
 }
 \source{
-The data are provided courtesy of Prof. Rodrigo Vargas-Gaete at Universidad
- de La Frontera (Temuco, Chile).
+The data are provided courtesy of Prof. Rodrigo Vargas-Gaete (Universidad de La Frontera, Temuco, Chile).
 }
 \usage{
 data(standLleuque2)
 }
 \description{
-Se proporciona informacion de densidad, area basal, diametro medio cuadratico  y otras variables de 24 parcelas para Lleuque.
+Se proporciona información de densidad, área basal, diametro medio cuadratico  y otras variables de 24 parcelas para Lleuque.
 }
 \examples{
 data(standLleuque2)    

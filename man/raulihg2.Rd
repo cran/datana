@@ -3,24 +3,24 @@
 \docType{data}
 \name{raulihg2}
 \alias{raulihg2}
-\title{Crecimiento en altura de arboles de Nothofagus alpina.}
+\title{Crecimiento en altura de árboles de Nothofagus alpina.}
 \format{
 Contiene variables de nivel individual, como se describen a continuacion::
 \describe{
-\item{arbol}{Codigo del arbol}											
+\item{arbol}{Codigo del árbol}											
 \item{especie}{Nombre comun especie}
-\item{bha.t}{Edad a la altura del pecho, en anhos.}
+\item{bha.t}{Edad a la altura del pecho, en años.}
 \item{h.t}{Altura total, en m.}
  }
 }
 \source{
-Datos cedidos por el Dr Christian Salas-Eljatib (Chile).
+Datos cedidos por el Dr Christian Salas-Eljatib.
 }
 \usage{
 data(raulihg2)
 }
 \description{
-Datos de series de tiempo de altura para arboles muestreados de Nothofagus alpina (rauli) en el centro-sur de Chile. Estos arboles son parte
+Datos de series de tiempo de altura para árboles muestreados de Nothofagus alpina (rauli) en el centro-sur de Chile. Estos árboles son parte
 de los usados en articulo de referencia.
 }
 \examples{

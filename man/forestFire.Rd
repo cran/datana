@@ -35,22 +35,24 @@ The data frame contains four variables as follows:
  }
 }
 \source{
-Data were provided by Dr Adison Altamirano at the Universidad de La Frontera (Temuco, Chile).
+Data were compiled by Dr Adison Altamirano (Universidad de La Frontera, Temuco, Chile) from
+the Chilean Forest Service (CONAF).
 }
 \usage{
 data(forestFire)
 }
 \description{
-Data of forest fire occurrence from Altamirano et al. (2013) as our population, containing 7210 total observations (N), with only 
-890 cases of fire occurrence (N 1 ) and 6320 cases of non occurrence (N 0 ). The binary variable (Y) is the occurrence of forest 
-fire, where Y equal to 1 denotes occurrence and Y equal to 0  otherwise.
+Data of forest fire occurrence from Altamirano et al. (2013) as the population under study, 
+containing 7210 total observations, with only 890 cases of fire occurrence
+ and 6320 cases of non-occurrence. The binary variable (Y) is the occurrence of forest fire, 
+ where Y equal to 1 denotes occurrence and Y equal to 0 otherwise.
 }
 \examples{
 data(forestFire)    
 head(forestFire) 
 }
 \references{
-Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, Avila A. Infuencia de la heterogeneidad 
-del paisaje en la ocurrencia de incendios forestales en Chile Central. Revista de Geografia del Norte Grande, 55:157-170, 2013.
+Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, Avila A. 2013. Infuencia de la heterogeneidad 
+del paisaje en la ocurrencia de incendios forestales en Chile Central. Revista de Geografia del Norte Grande, 55:157-170.
 }
 \keyword{datasets}

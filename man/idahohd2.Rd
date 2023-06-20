@@ -3,16 +3,16 @@
 \docType{data}
 \name{idahohd2}
 \alias{idahohd2}
-\title{Altura-diametro de arboles en el estado de Idaho (USA).}
+\title{Altura-diámetro de árboles en el estado de Idaho (USA).}
 \format{
 Contiene cinco variables, como sigue:
 \describe{
   \item{parce}{numero de la parcela de muestreo.}
-  \item{narb}{numero del arbol dentro de la parcela.}
-\item{spp}{especie del arbol, una variable factor  con niveles DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
+  \item{narb}{numero del árbol dentro de la parcela.}
+\item{spp}{especie del árbol, una variable factor  con niveles DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
                 WC = Western red cedar, WP = White pine.}
-\item{d}{Diametro del tronco a los 1.3m sobre el suelo, en cm.}
-\item{h}{Altura del arbol, en m.}
+\item{d}{diámetro del tronco a los 1.3m sobre el suelo, en cm.}
+\item{h}{Altura del árbol, en m.}
  }
 }
 \source{

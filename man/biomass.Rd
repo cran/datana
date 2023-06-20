@@ -6,14 +6,14 @@
 \title{Contains tree-level biomass data for several species in Canada.}
 \format{
 \describe{
-  \item{treenum}{tree number.}
-  \item{spp}{species common name.}
-  \item{dbh}{diameter at breast height, in cm.}
-  \item{height}{total height, in m.}
-  \item{totbiom}{total biomass, in kg.}
-  \item{bolebiom}{stem biomass, in kg.}
-  \item{branchbiom}{branches biomass, in kg.}
-  \item{foliagebiom}{foliage biomass, in kg.}
+  \item{treenum}{Tree number.}
+  \item{spp}{Species common name.}
+  \item{dbh}{Diameter at breast height, in cm.}
+  \item{height}{Total height, in m.}
+  \item{totbiom}{Total biomass, in kg.}
+  \item{bolebiom}{Stem biomass, in kg.}
+  \item{branchbiom}{Branches biomass, in kg.}
+  \item{foliagebiom}{Foliage biomass, in kg.}
  }
 }
 \source{
@@ -24,10 +24,12 @@ the School of Forestry and Environmental Studies at Yale University (New Haven, 
 biomass
 }
 \description{
-These are tree-level variables for several species in Canada.
+Biomass component measurements for sample trees of four species. 
+The species are Balsam fir (Abies balsamea), Black spruce (Picea mariana),
+White birch (Betula papyrifera),  and White spruce (Picea glauca).
 }
 \examples{
-data(biomass)    
 head(biomass) 
+table(biomass$spp)    
 }
 \keyword{datasets}
