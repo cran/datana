@@ -1,8 +1,8 @@
 citHeader("To cite the datana package in publications use:")
 
 bibentry(bibtype = "Book",
-  title        = "{An{\\'a}lisis de datos con el programa estad{\\'i}stico R: una introducci{\\'o}n aplicada}",
-  author       = c("C. Salas-Eljatib"),
+  title        = "{Analisis de datos con el programa estadistico R: una introduccion aplicada}",
+  author       = "Salas-Eljatib, C.",
   year         = "2021",
   publisher    = "Ediciones Universidad Mayor",
   address      = "Santiago, Chile",
@@ -12,4 +12,17 @@ bibentry(bibtype = "Book",
   paste("Salas-Eljatib, C. 2021.",
         "Análisis de datos con el programa estadístico R: una introducción aplicada.",
         "Ediciones Universidad Mayor, Santiago, Chile. 170 p.")
+)
+
+bibentry(bibtype = "Manual",
+  title        = "{datana: Datasets and Functions to Accompany Analisis De Datos Con R}",
+  author       = "Salas-Eljatib, C.",
+  year         = "2024",
+  note    = "R package version 1.0.4",
+  url      = "https://CRAN.R-project.org/package=datana",
+
+  textVersion  =
+  paste("Salas-Eljatib, C. 2024.",
+        "datana: Datasets and Functions to Accompany Análisis de Datos con R.",
+        "R package version 1.0.4","https://CRAN.R-project.org/package=datana")
 )

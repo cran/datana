@@ -3,7 +3,7 @@
 \docType{data}
 \name{spatAustria}
 \alias{spatAustria}
-\title{Tree locations for several plots of Norway spruce}
+\title{Tree locations for several plots of Norway spruce in Austria}
 \format{
 Contains cartesian position of trees, and covariates, in sample plots, as follows:
 \describe{
@@ -34,7 +34,7 @@ points(pos$x.coord,pos$y.coord,col=pos$plot.code,cex=0.5)
 par(oldpar)
 }
 \references{
-- Kindermann G. Kristofel F, Neumann M, Rossler G, LedermannT & Schueler. 2018. 109 years of forest growth measurements from
+- Kindermann G. Kristofel F, Neumann M, Rossler G, Ledermann T & Schueler. 2018. 109 years of forest growth measurements from
  individual Norway spruce trees. Sci. Data 5:180077 \doi{10.1038/sdata.2018.77}
 }
 \keyword{datasets}

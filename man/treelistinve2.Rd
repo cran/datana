@@ -3,41 +3,41 @@
 \docType{data}
 \name{treelistinve2}
 \alias{treelistinve2}
-\title{Lista de árboles provienentes de un inventario forestal.}
+\title{Lista de árboles en un inventario forestal.}
 \format{
-Contiene variables a nivel de árbol dentro de parcelas.
+Contiene variables a nivel de arbol dentro de parcelas.
 \describe{
-  \item{parcela}{Numero de la parcela de muestreo.}
-  \item{sup.parce}{Superficie de la parcela, en m2.}
-  \item{arbol}{Numero identificador del árbol.}
-\item{especie}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
-Lingue= Persea lingue, Coigue= Nothofagus dombeyi, Roble= Nothofagus obliqua, Other= Otra}
-\item{dap}{Diametro a la altura del pecho, en cm}
-\item{htot}{Altura total, en m. Solo medida en algunas árboles muestra.}
+  \item{parce}{Numero de la parcela de muestreo.}
+  \item{sup.parce}{Superficie de la parcela, en m\eqn{^{2}}{^2}.}
+  \item{arbol}{Numero identificador del arbol.}
+\item{espe}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
+Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
+\item{dap}{Diámetro a la altura del pecho, en cm}
+\item{atot}{Altura total, en m. Solo medida en algunas árboles muestra.}
  }
 }
 \source{
-Los datos son cortesia del Prof. Christian Salas-Eljatib (Chile). Mayores detalles
-  pueden encontrarse en Salas (2001, 2002).
+Los datos fueron cedidos por el Prof. Christian Salas-Eljatib, Universidad de Chile (Santiago, Chile).
 }
 \usage{
 data(treelistinve2)
 }
 \description{
-Variables a nivel de árbol medidos en tres unidades de muestreo establecidas en un inventario forestal. 
- Note que las parcelas no tienen la misma superficie. Las parcelas
- fueron establecidas en un bosque secundario de Nothofagus obliqua en las cercanias de Temuco.
+Variables a nivel de árbol medidas en tres unidades de muestreo establecidas en un inventario forestal. 
+ Note que las parcelas pueden tener diferentes superficies. Las parcelas
+ fueron establecidas en un bosque secundario dominando por Nothofagus obliqua en las cercanias de Temuco.
 }
 \examples{
 data(treelistinve2)    
-unique(treelistinve2$parcela) 
-table(treelistinve2$parcela,treelistinve2$sup.parce)
+unique(treelistinve2$parce) 
+table(treelistinve2$parce,treelistinve2$sup.parce)
+tapply(treelistinve2$dap,treelistinve2$espe,summary)
 }
 \references{
 - Salas C. 2001. Caracterización básica del relicto de Biodiversidad 
 Rucamanque. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 
 - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
-del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009.}
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009} \url{https://eljatib.com/publication/2002-07-01_ajuste_y_validacion_/}
 }
 \keyword{datasets}

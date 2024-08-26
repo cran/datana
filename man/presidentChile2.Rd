@@ -3,38 +3,37 @@
 \docType{data}
 \name{presidentChile2}
 \alias{presidentChile2}
-\title{2021 presidential election in Chile.}
+\title{Eleccion presidencial del 2021 en Chile.}
 \format{
-The data frame contains the following columns:
+Los datos contienen las siguientes columnas:
 \describe{
-  \item{region.no}{Administrative region number of Chile.}
-  \item{region}{Administrative region name.}
-  \item{provincia}{Province.}
-  \item{circu.senatorial}{Circunscripción senatorial.}
-  \item{distrito}{Distrito.}
-  \item{comuna}{Comuna.}
-  \item{circu.elec}{Circunscripción electoral.}
-  \item{local}{Lugar de votacion.}
-  \item{no.mesa}{Numero de mesa de votacion.}
-  \item{tipo.mesa}{Tipo de mesa: M (Mujeres), V (Varones).}
-  \item{mesas.fusionadas}{Mesas funcionadas.}
-  \item{electores}{Total de electores de la mesa.}
-  \item{nro.en.voto}{Numero del candidato en el voto.}
-  \item{candidato}{Candidato: Gabriel Boric, Jose A. Kast, Votos nulos, Votos en blanco.}
-  \item{votos.tricel}{Numero total de votos de la mesa}       
+  \item{region.no}{Numero de la region adminsitrativa de Chile.}
+  \item{region}{Nombre de la region administrativa de Chile}
+  \item{provincia}{Provincia.}
+  \item{circu.senatorial}{Circunscripcion senatorial.}
+  \item{distrito}{Distrit.}
+  \item{comuna}{County.}
+  \item{circu.elec}{Circunscripcion electoral.}
+  \item{local}{Local de votacion. Generalmente es un colegio.}
+  \item{no.mesa}{Numero de mesa.}
+  \item{tipo.mesa}{Tipo de mesa de votacion.}
+  \item{mesas.fusionadas}{Mesa de votacion fucionada.}
+  \item{electores}{Electores.}
+  \item{nro.en.voto}{.}
+  \item{candidato}{Candidato, ya sea Gabriel Boric o Jose A. Kast}
+  \item{votos.tricel}{Numero total de votos segun el TRICEL (Tribunal calificador de elecciones).}       
  }
 }
 \source{
-Los datos fueron obtenidos desde el servicio electoral del Gobierno de Chile (SERVEL) en
- \url{https://www.servel.cl/centro-de-datos/procesos-electorales-detalle/?id=27}.
-  El archivo de datos tenia el nombre "Resultados_mesa_presidencial_TRICEL_2v_2021-1.xlsx", y fue 
-  descargado el 24 de Octubre del 2022.
+Los datos fueron obtenidos desde el sitio web del Servicio Electoral del Gobierno de Chilean (SERVEL) en
+ \url{https://www.servel.cl}.
+ El archivo de datos descargado el 24 de Octubre del 2022 tenia el nombre "Resultados_mesa_presidencial_TRICEL_2v_2021-1.xlsx".
 }
 \usage{
-data(presidentChile)
+data(presidentChile2)
 }
 \description{
-Voting table-level data of the 2021 presidential election in Chile. The election was held on December 19, 2021.
+Datos de mesa de la eleccion presidencial del 2012 en Chile. La eleccion se llevo a cabo el 19 de Diciembre del 2021.
 }
 \examples{
 data(presidentChile2)    

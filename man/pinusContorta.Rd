@@ -5,7 +5,7 @@
 \alias{pinusContorta}
 \title{Contains spatial location of Pinus contorta trees in sample plots.}
 \format{
-Contains 8 variables, as follows:
+Contains eight variables, as follows:
 \describe{
   \item{plot.id}{Plot sample ID.}
   \item{tree.id}{Tree identificator number in each plot. Same indv/id for multi-stem trees.}
@@ -19,8 +19,8 @@ Oreopulus glacialis, Acaena integerrima and others species.}
 }
 }
 \source{
-The data are provided courtesy of Drs. Anibal Pauchard and Rafael Garcia at the Laboratorio de Invasiones Biologicas,
- Universidad de Concepción (Chile).
+The data are provided courtesy of Drs Anibal Pauchard and Rafael Garcia at the Laboratorio de Invasiones Biologicas,
+ Universidad de Concepción (Concepción, Chile).
 }
 \usage{
 data(pinusContorta)
@@ -38,6 +38,6 @@ unique(pinusContorta$plot.id)
 \references{
 Pauchard A, Escudero A, Garcia RA, de la Cruz M, Langdon B, Cavieres LA, Esquivel J. 2016.
  Pine invasions in treeless environments: dispersal overruns microsite heterogeneity. 
- Ecology and Evolution. 6(2): 447-459.
+ Ecology and Evolution. 6(2): 447-459. \doi{10.1002/ece3.1877}
 }
 \keyword{datasets}

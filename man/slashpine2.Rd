@@ -7,25 +7,25 @@
 \format{
 Variables se describen a continuacion::
 \describe{
-\item{tree_id}{Identifcador árbol}											
-\item{dbh}{diametro}
+\item{tree_id}{Identifcador arbol}											
+\item{dbh}{diámetro}
 \item{h}{altura total}
 \item{lcl}{largo de copa}
-\item{age}{edad árbol}
+\item{age}{edad arbol}
 \item{wood}{biomasa madera}
 \item{bark}{biomasa corteza}
 \item{crown}{biomasa copa}
-\item{tree}{biomasa árbol}
+\item{tree}{biomasa arbol}
  }
 }
 \source{
-Datos fueron contribuidos por el Dr Christian Salas-Eljatib (Universidad Mayor, Santiago, Chile).
+Datos fueron contribuidos por el Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
 }
 \usage{
 data(slashpine2)
 }
 \description{
-Dataset que contiene 9 pares de columnas con información sobre la biomasa de 40 árboles.
+Dataset que contiene 9 pares de columnas con informacion sobre la biomasa de 40 árboles.
 }
 \examples{
 data(slashpine2)    

@@ -7,30 +7,30 @@
 \format{
 Contiene variables de nivel individual, como se describen a continuacion::
 \describe{
-\item{arbol}{Codigo del árbol}											
-\item{especie}{Nombre comun especie}
+\item{tree.code}{Codigo del arbol}											
+\item{spp}{Nombre comun especie}
 \item{bha.t}{Edad a la altura del pecho, en años.}
 \item{h.t}{Altura total, en m.}
  }
 }
 \source{
-Datos cedidos por el Dr Christian Salas-Eljatib.
+Datos cedidos por el Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
 }
 \usage{
 data(raulihg2)
 }
 \description{
 Datos de series de tiempo de altura para árboles muestreados de Nothofagus alpina (rauli) en el centro-sur de Chile. Estos árboles son parte
-de los usados en articulo de referencia.
+de los usados en el siguiente articulo:
+ * Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.
 }
 \examples{
 data(raulihg2)    
 head(raulihg2) 
 }
 \references{
-- Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an
+Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an
  example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.
-
-- Salas-Eljatib, C. 2021. Time series height-data for Nothofagus alpina trees. \doi{10.6084/m9.figshare.13521602.v5}
+Salas-Eljatib, C. 2021. Time series height-data for Nothofagus alpina trees. \doi{10.6084/m9.figshare.13521602.v5}
 }
 \keyword{datasets}

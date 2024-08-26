@@ -5,7 +5,7 @@
 \alias{sppAbundance}
 \title{Contains information of abundance of plant species in the central-southern Andes of Chile.}
 \format{
-Contains six variables, as follows:
+Contains 6 variables, as follows:
 \describe{
   \item{sp.name}{name of specie.}
   \item{sp.code.name}{code of specie}
@@ -16,7 +16,7 @@ Contains six variables, as follows:
  }
 }
 \source{
-The data are provided courtesy of Dr Andres Fuentes at the Universidad 
+The data are provided courtesy of Dr Andres Fuentes-Ramirez at the Universidad 
 of La Frontera (Temuco, Chile)
 }
 \usage{
@@ -33,8 +33,8 @@ data(sppAbundance)
 head(sppAbundance) 
 }
 \references{
-- Fuentes A, Salas C, Gonzalez M, Urrutia J, Arroyo P, Santibanez P. 2020. Initial 
- response of understorey vegetation and tree regeneration to a mixed-severity fire
-  in old-growth Araucaria-Nothofagus forests. Applied Vegetation Science 23:210-222.
+- Fuentes-Ramirez A, Salas-Eljatib C, Gonzalez M, Urrutia J, Arroyo P, Santibanez P. 2020. Initial response of understorey vegetation and tree
+  regeneration to a mixed-severity fire in old-growth Araucaria-Nothofagus forests.Applied 
+  Vegetation Science. 23:210-222.
 }
 \keyword{datasets}

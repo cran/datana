@@ -30,7 +30,7 @@ data(plantsHawaii)
 head(plantsHawaii) 
 }
 \references{
-Craven D, Knight T, Barton K, Bialic-Murphy L, Cordell S, Giardina C, Gillespie T, Ostertag R, Sack L,Chase J.
+- Craven D, Knight T, Barton K, Bialic-Murphy L, Cordell S, Giardina C, Gillespie T, Ostertag R, Sack L,Chase J.
 2018. OpenNahele: the open Hawaiian forest plot database. Biodiversity Data Journal 6: e28406.
 }
 \keyword{datasets}

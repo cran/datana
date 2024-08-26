@@ -3,35 +3,38 @@
 \docType{data}
 \name{soiltreat2}
 \alias{soiltreat2}
-\title{Tratamiento de suelo en el crecimiento de plantulas de  2-años de edad.}
+\title{Tratamientos del suelo en el crecimiento de plantulas.}
 \format{
-Contiene las siguientes columnas:
+Los datos, a nivel de parcela, tienen las siguientes columnas, 
 \describe{
-  \item{bloque}{Codigo del bloque correspondiente del experimento.} 
-  \item{tmo}{Tratamiento.}
-  \item{alt.ini}{Altura inicial de la parcela, en m.}
-  \item{alt.inc}{Incremento en altura de los ultimos 5-años de la parcela, en m.}
+  \item{bloque}{Bloque del experimento.}
+  \item{tmo}{Factor tratamiento, medido en tres  nivels.}
+  \item{alt.ini}{Altura initial, rn m.}
+  \item{alt.inc}{Incremento en altura durante los últimos cinco años, en m.}
  }
 }
 \source{
-Los datos vienen de la pagina 71 de Freese (1967), y fueron digitados por Nayeli
- Ramirez,  una estudiante del Prof Christian Salas-Eljatib.
+Cuadro de la página 71 de Freese (1967). Los datos fueron digitados por Nayeli Ramirez, una 
+ estudiante del Prof. Christian Salas-Eljatib.
 }
 \usage{
-data(soiltreat)
+data(soiltreat2)
 }
 \description{
-Los tratamientos fueron asignados aleatoriamente a tres parcelas dentro de cada uno de los 11 bloques.
- Cada parcela estaba constituida de 50 plantulas. El incremento promedio en altura de los ultimos 5 años
-  fue el criterio para evaluar los tratamientos. La altura inicial y el incremento son las variables continuas
-  de los datos.
+Un experimento sobre el efecto de tres tratamientos del suelo en el crecimiento 
+ en altura de plantulas de 2-años de edad. Los tratamientos fueron asignados aleatoriamente
+ a tres parcelas dentro de cada uno de 11 bloques. Cada parcela esta constituida por 
+ hasta 50 plantulas. El promedio del incremento en altura de los ultimos 5 años fue
+  la variable de interes para evaluar los tratamientos.
 }
 \examples{
 data(soiltreat2)    
+head(soiltreat2) 
 tapply(soiltreat2$alt.inc,soiltreat2$tmo,summary)
+tapply(soiltreat2$alt.inc,soiltreat2$tmo,sd)
 }
 \references{
-Freese F. 1967. Elementary statistical methods for foresters. Agriculture Handbook 317,
-U.S. Department of Agriculture, Forest Service, Washington DC, USA. 87p.
+- Freese, F 1967. Elementary statistical methods for foresters. Agriculture Handbook 3171, USDA 
+Forest Service.
 }
 \keyword{datasets}

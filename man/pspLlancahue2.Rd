@@ -3,33 +3,32 @@
 \docType{data}
 \name{pspLlancahue2}
 \alias{pspLlancahue2}
-\title{Ubicación espacial de árboles dentro de una parcela de muestreo en el bosque de Llancahue, Valdivia, Chile.}
+\title{Ubicacion espacial de árboles en un parcela de muestreo en el bosque de Llancahue, cerca de Valdivia, Chile.}
 \format{
-Contiene las siguientes variables a nivel de árbol
+Contains tree-level variables, as follows:
 \describe{
-\item{arbol}{Codigo identificador del árbol.}
-\item{especie}{Abreviación de la especie: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+ \item{arbol}{Identificador del árbol}
+\item{espe}{Codificación de la especie como sigue: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
-\item{dap}{diámetro a la altura del pecho, en cm.}
-\item{coord.x}{Posición cartesiana en el eje-X, en m.}
-\item{coord.y}{Posición cartesiana en el eje-Y, en m.}
-\item{especie.ori}{Abreviación original para las especies.}
+\item{dap}{Diámetro a la altura del pecho, en cm}
+\item{coord.x}{Posicion cartesiana en el eje-X, en m}
+\item{coord.y}{Posicion cartesiana en el eje-Y, en m}
  }
 }
 \source{
-Los datos fueron cedidos por el Prof. Daniel Soto de la Universidad de Aysen (Coyhaique, Chile).
+Los datos fueron cedidos por el Prof. Daniel Soto de Universidad
+ de Aysen (Coyhaique, Chile).
 }
 \usage{
 data(pspLlancahue2)
 }
 \description{
-Posición cartesiana, especie, y diámetro de árboles dentro de una parcela rectangular de 130 m por 70 m.
+La posicion cartesiana, especie, y diámetro de árboles en una parcela de muestreo rectangular de 130 m por 70 m. Mayores
+ antecedentes aparecen en las referencias.
 }
 \examples{
 data(pspLlancahue2)    
 head(pspLlancahue2) 
-tapply(pspLlancahue2$dap,pspLlancahue2$especie,length) 
-boxplot(dap~especie, data=pspLlancahue2)
 }
 \references{
 - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y espacial de un bosque mixto dominado por

@@ -3,48 +3,45 @@
 \docType{data}
 \name{beetles2}
 \alias{beetles2}
-\title{Densidad poblacion de escarabajos en el tiempo.}
+\title{Crecimiento poblacional de escarabajos.}
 \format{
-Los datos contienen las siguientes cuatro columnas:
 \describe{
-\item{dias}{dias desde el comienzo del experimento.}	
-\item{dieta}{dieta de harina de trigo, en gr.}	
-\item{tipo}{tipo de individuo: egg, larvae, pupae, adult.}
-\item{densidad}{numero de individuos.}
+  \item{dias}{Numero de dias.}
+  \item{dieta}{La cantidad de harina (en gramos) de ambientes donde crecen los escarabajos.  Seis niveles del factor Dieta.}
+  \item{tipo}{Estados de desarrollo de los escarabajos, i.e., huevos, larvas, pupas, y adultos.}
+  \item{densidad}{Numero total de individuos por ambiente de crecimiento.}
  }
 }
 \source{
-Los datos fueron digitados por la Srta. Yamara Arancibia, una estudiante de pregrado del
- Profesor Christian Salas-Eljatib en la Universidad Mayor, Santiago, Chile.
+Datos del Cuadro No. 1, page 116, de Chapman (1928). Serie de experimentos bajo condiciones controladas
+ donde escarabajos (Tribolium confusum) se mantienen en ambientes de tamaño conocido. 
+ El periodo desde huevo a adulto es de aproximadamente de cuarenta dias a 27 grados Celsius. Los datos
+ fueron digitados por Yamara Arancibia, una estudiante del Prof. Christian Salas-Eljatib.
 }
 \usage{
-data(beetles2)
+beetles2
 }
 \description{
-Serie de tiempo de densidad poblacion de un experimento controlado
- en donde escarabajos (Tribolium confusum) son mantenidos en condiciones constantes. 
- El periodo desde huevo a adulto es aproximadamente de 40 dias a 27 grados Celsius, y
-los escarabajos fueron sometidos a diferentes dietas de harina. Los datos son mayormente
- detallados en Champman (1928).
+Mediciones temporales de densidad de escarabajos (Tribolium confusum) creciendo en 
+ diferentes ambientes controlados.
 }
 \examples{
 data(beetles2)    
-df<-beetles2
-nombre.dietas<-unique(df$dieta)
-num.dietas<-length(nombre.dietas)
-#Grafico de serie de tiempo, tal como en la Fig.1 del paper
-#(i) primero se necesita calcular
-alys<-with(df,tapply(densidad, list(as.factor(dias),as.factor(dieta)),sum))
+nom.dieta<-unique(beetles2$dieta)
+num.dieta<-length(nom.dieta)
+##Grafico de serie de tiempo
+#primero algunos calculos
+alys<-with(beetles2,tapply(densidad, list(as.factor(dias),as.factor(dieta)),sum))
 out<-as.data.frame(alys)
 out$tiempo<-row.names(out)
-#(ii) segundo, graficar
-matplot(out[,"tiempo"], out[,1:num.dietas], las=1, type=c("b"),pch=1,
- xlab="Tiempo en dias",ylab="Individuos totales") 
-legend("topleft", legend = nombre.dietas, title = "Dieta (gr)",
- col = 1:num.dietas, lty = 1:num.dietas, pch = 1)
+head(out)
+##Figura 1 del paper
+matplot(out[,"tiempo"], out[,1:num.dieta], las=1, type=c("b"),pch=1,
+        xlab="Tiempo en dias",ylab="Densidad de individuos")
+legend("topleft", legend = nom.dieta, title = "Dieta (gr)",
+       col = 1:6, lty = 1:6, pch = 1)
 }
 \references{
-- Champman RN. 1928. The Quantitative Analysis of Environmental Factors. 
-Ecology 9(2):111-122. \doi{10.2307/1929348}
+- Chapman RN. 1928. The Quantitative Analysis of Environmental Factors. Ecology 9(2):111-122.
 }
 \keyword{datasets}

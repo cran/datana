@@ -10,40 +10,39 @@ Variables se describen a continuacion:
 \item{fire}{Presencia de incendio forestal (1 si, 0 no)}											
 \item{xcoord}{Coordenada geografica x.utm}
 \item{ycoord}{Coordenada geografica y.utm}
-\item{aspect}{Exposición (grados desde el norte)}
-\item{eleva}{Elevación (m)}
+\item{aspect}{Exposicion (grados desde el norte)}
+\item{eleva}{Elevacion (m)}
 \item{slope}{Pendiente (grados)}
 \item{distr}{Distancia a caminos de tierra}
 \item{distcity}{Distancia a ciudades}
 \item{distriver}{Distancia a caminos pavimentados}
 \item{covera}{Clasificaciones de uso del suelo segun un poligono}
 \item{coverb}{Clasificaciones de uso del suelo segun un poligono}
-\item{tempe}{Temperatura minima del mes mas frio}
-\item{ppan}{Precipitación anual}
+\item{tempe}{Temperatura m?nima del mes m?s frio}
+\item{ppan}{Precipitacion anual}
 \item{ndii}{Indice infrarrojo de diferencia normalizado}
-\item{nvdi}{Indice de vegetación de diferencia normalizado}
-\item{tempe2}{Temperatura minima del mes mas calido}
-\item{ppan2}{Precipitación del mes mas seco}
+\item{nvdi}{Indice de vegetacion de diferencia normalizado}
+\item{tempe2}{Temperatura m?nima del mes mas calido}
+\item{ppan2}{Precipitacion del mes mas seco}
 \item{frec.fire}{Frecuencia de incendios}
 \item{perc.fire}{Porcentajede la frecuencia de incendios}
 \item{fireClass}{Clase para variable frecuencia de incendio}
-\item{asp.class}{Clase de variable exposición }
+\item{asp.class}{Clase de variable exposicion }
 \item{eleva.class}{Clase de variable numerica elevacion}
 \item{slope.class}{Clase de variable numerica pendiente}
 \item{ndii.class}{Clase de indice infrarrojo de diferencia normalizado}
-\item{nvdi.class}{Clase de indice de vegetación de diferencia normalizado}
+\item{nvdi.class}{Clase de indice de vegetacion de diferencia normalizado}
  }
 }
 \source{
-Datos fueron compilados por el Dr Adison Altamirano (Universidad de La Frontera, Temuco, Chile) desde
-la Corporación Nacional Forestal (Chile).
+Datos fueron cedidos por el Dr Christian Salas-Eljatib (Santiago, Chile).
 }
 \usage{
 data(forestFire2)
 }
 \description{
-Datos de ocurrencia de incendios forestales de Altamirano et al. (2013) como la población bajo estudio, que contiene 7210 observaciones
-totales, con solo 890 casos de ocurrencia de incendios y 6320 casos de no ocurrencia. La variable binaria (Y)
+Datos de ocurrencia de incendios forestales de Altamirano et al. (2013) como nuestra poblacion, que contiene 7210 observaciones
+totales (N), con solo 890 casos de ocurrencia de incendios (N1) y 6320 casos de no ocurrencia (N0). La variable binaria (Y)
 es la ocurrencia de un incendio forestal, donde Y igual a 1 denota ocurrencia e igual a 0 en caso contrario.
 }
 \examples{
@@ -51,7 +50,7 @@ data(forestFire2)
 head(forestFire2) 
 }
 \references{
-Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, and Avila A. 2013. Infuencia de la heterogeneidad 
-del paisaje en la ocurrencia de incendios forestales en Chile Central. Revista de Geografia del Norte Grande, 55:157-170.
+Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, and Avila A. Infuencia de la heterogeneidad 
+del paisaje en la ocurrencia de incendios forestales en Chile Central. Revista de Geografia del Norte Grande, 55:157-170, 2013.
 }
 \keyword{datasets}

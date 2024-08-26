@@ -3,41 +3,40 @@
 \docType{data}
 \name{pinusSpp2}
 \alias{pinusSpp2}
-\title{Variables a nivel de árbol en parcelas de muestreo de Pinus spp en Chile.}
+\title{Variables a nivel de arbol en parcelas de muestreo de Pinus spp en Chile.}
 \format{
-Contains 8 variables, as follows:
+Los datos contienen ocho columnas que se detallan a continuacion:
 \describe{
 \item{parcela}{Numero de la parcela.}
 \item{sup.parcela}{Superficie de la parcela, en m\eqn{^{2}}{^2}.}
 \item{lat.s}{Decimal coordinate of S latitude.}
 \item{long.w}{Decimal coordinate of W longitude.}
-\item{indv.id}{Identificador del árbol en la parcelaeach plot. Same indv/id for multi-stem trees.}
+\item{indv.id}{Identificador del arbol en la parcelaeach plot. Same indv/id for multi-stem trees.}
 \item{fuste.id}{Identificador del fuste.}
-\item{especie}{Especie.}
-\item{dap}{diámetro a la altura del pecho, en cm.}
-\item{h}{Altura total, en m.}
+\item{espe}{Especie.}
+\item{dap}{Diámetro a la altura del pecho, en cm.}
+\item{atot}{Altura total, en m.}
 \item{hcc}{Altura comienzo de copa, en m.}
 \item{largo.copa}{Largo de copa, en m.}
-\item{obs}{Observacion.}
 }
 }
 \source{
-Los datos fueron cedidos por los Drs. Anibal Pauchard y Rafael Garcia del Laboratorio de Invasiones
- Biologicas, Universidad de Concepción (Chile).
+Los datos fueron cedidos por los Drs. Anibal Pauchard y Rafael García del Laboratorio de Invasiones
+ Biológicas, Universidad de Concepción (Concepción, Chile).
 }
 \usage{
 data(pinusSpp2)
 }
 \description{
-Mediciones a nivel de árbol para estudiar la invasion de Pinus spp en bosques de Araucaria-Nothofagus en 
+Mediciones a nivel de arbol para estudiar la invasion de Pinus spp en bosques de Araucaria-Nothofagus en 
 la Reserva Nacional Malalcahuello en la region de la Araucania en el sur de Chile. 
 Hay 26 parcelas, y la superficie de cada una es de 100 m\eqn{^{2}}{^2}.
 }
 \examples{
 data(pinusSpp2)    
 head(pinusSpp2) 
-length(unique(pinusSpp2$parcela)) 
-boxplot(dap~parcela, data=pinusSpp2) 
+length(unique(pinusSpp2$parce)) 
+boxplot(dap~parce, data=pinusSpp2) 
 }
 \references{
 Cobar-Carranza A, Garcia R, Pauchard A & Pena E. 2014. Effect of Pinus contorta invasion on forest fuel properties and

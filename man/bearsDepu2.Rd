@@ -3,7 +3,7 @@
 \docType{data}
 \name{bearsDepu2}
 \alias{bearsDepu2}
-\title{Age and physical measurement data for wild bears. Data frame same as "bears" but without missing values.}
+\title{Age and physical measurement data for wild bears. Dataframe same as "bears" but without missing values.}
 \format{
 Contiene variables de nivel individual, como se describen a continuacion:
 \describe{
@@ -17,7 +17,7 @@ Contiene variables de nivel individual, como se describen a continuacion:
 \item{length}{longitud del cuerpo, en cm}
 \item{chestG}{circunferencia del pecho, en cm}
 \item{weight}{peso corporal, en kg}
-\item{obs}{numero de observación para el oso}
+\item{obs}{numero de observacion para el oso}
 \item{name}{nombre dado al oso}
  }
 }

@@ -3,48 +3,44 @@
 \docType{data}
 \name{beetles}
 \alias{beetles}
-\title{Population density of beetles on time.}
+\title{Population density growth of beetles.}
 \format{
-The data contains the following four columns:
 \describe{
-\item{days}{days since the beginning of the experiment.}	
-\item{diet}{diet of whole wheat flour, in gr.}	
-\item{type}{type of individual: egg, larvae, pupae, adult.}
-\item{density}{number of individuals.}
+  \item{days}{Number of days.}
+  \item{diet}{The quantities of flour (in grams) of the environments where the beetles were growing.  Six levels of the factor Diet.}
+  \item{type}{The various stage of beetles, i.e., eggs, larvae, pupae, and adults.}
+  \item{density}{The number of insects per environment.}
  }
 }
 \source{
-Data were digited by Yamara Arancibia, an undergraduate student of
- Prof Christian Salas-Eljatib at the Universidad Mayor, Santiago, Chile.
+Data from Table No. 1, page 116, of Chapman (1928). Series of experiments under controlled
+ conditions in which flour beetles (Tribolium confusum) are kept in environments of known size. 
+ The period from egg to adult is approximately forty days at 27C degrees. The data were entered by
+ Yamara Arancibia, a former student of Prof. Christian Salas-Eljatib.
 }
 \usage{
-data(beetles)
+beetles
 }
 \description{
-Time series of population densities of experiments under controlled conditions
- in which flour beetles (Tribolium confusum) are kept in environments of known size. 
- The period from egg to adult is approximately forty days at 27C degrees, and
-beetles were subject to different diets  of whole wheat flour. The data are fully 
-documented in Champman (1928).
+Temporal measurements of density of beetles (Tribolium confusum) growing in different controlled environments.
 }
 \examples{
 data(beetles)    
-df<-beetles
-name.diets<-unique(df$diet)
-num.diets<-length(name.diets)
-#Time series curves, such as in Fig.1 of the paper
-#(i) firstly, we need to compute the following
-alys<-with(df,tapply(density, list(as.factor(days),as.factor(diet)),sum))
+name.diet<-unique(beetles$diet)
+num.diet<-length(name.diet)
+##Time series plot
+#first, some computation
+alys<-with(beetles,tapply(density, list(as.factor(days),as.factor(diet)),sum))
 out<-as.data.frame(alys)
 out$time<-row.names(out)
-#(ii) secondly, to plot
-matplot(out[,"time"], out[,1:num.diets], las=1, type=c("b"),pch=1,
- xlab="Time in days",ylab="Total individuals") 
-legend("topleft", legend = name.diets, title = "Diet (gr)",
- col = 1:num.diets, lty = 1:num.diets, pch = 1)
+head(out)
+#Figure 1 of the paper
+matplot(out[,"time"], out[,1:num.diet], las=1, type=c("b"),pch=1,
+        xlab="Time in days",ylab="Total individuals")
+legend("topleft", legend = name.diet, title = "Diet (gr)",
+       col = 1:6, lty = 1:6, pch = 1)
 }
 \references{
-- Champman RN. 1928. The Quantitative Analysis of Environmental Factors. 
-Ecology 9(2):111-122. \doi{10.2307/1929348}
+- Chapman RN. 1928. The Quantitative Analysis of Environmental Factors. Ecology 9(2):111-122.
 }
 \keyword{datasets}

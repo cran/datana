@@ -9,11 +9,11 @@ La data frame contiene siete variables:
 \describe{
   \item{bosque.id}{Codigo identificador del bosque.}
   \item{parcela}{Codigo identificador de la parcela.}
-  \item{arbol}{Numero de identificación árbol.}
-  \item{dap}{Diametro a la altura del pecho, en  pulgadas.}
+  \item{arbol}{Numero de identificacion arbol.}
+  \item{dap}{Diámetro a la altura del pecho, en  pulgadas.}
   \item{htot}{Altura total, en pies}
-  \item{edad}{Edad, en años}
-  \item{altura}{Altura para cada edad del árbol, en pies}
+  \item{edad}{Edad, en os}
+  \item{altura}{Altura para cada edad del arbol, en pies}
  }
 }
 \source{

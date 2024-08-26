@@ -3,38 +3,39 @@
 \docType{data}
 \name{treelistinve}
 \alias{treelistinve}
-\title{Tree-list data from a forest inventory.}
+\title{Tree-list data in a forest inventory.}
 \format{
 Contains tree-level variables, as follows:
 \describe{
   \item{plot}{Plot number.}
-  \item{plot.size}{Plot size, in m2.}
+  \item{plot.size}{Plot size, in m\eqn{^{2}}{^2}.}
   \item{tree}{Tree identificator}
 \item{species}{species common name as follows: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
-Lingue= Persea lingue, Coigue= Nothofagus dombeyi, Roble= Nothofagus obliqua, Other= Other}
+Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
 \item{dbh}{Diameter at breast-height, in cm}
 \item{htot}{Total height, in m. Only measured for some sample trees.}
  }
 }
 \source{
-The data are provided courtesy of Prof. Christian Salas-Eljatib (Chile). Further details can be found in Salas (2001, 2002).
+The data are provided courtesy of Prof. Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
 }
 \usage{
 data(treelistinve)
 }
 \description{
 Tree-level variables measured within three sample plots in a forest inventory. 
- Notice that not all plots have the same size.
+ Notice that plots might have different areas.
 }
 \examples{
 data(treelistinve)    
 head(treelistinve) 
+tapply(treelistinve$dbh,treelistinve$species,summary)
 }
 \references{
 - Salas C. 2001. Caracterización básica del relicto de Biodiversidad 
 Rucamanque. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 
 - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
-del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009}
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009} \url{https://eljatib.com/publication/2002-07-01_ajuste_y_validacion_/}
 }
 \keyword{datasets}

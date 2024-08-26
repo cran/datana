@@ -3,44 +3,43 @@
 \docType{data}
 \name{araucaria2}
 \alias{araucaria2}
-\title{Variables de estado de rodal para parcelas de muestreo en bosques de Araucaria araucana el sur de Chile.}
+\title{Variables a nivel de parcela para bosques de Araucaria araucana el sur de Chile.}
 \format{
-Contiene las siguientes variables a nivel de parcela:
+Contains plot-level variables as follows:
 \describe{
-  \item{rodal}{Número del rodal.}
-  \item{parcela}{Número identificador de la parcela de muestreo.}
-  \item{x.utm}{Coordenada UTM en  el ejex-X, en km}
-  \item{y.utm}{Coordenada UTM en  el ejex-Y, en km}
-    \item{pendiente}{Pendiente, en \%}
-\item{exposicion}{Exposición, en grados.}
-    \item{altitud}{Altitud, en msnm}    
+  \item{rodal}{Stand number}
+  \item{parcela}{Plot sample identificator number}
+  \item{x.utm}{UTM  coordinate in X-axis, in km}
+  \item{y.utm}{UTM  coordinate in Y-axis, in km}
+    \item{pendiente}{Slope, in \%}
+\item{exposicion}{Aspect, in degrees}
+    \item{altitud}{Elevation, in msnm}    
   \item{nha}{Densidad, en arb/ha}
- \item{gha}{Área basal, en m\eqn{^{2}}{^2}/ha}
+ \item{gha}{Area basal, en m\eqn{^{2}}{^2}/ha}
 \item{hdom}{Altura dominante, en m}
 \item{vha}{Volumen bruto, en m\eqn{^{3}}{^3}/ha} 
- \item{dg}{Diámetro medio cuadrático, en cm}
+ \item{dg}{Diameter medio cuadratico, en cm}
  }
 }
 \source{
-Los datos a nivel de árbol fueron cedidos por el Dr Nelson Ojeda (Universidad de La Frontera, Temuco, Chile) y
-más antecedentes pueden encontrarse en Salas et al (2010).
+Los datos a nivel de arbol fueron cedidos por el Dr Nelson Ojeda de
+la Universidad de La Frontera (Temuco, Chile).
 }
 \usage{
-data(araucaria2)
+data(araucaria)
 }
 \description{
-Variables de estado de rodal para parcelas de muestreo establecidas en bosques de Araucaria araucana  
- en el sur de Chile.  Estas variables se basan en mediciones a nivel de árbol
- realizadas en parcelas de muestreo de superficie de 1000 m\eqn{^{2}}{^2}.  Hay dos rodales y las mediciones
- fueron realizadas en el 2009.
+Estos son variables a nivel de parcela para bosques Araucaria araucana  
+ en el sur de Chile, medidos en 2009.  Estas variables se basan en mediciones
+ realizadas en parcelas de muestreo de superficie fija de 1000 m\eqn{^{2}}{^2}.  Hay dos rodales.
 }
 \examples{
+data(araucaria2)    
 head(araucaria2) 
-tapply(araucaria2$parcela,araucaria2$rodal,length)
 }
 \references{
-Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadísticos paramétricos y no paramétricos
-   para predecir variables de rodal basados en Landsat ETM+: una comparación en un bosque
-    de Araucaria araucana en Chile. Bosque 31(3):179-194.
+Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadisticos parametricos y no parametricos
+   para predecir variables de rodal basados en Landsat ETM+: una comparacion en un bosque
+    de Araucaria araucana en Chile. Bosque 31(3): 179-194.
 }
 \keyword{datasets}

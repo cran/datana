@@ -29,7 +29,6 @@
 #' @param x.lim (optional) A vector of two elements with the limits of the Y-axis. Default is the range of the X-variable.
 #'
 #' @return Result of calculation
-#' @rdname xyHist
 #' @export
 #' @importFrom graphics hist
 #'
@@ -73,3 +72,12 @@ xyHist<-function(x=x, y=y, col.x="blue",col.y="red",
   graphics::barplot(yhist$counts, axes=FALSE, xlim=c(0, top), space=0,
           horiz=TRUE,  col=col.y)
 }
+#---------------------------
+##how to use this funcion?
+#
+#library(datana)
+#data(treevolroble)
+#df <- treevolroble
+##using the function
+#xyHist(x=df$dbh,x=df$htot)
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

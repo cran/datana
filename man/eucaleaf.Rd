@@ -37,6 +37,6 @@ leaf beetle Chrysophtharta bimaculata in Eucalyptus nitens in Tasmania. Doctoral
  University of Tasmania, Hobart, Australia.
 
 - Gregoire TG, and Salas C. 2009. Ratio estimation with measurement
-error in the auxiliary variate. Biometrics 65(2):590-598
+error in the auxiliary variate. Biometrics 65(2):590-598 \doi{10.1111/j.1541-0420.2008.01110.x}
 }
 \keyword{datasets}

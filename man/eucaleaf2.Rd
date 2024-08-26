@@ -8,8 +8,8 @@
 Contiene variables a nivel de hoja, como sigue:
 \describe{
   \item{tiempo}{factor a dos niveles: Temprano o Tardio}
-\item{arbol}{un identificador del árbol muestra}
-\item{meristema}{descripción del meristema}
+\item{arbol}{un identificador del arbol muestra}
+\item{meristema}{descripcion del meristema}
 \item{largo}{largo de la hoja, en mm}
 \item{ancho}{ancho de la hoja, en mm}
 \item{area}{area foliar, en cm\eqn{^{2}}{^2}}
@@ -36,7 +36,7 @@ head(eucaleaf2)
 leaf beetle Chrysophtharta bimaculata in Eucalyptus nitens in Tasmania. Doctoral dissertation,
  University of Tasmania, Hobart, Australia.
 
-- Gregoire TG, y Salas C. 2009. Ratio estimation with measurement
-error in the auxiliary variate. Biometrics 65(2):590-598
+- Gregoire TG, and Salas C. 2009. Ratio estimation with measurement
+error in the auxiliary variate. Biometrics 65(2):590-598 \doi{10.1111/j.1541-0420.2008.01110.x}
 }
 \keyword{datasets}

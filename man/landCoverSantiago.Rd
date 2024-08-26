@@ -24,7 +24,7 @@ The data frame contains four variables as follows:
  }
 }
 \source{
-Data were provided by Dr Ignacio Fernandez at the Universidad Mayor (Santiago, Chile).
+Data were provided by Dr Ignacio Fernandez at Universidad Adolfo Ibanez (Santiago, Chile).
 }
 \usage{
 data(landCoverSantiago)

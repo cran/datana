@@ -19,7 +19,7 @@ The data frame contains nine variables as follows:
  }
 }
 \source{
-Data were provided by Dr Christian Salas-Eljatib (Universidad Mayor, Santiago, Chile).
+Data were provided by Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
 }
 \usage{
 data(slashpine)

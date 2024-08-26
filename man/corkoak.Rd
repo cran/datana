@@ -7,13 +7,13 @@
 \format{
 \describe{
   \item{tree}{A correlative number for each sample tree.}
-  \item{csc}{Circumference at 1.3 m outside bark, in cm.}
-  \item{cbc}{Circumference at 1.3 m under bark, in cm.}
-  \item{bt}{Bark thickness, in cm.}
-  \item{hdeb}{Debarking height, in m.}	
-  \item{hblc}{Height to base of live crown, in m.}	
+  \item{csc}{is tree circumference at 1.3 m outside bark, in cm.}
+  \item{cbc}{is tree circumference at 1.3 m under bark, in cm.}
+  \item{bt}{bark thickness, in cm.}
+  \item{hdeb}{is debarking height, in m.}	
+  \item{hblc}{height to base of live crown, in m.}	
   \item{nb}{number of branches debarked}
-  \item{crown.d}{crown diameter, in m.}
+  \item{cr.diam}{crown diameter, in m.}
   \item{w}{total green weight of the stripped cork, in kg}
   \item{stratum}{Stratum}
  }

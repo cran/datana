@@ -29,8 +29,8 @@ Diameter and height growth of 66 Grand-fir trees. Data derived from stem analysi
 trees collected by Dr Albert Stage (US Forest Service, Moscow, ID, USA.)
 }
 \examples{
-head(treegrowth)    
-unique(treegrowth$tree.code)
+data(treegrowth)    
+head(treegrowth) 
 }
 \references{
 Stage, A. R., 1963. A mathematical approach to polymorphic site index curves for 

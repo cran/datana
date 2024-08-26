@@ -1,3 +1,1 @@
-export("deleteRight", "descstat", "extractRight",
-       "findColumn.byname", "valesta", "xyBoxplot",
-       "xyHist")
+export("descstat", "xyBoxplot", "xyHist")

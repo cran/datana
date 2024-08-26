@@ -34,8 +34,8 @@ data(snaspeChile2)
 head(snaspeChile2) 
 }
 \references{
-EL SNASPE esta bajo la administración de la Corporación Nacional Forestal (CONAF) de Chile.
-Mayor información y documentación se puede encontrar en
-\url{https://www.conaf.cl/parques-nacionales/parques-de-chile/}
+EL SNASPE esta bajo la administracion de la Corporacion Nacional Forestal (CONAF) de Chile.
+Mayor informacion y documentacion se puede encontrar en
+\url{https://www.conaf.cl}
 }
 \keyword{datasets}

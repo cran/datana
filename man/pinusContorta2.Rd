@@ -3,30 +3,30 @@
 \docType{data}
 \name{pinusContorta2}
 \alias{pinusContorta2}
-\title{Ubicación espacial de árboles de Pinus contorta en parcelas de muestreo.}
+\title{Ubicacion espacial de árboles de Pinus contorta en parcelas de muestreo.}
 \format{
 Contiene ocho variables, como siguen:
 \describe{
   \item{parcela}{Parcela.}
-  \item{arbol}{Numero de árbol en cada parcela. Mismo árbol/id para árboles multifustales.}
+  \item{arbol}{Numero de arbol en cada parcela. Mismo arbol/id para árboles multifustales.}
 \item{coord.y}{coordinada de latitud W.}
 \item{coord.x}{coordinada de longitud W.}
 \item{substrato}{Cobertura del suelo donde cada pino crece. Bare soil, Festuca pallescens, Baccharis magellanica, 
 Oreopulus glacialis, Acaena integerrima and others species.}
 \item{h}{Height of trees, in cm.}
-\item{diam.cuello}{diámetro del cuello, en mm.}
-\item{area.copa}{Área de copa, en m\eqn{^{2}}{^2}.}
+\item{diam.cuello}{Diámetro del cuello, en mm.}
+\item{area.copa}{Area de copa, en m\eqn{^{2}}{^2}.}
 }
 }
 \source{
 Los datos fueron cedidos por los Drs. Anibal Pauchard y Rafael Garcia del Laboratorio de Invasiones Biologicas,
- Universidad de Concepción (Chile).
+ Universidad de Concepcion (Chile).
 }
 \usage{
 data(pinusContorta2)
 }
 \description{
-Mediciones a nivel de árbol, con la ubicación cartesian de cada árbol de Pinus contorta, en parcelas
+Mediciones a nivel de árbol, con la ubicacion cartesian de cada arbol de Pinus contorta, en parcelas
 de muestreo para estudio de invasion en la estepa Patagonica en Coyhaique en el sur de Chile. Hay tres parcelas, cada
  una de 10.000 m\eqn{^{2}}{^2}.
 }
@@ -38,6 +38,6 @@ unique(pinusContorta2$plot.id)
 \references{
 Pauchard A, Escudero A, Garcia RA, de la Cruz M, Langdon B, Cavieres LA, Esquivel J. 2016.
  Pine invasions in treeless environments: dispersal overruns microsite heterogeneity. 
- Ecology and Evolution. 6(2): 447-459.
+ Ecology and Evolution. 6(2): 447-459. \doi{10.1002/ece3.1877}
 }
 \keyword{datasets}

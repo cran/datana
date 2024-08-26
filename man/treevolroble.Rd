@@ -7,15 +7,16 @@
 \format{
 Contains tree-level variables, as follows:
 \describe{
-  \item{tree.no}{Tree number.}
-\item{dbh}{Diameter at breast height, in cm.}
+  \item{tree.no}{Tree id}
+\item{dbh}{Diameter at breast height, in cm}
 \item{htot}{Total height, in m.}
- \item{d6}{Upper-stem diameter at 6 m, in cm.}
+ \item{d6}{Upper-stem diameter at 6 m, in cm}
 \item{vtot}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
  }
 }
 \source{
-The data are provided courtesy of Dr Christian Salas-Eljatib (Chile).
+The data are provided courtesy of Dr Christian Salas at
+the Universidad de Chile (Santiago, Chile).
 }
 \usage{
 data(treevolroble)
@@ -23,16 +24,15 @@ data(treevolroble)
 \description{
 These are tree-level measurement data of sample trees in the Rucamanque experimental forest, 
  near Temuco, in the Araucania region in south-centralChile, measured in 1999.  The
-data are the same as in the data frame "treevolruca", but only having observations for the 
+data are the same as in the dataframe "treevolruca", but only having observations for the 
 species roble (Nothofagus obliqua).
 }
 \examples{
 data(treevolroble)    
 head(treevolroble) 
-plot(vtot~dbh, data=treevolroble) 
 }
 \references{
 - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
-del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009}
+del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009} \url{https://eljatib.com/publication/2002-07-01_ajuste_y_validacion_/}
 }
 \keyword{datasets}

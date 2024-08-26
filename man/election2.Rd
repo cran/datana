@@ -3,9 +3,9 @@
 \docType{data}
 \name{election2}
 \alias{election2}
-\title{Elección presidential en el estado de Florida (USA) en el 2000.}
+\title{Eleccion presidential en el estado de Florida (USA) en el 2000.}
 \format{
-Contiene tres variables, como sigue:
+Contains 3 variables, as follows:
 \describe{
   \item{gore}{Votos para Gore.}
   \item{bush}{Votos para Bush.}
@@ -19,11 +19,11 @@ Los datos se obtuvieron desde el paquete 'alr4' de R.
 data(election2)
 }
 \description{
-Votos para cada candidato (i.e., Bush, Gore y Buchanan) por condado en la elección presidencial del 2000 en el estado de Florida (USA).
+County-by-county vote for president in Florida in 2000 for Bush, Gore and Buchanan.
 }
 \examples{
-head(election2)    
-colSums(election2)
+data(election2)    
+head(election2) 
 }
 \references{
 Weisberg S. 2014. Applied Linear Regression. 4th edition. Hoboken NJ: Wiley

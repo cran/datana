@@ -5,7 +5,7 @@
 \alias{annualppCities}
 \title{Time series of annual precipitations in cities of Chile.}
 \format{
-The data frame contains three variables as follows:
+The dataframe contains three variables as follows:
 \describe{
   \item{city}{Name of city.}
   \item{year}{Year of registry.}
@@ -16,17 +16,13 @@ The data frame contains three variables as follows:
 The data were obtained from \url{https://explorador.cr2.cl/}.
 }
 \usage{
-annualppCities
-}
-\description{
-The data frame has annual precipitation in six cities of 
-Chile (i.e., Santiago, Talca, Chillan, Temuco, Valdivia, and Puerto Montt) in 
-different years, from 1950 to 2019.
- @usage
 data(annualppCities)
 }
+\description{
+Data contains annual precipitations in six cities in Chile (Santiago, Talca, Chillan, Temuco, Valdivia, and Puerto Montt) at different years.
+}
 \examples{
-head(annualppCities)    
-range(annualppCities$year)
+data(annualppCities)    
+head(annualppCities) 
 }
 \keyword{datasets}

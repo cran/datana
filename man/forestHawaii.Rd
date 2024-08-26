@@ -10,7 +10,7 @@ Contains 18 variables, as follows:
   \item{island}{Island name.}
   \item{plot.id}{Unique numeric identifier for each plot.}
 \item{study}{Brief name of study.}
-\item{plot.area}{Plot area in m2.}
+\item{plot.area}{Plot area in m\eqn{^{2}}{^2}.}
 \item{longitude}{Longitude of plot in decimal degrees; WGS84 coordinate system.}
 \item{latitude}{Latitude of plot in decimal degrees; WGS84 coordinate system.}
 \item{year}{Year in which plot data was collected.}
@@ -24,7 +24,7 @@ Contains 18 variables, as follows:
 \item{cultivated.status}{Binary variable (1 = yes, 0 = no, NA = not applicable) indicating if species is cultivated following PIER.}
 \item{abundance}{Number of individuals (all = 1).}
 \item{abundance.ha}{Abundance of each individual on a per hectare basis.}
-\item{dbh}{Diameter at 1.3 m (DBH in cm) for each individual; NA indicates that size was not measured, but was classified by size class.}
+\item{dbh}{Diameter at 1.3 m (in cm) for each individual; NA indicates that size was not measured, but was classified by size class.}
  }
 }
 \source{
@@ -40,10 +40,10 @@ Diameter at breast height (or occurrence) of individual trees, shrubs and tree
 }
 \examples{
 data(forestHawaii)    
-head(forestHawaii) 
+table(forestHawaii$plot.id) 
 }
 \references{
-Craven D, Knight T, Barton K, Bialic-Murphy L, Cordell S, Giardina C, Gillespie T, Ostertag R, Sack L,Chase J. 2018. 
+- Craven D, Knight T, Barton K, Bialic-Murphy L, Cordell S, Giardina C, Gillespie T, Ostertag R, Sack L,Chase J. 2018. 
 OpenNahele: the open Hawaiian forest plot database. Biodiversity Data Journal 6: e28406.
 }
 \keyword{datasets}

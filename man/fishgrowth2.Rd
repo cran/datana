@@ -13,7 +13,7 @@ Contiene tres variables, como sigue:
  }
 }
 \source{
-Datos obtenidos desde el paquete 'alr4' de R.
+Datos obtenidos desde el paquete alr4 de R.
 }
 \usage{
 data(fishgrowth2)

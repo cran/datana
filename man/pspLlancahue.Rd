@@ -7,13 +7,12 @@
 \format{
 Contains tree-level variables, as follows:
 \describe{
-\item{tree.code}{Tree identificator}
-\item{spp.name}{Species abbreviation as follows: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+  \item{tree.code}{Tree identificator}
+\item{spp.name}{species abreviation as follows: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
-\item{dbh}{Diameter at breast height, in cm.}
-\item{x.coord}{Cartesian position in the X-axis, in m,}
-\item{y.coord}{Cartesian position in the Y-axis, in m.}
-\item{spp.ori}{Original species abbreviation.}
+\item{dbh}{diameter at breast height, in cm}
+\item{x.coord}{Cartesian position in the X-axis, in m}
+\item{y.coord}{Cartesian position in the Y-axis, in m}
  }
 }
 \source{
@@ -29,8 +28,6 @@ The Cartesian position, species, and diameter of trees within a plot were measur
 \examples{
 data(pspLlancahue)    
 head(pspLlancahue) 
-tapply(pspLlancahue$dbh,pspLlancahue$spp.name,length) 
-boxplot(dbh~spp.name, data=pspLlancahue)
 }
 \references{
 - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y espacial de un bosque mixto dominado por

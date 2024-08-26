@@ -3,33 +3,31 @@
 \docType{data}
 \name{biomass2}
 \alias{biomass2}
-\title{Biomasa a nivel de árbol para especies arboreas de Canada.}
+\title{Biomasa a nivel de arbol para especies arboreas de Canada.}
 \format{
 \describe{
-  \item{arbol}{Numero del árbol.}
-  \item{spp}{Nombre comun de la especie.}
-  \item{dap}{Diametro a la altura del pecho, en cm.}
-  \item{altura}{Altura total, en m.}
-  \item{biomtot}{Biomasa total, en kg.}
-  \item{biomfuste}{Biomasa del fuste, en kg.}
-  \item{biomramas}{Biomasa de las ramas, en kg.}
-  \item{biomfollaje}{Biomasa del follaje, en kg.}
+  \item{treenum}{tree number.}
+  \item{spp}{species common name.}
+  \item{dbh}{diameter at breast height, in cm.}
+  \item{height}{total height, in m.}
+  \item{totbiom}{total biomass, in kg.}
+  \item{bolebiom}{stem biomass, in kg.}
+  \item{branchbiom}{branches biomass, in kg.}
+  \item{foliagebiom}{foliage biomass, in kg.}
  }
 }
 \source{
-Los datos fueron cedidos por el Prof. Timothy Gregoire de la 
-School of Forestry and Environmental Studies de Yale University (New Haven, CT, USA).
+The data are provided courtesy of Prof. Timothy Gregoire at
+the School of Forestry and Environmental Studies at Yale University (New Haven, CT, USA).
 }
 \usage{
 biomass2
 }
 \description{
-Mediciones de componentes de biomasa de árboles muestra de cuatro especies. 
-Las especies son Balsam fir (Abies balsamea), Black spruce (Picea mariana),
-White birch (Betula papyrifera), y White spruce (Picea glauca).
+These are tree-level variables for several species in Canada.
 }
 \examples{
-head(biomass2)    
-table(biomass2$spp)
+data(biomass2)    
+head(biomass2) 
 }
 \keyword{datasets}

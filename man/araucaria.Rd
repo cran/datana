@@ -3,42 +3,43 @@
 \docType{data}
 \name{araucaria}
 \alias{araucaria}
-\title{Stand variables for sampling plots in Araucaria araucana forests in southern Chile.}
+\title{Contains plot-level variables in Araucaria araucana forests in southern Chile.}
 \format{
 Contains plot-level variables as follows:
 \describe{
-  \item{stand}{Stand number.}
-  \item{plot.no}{Plot sample identificator number.}
-  \item{x.utm}{UTM  coordinate in X-axis, in km.}
-  \item{y.utm}{UTM  coordinate in Y-axis, in km.}
-    \item{slope}{Slope, in \%.}
-\item{aspect}{Aspect, in degrees.}
-    \item{eleva}{Elevation, in msnm.}    
-  \item{nha }{Tree density, in trees/ha.}
- \item{gha }{Basal area, in m\eqn{^{2}}{^2}/ha.}
-\item{hdom}{Dominant height, in m.}
-\item{vha }{Gross stand volume, m\eqn{^{3}}{^3}/ha.} 
- \item{dg}{Diameter of the average basal area tree of the plot, in cm.}
+  \item{stand}{Stand number}
+  \item{plot.no}{Plot sample identificator number}
+  \item{x.utm}{UTM  coordinate in X-axis, in km}
+  \item{y.utm}{UTM  coordinate in Y-axis, in km}
+    \item{slope}{Slope, in \%}
+\item{aspect}{Aspect, in degrees}
+    \item{eleva}{Elevation, in msnm}    
+  \item{nha }{Tree density, in trees/ha}
+ \item{gha }{Basal area, in m\eqn{^{2}}{^2}/ha}
+\item{hdom}{Dominant height, in m}
+\item{vha }{Gross stand volume, m\eqn{^{3}}{^3}/ha} 
+ \item{dg}{Diameter of the average basal area tree of the plot, in cm}
  }
 }
 \source{
-The data are provided courtesy of Dr Nelson Ojeda (Universidad de La Frontera, Temuco, Chile) and
-further details can be found in Salas et al (2010).
+The data are provided courtesy of Dr Nelson Ojeda at Universidad de La Frontera (Temuco, Chile).
 }
 \usage{
 data(araucaria)
 }
 \description{
-These are plot-level data from Araucaria araucana-dominated forests in southern Chile. The data are
- based on tree-level measurements from fixed-area plots of 1000 m\eqn{^{2}}{^2}, and there are two forest stands.
+These are plot-level measurement data from the Araucaria araucana forests 
+ in southern Chile, measured in 2009.  The data  was based on fixed-area plots of 1000 m\eqn{^{2}}{^2}.  They are two forest stands.
 }
 \examples{
+data(araucaria)    
 head(araucaria) 
-tapply(araucaria$plot.no,araucaria$stand,length)
 }
 \references{
 Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadisticos parametricos y no parametricos
-   para predecir variables de rodal basados en Landsat ETM+: una comparación en un bosque
-    de Araucaria araucana en Chile. Bosque 31(3): 179-194.
+   para predecir variables de rodal basados en Landsat ETM+: una comparacion en un bosque
+    de Araucaria araucana en Chile [Parametric and non-parametric statistical methods for 
+    predicting plotwise variables based on Landsat ETM+: a comparison in an Araucaria araucana forest
+     in Chile]. Bosque 31(3): 179-194.
 }
 \keyword{datasets}

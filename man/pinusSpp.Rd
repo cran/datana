@@ -5,7 +5,7 @@
 \alias{pinusSpp}
 \title{Tree-level variables of several sample plots of invasive Pinus spp in Chile.}
 \format{
-Contains 8 variables, as follows:
+Contains eight variables, as follows:
 \describe{
 \item{plot.id}{Plot sample ID.}
 \item{plot.size}{Plot size, en m\eqn{^{2}}{^2}.}
@@ -18,12 +18,11 @@ Contains 8 variables, as follows:
 \item{h}{Height, in m.}
 \item{hcb}{Height to crown base, in m.}
 \item{crown.lenght}{Crown lenght, in m.}
-\item{obs}{Extra information.}
 }
 }
 \source{
-The data are provided courtesy of Drs. Anibal Pauchard and Rafael Garcia at the Laboratorio de Invasiones
- Biologicas, Universidad de Concepción (Chile).
+The data are provided courtesy of Drs Anibal Pauchard and Rafael García at the Laboratorio de Invasiones
+ Biológicas, Universidad de Concepcion (Concepción, Chile).
 }
 \usage{
 data(pinusSpp)

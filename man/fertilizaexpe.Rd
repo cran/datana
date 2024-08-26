@@ -12,7 +12,7 @@ Contains three variables, as follows:
  }
 }
 \source{
-The data were provided by Dr Christian Salas.
+The data were provided by Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
 }
 \usage{
 data(fertilizaexpe)

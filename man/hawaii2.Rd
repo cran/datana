@@ -3,15 +3,15 @@
 \docType{data}
 \name{hawaii2}
 \alias{hawaii2}
-\title{Incremento corriente anual en diametro de una especie tropical en Hawaii}
+\title{Incremento corriente anual en diámetro de una especie tropical en Hawaii}
 \format{
 Estos datos contienen las siguientes columnas:
 \describe{
-  \item{arb.id}{Codigo identificador del árbol. La primera letra del ID representa
+  \item{arb.id}{Codigo identificador del arbol. La primera letra del ID representa
   un cohorte. Hay seis cohortes que representan una cronosecuencia.}
-  \item{dap}{Diametro a la altura del pecho, en cm.}
+  \item{dap}{Diámetro a la altura del pecho, en cm.}
   \item{htot}{Altura total, en m.}
-  \item{area.copa}{Área de copa, en metros cuadrados.}
+  \item{area.copa}{Area de copa, en metros cuadrados.}
   \item{ind.comp}{Competition index (Basal area of nearest neighbor divided by square of distance to nearest neighbor plus
          basal area of second nearest neighbor divided by square of distance to second nearest neighbor).}
   \item{ica.1986}{Incremento corriente anual durante el año 1986, en mm.}
@@ -26,9 +26,9 @@ Los datos fueron obtenidos desde Gerrish and Mueller-Dombois (1999).
 data(hawaii)
 }
 \description{
-Tamaño del árbol, competencia, e incremento corriente anual de árboles de Metrosideros polymorpha 
+Tamaño del arbol, competencia, e incremento corriente anual de árboles de Metrosideros polymorpha 
 colectado en el volcan Kilauea, en Hawaii. Los datos contienen 64 observaciones de incremento corriente anual 
-(definido como el incremento en diametro en un año calendario) de cada árbol. Estos incrementos
+(definido como el incremento en diámetro en un año calendario) de cada arbol. Estos incrementos
  fueron medidos desde el año 1986 a 1988 usando bandas dendrometricas.
 }
 \examples{

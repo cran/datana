@@ -7,50 +7,49 @@
 \format{
 Variables se describen a continuacion::
 \describe{
-\item{live.bah}{Área basal viva del conjunto de datos GNN}											
-\item{live.tph}{Árboles vivos por hectarea del conjunto de datos GNN}
-\item{pos.x}{posición x del orden de clasificación de la celda de la cuadricula (la posición 1 es la mas occidental)}
-\item{pos.y}{posición y del orden de clasificación de la celda de la cuadricula (la posición 1 es la mas al norte)}
+\item{live.bah}{Area basal viva del conjunto de datos GNN}											
+\item{live.tph}{Arboles vivos por hectarea del conjunto de datos GNN}
+\item{pos.x}{posicion x del orden de clasificacion de la celda de la cuadricula (la posicion 1 es la mas occidental)}
+\item{pos.y}{posicion y del orden de clasificacion de la celda de la cuadricula (la posicion 1 es la mas al norte)}
 \item{alb.x}{coordenada x del centroide de la celda de la cuadricula en California Albers (EPSG 3310)}
 \item{alb.y}{coordenada y del centroide de la celda de la cuadricula en California Albers (EPSG 3310)}
 \item{mort.bin}{1 = árboles muertos observados en la celda de la cuadricula. 0 = no se observaron árboles muertos}
-\item{mort.tph}{Árboles muertos por hectarea del conjunto de datos ADS agregado}
-\item{mort.tpa}{Árboles muertos por acre del conjunto de datos ADS agregado}
-\item{year}{Año del vuelo de ADS. La mayoria de los vuelos se realizaron entre mayo y agosto}
-\item{Defnorm}{Deficit hidrico climatico anual medio para la celda de la cuadricula, para el anho hidrico del 1 de octubre al 31 de septiembre, promediado de 1981 a 2015}
-\item{Def0}{Deficit de agua climatica para la celda de la cuadricula durante el anho hidrologico de octubre a septiembre que se superpone al vuelo ADS de verano del anho dado}
-\item{Defz0}{Puntaje Z para el deficit hidrico climatico para la celda de cuadricula / anho hidrico dado. Calculado como (Def0-Defnorm) / (desviación estandar en el deficit entre todos los anhos 1981-2015 para la celda de la cuadricula dada}
-\item{Defz1}{Puntuación Z para el deficit hidrico climatico para la celda de la cuadricula dada en el anho hidrologico anterior.}
-\item{Defz2}{Puntuación Z para el deficit hidrico climatico para la celda de la cuadricula dada dos anhos antes.}
-\item{Tz0}{Puntaje Z para la temperatura para la celda de cuadricula / anho dado.}
-\item{Pz0}{Puntaje Z para la precipitación para la celda / anho de la cuadricula dado.}
-\item{Defquant}{Variable FDCI. Cuantil de Defnorm de la celda de la cuadricula dada, en relación con la Defnorm de todas las demas celdas de la cuadricula con un área basal dentro de 2.5 m2 ha-1 de la celda dada}
+\item{mort.tph}{Arboles muertos por hectarea del conjunto de datos ADS agregado}
+\item{mort.tpa}{Arboles muertos por acre del conjunto de datos ADS agregado}
+\item{year}{año del vuelo de ADS. La mayoria de los vuelos se realizaron entre mayo y agosto}
+\item{Defnorm}{Deficit hidrico climatico anual medio para la celda de la cuadricula, para el año hidrico del 1 de octubre al 31 de septiembre, promediado de 1981 a 2015}
+\item{Def0}{Deficit de agua climatica para la celda de la cuadricula durante el año hidrologico de octubre a septiembre que se superpone al vuelo ADS de verano del año dado}
+\item{Defz0}{Puntaje Z para el deficit hidrico climatico para la celda de cuadricula / año hidrico dado. Calculado como (Def0-Defnorm) / (desviacion estandar en el deficit entre todos los años 1981-2015 para la celda de la cuadricula dada}
+\item{Defz1}{Puntuacion Z para el deficit h?drico climatico para la celda de la cuadricula dada en el año hidrologico anterior.}
+\item{Defz2}{Puntuacion Z para el deficit hidrico climatico para la celda de la cuadricula dada dos años antes.}
+\item{Tz0}{Puntaje Z para la temperatura para la celda de cuadricula / año dado.}
+\item{Pz0}{Puntaje Z para la precipitacion para la celda / año de la cuadricula dado.}
+\item{Defquant}{Variable FDCI. Cuantil de Defnorm de la celda de la cuadricula dada, en relacion con la Defnorm de todas las demas celdas de la cuadricula con un area basal dentro de 2.5 m\eqn{^{2}}{^2}/ha de la celda dada}
  }
 }
 \source{
-Los datos fueron derivados desde el repositorio \doi{10.5061/dryad.7vt36}, que contiene detalles y datos sobre
-el paper de Young et al (2017). Estos datos fueron ordenados, y empleados, para el trabajo de Salas-Eljatib et al (2018).
+The data were provided from DRYAD repository.
 }
 \usage{
 data(deadForestCA2)
 }
 \description{
-El archivo de datos contiene una fila por combinación unica de celda de cuadricula de 3,5 km por año. 
+El archivo de datos contiene una fila por combinacion unica de celda de cuadricula de 3,5 km por año. 
 El marco de datos cubre todas las celdas de la cuadricula dentro del estado de California donde se 
-tomo al menos un vuelo de la Encuesta de detección aerea (ADS) entre 2009 y 2015, por lo que cada posicion
+tomo al menos un vuelo de la Encuesta de deteccion aerea (ADS) entre 2009 y 2015, por lo que cada posicion
 de celda de la cuadricula tiene entre 1 y 7 años de datos (reflejados como 1 a 7 filas en el archivo de datos
-por posición de celda de cuadricula). Las principales variables de respuesta son mort.bin (presencia de alguna mortalidad)
- y mort.tph (numero de árboles muertos / ha dentro de la celda de la cuadricula por año).
+por posicion de celda de cuadricula). Las principales variables de respuesta son mort.bin (presencia de alguna mortalidad)
+ y mort.tph (numero de árboles muertos /ha dentro de la celda de la cuadricula por año).
 }
 \examples{
 data(deadForestCA2)    
 head(deadForestCA2) 
 }
 \references{
--Young DJN, Stevens JT, Earles JM, Moore J, Ellis A, Jirka AL, Latimer AM. 2017. Long-term climate and
- competition explain forest mortality patterns under extreme drought. Ecology Letters 20(1):78-86. \doi{10.1111/ele.12711}
+-Derek J. N. Young, Jens T. Stevens, J. Mason Earles, Jeffrey Moore, Adam Ellis, Amy L. Jirka, and Andrew M. Latimer.
+ Long-term climate and competition explain forest mortality patterns under extreme drought.Ecology Letters, 20(1):78-86, 2017.
 
--Salas-Eljatib C, Fuentes-Ramirez A, Gregoire TG, Altamirano A, Yaitul V. 2018. A study on the effects of unbalanced data when
- fitting logistic regression models in ecology. Ecological Indicators, 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
+-Salas-Eljatib C, Fuentes-Ramirez A., Gregoire TG, Altamirano A., and Yaitul V. A study on the effects of unbalanced data when
+ fitting logistic regression models in ecology. Ecological Indicators, 85:502-508, 2018.
 }
 \keyword{datasets}

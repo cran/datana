@@ -5,7 +5,7 @@
 \alias{election}
 \title{Presidential election data of Florida (USA) in 2000.}
 \format{
-Contains three variables, as follows:
+Contains 3 variables, as follows:
 \describe{
   \item{gore}{Vote for Gore.}
   \item{bush}{Vote for Bush.}
@@ -22,8 +22,8 @@ data(election)
 County-by-county vote for president in Florida in 2000 for Bush, Gore and Buchanan.
 }
 \examples{
-head(election)    
-colSums(election) 
+data(election)    
+head(election) 
 }
 \references{
 Weisberg S. 2014. Applied Linear Regression. 4th edition. Hoboken NJ: Wiley

@@ -5,9 +5,9 @@
 \alias{ptaeda}
 \title{Height growth of Pinus taeda (Loblolly pine) trees}
 \format{
-Data having the following columns:
+An object of class c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame") containing the following columns:
 \describe{
-\item{tree}{an ordered factor indicating the seed source for the tree. The ordering is according to increasing maximum height.}
+\item{seed.id}{an ordered factor indicating the seed source for the tree. The ordering is according to increasing maximum height.}
 \item{age}{a numeric vector of tree ages, in yr.}
 \item{height}{a numeric vector of tree heights, in m.}
  }
@@ -25,12 +25,12 @@ The Loblolly data frame has 84 rows and tree columns of records of the tree heig
 \examples{
 
 data(ptaeda)
-plot(height ~ age, data = ptaeda, subset = tree == 329,
+plot(height ~ age, data = ptaeda, subset = seed.id == 329,
      xlab = "Tree age (yr)", las = 1,
      ylab = "Tree height (m)",
-     main = "Loblolly data and fitted curve (tree 329 only)")
+     main = "Loblolly data and fitted curve (seed.id 329 only)")
 m1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
-           data = ptaeda, subset = tree == 329)
+           data = ptaeda, subset = seed.id == 329)
 age <- seq(0, 30, length.out = 101)
 lines(age, predict(m1, list(age = age)))
 }

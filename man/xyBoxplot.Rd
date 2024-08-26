@@ -2,7 +2,7 @@
 % Please edit documentation in R/xyBoxplot.R
 \name{xyBoxplot}
 \alias{xyBoxplot}
-\title{Function for a scatter-plot with boxplots}
+\title{xyBoxplot: Function for a scatter-plot with boxplots}
 \usage{
 xyBoxplot(x = x, y = y, col.dots = "blue", xlab = NULL, ylab = NULL)
 }
@@ -21,12 +21,12 @@ xyBoxplot(x = x, y = y, col.dots = "blue", xlab = NULL, ylab = NULL)
 Result of calculation
 }
 \description{
-This function creates a scatter-plot with boxplots for the Y-axis variable.
+Creates a scatter-plot with boxplots for the Y-axis variable.
 }
 \examples{
 library(datana)
 data(fishgrowth)
 df <- fishgrowth
 xyBoxplot(x=df$age,y=df$length)
-xyBoxplot(x=df$age,y=df$length,col="red")
+xyBoxplot(x=df$age,y=df$length)
 }

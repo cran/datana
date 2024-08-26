@@ -35,6 +35,6 @@ head(snaspeChile)
 \references{
 The SNASPE has been created and is currently managed by the National Forest Corporation (CONAF).
 More information and documentation can be found at
-\url{https://www.conaf.cl/parques-nacionales/parques-de-chile/}
+\url{https://www.conaf.cl}
 }
 \keyword{datasets}

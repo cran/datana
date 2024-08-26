@@ -7,9 +7,9 @@
 \format{
 A data frame with 31 observations and three variables
 \describe{
-\item{dbh}{Diameter at breast height, in cm}
-\item{htot}{Total height, in m}
-\item{volume}{Volume of timber, in m\eqn{^{3}}{^3}}
+\item{dbh}{diameter at breast height, in cm}
+\item{htot}{total height, in m}
+\item{vtot}{volume of timber, in cubic meters}
  }
 }
 \source{
@@ -19,16 +19,15 @@ Ryan, T. A., Joiner, B. L. and Ryan, B. F. (1976) The Minitab Student Handbook. 
 data(treevol)
 }
 \description{
-This data set provides measurements of the diameter, height and volume
- of timber in 31 felled black cherry trees. It is a slight modification
-  of the dataframe 'trees' of the 'datasets' R package.
+This data set provides measurements of the diameter, height and volume of timber in 31 felled black cherry trees.
+This dataframe is a slight modification to the original dataframe "trees" from the datasets R package.
 }
 \examples{
-pairs(treevol, panel = panel.smooth, main = "treevol data frame")
-plot(volume ~ dbh, data = treevol, log = "xy")
-coplot(log(volume) ~ log(dbh) | htot, data = treevol,
+pairs(treevol, panel = panel.smooth, main = "treevol dataframe")
+plot(vtot ~ dbh, data = treevol, log = "xy")
+coplot(log(vtot) ~ log(dbh) | htot, data = treevol,
        panel = panel.smooth)
-summary(m1 <- lm(log(volume) ~ log(dbh), data = treevol))
+summary(m1 <- lm(log(vtot) ~ log(dbh), data = treevol))
 summary(m2 <- update(m1, ~ . + log(htot), data = treevol))
 anova(m1,m2)
 }

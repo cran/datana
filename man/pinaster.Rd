@@ -3,13 +3,13 @@
 \docType{data}
 \name{pinaster}
 \alias{pinaster}
-\title{Tree volume for Pinus pinaster in the Baixo-Miño, Galicia, Spain.}
+\title{Tree volume for Pinus pinaster in the Baixo-Mino, Galicia, Spain.}
 \format{
 Contains tree-level variables, as follows:
 \describe{
-  \item{stand}{Stand from where the sample tree was collected.}
-\item{si}{Site index of the stand, in m.}
-\item{tree.no}{Tree number.}
+  \item{stand}{stand number from the sample tree was selected.}
+\item{si}{Site index of the stand.}
+\item{tree.no}{tree number.}
 \item{dbh}{Diameter at breast height, in cm.}
 \item{htot}{Total height, in m.}
  \item{d4}{Upper-stem diameter at 4 m, in cm.}
@@ -18,13 +18,14 @@ Contains tree-level variables, as follows:
  }
 }
 \source{
-The data are provided courtesy of Dr Christian Salas-Eljatib.
+The data are provided courtesy of Dr Christian Salas-Eljatib at
+the Universidad de Chile (Santiago, Chile).
 }
 \usage{
 data(pinaster)
 }
 \description{
-Tree-level volume data of sample trees in the Baixo-Miño region, Galicia, Spain.
+These are volume measurements data of sample trees in the Baixo-Mino region in Galicia, Spain.
 }
 \examples{
 data(pinaster)    

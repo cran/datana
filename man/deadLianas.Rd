@@ -35,9 +35,9 @@ The data frame contains four variables as follows:
 \item{TS_bio4}{Temperature seasonality in the plot (standard deviation*100)}
 \item{ATR_bio7}{Annual temperature range in the plot (10 celsius degrees)}
 \item{AET}{Actual evapotranspiration in the plot (mm yr-1)}
-\item{BasAre}{Basal area of trees with DBH major or equal to 5 cm (AB) in the plot (m2 ha-1)}
-\item{BasAre5_10}{Basal area of trees with greater or equal than 5  DBH and  less than 10 cm in the plot (m2 ha-1)}
-\item{BasAre10}{Basal area of trees with greater or equal than 10 cm DBH in the plot (m2 ha-1)}
+\item{BasAre}{Basal area of trees with DBH major or equal to 5 cm (AB) in the plot (m\eqn{^{2}}{^2}/ha)}
+\item{BasAre5_10}{Basal area of trees with greater or equal than 5  DBH and  less than 10 cm in the plot (m\eqn{^{2}}{^2}/ha)}
+\item{BasAre10}{Basal area of trees with greater or equal than 10 cm DBH in the plot (m\eqn{^{2}}{^2}/ha)}
 \item{Ind10}{Number of canopy trees (with greater or equal than 10 cm DBH ) in the plot}
 \item{Ind5}{Number of understory trees (with greater or equal than 5  DBH and  less than 10 cm) in the plot}
 \item{Ind5_10}{Number of trees with greater or equal than 5  DBH and  less than 10 cm in the plot}

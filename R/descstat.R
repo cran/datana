@@ -1,9 +1,10 @@
-#' A function that prepares a descriptive statistics table for continuous variables.
+#' descstat: Function that creates a descriptive statistics table for all continuous variables in a dataframe excluding missing values.
 #' 
-#' Function that creates a descriptive statistics table for all continuous variables in a dataframe excluding missing values.
+#' As always, please check the output after applying the function.
 #' 
-#' @param data a dataframe containing variables as columns.
-#' @param decnum the number of decimals to be used in the output.
+#' @title A descriptive statistics table for continuous variables
+#' @param data a dataframe containing variables as columns
+#' @param decnum the number of decimals to be used in the output 
 #'
 #' @return This function wraps descriptive statistics into a summarize table having the following
 #'   descriptive statistics: sample size, minimum, maximum, mean, median, SD, and coefficient of variation (%). 

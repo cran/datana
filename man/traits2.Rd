@@ -14,7 +14,7 @@
  }
 }
 \source{
-Parte de la información sobre tolerancia a la sombra se encuentra en Soto et al 2010
+Parte de la informacion sobre tolerancia a la sombra se encuentra en Soto et al 2010
 }
 \usage{
 data(traits2)

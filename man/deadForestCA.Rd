@@ -3,7 +3,7 @@
 \docType{data}
 \name{deadForestCA}
 \alias{deadForestCA}
-\title{Data contains climatic, forest structure and forest mortality variable}
+\title{Data contains  climatic, forest structure and forest mortality variable}
 \format{
 The data frame contains four variables as follows:
 \describe{
@@ -24,12 +24,11 @@ The data frame contains four variables as follows:
 \item{Defz2}{Z-score for climatic water deficit for the given grid cell two water years prior.}
 \item{Tz0}{Z-score for temperature for the given grid cell/year.}
 \item{Pz0}{Z-score for precipitation for the given grid cell/year.}
-\item{Defquant}{FDCI variable. Quantile of Defnorm of the given grid cell, relative to the Defnorm of all other grid cells with a basal area within 2.5 m2 ha-1 of the given cell is basal area.}
+\item{Defquant}{FDCI variable. Quantile of Defnorm of the given grid cell, relative to the Defnorm of all other grid cells with a basal area within 2.5 m\eqn{^{2}}{^2}/ha of the given cell is basal area.}
  }
 }
 \source{
-The data were derived from the following repository \doi{10.5061/dryad.7vt36}, having details and data about
-the paper of Young et al (2017). This data frame was built, and used, for the research conducted by Salas-Eljatib et al (2018).
+The data were provided from DRYAD repository.
 }
 \usage{
 data(deadForestCA)
@@ -47,10 +46,10 @@ data(deadForestCA)
 head(deadForestCA) 
 }
 \references{
--Young DJN, Stevens JT, Earles JM, Moore J, Ellis A, Jirka AL, Latimer AM. 2017. Long-term climate and
- competition explain forest mortality patterns under extreme drought. Ecology Letters 20(1):78-86. \doi{10.1111/ele.12711}
+-Derek J. N. Young, Jens T. Stevens, J. Mason Earles, Jeffrey Moore, Adam Ellis, Amy L. Jirka, and Andrew M. Latimer.
+ Long-term climate and competition explain forest mortality patterns under extreme drought.Ecology Letters, 20(1):78-86, 2017.
 
--Salas-Eljatib C, Fuentes-Ramirez A, Gregoire TG, Altamirano A, Yaitul V. 2018. A study on the effects of unbalanced data when
- fitting logistic regression models in ecology. Ecological Indicators, 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
+-C. Salas-Eljatib, Andres Fuentes-Ramirez, Timothy G. Gregoire, Adison Altamirano, and Valeska Yaitul. A study on the effects of unbalanced data when
+ fitting logistic regression models in ecology. Ecological Indicators, 85:502-508, 2018
 }
 \keyword{datasets}

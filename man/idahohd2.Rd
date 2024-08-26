@@ -8,15 +8,15 @@
 Contiene cinco variables, como sigue:
 \describe{
   \item{parce}{numero de la parcela de muestreo.}
-  \item{narb}{numero del árbol dentro de la parcela.}
-\item{spp}{especie del árbol, una variable factor  con niveles DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
+  \item{narb}{numero del arbol dentro de la parcela.}
+\item{spp}{especie del arbol, una variable factor  con niveles DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
                 WC = Western red cedar, WP = White pine.}
-\item{d}{diámetro del tronco a los 1.3m sobre el suelo, en cm.}
-\item{h}{Altura del árbol, en m.}
+\item{d}{Diámetro del tronco a los 1.3m sobre el suelo, en cm.}
+\item{h}{Altura del arbol, en m.}
  }
 }
 \source{
-Los datos fueron obtenidos desde la libreria 'alr4'.
+Los datos fueron obtenidos desde la libreria alr4.
 }
 \usage{
 data(idahohd2)
