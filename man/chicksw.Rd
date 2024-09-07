@@ -7,12 +7,12 @@
 \format{
 Contains four variables, as follows:
 \describe{
-  \item{weight}{a numeric vector giving the body weight of the chick (gm).}
-  \item{time}{a numeric vector giving the number of days since birth when the measurement was made.}
-\item{chick}{an ordered factor with levels different giving a unique identifier for the chick. The ordering of the
+  \item{weight}{A numeric vector giving the body weight of the chick (gm).}
+  \item{time}{A numeric vector giving the number of days since birth when the measurement was made.}
+\item{chick}{An ordered factor with levels different giving a unique identifier for the chick. The ordering of the
             levels groups chicks on the same diet together and orders them according to their final weight 
             (lightest to heaviest) within diet.}
-\item{diet}{a factor with levels 1,2,3 and 4 indicating which experimental diet the chick received.}
+\item{diet}{A factor with levels 1,2,3 and 4 indicating which experimental diet the chick received.}
  }
 }
 \source{

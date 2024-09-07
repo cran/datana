@@ -8,7 +8,7 @@
 Contiene variables a nivel de hoja, como sigue:
 \describe{
   \item{tiempo}{factor a dos niveles: Temprano o Tardio}
-\item{arbol}{un identificador del arbol muestra}
+\item{arbol}{un identificador del árbol muestra}
 \item{meristema}{descripcion del meristema}
 \item{largo}{largo de la hoja, en mm}
 \item{ancho}{ancho de la hoja, en mm}

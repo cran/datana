@@ -33,13 +33,13 @@ Mediciones de radios de copa en direcciones cardinales para árboles muestra en 
 \examples{
 data(crown2)    
 table(crown2$espe) 
-descstat(crown2[,c("dap","dcopa")])
+descstat(crown2[,c("dap","dcopa")]) 
 }
 \references{
 - Salas C. 2001. Caracterización básica del relicto de Biodiversidad 
 Rucamanque [Basic characterization of the biodiversity remnant Rucamanque]. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 
 - Salas C, and Garcia O. 2006. Modelling height development of mature Nothofagus obliqua. 
-Forest Ecology and Management 229 (1-3): 1–6. \doi{10.1016/j.foreco.2006.04.015}
+Forest Ecology and Management 229 (1-3): 1-6. \doi{10.1016/j.foreco.2006.04.015}
 }
 \keyword{datasets}

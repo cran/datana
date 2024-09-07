@@ -11,10 +11,10 @@ Contains tree-level variables, as follows:
 \item{si}{Site index of the stand.}
 \item{tree.no}{tree number.}
 \item{dbh}{Diameter at breast height, in cm.}
-\item{htot}{Total height, in m.}
+\item{toth}{Total height, in m.}
  \item{d4}{Upper-stem diameter at 4 m, in cm.}
-\item{vol.wb}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
-\item{vol.wob}{Tree gross volume, in m\eqn{^{3}}{^3} without bark.}
+\item{volwb}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
+\item{volwob}{Tree gross volume, in m\eqn{^{3}}{^3} without bark.}
  }
 }
 \source{
@@ -33,6 +33,6 @@ head(pinaster)
 }
 \references{
 - Salas C, Nieto L, Irisarri A. 2005. Modelos de volumen para Pinus pinaster Ait. en la comarca del Baixo Mino,
-  Galicia, Espana. Quebracho 12: 11-22. \url{https://eljatib.com/publication/2005-12-01_modelos_de_volumen_p/}
+  Galicia, España. Quebracho 12: 11-22. \url{https://eljatib.com/publication/2005-12-01_modelos_de_volumen_p/}
 }
 \keyword{datasets}

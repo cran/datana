@@ -7,9 +7,9 @@
 \format{
 Contiene las siguientes variables para cada unidad del SNASPE:
 \describe{
-\item{uni.id}{numero indentificador de la unidad.}
+\item{uni.id}{número indentificador de la unidad.}
 \item{unidad}{Nombre de la unidad.}
-\item{categoria}{Categoria de la unidad. It can be either a National Park, a National Reserve or a Natural Monument.}
+\item{categoria}{Categoría de la unidad. It can be either a National Park, a National Reserve or a Natural Monument.}
 \item{comuna}{Name of the commune (the smallest Chilean territorial division) where the unit is located.}
 \item{province}{Province where the comunne is located (one territorial division level above the commune).}
  \item{region}{Region where the province is located (one territorial division level above the province and the biggest Chilean territorial division).}

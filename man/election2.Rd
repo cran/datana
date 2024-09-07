@@ -3,13 +3,13 @@
 \docType{data}
 \name{election2}
 \alias{election2}
-\title{Eleccion presidential en el estado de Florida (USA) en el 2000.}
+\title{Elección presidencial en el estado de Florida (USA) en el 2000.}
 \format{
-Contains 3 variables, as follows:
+Contiene las siguientes tres columnas:
 \describe{
-  \item{gore}{Votos para Gore.}
-  \item{bush}{Votos para Bush.}
-\item{buchaman}{Votos para Buchaman.}
+  \item{gore}{Votos para Gore. Número de votos para Al Gore.}
+  \item{bush}{Votos para Bush. Número de votos para George W. Bush.}
+\item{buchanan}{Votos para Buchaman. Número de votos para Pat Buchanan.}
  }
 }
 \source{
@@ -19,7 +19,7 @@ Los datos se obtuvieron desde el paquete 'alr4' de R.
 data(election2)
 }
 \description{
-County-by-county vote for president in Florida in 2000 for Bush, Gore and Buchanan.
+Conteo de votos a nivel de condado en el estado de Florida, año 2000.
 }
 \examples{
 data(election2)    

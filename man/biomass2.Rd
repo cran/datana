@@ -3,7 +3,7 @@
 \docType{data}
 \name{biomass2}
 \alias{biomass2}
-\title{Biomasa a nivel de arbol para especies arboreas de Canada.}
+\title{Biomasa a nivel de árbol para especies arboreas de Canada.}
 \format{
 \describe{
   \item{treenum}{tree number.}

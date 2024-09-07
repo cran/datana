@@ -21,7 +21,7 @@ data(radiatapl)
 }
 \description{
 Tree-level information collected within sample plots in a forestry plantation of Pinus radiata near Capitan Pastene, 
-Southern Chile. Sample plots size is 150 square meters.
+Southern Chile. Sample plots size is 150 150 m\eqn{^{2}}{^2}.
 }
 \examples{
 data(radiatapl)    

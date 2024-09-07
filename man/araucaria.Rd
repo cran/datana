@@ -36,7 +36,7 @@ data(araucaria)
 head(araucaria) 
 }
 \references{
-Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadisticos parametricos y no parametricos
+Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadísticos parametricos y no parametricos
    para predecir variables de rodal basados en Landsat ETM+: una comparacion en un bosque
     de Araucaria araucana en Chile [Parametric and non-parametric statistical methods for 
     predicting plotwise variables based on Landsat ETM+: a comparison in an Araucaria araucana forest

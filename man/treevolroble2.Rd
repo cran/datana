@@ -3,29 +3,27 @@
 \docType{data}
 \name{treevolroble2}
 \alias{treevolroble2}
-\title{Variables alometricas a nivel de arbol para roble (Nothofagus obliqua) en el bosque de Rucamanque, cerca de Temuco, Chile.}
+\title{Volumen a nivel de árbol para roble (Nothofagus obliqua) especie en el bosque de Rucamanque}
 \format{
 Las siguientes columnas son parte de la dataframe:
 \describe{
-  \item{arbol}{Numero del arbol.}
+  \item{arbol}{Número del árbol.}
 \item{especie}{Especie.}
 \item{dap}{Diámetro a la altura del pecho, en cm.}
-\item{htot}{Altura total, en m.}
+\item{atot}{Altura total, en m.}
  \item{d6}{Diámetro fustal a los 6 m, en cm.}
 \item{vtot}{Volumen bruto total, en m\eqn{^{3}}{^3} with bark.}
  }
 }
 \source{
-The data are provided courtesy of Dr Christian Salas (Chile).
+Los datos son proporcionados por el Prof. Christian Salas (Universidad de Chile).
 }
 \usage{
 data(treevolroble2)
 }
 \description{
-These are tree-level measurement data of sample trees in the Rucamanque experimental forest, 
- near Temuco, in the Araucania region in south-centralChile, measured in 1999.  The
-data are the same as in the dataframe "treevolruca", but only having observations for the 
-species roble (Nothofagus obliqua).
+Volumen, altura y diámetro, entre otras para árboles muestra de roble (Nothofagus obliqua) en 
+ el bosque de Rucamanque, cerca de Temuco, en la región de la Araucania, en el sur de Chile.
 }
 \examples{
 data(treevolroble2)    

@@ -34,6 +34,6 @@ head(floraChile)
 \references{
 - Bannister JR, Vidal OJ, Teneb E, Sandoval V. 2012. Latitudinal patterns
  and regionalization of plant diversity along a 4270‐km gradient in continental
-  Chile. Austral Ecology, 37(4), 500-509.
+  Chile. Austral Ecology 37(4):500-509.
 }
 \keyword{datasets}

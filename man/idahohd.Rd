@@ -3,20 +3,20 @@
 \docType{data}
 \name{idahohd}
 \alias{idahohd}
-\title{Tree height-diameter data from Idaho (USA).}
+\title{Tree height-diameter data from Idaho (USA)}
 \format{
 Contains five variables, as follows:
 \describe{
-  \item{plot}{plot number.}
-  \item{tree}{tree within plot.}
-\item{species}{a factor with levels DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
+  \item{plot}{Plot number.}
+  \item{tree}{Tree within plot.}
+\item{species}{A factor with levels DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
                 WC = Western red cedar, WP = White pine.}
-\item{dbh}{Diameter 137 cm perpendicular to the bole, mm.}
-\item{height}{Height of the tree, in decimeters.}
+\item{dbh}{Diameter 137 cm perpendicular to the bole, cm.}
+\item{toth}{Height of the tree, in m.}
  }
 }
 \source{
-The data were obtained from the alr4 library.
+The data were assembled from the 'ufc' dataframe from the 'alr4' library.
 }
 \usage{
 data(idahohd)
@@ -28,6 +28,7 @@ of Idaho Experimental Forest, dated 1991.
 \examples{
 data(idahohd)    
 head(idahohd) 
+plot(toth~dbh, data=idahohd)
 }
 \references{
 Weisberg S. 2014. Applied Linear Regression. 4th edition. New York: Wiley.

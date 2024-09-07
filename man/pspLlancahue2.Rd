@@ -3,16 +3,16 @@
 \docType{data}
 \name{pspLlancahue2}
 \alias{pspLlancahue2}
-\title{Ubicacion espacial de árboles en un parcela de muestreo en el bosque de Llancahue, cerca de Valdivia, Chile.}
+\title{Ubicación cartesiana de árboles en el bosque de Llancahue}
 \format{
 Contains tree-level variables, as follows:
 \describe{
- \item{arbol}{Identificador del árbol}
-\item{espe}{Codificación de la especie como sigue: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
- LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
-\item{dap}{Diámetro a la altura del pecho, en cm}
-\item{coord.x}{Posicion cartesiana en el eje-X, en m}
-\item{coord.y}{Posicion cartesiana en el eje-Y, en m}
+ \item{arb.id}{Identificador del árbol.}
+\item{spp}{Codificación de la especie como sigue: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+ LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna.}
+\item{dap}{Diámetro a la altura del pecho, en cm.}
+\item{coord.x}{Posición cartesiana en el eje-X, en m.}
+\item{coord.y}{Posición cartesiana en el eje-Y, en m.}
  }
 }
 \source{
@@ -23,15 +23,18 @@ Los datos fueron cedidos por el Prof. Daniel Soto de Universidad
 data(pspLlancahue2)
 }
 \description{
-La posicion cartesiana, especie, y diámetro de árboles en una parcela de muestreo rectangular de 130 m por 70 m. Mayores
- antecedentes aparecen en las referencias.
+Corresponde a la posición cartesiana, especie, y diámetro de árboles en una parcela de muestreo
+ en el bosque de Llancahue, cerca de Valdivia, Chile. La parcela es rectangular con
+ dimensiones de 130 m por 70 m. Mayores antecedentes aparecen en las referencias.
 }
 \examples{
 data(pspLlancahue2)    
 head(pspLlancahue2) 
+descstat(pspLlancahue2$dap)
+boxplot(dap~spp, data=pspLlancahue2)
 }
 \references{
 - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y espacial de un bosque mixto dominado por
-Nothofagus dombeyi despues de un disturbio parcial. Revista Chilena de Historia Natural 83(3): 335-347.
+Nothofagus dombeyi después de un disturbio parcial. Revista Chilena de Historia Natural 83(3): 335-347.
 }
 \keyword{datasets}

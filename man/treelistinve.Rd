@@ -13,7 +13,7 @@ Contains tree-level variables, as follows:
 \item{species}{species common name as follows: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
 Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
 \item{dbh}{Diameter at breast-height, in cm}
-\item{htot}{Total height, in m. Only measured for some sample trees.}
+\item{toth}{Total height, in m. Only measured for some sample trees.}
  }
 }
 \source{

@@ -7,7 +7,7 @@
 \format{
 Los datos contienen las siguientes columnas:
 \describe{
-  \item{region.no}{Numero de la region adminsitrativa de Chile.}
+  \item{region.no}{Número de la region adminsitrativa de Chile.}
   \item{region}{Nombre de la region administrativa de Chile}
   \item{provincia}{Provincia.}
   \item{circu.senatorial}{Circunscripcion senatorial.}
@@ -15,13 +15,13 @@ Los datos contienen las siguientes columnas:
   \item{comuna}{County.}
   \item{circu.elec}{Circunscripcion electoral.}
   \item{local}{Local de votacion. Generalmente es un colegio.}
-  \item{no.mesa}{Numero de mesa.}
+  \item{no.mesa}{Número de mesa.}
   \item{tipo.mesa}{Tipo de mesa de votacion.}
   \item{mesas.fusionadas}{Mesa de votacion fucionada.}
   \item{electores}{Electores.}
   \item{nro.en.voto}{.}
   \item{candidato}{Candidato, ya sea Gabriel Boric o Jose A. Kast}
-  \item{votos.tricel}{Numero total de votos segun el TRICEL (Tribunal calificador de elecciones).}       
+  \item{votos.tricel}{Número total de votos segun el TRICEL (Tribunal calificador de elecciones).}       
  }
 }
 \source{

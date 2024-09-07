@@ -3,15 +3,15 @@
 \docType{data}
 \name{pinusSpp2}
 \alias{pinusSpp2}
-\title{Variables a nivel de arbol en parcelas de muestreo de Pinus spp en Chile.}
+\title{Variables a nivel de árbol en parcelas de muestreo de Pinus spp en Chile.}
 \format{
 Los datos contienen ocho columnas que se detallan a continuacion:
 \describe{
-\item{parcela}{Numero de la parcela.}
+\item{parcela}{Número de la parcela.}
 \item{sup.parcela}{Superficie de la parcela, en m\eqn{^{2}}{^2}.}
 \item{lat.s}{Decimal coordinate of S latitude.}
 \item{long.w}{Decimal coordinate of W longitude.}
-\item{indv.id}{Identificador del arbol en la parcelaeach plot. Same indv/id for multi-stem trees.}
+\item{indv.id}{Identificador del árbol en la parcelaeach plot. Same indv/id for multi-stem trees.}
 \item{fuste.id}{Identificador del fuste.}
 \item{espe}{Especie.}
 \item{dap}{Diámetro a la altura del pecho, en cm.}
@@ -28,7 +28,7 @@ Los datos fueron cedidos por los Drs. Anibal Pauchard y Rafael García del Labor
 data(pinusSpp2)
 }
 \description{
-Mediciones a nivel de arbol para estudiar la invasion de Pinus spp en bosques de Araucaria-Nothofagus en 
+Mediciones a nivel de árbol para estudiar la invasion de Pinus spp en bosques de Araucaria-Nothofagus en 
 la Reserva Nacional Malalcahuello en la region de la Araucania en el sur de Chile. 
 Hay 26 parcelas, y la superficie de cada una es de 100 m\eqn{^{2}}{^2}.
 }

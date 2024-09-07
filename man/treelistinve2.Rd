@@ -5,14 +5,14 @@
 \alias{treelistinve2}
 \title{Lista de árboles en un inventario forestal.}
 \format{
-Contiene variables a nivel de arbol dentro de parcelas.
+Contiene variables a nivel de árbol dentro de parcelas.
 \describe{
-  \item{parce}{Numero de la parcela de muestreo.}
+  \item{parce}{Número de la parcela de muestreo.}
   \item{sup.parce}{Superficie de la parcela, en m\eqn{^{2}}{^2}.}
-  \item{arbol}{Numero identificador del arbol.}
-\item{espe}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
-Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
-\item{dap}{Diámetro a la altura del pecho, en cm}
+  \item{arbol}{Número identificador del árbol.}
+\item{spp}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
+Lingue= Persea lingue, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
+\item{dap}{Diámetro a la altura del pecho, en cm.}
 \item{atot}{Altura total, en m. Solo medida en algunas árboles muestra.}
  }
 }
@@ -31,7 +31,7 @@ Variables a nivel de árbol medidas en tres unidades de muestreo establecidas en
 data(treelistinve2)    
 unique(treelistinve2$parce) 
 table(treelistinve2$parce,treelistinve2$sup.parce)
-tapply(treelistinve2$dap,treelistinve2$espe,summary)
+tapply(treelistinve2$dap,treelistinve2$spp,summary)
 }
 \references{
 - Salas C. 2001. Caracterización básica del relicto de Biodiversidad 

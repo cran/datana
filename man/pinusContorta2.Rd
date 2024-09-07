@@ -3,12 +3,12 @@
 \docType{data}
 \name{pinusContorta2}
 \alias{pinusContorta2}
-\title{Ubicacion espacial de árboles de Pinus contorta en parcelas de muestreo.}
+\title{Ubicación espacial de árboles de Pinus contorta en parcela de muestreo}
 \format{
 Contiene ocho variables, como siguen:
 \describe{
   \item{parcela}{Parcela.}
-  \item{arbol}{Numero de arbol en cada parcela. Mismo arbol/id para árboles multifustales.}
+  \item{arbol}{Número de árbol en cada parcela. Mismo árbol/id para árboles multifustales.}
 \item{coord.y}{coordinada de latitud W.}
 \item{coord.x}{coordinada de longitud W.}
 \item{substrato}{Cobertura del suelo donde cada pino crece. Bare soil, Festuca pallescens, Baccharis magellanica, 
@@ -26,7 +26,7 @@ Los datos fueron cedidos por los Drs. Anibal Pauchard y Rafael Garcia del Labora
 data(pinusContorta2)
 }
 \description{
-Mediciones a nivel de árbol, con la ubicacion cartesian de cada arbol de Pinus contorta, en parcelas
+Mediciones a nivel de árbol, con la ubicación cartesian de cada árbol de Pinus contorta, en parcelas
 de muestreo para estudio de invasion en la estepa Patagonica en Coyhaique en el sur de Chile. Hay tres parcelas, cada
  una de 10.000 m\eqn{^{2}}{^2}.
 }

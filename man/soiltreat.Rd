@@ -3,7 +3,7 @@
 \docType{data}
 \name{soiltreat}
 \alias{soiltreat}
-\title{Soil treatment experiment in tree seedlings.}
+\title{Soil treatment experiment in tree seedlings}
 \format{
 Contains the four following columns, at the plot-level,
 \describe{

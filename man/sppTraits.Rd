@@ -42,7 +42,7 @@ head(sppTraits)
 }
 \references{
 - Ameztegui A, Paquette A, Shipley B, Heym M, Messier C, Gravel D. 2016 . Shade tolerance and 
- the functional trait: demography relationship in temperate and boreal forests. Functional Ecology, 
+ the functional trait: demography relationship in temperate and boreal forests. Functional Ecology 
  31: 821-830.
 }
 \keyword{datasets}

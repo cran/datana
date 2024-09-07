@@ -9,7 +9,7 @@ Contains of variables, as follows:
 \describe{
 \item{spp}{Species code. 'Ro' is Nothofagus obliqua (roble), 'Co' is Nothofagus dombeyi (Coigue) and 'Ol' is Olivillo.}
 \item{dbh}{Diameter at breast height, in cm.}
-\item{htot}{Total height, in m.}
+\item{toth}{Total height, in m.}
 \item{crad.n}{Crown radii towards the north, in m.}
 \item{crad.e}{Crown radii towards the east, in m.}
  \item{crad.s}{Crown radii towards the south, in m.}
@@ -33,13 +33,13 @@ Crown radii measurements in cardinal directions for sample trees at the Rucamanq
 \examples{
 data(crown)    
 table(crown$spp) 
-descstat(crown[,c("dbh","cr.diam")])
+descstat(crown[,c("dbh","cr.diam")]) 
 }
 \references{
 - Salas C. 2001. Caracterización básica del relicto de Biodiversidad 
 Rucamanque [Basic characterization of the biodiversity remnant Rucamanque]. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 
 - Salas C, and Garcia O. 2006. Modelling height development of mature Nothofagus obliqua. 
-Forest Ecology and Management 229 (1-3): 1–6. \doi{10.1016/j.foreco.2006.04.015}
+Forest Ecology and Management 229 (1-3): 1-6. \doi{10.1016/j.foreco.2006.04.015}
 }
 \keyword{datasets}

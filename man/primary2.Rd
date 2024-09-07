@@ -3,7 +3,7 @@
 \docType{data}
 \name{primary2}
 \alias{primary2}
-\title{Eleccion primaria para la presidencia de Chile.}
+\title{Elección primaria para la presidencia de Chile}
 \format{
 The dataframe contains the following columns:
 \describe{
@@ -22,7 +22,7 @@ The dataframe contains the following columns:
   \item{pacto}{Pacto politico del candidato.}
   \item{partido}{Partido politica del candidato.}
   \item{candidato}{Nombre del candidato.}
-  \item{votos}{Numero total de votos.}       
+  \item{votos}{Número total de votos.}       
  }
 }
 \source{

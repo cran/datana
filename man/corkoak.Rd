@@ -3,7 +3,7 @@
 \docType{data}
 \name{corkoak}
 \alias{corkoak}
-\title{Tree-level cork biomass data for Oak trees in Portugal.}
+\title{Tree-level cork biomass data for Oak trees in Portugal}
 \format{
 \describe{
   \item{tree}{A correlative number for each sample tree.}

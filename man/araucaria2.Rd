@@ -22,7 +22,7 @@ Contains plot-level variables as follows:
  }
 }
 \source{
-Los datos a nivel de arbol fueron cedidos por el Dr Nelson Ojeda de
+Los datos a nivel de árbol fueron cedidos por el Dr Nelson Ojeda de
 la Universidad de La Frontera (Temuco, Chile).
 }
 \usage{
@@ -38,7 +38,7 @@ data(araucaria2)
 head(araucaria2) 
 }
 \references{
-Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadisticos parametricos y no parametricos
+Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadísticos parametricos y no parametricos
    para predecir variables de rodal basados en Landsat ETM+: una comparacion en un bosque
     de Araucaria araucana en Chile. Bosque 31(3): 179-194.
 }

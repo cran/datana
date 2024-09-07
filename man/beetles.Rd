@@ -3,7 +3,7 @@
 \docType{data}
 \name{beetles}
 \alias{beetles}
-\title{Population density growth of beetles.}
+\title{Population density growth of beetles}
 \format{
 \describe{
   \item{days}{Number of days.}

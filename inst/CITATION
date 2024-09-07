@@ -18,11 +18,11 @@ bibentry(bibtype = "Manual",
   title        = "{datana: Datasets and Functions to Accompany Analisis De Datos Con R}",
   author       = "Salas-Eljatib, C.",
   year         = "2024",
-  note    = "R package version 1.0.4",
+  note    = "R package version 1.0.5",
   url      = "https://CRAN.R-project.org/package=datana",
 
   textVersion  =
   paste("Salas-Eljatib, C. 2024.",
         "datana: Datasets and Functions to Accompany Análisis de Datos con R.",
-        "R package version 1.0.4","https://CRAN.R-project.org/package=datana")
+        "R package version 1.0.5","https://CRAN.R-project.org/package=datana")
 )

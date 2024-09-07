@@ -5,11 +5,11 @@
 \alias{election}
 \title{Presidential election data of Florida (USA) in 2000.}
 \format{
-Contains 3 variables, as follows:
+Contains three variables, as follows:
 \describe{
   \item{gore}{Vote for Gore.}
   \item{bush}{Vote for Bush.}
-\item{buchaman}{Vote for Buchaman.}
+\item{buchanan}{Vote for Pat Buchanan.}
  }
 }
 \source{

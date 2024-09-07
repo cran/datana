@@ -8,15 +8,15 @@
 Variables se describen a continuacion::
 \describe{
 \item{live.bah}{Area basal viva del conjunto de datos GNN}											
-\item{live.tph}{Arboles vivos por hectarea del conjunto de datos GNN}
+\item{live.tph}{Árboles vivos por hectarea del conjunto de datos GNN}
 \item{pos.x}{posicion x del orden de clasificacion de la celda de la cuadricula (la posicion 1 es la mas occidental)}
 \item{pos.y}{posicion y del orden de clasificacion de la celda de la cuadricula (la posicion 1 es la mas al norte)}
 \item{alb.x}{coordenada x del centroide de la celda de la cuadricula en California Albers (EPSG 3310)}
 \item{alb.y}{coordenada y del centroide de la celda de la cuadricula en California Albers (EPSG 3310)}
 \item{mort.bin}{1 = árboles muertos observados en la celda de la cuadricula. 0 = no se observaron árboles muertos}
-\item{mort.tph}{Arboles muertos por hectarea del conjunto de datos ADS agregado}
-\item{mort.tpa}{Arboles muertos por acre del conjunto de datos ADS agregado}
-\item{year}{año del vuelo de ADS. La mayoria de los vuelos se realizaron entre mayo y agosto}
+\item{mort.tph}{Árboles muertos por hectarea del conjunto de datos ADS agregado}
+\item{mort.tpa}{Árboles muertos por acre del conjunto de datos ADS agregado}
+\item{year}{año del vuelo de ADS. La mayoría de los vuelos se realizaron entre mayo y agosto}
 \item{Defnorm}{Deficit hidrico climatico anual medio para la celda de la cuadricula, para el año hidrico del 1 de octubre al 31 de septiembre, promediado de 1981 a 2015}
 \item{Def0}{Deficit de agua climatica para la celda de la cuadricula durante el año hidrologico de octubre a septiembre que se superpone al vuelo ADS de verano del año dado}
 \item{Defz0}{Puntaje Z para el deficit hidrico climatico para la celda de cuadricula / año hidrico dado. Calculado como (Def0-Defnorm) / (desviacion estandar en el deficit entre todos los años 1981-2015 para la celda de la cuadricula dada}
@@ -39,7 +39,7 @@ El marco de datos cubre todas las celdas de la cuadricula dentro del estado de C
 tomo al menos un vuelo de la Encuesta de deteccion aerea (ADS) entre 2009 y 2015, por lo que cada posicion
 de celda de la cuadricula tiene entre 1 y 7 años de datos (reflejados como 1 a 7 filas en el archivo de datos
 por posicion de celda de cuadricula). Las principales variables de respuesta son mort.bin (presencia de alguna mortalidad)
- y mort.tph (numero de árboles muertos /ha dentro de la celda de la cuadricula por año).
+ y mort.tph (número de árboles muertos /ha dentro de la celda de la cuadricula por año).
 }
 \examples{
 data(deadForestCA2)    

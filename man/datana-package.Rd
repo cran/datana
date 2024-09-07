@@ -8,7 +8,7 @@
 \description{
 The datana package provides the datasets and functions that accompany the book "Análisis de datos con el programa estadístico R: una introducción aplicada" by Salas-Eljatib (2021, ISBN: 9789566086109). You can visit the book's website at \url{https://eljatib.com/rlibro}.
 
-Notice that every dataframe has a similar one but using column names in Spanish. For instance, the dataframe 'pinaster' has column names in English, but 'pinaster2' has column names in Spanish. Both dataframes have the same data.
+Notice that every dataframe has a counterpart but has column names in Spanish. For instance, the dataframe 'crown' has column names in English, but 'crown2' has column names in Spanish. Both data frames have the same data.
 %\packageDescription{datana}
 }
 
@@ -41,13 +41,12 @@ Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una in
 \keyword{ package }
 \examples{%#simple examples of the most important functions
 ##scatter-plot and marginal histograms
-library(datana)
 data(treevolroble)
 df <- treevolroble
-xyHist(x=df$dbh,y=df$htot, xlab="Variable X",  ylab="Variable Y")
+xyhist(x=df$dbh,y=df$toth, xlab="Variable X",  ylab="Variable Y")
 
 ##scatter-plot and box-plots 
 data(fishgrowth)
 df <- fishgrowth
-xyBoxplot(x=df$length,y=df$scale)
+xyboxplot(x=df$length,y=df$scale)
 }

@@ -1,4 +1,4 @@
-#' 2021 primary election for the president of Chile.  
+#' 2021 primary election for the president of Chile  
 #' @description
 #' Voter table-level data of the 2021 primary election for the president of Chile. 
 #' @usage
@@ -31,7 +31,7 @@
 #' data(primary)    
 #' head(primary) 
 'primary'
-#' Eleccion primaria para la presidencia de Chile.  
+#' Elección primaria para la presidencia de Chile  
 #' @description
 #' Datos a nivel de mesa para la votacion primaria de presidente de Chile. 
 #' @usage
@@ -53,7 +53,7 @@
 #'   \item{pacto}{Pacto politico del candidato.}
 #'   \item{partido}{Partido politica del candidato.}
 #'   \item{candidato}{Nombre del candidato.}
-#'   \item{votos}{Numero total de votos.}       
+#'   \item{votos}{Número total de votos.}       
 #'  }
 #' @source 
 #' The data were obtained from the electoral service of the Chilean Government (SERVEL) at
@@ -64,7 +64,7 @@
 #' data(primary2)    
 #' head(primary2) 
 'primary2'
-#' Population density growth of beetles.
+#' Population density growth of beetles
 #'
 #' @description
 #' Temporal measurements of density of beetles (Tribolium confusum) growing in different controlled environments.
@@ -100,7 +100,7 @@
 #' legend("topleft", legend = name.diet, title = "Diet (gr)",
 #'        col = 1:6, lty = 1:6, pch = 1)
 "beetles"
-#' Crecimiento poblacional de escarabajos.
+#' Crecimiento poblacional de escarabajos
 #'
 #' @description
 #' Mediciones temporales de densidad de escarabajos (Tribolium confusum) creciendo en 
@@ -108,10 +108,10 @@
 #' 
 #' @format 
 #' \describe{
-#'   \item{dias}{Numero de dias.}
+#'   \item{dias}{Número de dias.}
 #'   \item{dieta}{La cantidad de harina (en gramos) de ambientes donde crecen los escarabajos.  Seis niveles del factor Dieta.}
 #'   \item{tipo}{Estados de desarrollo de los escarabajos, i.e., huevos, larvas, pupas, y adultos.}
-#'   \item{densidad}{Numero total de individuos por ambiente de crecimiento.}
+#'   \item{densidad}{Número total de individuos por ambiente de crecimiento.}
 #'  }
 #' @source  
 #' Datos del Cuadro No. 1, page 116, de Chapman (1928). Serie de experimentos bajo condiciones controladas
@@ -137,7 +137,7 @@
 #' legend("topleft", legend = nom.dieta, title = "Dieta (gr)",
 #'        col = 1:6, lty = 1:6, pch = 1)
 "beetles2"
-#' Soil treatment experiment in tree seedlings.  
+#' Soil treatment experiment in tree seedlings  
 #' @description
 #' A test was made of the effect of three soil treatments on the height 
 #'  growth of 2-year-old seedlings. Treatments were assigned at random 
@@ -193,7 +193,7 @@
 #' tapply(soiltreat2$alt.inc,soiltreat2$tmo,summary)
 #' tapply(soiltreat2$alt.inc,soiltreat2$tmo,sd)
 'soiltreat2'
-#' Tree-level cork biomass data for Oak trees in Portugal.
+#' Tree-level cork biomass data for Oak trees in Portugal
 #'
 #' @description
 #' Measurements of cork weight in sample trees of Quercus suber (Oak) in Portugal.
@@ -222,7 +222,7 @@
 #' data(corkoak)    
 #' head(corkoak) 
 "corkoak"
-#' Datos de biomasa de corcho en árboles de Encino en Portugal.
+#' Datos de biomasa de corcho en árboles de Encino en Portugal
 #'
 #' @description
 #' Mediciones de peso de corcho en árboles muestra de Quercus suber en Portugal.
@@ -266,7 +266,7 @@
 #' \item{species}{species common name as follows: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
 #' Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
 #' \item{dbh}{Diameter at breast-height, in cm}
-#' \item{htot}{Total height, in m. Only measured for some sample trees.}
+#' \item{toth}{Total height, in m. Only measured for some sample trees.}
 #'  }
 #' @source 
 #'  The data are provided courtesy of Prof. Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile). 
@@ -289,14 +289,14 @@
 #'  fueron establecidas en un bosque secundario dominando por Nothofagus obliqua en las cercanias de Temuco.
 #' @usage
 #' data(treelistinve2)
-#' @format Contiene variables a nivel de arbol dentro de parcelas.
+#' @format Contiene variables a nivel de árbol dentro de parcelas.
 #' \describe{
-#'   \item{parce}{Numero de la parcela de muestreo.}
+#'   \item{parce}{Número de la parcela de muestreo.}
 #'   \item{sup.parce}{Superficie de la parcela, en m\eqn{^{2}}{^2}.}
-#'   \item{arbol}{Numero identificador del arbol.}
-#' \item{espe}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
-#' Lingue= Persea lingues, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
-#' \item{dap}{Diámetro a la altura del pecho, en cm}
+#'   \item{arbol}{Número identificador del árbol.}
+#' \item{spp}{Nombre comun de especies como sigue: Olivillo= Aextocicon puncatatum, Tepa= Laureliopsis philippiana, 
+#' Lingue= Persea lingue, Coigue=Nothofagus dombeyi, Roble=Nothofagus obliqua, Other=Other}
+#' \item{dap}{Diámetro a la altura del pecho, en cm.}
 #' \item{atot}{Altura total, en m. Solo medida en algunas árboles muestra.}
 #'  }
 #' @source 
@@ -311,12 +311,12 @@
 #' data(treelistinve2)    
 #' unique(treelistinve2$parce) 
 #' table(treelistinve2$parce,treelistinve2$sup.parce)
-#' tapply(treelistinve2$dap,treelistinve2$espe,summary)
+#' tapply(treelistinve2$dap,treelistinve2$spp,summary)
 'treelistinve2'
 #' Data from a Eucalyptus globulus plantation near Gorbea, Region de La Araucania, Chile.  
 #' @description
 #' Tree-level data collected within a sample plot in a forestry plantation of Eucalyptus globulus near Gorbea, 
-#' Southern Chile. The plot size is 500 square meters. The plantation is 15 yr-old and
+#' Southern Chile. The plot size is 500 m\eqn{^{2}}{^2}. The plantation is 15 yr-old and
 #' had been subject to three thinnings. 
 #' @usage
 #' data(eucaplot)
@@ -334,23 +334,23 @@
 #' data(eucaplot)    
 #' head(eucaplot) 
 'eucaplot'
-#' Arboles dentro de parcelas de muestreo en una plantacion de Eucalyptus globulus, Chile.  
+#' Árboles dentro de parcelas de muestreo en una plantación de Eucalyptus globulus, Chile.  
 #' @description
-#' Tree-level data collected within a sample plot in a forestry plantation of Eucalyptus globulus near Gorbea, 
-#' Southern Chile. The plot size is 500 square meters. The plantation is 15 yr-old and
-#' had been subject to three thinnings. 
+#' Datos a nivel de árbol colectados dentro de una parcela de muestreo en una plantación
+#'   forestal de Eucalyptus globulus cerca de Gorbea, Sur de Chile. La superficie de la parcela es de 500 m\eqn{^{2}}{^2}.
+#'   La plantación tiene 15 años de edad y ha estado sujeta a tres raleos. 
 #' @usage
 #' data(eucaplot2)
-#' @format The dataframe contains four variables as follows:
+#' @format Los datos contienen las siguientes cuatro columnas:
 #' \describe{
-#'   \item{dbh}{Diameter at breast height, in cm.}
-#'   \item{health}{health status (1: good, 2: medium, 3: bad).}
-#'   \item{shape}{stem shape for timber purposes (1: good, 2: medium, 3: bad).}
-#'   \item{crown.class}{Crown class (1: superior, 2: intermedium, 3: lower).}
-#'   \item{toth}{Total height, in m.}
+#'   \item{dap}{Diámetro a la altura del pecho, en cm.}
+#'   \item{sanidad}{Evaluación cualitativa de la sanidad del árbol (1: buena, 2: media, 3: mala).}
+#'   \item{forma}{Evaluación cualtitativa de la forma del fuste (1: buena, 2: media, 3: mala).}
+#'   \item{clase.copa}{Clase de copa (1: superior, 2: intermedio, 3: inferior).}
+#'   \item{atot}{Altura total, en m.}
 #'  }
 #' @source 
-#' The data were provided courtesy of Dr Christian Salas (Universidad de Chile, Santiago, Chile).  
+#' Los datos fueron cedidos por el Prof. Christian Salas (Universidad de Chile, Santiago, Chile).  
 #' @examples
 #' data(eucaplot2)    
 #' head(eucaplot2) 
@@ -394,7 +394,7 @@
 #' data(presidentChile2)
 #' @format Los datos contienen las siguientes columnas:
 #' \describe{
-#'   \item{region.no}{Numero de la region adminsitrativa de Chile.}
+#'   \item{region.no}{Número de la region adminsitrativa de Chile.}
 #'   \item{region}{Nombre de la region administrativa de Chile}
 #'   \item{provincia}{Provincia.}
 #'   \item{circu.senatorial}{Circunscripcion senatorial.}
@@ -402,13 +402,13 @@
 #'   \item{comuna}{County.}
 #'   \item{circu.elec}{Circunscripcion electoral.}
 #'   \item{local}{Local de votacion. Generalmente es un colegio.}
-#'   \item{no.mesa}{Numero de mesa.}
+#'   \item{no.mesa}{Número de mesa.}
 #'   \item{tipo.mesa}{Tipo de mesa de votacion.}
 #'   \item{mesas.fusionadas}{Mesa de votacion fucionada.}
 #'   \item{electores}{Electores.}
 #'   \item{nro.en.voto}{.}
 #'   \item{candidato}{Candidato, ya sea Gabriel Boric o Jose A. Kast}
-#'   \item{votos.tricel}{Numero total de votos segun el TRICEL (Tribunal calificador de elecciones).}       
+#'   \item{votos.tricel}{Número total de votos segun el TRICEL (Tribunal calificador de elecciones).}       
 #'  }
 #' @source 
 #' Los datos fueron obtenidos desde el sitio web del Servicio Electoral del Gobierno de Chilean (SERVEL) en
@@ -458,7 +458,7 @@
 #'   \item{tree.code}{Tree number identification. The first letter of the ID represents
 #'   a cohort. Six cohorts representing a chronosequence were sampled.}
 #'   \item{dbh}{Initial stem diameter, in cm.}
-#'   \item{htot}{Total height, in m.}
+#'   \item{toth}{Total height, in m.}
 #'   \item{crown.area}{Crown outline area, in square meters.}
 #'   \item{comp.ind}{Competition index (Basal area of nearest neighbor divided by square of distance to nearest neighbor plus
 #'          basal area of second nearest neighbor divided by square of distance to second nearest neighbor).}
@@ -478,18 +478,18 @@
 'hawaii'
 #' Incremento corriente anual en diámetro de una especie tropical en Hawaii
 #' @description
-#' Tamaño del arbol, competencia, e incremento corriente anual de árboles de Metrosideros polymorpha 
+#' Tamaño del árbol, competencia, e incremento corriente anual de árboles de Metrosideros polymorpha 
 #' colectado en el volcan Kilauea, en Hawaii. Los datos contienen 64 observaciones de incremento corriente anual 
-#' (definido como el incremento en diámetro en un año calendario) de cada arbol. Estos incrementos
+#' (definido como el incremento en diámetro en un año calendario) de cada árbol. Estos incrementos
 #'  fueron medidos desde el año 1986 a 1988 usando bandas dendrometricas.
 #' @usage
 #' data(hawaii)
 #' @format Estos datos contienen las siguientes columnas:
 #' \describe{
-#'   \item{arb.id}{Codigo identificador del arbol. La primera letra del ID representa
+#'   \item{arb.id}{Codigo identificador del árbol. La primera letra del ID representa
 #'   un cohorte. Hay seis cohortes que representan una cronosecuencia.}
 #'   \item{dap}{Diámetro a la altura del pecho, en cm.}
-#'   \item{htot}{Altura total, en m.}
+#'   \item{atot}{Altura total, en m.}
 #'   \item{area.copa}{Area de copa, en metros cuadrados.}
 #'   \item{ind.comp}{Competition index (Basal area of nearest neighbor divided by square of distance to nearest neighbor plus
 #'          basal area of second nearest neighbor divided by square of distance to second nearest neighbor).}
@@ -510,7 +510,7 @@
 #' Sampling plots data from a Pinus radiata plantation near Capitan Pastene, Region de La Araucania, Chile.  
 #' @description
 #' Tree-level information collected within sample plots in a forestry plantation of Pinus radiata near Capitan Pastene, 
-#' Southern Chile. Sample plots size is 150 square meters.
+#' Southern Chile. Sample plots size is 150 150 m\eqn{^{2}}{^2}.
 #' @usage
 #' data(radiatapl)
 #' @format The data frame contains four variables as follows:
@@ -526,6 +526,25 @@
 #' data(radiatapl)    
 #' head(radiatapl) 
 'radiatapl'
+#' Datos a nivel de árbol de parcelas de muestreo en plantaciones de Pinus radiata  
+#' @description
+#' Es un listado de árboles con características medidas dentro de unidades de muestreo en una plantacion de Pinus radiata cercana a Capitan Pastene, 
+#' Region de la Araucania, Chile. Las parcelas de muestreo tienen 150 m\eqn{^{2}}{^2}.
+#' @usage
+#' data(radiatapl2)
+#' @format Los datos contienen las siguientes columnas
+#' \describe{
+#'   \item{parce}{Número de identificación de la parcela de muestreo.}
+#'   \item{arbol}{Número de identificación del árbol dentro de la parcela.}
+#'   \item{dap}{Diámetro a los 1.3 m en el fuste, en cm.}
+#'   \item{atot}{Altura total, en m. Solo registrada para algunos árboles muestra.}
+#'  }
+#' @source 
+#' Los datos son cortesia del Ing. Forestal Mauricio Lobos-Beneventi (Temuco, Chile).  
+#' @examples
+#' data(radiatapl2)    
+#' head(radiatapl2) 
+'radiatapl2'
 #' Time series of annual precipitations in cities of Chile.  
 #' @description
 #' Data contains annual precipitations in six cities in Chile (Santiago, Talca, Chillan, Temuco, Valdivia, and Puerto Montt) at different years.  
@@ -560,12 +579,12 @@
 #' data(annualppCities2)    
 #' head(annualppCities2) 
 'annualppCities2'
-#' Diameter and height growth of Grand-fir sample trees.  
+#' Diameter and height growth of Grand-fir (Abies grandis) sample trees  
 #' @description
 #' Diameter and height growth of 66 Grand-fir trees. Data derived from stem analysis sample
 #' trees collected by Dr Albert Stage (US Forest Service, Moscow, ID, USA.)
 #' @usage
-#' data(treegrowth)
+#' data(treegr)
 #' @format Contains seven column, as follows:
 #' \describe{
 #'   \item{tree.id}{Tree number identificator. An unique number to each sample tree.}
@@ -574,7 +593,7 @@
 #'   \item{tree.code}{A composite tree code representing the following columns: tree.id-forest-habitat}
 #'   \item{age}{Age, in yr}
 #'   \item{dbh}{Diameter at breast-height, in cm.}
-#'   \item{htot}{Total height, in m.}
+#'   \item{toth}{Total height, in m.}
 #'  }
 #' @source 
 #' Originally, the data were provided by Dr Albert Stage (R.I.P) to Professor Andrew Robinson (University
@@ -584,76 +603,86 @@
 #' Stage, A. R., 1963. A mathematical approach to polymorphic site index curves for 
 #'  Grand fir. Forest Science 9 (2), 167–180.
 #' @examples
-#' data(treegrowth)    
-#' head(treegrowth) 
-'treegrowth'
-#' Crecimiento en diámetro y altura de árboles muestras de Grand-fir.  
+#' data(treegr)    
+#' head(treegr) 
+'treegr'
+#' Crecimiento en diámetro y altura de árboles muestras de Grand-fir (Abies grandis) 
 #' @description
 #' Crecimiento en diámetro y altura de 66 árboles de Grand-fir. Los datos fueron derivados a partir
 #'  de árboles muestras de analisis fustal colectados por el Dr Albert Stage (US Forest Service, Moscow, ID, USA.)
 #' @usage
-#' data(treegrowth)
+#' data(treegr2)
 #' @format Contiene las siguientes siete columnas:
 #' \describe{
-#'   \item{num.arb}{Numero identificador del arbol. Unico para cada arbol muestra.}
+#'   \item{num.arb}{Número identificador del árbol. Unico para cada árbol muestra.}
 #'   \item{bosque}{Tipo forestal.}
-#'   \item{habitat}{Clasificacion de tipo de habitat.}
-#'   \item{cod.arb}{Un codigo que combina a las siguientes columnas: num.arb-bosque-habitat}
+#'   \item{habitat}{Clasificación de tipo de habitat.}
+#'   \item{cod.arb}{Un código que combina a las siguientes columnas: num.arb-bosque-habitat}
 #'   \item{edad}{Edad, en años.}
 #'   \item{dap}{Diámetro a la altura del pecho, en cm. Note que los decimales es debido a 
 #'     que esta variable originalmente fue medida en pulgadas.}
-#'   \item{htot}{Altura total, in m. Note que los decimales es debido a que esta variable
+#'   \item{atot}{Altura total, in m. Note que los decimales es debido a que esta variable
 #'    fue originalmente medida en pies.}
 #'  }
 #' @source 
 #' Originalmente los datos fueron cedidos por el Dr Albert Stage (Q.E.P.D) al Profesor Andrew Robinson (University
-#'  of Idaho, USA), quien los usaba para explicar el ajuste de modelos estadisticos. El Dr Christian Salas-Eljatib
-#'  fue un estudiante de postgrado en estadistica del Prof. Robinson en la Univ. of Idaho.  
+#'  of Idaho, USA), quien los usaba para explicar el ajuste de modelos estadísticos. El Dr Christian Salas-Eljatib
+#'  fue un estudiante de postgrado en estadística del Prof. Robinson en la Univ. of Idaho.  
 #' @references
-#' Stage, A. R., 1963. A mathematical approach to polymorphic site index curves for 
-#'  Grand fir. Forest Science 9 (2), 167–180.
+#' Stage AR. 1963. A mathematical approach to polymorphic site index curves for 
+#'  Grand fir. Forest Science 9(2):167–180.
 #' @examples
-#' data(treegrowth2)    
-#' head(treegrowth2) 
-'treegrowth2'
+#' data(treegr2)    
+#' head(treegr2) 
+'treegr2'
 #' Fertilization experiment data.  
 #' @description
 #' Data contains volume data at plot-level for a fertilization
 #' experiment.  
 #' @usage
-#' data(fertilizaexpe)
+#' data(fertiliza)
 #' @format Contains three variables, as follows:
 #' \describe{
 #'   \item{treat}{Treatment level.}
-#'   \item{volume}{Plot-level volume, in m\eqn{^{3}}{^3}/plot.}
+#'   \item{volume}{Plot-level volume, in m\eqn{^{3}}{^3}.}
 #'  }
 #' @source 
 #' The data were provided by Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).  
 #' @references
 #' not yet 
 #' @examples
-#' data(fertilizaexpe)    
-#' head(fertilizaexpe) 
-'fertilizaexpe'
-#' Datos a nivel de parcela de un experimento de fertilizacion.  
+#' data(fertiliza)    
+#' head(fertiliza) 
+#' levels(fertiliza$treat)
+#' means.g <- tapply(fertiliza$volume,fertiliza$treat,mean);means.g
+#' sds.g <- tapply(fertiliza$volume,fertiliza$treat,sd);sds.g
+#' ns.g <- tapply(fertiliza$volume,fertiliza$treat,length);ns.g
+#' 
+'fertiliza'
+#' Datos a nivel de parcela de un experimento de fertilización  
 #' @description
-#' Data contains volume data at plot-level for a fertilization
-#' experiment.  
+#' Datos a nivel de parcela de un experimento de fertilización con tratamientos
+#' y replicas.  
 #' @usage
-#' data(fertilizaexpe2)
-#' @format Contains three variables, as follows:
+#' data(fertiliza2)
+#' @format Contiene tres columnas como sigue:
 #' \describe{
-#'   \item{treat}{Treatment level.}
-#'   \item{volume}{Plot-level volume, in m\eqn{^{3}}{^3}/plot.}
+#'   \item{tmo}{Tratamiento.Factor medido en diferentes niveles.}
+#'   \item{vol}{Volumen de madera en la parcela experimental, en m\eqn{^{3}}{^3}.}
 #'  }
 #' @source 
-#' The data were provided by Dr Christian Salas.  
+#' Datos cedidos por el Prof. Christian Salas.  
 #' @references
 #' not yet 
 #' @examples
-#' data(fertilizaexpe2)    
-#' head(fertilizaexpe2) 
-'fertilizaexpe2'
+#' data(fertiliza2)    
+#' head(fertiliza2) 
+#' levels(fertiliza$tmo)
+#' media.g <- tapply(fertiliza2$vol,fertiliza2$tmo,mean);media.g
+#' desvst.g <- tapply(fertiliza2$vol,fertiliza2$tmo,sd);desvst.g
+#' n.g <- tapply(fertiliza2$vol,fertiliza2$tmo,length);n.g
+#' 
+'fertiliza2'
 #' Data on fish growth.  
 #' @description
 #' Data on samples of small mouth bass collected in West Bearskin Lake, Minnesota, in 1991. The
@@ -711,7 +740,7 @@
 #' \item{stem.id}{Stem identificator number in each plot.}
 #' \item{spp}{Specie.}
 #' \item{dbh}{Diameter at breast-height, in cm.}
-#' \item{h}{Height, in m.}
+#' \item{toth}{Total height, in m.}
 #' \item{hcb}{Height to crown base, in m.}
 #' \item{crown.lenght}{Crown lenght, in m.}
 #' }
@@ -729,20 +758,20 @@
 #' length(unique(pinusSpp$plot.id)) 
 #' boxplot(dbh~plot.id, data=pinusSpp) 
 'pinusSpp'
-#' Variables a nivel de arbol en parcelas de muestreo de Pinus spp en Chile.  
+#' Variables a nivel de árbol en parcelas de muestreo de Pinus spp en Chile.  
 #' @description
-#' Mediciones a nivel de arbol para estudiar la invasion de Pinus spp en bosques de Araucaria-Nothofagus en 
+#' Mediciones a nivel de árbol para estudiar la invasion de Pinus spp en bosques de Araucaria-Nothofagus en 
 #' la Reserva Nacional Malalcahuello en la region de la Araucania en el sur de Chile. 
 #' Hay 26 parcelas, y la superficie de cada una es de 100 m\eqn{^{2}}{^2}.
 #' @usage
 #' data(pinusSpp2)
 #' @format Los datos contienen ocho columnas que se detallan a continuacion:
 #' \describe{
-#' \item{parcela}{Numero de la parcela.}
+#' \item{parcela}{Número de la parcela.}
 #' \item{sup.parcela}{Superficie de la parcela, en m\eqn{^{2}}{^2}.}
 #' \item{lat.s}{Decimal coordinate of S latitude.}
 #' \item{long.w}{Decimal coordinate of W longitude.}
-#' \item{indv.id}{Identificador del arbol en la parcelaeach plot. Same indv/id for multi-stem trees.}
+#' \item{indv.id}{Identificador del árbol en la parcelaeach plot. Same indv/id for multi-stem trees.}
 #' \item{fuste.id}{Identificador del fuste.}
 #' \item{espe}{Especie.}
 #' \item{dap}{Diámetro a la altura del pecho, en cm.}
@@ -795,9 +824,9 @@
 #' head(pinusContorta)
 #' unique(pinusContorta$plot.id) 
 'pinusContorta'
-#' Ubicacion espacial de árboles de Pinus contorta en parcelas de muestreo.  
+#' Ubicación espacial de árboles de Pinus contorta en parcela de muestreo  
 #' @description
-#' Mediciones a nivel de árbol, con la ubicacion cartesian de cada arbol de Pinus contorta, en parcelas
+#' Mediciones a nivel de árbol, con la ubicación cartesian de cada árbol de Pinus contorta, en parcelas
 #' de muestreo para estudio de invasion en la estepa Patagonica en Coyhaique en el sur de Chile. Hay tres parcelas, cada
 #'  una de 10.000 m\eqn{^{2}}{^2}.   
 #' @usage
@@ -805,7 +834,7 @@
 #' @format Contiene ocho variables, como siguen:
 #' \describe{
 #'   \item{parcela}{Parcela.}
-#'   \item{arbol}{Numero de arbol en cada parcela. Mismo arbol/id para árboles multifustales.}
+#'   \item{arbol}{Número de árbol en cada parcela. Mismo árbol/id para árboles multifustales.}
 #' \item{coord.y}{coordinada de latitud W.}
 #' \item{coord.x}{coordinada de longitud W.}
 #' \item{substrato}{Cobertura del suelo donde cada pino crece. Bare soil, Festuca pallescens, Baccharis magellanica, 
@@ -863,7 +892,7 @@
 #' \item{day}{Dia del mes (1--31).}
 #'  }
 #' @source 
-#' Los datos fueron obtenidos desde la libreria datasets.  
+#' Los datos fueron obtenidos desde la librería 'datasets'.  
 #' @references
 #' Chambers J, Cleveland W, Kleiner B, Tukey P. 1983. Graphical Methods for Data Analysis. Belmont. CA: Wadsworth.
 #' @examples
@@ -875,11 +904,11 @@
 #' County-by-county vote for president in Florida in 2000 for Bush, Gore and Buchanan.  
 #' @usage
 #' data(election)
-#' @format Contains 3 variables, as follows:
+#' @format Contains three variables, as follows:
 #' \describe{
 #'   \item{gore}{Vote for Gore.}
 #'   \item{bush}{Vote for Bush.}
-#' \item{buchaman}{Vote for Buchaman.}
+#' \item{buchanan}{Vote for Pat Buchanan.}
 #'  }
 #' @source 
 #' The data were obtained from the 'alr4' library.  
@@ -889,16 +918,16 @@
 #' data(election)    
 #' head(election) 
 'election'
-#' Eleccion presidential en el estado de Florida (USA) en el 2000.  
+#' Elección presidencial en el estado de Florida (USA) en el 2000.  
 #' @description
-#' County-by-county vote for president in Florida in 2000 for Bush, Gore and Buchanan.  
+#' Conteo de votos a nivel de condado en el estado de Florida, año 2000.  
 #' @usage
 #' data(election2)
-#' @format Contains 3 variables, as follows:
+#' @format Contiene las siguientes tres columnas:
 #' \describe{
-#'   \item{gore}{Votos para Gore.}
-#'   \item{bush}{Votos para Bush.}
-#' \item{buchaman}{Votos para Buchaman.}
+#'   \item{gore}{Votos para Gore. Número de votos para Al Gore.}
+#'   \item{bush}{Votos para Bush. Número de votos para George W. Bush.}
+#' \item{buchanan}{Votos para Buchaman. Número de votos para Pat Buchanan.}
 #'  }
 #' @source 
 #' Los datos se obtuvieron desde el paquete 'alr4' de R.  
@@ -908,7 +937,7 @@
 #' data(election2)    
 #' head(election2) 
 'election2'
-#' Tree height-diameter data from Idaho (USA).  
+#' Tree height-diameter data from Idaho (USA)  
 #' @description
 #' These data are forest inventory measures from the Upper Flat Creek stand of the University 
 #' of Idaho Experimental Forest, dated 1991.   
@@ -916,44 +945,45 @@
 #' data(idahohd)
 #' @format Contains five variables, as follows:
 #' \describe{
-#'   \item{plot}{plot number.}
-#'   \item{tree}{tree within plot.}
-#' \item{species}{a factor with levels DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
+#'   \item{plot}{Plot number.}
+#'   \item{tree}{Tree within plot.}
+#' \item{species}{A factor with levels DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
 #'                 WC = Western red cedar, WP = White pine.}
-#' \item{dbh}{Diameter 137 cm perpendicular to the bole, mm.}
-#' \item{height}{Height of the tree, in decimeters.}
+#' \item{dbh}{Diameter 137 cm perpendicular to the bole, cm.}
+#' \item{toth}{Height of the tree, in m.}
 #'  }
 #' @source 
-#' The data were obtained from the alr4 library.  
+#' The data were assembled from the 'ufc' dataframe from the 'alr4' library.  
 #' @references
 #' Weisberg S. 2014. Applied Linear Regression. 4th edition. New York: Wiley.
 #' @examples
 #' data(idahohd)    
 #' head(idahohd) 
+#' plot(toth~dbh, data=idahohd)
 'idahohd'
-#' Altura-diámetro de árboles en el estado de Idaho (USA).  
+#' Altura-diámetro de árboles en el estado de Idaho (USA)  
 #' @description
-#' Estos datos provienen de un muestreo en un bosque de
-#' Upper Flat Creek en el bosque experimental de la 
-#' University of Idaho, medido en 1991.   
+#' Estos datos provienen de un muestreo en el bosque experimental de la 
+#'  University of Idaho, en Upper Flat Creek, Idaho, USA. Medido en 1991.   
 #' @usage
 #' data(idahohd2)
-#' @format Contiene cinco variables, como sigue:
+#' @format Contiene cinco variables detalladas a continuación:
 #' \describe{
-#'   \item{parce}{numero de la parcela de muestreo.}
-#'   \item{narb}{numero del arbol dentro de la parcela.}
-#' \item{spp}{especie del arbol, una variable factor  con niveles DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
+#'   \item{parce}{Número de la parcela de muestreo.}
+#'   \item{arbol}{Número del árbol dentro de la parcela.}
+#' \item{spp}{Especie del árbol, una variable factor  con niveles DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
 #'                 WC = Western red cedar, WP = White pine.}
-#' \item{d}{Diámetro del tronco a los 1.3m sobre el suelo, en cm.}
-#' \item{h}{Altura del arbol, en m.}
+#' \item{dap}{Diámetro del fuste a los 1.3 m sobre el suelo, en cm.}
+#' \item{atot}{Altura del árbol, en m.}
 #'  }
 #' @source 
-#' Los datos fueron obtenidos desde la libreria alr4.  
+#' Los datos fueron obtenidos desde la dataframe 'ufc' de la librería 'alr4'.  
 #' @references
 #' Weisberg S. 2014. Applied Linear Regression. 4th edition. New York: Wiley.
 #' @examples
 #' data(idahohd2)    
-#' head(idahohd2) 
+#' head(idahohd2)
+#' plot(atot~dap, data=idahohd2)
 'idahohd2'
 #' Chicken growth data.  
 #' @description
@@ -963,12 +993,12 @@
 #' data(chicksw)
 #' @format Contains four variables, as follows:
 #' \describe{
-#'   \item{weight}{a numeric vector giving the body weight of the chick (gm).}
-#'   \item{time}{a numeric vector giving the number of days since birth when the measurement was made.}
-#' \item{chick}{an ordered factor with levels different giving a unique identifier for the chick. The ordering of the
+#'   \item{weight}{A numeric vector giving the body weight of the chick (gm).}
+#'   \item{time}{A numeric vector giving the number of days since birth when the measurement was made.}
+#' \item{chick}{An ordered factor with levels different giving a unique identifier for the chick. The ordering of the
 #'             levels groups chicks on the same diet together and orders them according to their final weight 
 #'             (lightest to heaviest) within diet.}
-#' \item{diet}{a factor with levels 1,2,3 and 4 indicating which experimental diet the chick received.}
+#' \item{diet}{A factor with levels 1,2,3 and 4 indicating which experimental diet the chick received.}
 #'  }
 #' @source 
 #' The data were obtained from the alr4 library.  
@@ -978,7 +1008,7 @@
 #' data(chicksw)    
 #' head(chicksw) 
 'chicksw'
-#' ludge data are at different cities, with a value of concentration zinc.  
+#' Sludge data are at different cities, with a value of concentration zinc.  
 #' @description
 #' Dataset contains 36 observations   
 #' @usage
@@ -1179,7 +1209,7 @@
 #' @references
 #' - Bannister JR, Vidal OJ, Teneb E, Sandoval V. 2012. Latitudinal patterns
 #'  and regionalization of plant diversity along a 4270‐km gradient in continental
-#'   Chile. Austral Ecology, 37(4), 500-509. 
+#'   Chile. Austral Ecology 37(4):500-509. 
 #' @examples
 #' data(floraChile)    
 #' head(floraChile) 
@@ -1204,7 +1234,7 @@
 #' @references
 #' - Bannister JR, Vidal OJ, Teneb E, Sandoval V. 2012. Latitudinal patterns
 #'  and regionalization of plant diversity along a 4270‐km gradient in continental
-#'   Chile. Austral Ecology, 37(4), 500-509. 
+#'   Chile. Austral Ecology 37(4):500-509. 
 #' @examples
 #' data(floraChile2)    
 #' head(floraChile2) 
@@ -1269,7 +1299,7 @@
 #' The data were obtained from the DRYAD repository.  
 #' @references
 #'  - Ameztegui A, Paquette A, Shipley B, Heym M, Messier C, Gravel D. 2016 . Shade tolerance and 
-#'  the functional trait: demography relationship in temperate and boreal forests. Functional Ecology, 
+#'  the functional trait: demography relationship in temperate and boreal forests. Functional Ecology
 #'  31: 821-830. 
 #' @examples
 #' data(demograph)    
@@ -1305,7 +1335,7 @@
 #' The data were provided from DRYAD repository  
 #' @references
 #'  - Ameztegui A, Paquette A, Shipley B, Heym M, Messier C, Gravel D. 2016 . Shade tolerance and 
-#'  the functional trait: demography relationship in temperate and boreal forests. Functional Ecology, 
+#'  the functional trait: demography relationship in temperate and boreal forests. Functional Ecology 
 #'  31: 821-830. 
 #' @examples
 #' data(sppTraits)    
@@ -1378,38 +1408,38 @@
 #' \item{si}{Site index of the stand.}
 #' \item{tree.no}{tree number.}
 #' \item{dbh}{Diameter at breast height, in cm.}
-#' \item{htot}{Total height, in m.}
+#' \item{toth}{Total height, in m.}
 #'  \item{d4}{Upper-stem diameter at 4 m, in cm.}
-#' \item{vol.wb}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
-#' \item{vol.wob}{Tree gross volume, in m\eqn{^{3}}{^3} without bark.}
+#' \item{volwb}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
+#' \item{volwob}{Tree gross volume, in m\eqn{^{3}}{^3} without bark.}
 #'  }
 #' @source 
 #' The data are provided courtesy of Dr Christian Salas-Eljatib at
 #' the Universidad de Chile (Santiago, Chile).  
 #' @references
 #'  - Salas C, Nieto L, Irisarri A. 2005. Modelos de volumen para Pinus pinaster Ait. en la comarca del Baixo Mino,
-#'   Galicia, Espana. Quebracho 12: 11-22. \url{https://eljatib.com/publication/2005-12-01_modelos_de_volumen_p/}
+#'   Galicia, España. Quebracho 12: 11-22. \url{https://eljatib.com/publication/2005-12-01_modelos_de_volumen_p/}
 #' @examples
 #' data(pinaster)    
 #' head(pinaster) 
 'pinaster'
-#' Datos de volumen individual de árboles de Pinus pinaster en Galicia, España. 
+#' Volumen individual de árboles de Pinus pinaster en Galicia, España. 
 #'
 #' @description
-#' Variables de volumen y otras a nivel de arbol para una muestra de árboles
+#' Variables de volumen y otras a nivel de árbol para una muestra de árboles
 #'  de Pinus pinaster en la comarca del Baixo-Mino en Galicia, España.
 #' @usage
 #' data(pinaster2)
-#' @format Contiene las siguientes variables a nivel de arbol:
+#' @format Contiene las siguientes variables a nivel de árbol:
 #' \describe{
-#'   \item{rodal}{Rodal desde donde el arbol fue muestreado}
+#'   \item{rodal}{Rodal desde donde el árbol fue muestreado}
 #' \item{ind.sitio}{Indice de sitio del rodal, en m.}
-#' \item{arbol}{Numero del arbol.}
-#' \item{dbh}{Diámetro a la altura del pecho, en cm.}
-#' \item{htot}{Altura total, en m.}
+#' \item{arbol}{Número del árbol.}
+#' \item{dap}{Diámetro a la altura del pecho, en cm.}
+#' \item{atot}{Altura total, en m.}
 #'  \item{d4}{Diámetro fustal a los 4 m, en cm.}
-#' \item{vt.cc}{Volumen bruto total con corteza, en m\eqn{^{3}}{^3}.}
-#' \item{vt.sc}{Volumen bruto total sin corteza, en m\eqn{^{3}}{^3}.}
+#' \item{vtcc}{Volumen bruto total con corteza, en m\eqn{^{3}}{^3}.}
+#' \item{vtsc}{Volumen bruto total sin corteza, en m\eqn{^{3}}{^3}.}
 #'  }
 #' @source 
 #' Los datos fueron cedidos por el Dr Christian Salas (Chile).  
@@ -1449,7 +1479,7 @@
 #' @examples
 #' data(simula)    
 'simula'
-#' Tree locations for a sample plot in the Llancahue experimental forest, near Valdivia, Chile. 
+#' Tree locations for a sample plot in the Llancahue experimental forest 
 #'
 #' @description
 #' The Cartesian position, species, and diameter of trees within a plot were measured. The sample plot is  rectangular of 130 m by 70 m. Further details can be #' reviewed in the reference. 
@@ -1458,7 +1488,7 @@
 #' @format Contains tree-level variables, as follows:
 #' \describe{
 #'   \item{tree.code}{Tree identificator}
-#' \item{spp.name}{species abreviation as follows: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+#' \item{spp}{species abreviation as follows: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
 #'  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
 #' \item{dbh}{diameter at breast height, in cm}
 #' \item{x.coord}{Cartesian position in the X-axis, in m}
@@ -1473,32 +1503,37 @@
 #' @examples
 #' data(pspLlancahue)    
 #' head(pspLlancahue) 
+#' descstat(pspLlancahue$dbh)
+#' boxplot(dbh~spp, data=pspLlancahue)
 'pspLlancahue'
-#' Ubicacion espacial de árboles en un parcela de muestreo en el bosque de Llancahue, cerca de Valdivia, Chile. 
+#' Ubicación cartesiana de árboles en el bosque de Llancahue 
 #'
 #' @description
-#' La posicion cartesiana, especie, y diámetro de árboles en una parcela de muestreo rectangular de 130 m por 70 m. Mayores
-#'  antecedentes aparecen en las referencias. 
+#' Corresponde a la posición cartesiana, especie, y diámetro de árboles en una parcela de muestreo
+#'  en el bosque de Llancahue, cerca de Valdivia, Chile. La parcela es rectangular con
+#'  dimensiones de 130 m por 70 m. Mayores antecedentes aparecen en las referencias. 
 #' @usage
 #' data(pspLlancahue2)
 #' @format Contains tree-level variables, as follows:
 #' \describe{
-#'  \item{arbol}{Identificador del árbol}
-#' \item{espe}{Codificación de la especie como sigue: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
-#'  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
-#' \item{dap}{Diámetro a la altura del pecho, en cm}
-#' \item{coord.x}{Posicion cartesiana en el eje-X, en m}
-#' \item{coord.y}{Posicion cartesiana en el eje-Y, en m}
+#'  \item{arb.id}{Identificador del árbol.}
+#' \item{spp}{Codificación de la especie como sigue: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+#'  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna.}
+#' \item{dap}{Diámetro a la altura del pecho, en cm.}
+#' \item{coord.x}{Posición cartesiana en el eje-X, en m.}
+#' \item{coord.y}{Posición cartesiana en el eje-Y, en m.}
 #'  }
 #' @source 
 #'  Los datos fueron cedidos por el Prof. Daniel Soto de Universidad
 #'  de Aysen (Coyhaique, Chile). 
 #' @references
 #' - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y espacial de un bosque mixto dominado por
-#' Nothofagus dombeyi despues de un disturbio parcial. Revista Chilena de Historia Natural 83(3): 335-347.
+#' Nothofagus dombeyi después de un disturbio parcial. Revista Chilena de Historia Natural 83(3): 335-347.
 #' @examples
 #' data(pspLlancahue2)    
 #' head(pspLlancahue2) 
+#' descstat(pspLlancahue2$dap)
+#' boxplot(dap~spp, data=pspLlancahue2)
 'pspLlancahue2'
 #' Leaf measurements for Eucalyptus nitens trees in Tasmania, Australia. 
 #'
@@ -1540,7 +1575,7 @@
 #' @format Contiene variables a nivel de hoja, como sigue:
 #' \describe{
 #'   \item{tiempo}{factor a dos niveles: Temprano o Tardio}
-#' \item{arbol}{un identificador del arbol muestra}
+#' \item{arbol}{un identificador del árbol muestra}
 #' \item{meristema}{descripcion del meristema}
 #' \item{largo}{largo de la hoja, en mm}
 #' \item{ancho}{ancho de la hoja, en mm}
@@ -1600,14 +1635,14 @@
 #' @format Contiene variables a nivel de hoja, como sigue:
 #' \describe{
 #'   \item{tiempo}{factor a dos niveles: Temprano o Tardio}
-#' \item{arbol}{un identificador del arbol muestra}
+#' \item{arbol}{un identificador del árbol muestra}
 #' \item{meristema}{descripcion del meristema}
 #' \item{largo}{largo de la hoja, en mm}
 #' \item{ancho}{ancho de la hoja, en mm}
 #' \item{area}{area foliar, en cm\eqn{^{2}}{^2}}
 #'  }
 #' @source 
-#' Aunque la fuente original de estas mediciones proviene de la tesis del Dr Candy (1999), 
+#' Aunque la fuente original de estas mediciones proviene de la tesis del Dr. Candy (1999), 
 #'  el archivo de datos fue cortesia del Prof. Timothy Gregoire de
 #'  Yale University (New Haven, CT, USA). 
 #' @references
@@ -1618,79 +1653,80 @@
 #' data(eucaleafAll2)    
 #' head(eucaleafAll2) 
 'eucaleafAll2'
-#' Age and physical measurement data for wild bears. Dataframe same as "bears" but without missing values.
+#' Age and physical measurement data for wild bears (without missing values)
 #'
 #' @description
-#' Wild bears were anaesthetised, and their bodies were measured and weighed. One goal of the study
+#' Wild bears were anesthetized, and their bodies were measured and weighed. One goal of the study
 #'  was to make a table (or perhaps a set of tables) for people interested in estimating the weight of a
 #'  bear based on other measurements. 
 #' @usage
 #' data(bearsDepu)
-#' @format Contiene variables de nivel individual, como se describen a continuacion:
+#' @format Individual-level variables, as follows:
 #' \describe{
-#'   \item{id}{Bear identificator}
-#' \item{age}{age in months}
-#' \item{month}{Diameter at breast height, in cm}
-#' \item{sex}{1 =male, 2 = female}
-#' \item{headL}{length of head, in cm}
-#' \item{headW}{width of head, in cm}
-#' \item{neckG}{girth of neck, in cm}
-#' \item{length}{body length, in cm}
-#' \item{chestG}{girth of chest, in cm}
-#' \item{weight}{body weight, in kg}
-#' \item{obs}{observation number for bear}
+#'   \item{id}{Bear identificator.}
+#' \item{age}{Age in total number of months.}
+#' \item{month}{Month number within a given year.}
+#' \item{sex}{Sex code: 1 =male, 2 = female.}
+#' \item{headL}{Length of head, in cm.}
+#' \item{headW}{Width of head, in cm.}
+#' \item{neckG}{Girth of neck, in cm.}
+#' \item{length}{Body length, in cm.}
+#' \item{chestG}{Girth of chest, in cm.}
+#' \item{weight}{Body weight, in kg.}
+#' \item{obs}{Temporal observation number for bear.}
 #' \item{name}{name given to bear}
 #'  }
 #' @source 
-#' Minitab, Inc. The data description is courtesy of Prof. Timothy Gregoire at
-#'  Yale University (New Haven, CT, USA).
+#' According to Prof. Timothy Gregoire at Yale University (New Haven, CT, USA), the
+#'  data set was supplied by Gary Alt.
 #' @references
-#' According to Prof. Gregoire, This data set was supplied by Gary Alt. Entertaining 
-#'  references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
+#' Entertaining references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
 #' @examples
 #' data(bearsDepu)    
 #' head(bearsDepu)
+#' table(bearsDepu$sex)
+#' boxplot(headL~sex, data=bearsDepu) 
 #' @import  
 'bearsDepu'
-#' Age and physical measurement data for wild bears. Dataframe same as "bears" but without missing values.
+#' Edad y características biométricas de osos salvajes (sin datos faltantes)
 #'
 #' @description
-#' Los osos salvajes fueron anestesiados y sus cuerpos fueron medidos y pesados. Uno de los objetivos del estudio fue hacer una 
+#' Los osos salvajes fueron anestesiados y sus cuerpos medidos. Uno de los objetivos del estudio fue hacer una 
 #' tabla (o quizas un conjunto de tablas) para las personas interesadas en estimar el peso de un oso basandose en otras medidas.
-#' Esto se usara porque es mas facil medir la longitud de un oso, por ejemplo, que pesarlo.
-#' Observe que faltan valores para algunas de las variables.
+#' Esta dataframe es igual que "bears" pero sin valores perdidos.
 #' @usage
 #' data(bearsDepu2)
 #' @format Contiene variables de nivel individual, como se describen a continuacion:
 #' \describe{
-#'   \item{id}{Identificador de oso}
-#' \item{age}{edad en meses}
-#' \item{month}{diámetro a la altura del pecho, en cm}
-#' \item{sex}{1 = hombre, 2 = mujer}
-#' \item{headL}{longitud de la cabeza, en cm}
-#' \item{headW}{ancho de la cabeza, en cm}
-#' \item{neckG}{circunferencia del cuello, en cm}
-#' \item{length}{longitud del cuerpo, en cm}
-#' \item{chestG}{circunferencia del pecho, en cm}
-#' \item{weight}{peso corporal, en kg}
-#' \item{obs}{numero de observacion para el oso}
-#' \item{name}{nombre dado al oso}
+#'   \item{id}{Identificador del oso.}
+#' \item{edad}{edad en meses.}
+#' \item{mes}{Diámetro a la altura del pecho, en cm.}
+#' \item{sexo}{1 = hombre, 2 = mujer.}
+#' \item{cabezaL}{longitud de la cabeza, en cm.}
+#' \item{cabezaA}{ancho de la cabeza, en cm.}
+#' \item{cuelloP}{circunferencia del cuello, en cm.}
+#' \item{largo}{longitud del cuerpo, en cm.}
+#' \item{pechoG}{circunferencia del pecho, en cm.}
+#' \item{peso}{peso corporal, en kg.}
+#' \item{obs}{número de observación temporal para el oso.}
+#' \item{nombre}{nombre dado al oso.}
 #'  }
 #' @source 
-#' Minitab, Inc. The data description is courtesy of Prof. Timothy Gregoire at
-#'  Yale University (New Haven, CT, USA).
+#' Segun el Prof. Timothy Gregoire de Yale University (New Haven, CT, USA), los datos fueron
+#'  cedidos por Gary Alt. Minitab, Inc. La descripcion de los datos fue dada por el .
 #' @references
-#' According to Prof. Gregoire, This data set was supplied by Gary Alt. Entertaining 
-#'  references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
+#' Algunas referencias generales estan en el Reader's Digest de Abril, 1979, y Sports Afield de Septiembre, 1981.
 #' @examples
 #' data(bearsDepu2)    
 #' head(bearsDepu2)
+#' table(bearsDepu2$sexo)
+#' boxplot(cabezaL~sexo, data=bearsDepu2) 
 #' @import  
 'bearsDepu2'
-#' Age and physical measurement data for wild bears. 
+#' Age and physical measurement data for wild bears 
 #'
 #' @description
-#' Wild bears were anaesthetised, and their bodies were measured and weighed. One goal of the study
+#' Wild bears were anesthetized, and their bodies were measured and weighed. One goal of the study
 #'  was to make a table (or perhaps a set of tables) for people interested in estimating the weight of a
 #'  bear based on other measurements. Notice that there are missing values for some of the variables.
 #' @usage
@@ -1698,29 +1734,64 @@
 #' @format Contains individual-level variables, as follows:
 #' \describe{
 #'   \item{id}{Bear id}
-#' \item{age}{age in months}
-#' \item{month}{Diameter at breast height, in cm}
-#' \item{sex}{1 =male, 2 = female}
-#' \item{headL}{length of head, in cm}
-#' \item{headW}{width of head, in cm}
-#' \item{neckG}{girth of neck, in cm}
-#' \item{length}{body length, in cm}
-#' \item{chestG}{girth of chest, in cm}
-#' \item{weight}{body weight, in kg}
-#' \item{obs}{observation number for bear}
-#' \item{name}{name given to bear}
+#' \item{age}{Age in total number of months.}
+#' \item{month}{Month number within a given year.}
+#' \item{sex}{1 =male, 2 = female.}
+#' \item{headL}{Length of head, in cm.}
+#' \item{headW}{Width of head, in cm.}
+#' \item{neckG}{Girth of neck, in cm.}
+#' \item{length}{Body length, in cm.}
+#' \item{chestG}{Girth of chest, in cm.}
+#' \item{weight}{body weight, in kg.}
+#' \item{obs}{Temporal observation number for bear.}
+#' \item{name}{Name given to bear.}
 #'  }
 #' @source 
-#' Minitab, Inc. The data description is courtesy of Prof. Timothy Gregoire at
-#'  Yale University (USA).
+#' According to Prof. Timothy Gregoire at Yale University (New Haven, CT, USA), the
+#'  data set was supplied by Gary Alt.
 #' @references
-#' According to Prof. Gregoire, This data set was supplied by Gary Alt. Entertaining 
-#'  references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
+#' Entertaining references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
 #' @examples
 #' data(bears)    
 #' head(bears) 
+#' table(bears$sex)
+#' boxplot(headL~sex, data=bears)
 'bears'
-#' Contains tree-level variables for roble (Nothofagus obliqua) in the Rucamanque experimental forest, near Temuco, Chile. 
+#' Edad y características biométricas de osos salvajes 
+#'
+#' @description
+#' Los osos salvajes fueron anestesiados y sus cuerpos medidos. Uno de los objetivos del estudio fue hacer una
+#' tabla (o quizas un conjunto de tablas) para las personas interesadas en estimar el peso de un oso basandose en otras medidas. 
+#' Observe que faltan valores para algunas de las variables.
+#' @usage
+#' data(bears2)
+#' @format Contiene variables de nivel individual, como se describen a continuacion:
+#' \describe{
+#'   \item{id}{Identificador del oso}
+#' \item{edad}{edad en meses}
+#' \item{mes}{Diámetro a la altura del pecho, en cm}
+#' \item{sexo}{1 = hombre, 2 = mujer}
+#' \item{cabezaL}{longitud de la cabeza, en cm}
+#' \item{cabezaA}{ancho de la cabeza, en cm}
+#' \item{cuelloP}{circunferencia del cuello, en cm}
+#' \item{largo}{longitud del cuerpo, en cm}
+#' \item{pechoG}{circunferencia del pecho, en cm}
+#' \item{peso}{peso corporal, en kg}
+#' \item{obs}{número de observación temporal para el oso}
+#' \item{nombre}{nombre dado al oso}
+#'  }
+#' @source 
+#' Segun el Prof. Timothy Gregoire de Yale University (New Haven, CT, USA), los datos fueron
+#'  cedidos por Gary Alt. Minitab, Inc. La descripcion de los datos fue dada por él.
+#' @references
+#' Algunas referencias generales estan en el Reader's Digest de Abril, 1979, y Sports Afield de Septiembre, 1981.
+#' @examples
+#' data(bears2)    
+#' head(bears2) 
+#' table(bears2$sexo)
+#' boxplot(cabezaL~sexo, data=bears2)
+'bears2'
+#' Tree volume of roble (Nothofagus obliqua) in the Rucamanque forest
 #'
 #' @description
 #' These are tree-level measurement data of sample trees in the Rucamanque experimental forest, 
@@ -1733,9 +1804,9 @@
 #' \describe{
 #'   \item{tree.no}{Tree id}
 #' \item{dbh}{Diameter at breast height, in cm}
-#' \item{htot}{Total height, in m.}
+#' \item{toth}{Total height, in m.}
 #'  \item{d6}{Upper-stem diameter at 6 m, in cm}
-#' \item{vtot}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
+#' \item{totv}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
 #'  }
 #' @source 
 #' The data are provided courtesy of Dr Christian Salas at
@@ -1747,26 +1818,24 @@
 #' data(treevolroble)    
 #' head(treevolroble) 
 'treevolroble'
-#' Variables alometricas a nivel de arbol para roble (Nothofagus obliqua) en el bosque de Rucamanque, cerca de Temuco, Chile. 
+#' Volumen a nivel de árbol para roble (Nothofagus obliqua) especie en el bosque de Rucamanque
 #'
 #' @description
-#' These are tree-level measurement data of sample trees in the Rucamanque experimental forest, 
-#'  near Temuco, in the Araucania region in south-centralChile, measured in 1999.  The
-#' data are the same as in the dataframe "treevolruca", but only having observations for the 
-#' species roble (Nothofagus obliqua).
+#' Volumen, altura y diámetro, entre otras para árboles muestra de roble (Nothofagus obliqua) en 
+#'  el bosque de Rucamanque, cerca de Temuco, en la región de la Araucania, en el sur de Chile.  
 #' @usage
 #' data(treevolroble2)
 #' @format Las siguientes columnas son parte de la dataframe:
 #' \describe{
-#'   \item{arbol}{Numero del arbol.}
+#'   \item{arbol}{Número del árbol.}
 #' \item{especie}{Especie.}
 #' \item{dap}{Diámetro a la altura del pecho, en cm.}
-#' \item{htot}{Altura total, en m.}
+#' \item{atot}{Altura total, en m.}
 #'  \item{d6}{Diámetro fustal a los 6 m, en cm.}
 #' \item{vtot}{Volumen bruto total, en m\eqn{^{3}}{^3} with bark.}
 #'  }
 #' @source 
-#' The data are provided courtesy of Dr Christian Salas (Chile).  
+#' Los datos son proporcionados por el Prof. Christian Salas (Universidad de Chile).  
 #' @references
 #' - Salas C. 2002. Ajuste y validación de ecuaciones de volumen para un relicto
 #' del bosque de Roble-Laurel-Lingue. Bosque 23(2): 81-92. \doi{10.4067/S0717-92002002000200009} \url{https://eljatib.com/publication/2002-07-01_ajuste_y_validacion_/} 
@@ -1774,7 +1843,7 @@
 #' data(treevolroble2)    
 #' head(treevolroble2) 
 'treevolroble2'
-#' Contains tree-level variables of several species in the Rucamanque experimental forest, near Temuco, Chile. 
+#' Tree volume by species in the Rucamanque forest 
 #'
 #' These are tree-level measurement data of sample trees in the Rucamanque experimental forest, 
 #'  near Temuco, in the Araucania region in south-centralChile, measured in 1999.  The following
@@ -1787,9 +1856,9 @@
 #'   \item{tree.no}{Tree id.}
 #' \item{spp}{Species.}
 #' \item{dbh}{Diameter at breast height, in cm.}
-#' \item{htot}{Total height, in m.}
+#' \item{toth}{Total height, in m.}
 #'  \item{d6}{Upper-stem diameter at 6 m, in cm.}
-#' \item{vtot}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
+#' \item{totv}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
 #'  }
 #' @source 
 #' The data were provided courtesy of Dr Christian Salas (Universidad de Chile, Santiago, Chile).
@@ -1800,19 +1869,19 @@
 #' data(treevolruca)    
 #' head(treevolruca) 
 'treevolruca'
-#' Variables alometricas a nivel de arbol para varias especies del bosque de Rucamanque, cerca de Temuco, Chile. 
+#' Volumen a nivel de árbol en el bosque de Rucamanque
 #'
 #' Volumen, altura y diámetro, entre otras para árboles muestra en el bosque de Rucamanque, cerca de Temuco, 
-#' en la region de la Araucania, en el sur de Chile.  Las siguientes especies son parte de los datos: laurel (laurelia sempervirens), lingue (Persea lingue), olivillo (Aextocicon puncatum), 
+#' en la region de la Araucanía, en el sur de Chile.  Las siguientes especies son parte de los datos: laurel (laurelia sempervirens), lingue (Persea lingue), olivillo (Aextocicon puncatum), 
 #'  roble (Nothofagus obliqua), tepa (Laureliosis philippiana), y tineo (Weinmannia trichosperma).
 #' @usage
 #' data(treevolruca2)
 #' @format Las siguientes columnas son parte de la dataframe:
 #' \describe{
-#'   \item{arbol}{Numero del arbol.}
+#'   \item{arbol}{Número del árbol.}
 #' \item{especie}{Especie.}
 #' \item{dap}{Diámetro a la altura del pecho, en cm.}
-#' \item{htot}{Altura total, en m.}
+#' \item{atot}{Altura total, en m.}
 #'  \item{d6}{Diámetro fustal a los 6 m, en cm.}
 #' \item{vtot}{Volumen bruto total, en m\eqn{^{3}}{^3} with bark.}
 #'  }
@@ -1851,7 +1920,7 @@
 #' @source  
 #' The data are provided courtesy of Dr Nelson Ojeda at Universidad de La Frontera (Temuco, Chile).  
 #' @references
-#' Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadisticos parametricos y no parametricos
+#' Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadísticos parametricos y no parametricos
 #'    para predecir variables de rodal basados en Landsat ETM+: una comparacion en un bosque
 #'     de Araucaria araucana en Chile [Parametric and non-parametric statistical methods for 
 #'     predicting plotwise variables based on Landsat ETM+: a comparison in an Araucaria araucana forest
@@ -1885,10 +1954,10 @@
 #'  \item{dg}{Diameter medio cuadratico, en cm}
 #'  }
 #' @source  
-#' Los datos a nivel de arbol fueron cedidos por el Dr Nelson Ojeda de
+#' Los datos a nivel de árbol fueron cedidos por el Dr Nelson Ojeda de
 #' la Universidad de La Frontera (Temuco, Chile).  
 #' @references
-#' Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadisticos parametricos y no parametricos
+#' Salas C, Ene L, Ojeda N, Soto H. 2010. Metodos estadísticos parametricos y no parametricos
 #'    para predecir variables de rodal basados en Landsat ETM+: una comparacion en un bosque
 #'     de Araucaria araucana en Chile. Bosque 31(3): 179-194. 
 #' @examples
@@ -1899,24 +1968,24 @@
 #' 
 #' @description
 #' This data set provides measurements of the diameter, height and volume of timber in 31 felled black cherry trees.
-#' This dataframe is a slight modification to the original dataframe "trees" from the datasets R package.
+#' The records are a slight modification to the original dataframe "trees" from the datasets R package.
 #' @usage
 #' data(treevol)
 #' @format A data frame with 31 observations and three variables
 #' \describe{
-#' \item{dbh}{diameter at breast height, in cm}
-#' \item{htot}{total height, in m}
-#' \item{vtot}{volume of timber, in cubic meters}
+#' \item{dbh}{Diameter at breast height, in cm.}
+#' \item{toth}{Total height, in m.}
+#' \item{vtot}{Timber volume, in cubic meters.}
 #'  }
 #' @source 
-#' Ryan, T. A., Joiner, B. L. and Ryan, B. F. (1976) The Minitab Student Handbook. Duxbury Press.
+#' Ryan TA, Joiner BL, and Ryan BF. 1976. The Minitab Student Handbook. Duxbury Press.
 #' @examples
 #' pairs(treevol, panel = panel.smooth, main = "treevol dataframe")
 #' plot(vtot ~ dbh, data = treevol, log = "xy")
-#' coplot(log(vtot) ~ log(dbh) | htot, data = treevol,
+#' coplot(log(vtot) ~ log(dbh) | toth, data = treevol,
 #'        panel = panel.smooth)
 #' summary(m1 <- lm(log(vtot) ~ log(dbh), data = treevol))
-#' summary(m2 <- update(m1, ~ . + log(htot), data = treevol))
+#' summary(m2 <- update(m1, ~ . + log(toth), data = treevol))
 #' anova(m1,m2)
 'treevol'
 #' Volumen, altura, y diámetro para árboles de Black Cherry 
@@ -1943,65 +2012,77 @@
 #' summary(m2 <- update(m1, ~ . + log(atot), data = treevol2))
 #' anova(m1,m2)
 'treevol2'
-#' Diameter growth of orange trees
+#' Diameter growth of trees
 #' 
 #' @description
-#' The orange data frame has 35 rows and four columns of records of the growth of orange trees.
+#' The 'ficdiamgr' is a fictitious dataframe built to show the structure of 
+#'  longitudinal data. The dataframe has records of tree diameter growth of 
+#'  five sample trees, spanning three species. 
 #' @usage
-#' data(orange)
+#' data(ficdiamgr)
 #' @format A time series data containing the following columns:
 #' \describe{
 #' \item{tree.id}{an ordered factor indicating the tree on which the measurement is made. The ordering is according to increasing maximum diameter.}
-#' \item{time}{a numeric vector giving the numbers of days since 1968/12/31}
-#' \item{girth}{a numeric vector of trunk perimeter (mm). This is probably a circumference at breast height, a standard measurement in forestry.}
-#' \item{dbh}{a numeric vector of diameter at breast height (mm).}
+#' \item{time}{a numeric vector giving the numbers of days since establishment.}
+#' \item{dbh}{a numeric vector of diameter at breast height, in cm.}
 #' \item{site}{a factor variable, representing site conditions with two levels.}
 #' \item{spp}{a factor variable, representing tree species with three levels.}
 #'  }
 #' @source 
-#' Modified by Christian Salas-Eljatib from the Orange R dataframe.
+#' This dataframe was built from the 'Orange' data of the 'datasets' package,
+#'  by Christian Salas-Eljatib.
 #' @examples
-#' data(orange)
+#' data(ficdiamgr)
 #' 
-#' coplot(dbh ~ time | tree.id, data = orange, show.given = FALSE)
-#' m1 <- nls(dbh ~ SSlogis(time, Asym, xmid, scal),
-#'            data = orange, subset = tree.id == 3)
-#' plot(dbh ~ time, data = orange, subset = tree.id == 3,
-#'      xlab = "Time (number of days since 1968/12/31)",
-#'      ylab = "Tree diameter (mm)", las = 1)
-#' time <- seq(0, 1600, length.out = 101)
-#' lines(time, predict(m1, list(time = time)))
-'orange'
-#' Crecimiento diametral de árboles de naranjo
+#' coplot(dbh ~ time | tree, data = ficdiamgr, show.given = FALSE)
+'ficdiamgr'
+#' Crecimiento diametral de árboles
 #' 
 #' @description
-#' The orange data frame has 35 rows and four columns of records of the growth of orange trees.
+#' Los datos 'ficdiamgr2' son ficticios, y fue construida para mostrar la estructura 
+#'  de datos longitudinales. Los datos tienen registro de crecimiento en cinco 
+#'  árboles muestra, representando a tres especies. 
 #' @usage
-#' data(orange2)
-#' @format A time series data containing the following columns:
+#' data(ficdiamgr2)
+#' @format Una serie de tiempo conteniendo las siguientes columnas:
 #' \describe{
-#' \item{arbol}{indica el identificador del arbol.}
-#' \item{tiempo}{numero de dias desde el 31 de diciembre de 1968.}
-#' \item{peri}{el perimetro del tronco (mm), medido a la altura del pecho.}
-#' \item{dap}{diámetro a la altura del pecho (mm).}
+#' \item{arbol}{indica el identificador del árbol.}
+#' \item{tiempo}{número de dias desde el inicio de las mediciones.}
+#' \item{dap}{diámetro a la altura del pecho, en cm.}
 #' \item{sitio}{un factor, representando condiciones de sitio, en dos niveles.}
-#' \item{espe}{un factor, representando especie del arbol, en tres niveles.}
+#' \item{espe}{un factor, representando especie del árbol, en tres niveles.}
 #'  }
 #'  
 #' @source 
-#' Modificado por Christian Salas-Eljatib desde la dataframe Orange de libreria datasets.
+#' Estos datos fueron modificados desde la dataframe 'Orange' de la librería
+#'  'datasets', por Christian Salas-Eljatib.
 #' @examples
-#' data(orange2)
+#' data(ficdiamgr2)
 #' 
-#' coplot(dap ~ tiempo | arbol, data = orange2, show.given = FALSE)
-#' m1 <- nls(dap ~ SSlogis(tiempo, Asym, xmid, scal),
-#'            data = orange2, subset = arbol == 3)
-#' plot(dap ~ tiempo, data = orange2, subset = arbol== 3,
-#'      xlab = "Tiempo (numero de dias desde 31/12/1968)",
-#'      ylab = "Diametro (mm)", las = 1)
-#' tiempo <- seq(0, 1600, length.out = 101)
-#' lines(tiempo, predict(m1, list(tiempo = tiempo)))
-'orange2'
+#' coplot(dap ~ tiempo | arbol, data = ficdiamgr2, show.given = FALSE)
+'ficdiamgr2'
+#' Crecimiento en altura de Pinus taeda
+#' 
+#' @description
+#' Esta dataframe contiene 84 folas y tres columnas de crecimiento en altura de 
+#' árboles de Pinus taeda (Loblolly pine). Es una modificación de la dataframe "Loblolly" del paquete 'datasets' de R.
+#' @usage
+#' data(ptaeda2)
+#' @format An object of class c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame") containing the following columns:
+#' \describe{
+#' \item{semilla.id}{Un factor indicando el origen de la semilla del árbol.}
+#' \item{edad}{Edad del árbol, en años.}
+#' \item{atot}{Altura total, en m.}
+#'  }
+#' @source 
+#' Pinheiro, J. C. and Bates, D. M. (2000) Mixed-effects Models in S and S-PLUS. Springer.
+#' @examples
+#' 
+#' data(ptaeda2)
+#' plot(atot ~ edad, data = ptaeda2, subset = semilla.id == 329,
+#'      xlab = "Edad (años)", las = 1,
+#'      ylab = "Altura (m)")
+'ptaeda2'
 #' Height growth of Pinus taeda (Loblolly pine) trees
 #' 
 #' @description
@@ -2013,21 +2094,16 @@
 #' \describe{
 #' \item{seed.id}{an ordered factor indicating the seed source for the tree. The ordering is according to increasing maximum height.}
 #' \item{age}{a numeric vector of tree ages, in yr.}
-#' \item{height}{a numeric vector of tree heights, in m.}
+#' \item{toth}{a numeric vector of tree heights, in m.}
 #'  }
 #' @source 
 #' Pinheiro, J. C. and Bates, D. M. (2000) Mixed-effects Models in S and S-PLUS. Springer.
 #' @examples
 #' 
 #' data(ptaeda)
-#' plot(height ~ age, data = ptaeda, subset = seed.id == 329,
-#'      xlab = "Tree age (yr)", las = 1,
-#'      ylab = "Tree height (m)",
-#'      main = "Loblolly data and fitted curve (seed.id 329 only)")
-#' m1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
-#'            data = ptaeda, subset = seed.id == 329)
-#' age <- seq(0, 30, length.out = 101)
-#' lines(age, predict(m1, list(age = age)))
+#' plot(toth ~ age, data = ptaeda, subset = seed.id == 329,
+#'      xlab = "Age (yr)", las = 1,
+#'      ylab = "Height (m)")
 'ptaeda'
 #' Contains tree-level biomass data for several species in Canada.
 #'
@@ -2052,7 +2128,7 @@
 #' data(biomass)    
 #' head(biomass) 
 "biomass"
-#' Biomasa a nivel de arbol para especies arboreas de Canada.
+#' Biomasa a nivel de árbol para especies arboreas de Canada.
 #'
 #' @description
 #' These are tree-level variables for several species in Canada.
@@ -2287,9 +2363,9 @@
 #' data(snaspeChile2)
 #' @format Contiene las siguientes variables para cada unidad del SNASPE:
 #' \describe{
-#' \item{uni.id}{numero indentificador de la unidad.}
+#' \item{uni.id}{número indentificador de la unidad.}
 #' \item{unidad}{Nombre de la unidad.}
-#' \item{categoria}{Categoria de la unidad. It can be either a National Park, a National Reserve or a Natural Monument.}
+#' \item{categoria}{Categoría de la unidad. It can be either a National Park, a National Reserve or a Natural Monument.}
 #' \item{comuna}{Name of the commune (the smallest Chilean territorial division) where the unit is located.}
 #' \item{province}{Province where the comunne is located (one territorial division level above the commune).}
 #'  \item{region}{Region where the province is located (one territorial division level above the province and the biggest Chilean territorial division).}
@@ -2323,7 +2399,7 @@
 #' \describe{
 #' \item{spp}{Species code. 'Ro' is Nothofagus obliqua (roble), 'Co' is Nothofagus dombeyi (Coigue) and 'Ol' is Olivillo.}
 #' \item{dbh}{Diameter at breast height, in cm.}
-#' \item{htot}{Total height, in m.}
+#' \item{toth}{Total height, in m.}
 #' \item{crad.n}{Crown radii towards the north, in m.}
 #' \item{crad.e}{Crown radii towards the east, in m.}
 #'  \item{crad.s}{Crown radii towards the south, in m.}
@@ -2339,12 +2415,12 @@
 #' Rucamanque [Basic characterization of the biodiversity remnant Rucamanque]. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 #' 
 #' - Salas C, and Garcia O. 2006. Modelling height development of mature Nothofagus obliqua. 
-#' Forest Ecology and Management 229 (1-3): 1–6. \doi{10.1016/j.foreco.2006.04.015}
+#' Forest Ecology and Management 229 (1-3): 1-6. \doi{10.1016/j.foreco.2006.04.015}
 #'  
 #' @examples
 #' data(crown)    
 #' table(crown$spp) 
-#' descstat(crown[,c("dbh","cr.diam")])
+#' descstat(crown[,c("dbh","cr.diam")]) 
 "crown"
 #' Radios de copa de árboles
 #'
@@ -2375,105 +2451,76 @@
 #' Rucamanque [Basic characterization of the biodiversity remnant Rucamanque]. Bosque Nativo, 29:3-9. \url{https://eljatib.com/publication/2001-06-01_caracterizacion_basi/}
 #' 
 #' - Salas C, and Garcia O. 2006. Modelling height development of mature Nothofagus obliqua. 
-#' Forest Ecology and Management 229 (1-3): 1–6. \doi{10.1016/j.foreco.2006.04.015}
+#' Forest Ecology and Management 229 (1-3): 1-6. \doi{10.1016/j.foreco.2006.04.015}
 #'  
 #' @examples
 #' data(crown2)    
 #' table(crown2$espe) 
-#' descstat(crown2[,c("dap","dcopa")])
+#' descstat(crown2[,c("dap","dcopa")]) 
 "crown2"
 #' Tree height growth of Douglas-fir sample trees in the Northwest of the United States
 #' @description
 #' Data contains 148 observations on the height growth of dominant trees of Pseudotsguga mensiezzi in the Northwest of the United States.
 #' @usage
-#' data(hgrowthDfir)
+#' data(hgrdfir)
 #' @format The data frame contains seven variables as follows:
 #' \describe{
 #'   \item{natfor.id}{Code identifier.}
 #'   \item{plot.code}{Plot number identification}
 #'   \item{tree.code}{Tree number identification.}
 #'   \item{dbh}{Diameter at breast height at sampling, in in.}
-#'   \item{htot}{Total height at sa,pling, in ft}
-#'   \item{age}{Age of tree, yr}
-#'   \item{height}{Height at a given age, in ft}
+#'   \item{toth}{Total height at sa,pling, in ft.}
+#'   \item{age}{Age of tree, yr.}
+#'   \item{height}{Height at a given age, in ft.}
 #'  }
 #' @source 
 #' The data were provided by Dr Christian Salas.  
 #' @references
-#' Monserud RA. Height growth and site index curves for Inland Douglas-
-#' fir based on stem analysis data and forest habitat type. Forest Sci.,
-#' 30(4):943-965, 1984.
+#' - Monserud RA. 1984. Height growth and site index curves for Inland Douglas-fir based on 
+#' stem analysis data and forest habitat type. Forest Science 30(4):943-965.
 #' @references 
-#' Salas C, Stage AR, and Robinson AP. Modeling effects of
-#' overstory density and competing vegetation on tree height growth. Forest
-#' Sci., 54(1):107-122, 2008.
+#' - Salas C, Stage AR, and Robinson AP. 2008. Modeling effects of overstory density and competing 
+#' vegetation on tree height growth. Forest Science 54(1):107-122. \doi{10.1093/forestscience/54.1.107}
 #' @examples
-#' data(hgrowthDfir)    
-#' head(hgrowthDfir)
-"hgrowthDfir"
+#' data(hgrdfir)    
+#' head(hgrdfir)
+#' unique(hgrdfir$tree.code)
+#' table(hgrdfir$plot.code,hgrdfir$tree.code)
+#' tapply(hgrdfir$dbh, hgrdfir$tree.code, mean)
+#' tapply(hgrdfir$dbh, hgrdfir$tree.code, mean) #dbh of each sample tree
+#' tapply(hgrdfir$toth, hgrdfir$tree.code, mean) #toth of each sample tree
+"hgrdfir"
 #' Crecimiento en altura de una muestra de árboles en los Estados Unidos
 #' @description
 #' Data contiene 148 obserrvaciones sobre el crecimiento en altura de árboles dominantes de Pseudotsguga mensiezzi en el Nor-Oeste de los Estados Unidos
 #' @usage
-#' data(hgrowthDfir2)
+#' data(hgrdfir2)
 #' @format La data frame contiene siete variables:
 #' \describe{
 #'   \item{bosque.id}{Codigo identificador del bosque.}
 #'   \item{parcela}{Codigo identificador de la parcela.}
-#'   \item{arbol}{Numero de identificacion arbol.}
+#'   \item{arbol}{Número de identificacion árbol.}
 #'   \item{dap}{Diámetro a la altura del pecho, en  pulgadas.}
-#'   \item{htot}{Altura total, en pies}
+#'   \item{atot}{Altura total, en pies}
 #'   \item{edad}{Edad, en os}
-#'   \item{altura}{Altura para cada edad del arbol, en pies}
+#'   \item{altura}{Altura para cada edad del árbol, en pies}
 #'  }
 #' @source 
 #' La data fue cedida por el Dr Christian Salas-Eljatib.  
 #' @references
-#' Monserud RA. Height growth and site index curves for Inland Douglas-
-#' fir based on stem analysis data and forest habitat type. Forest Sci.,
-#' 30(4):943-965, 1984.
+#' Monserud RA. 1984. Height growth and site index curves for Inland Douglas-fir based on 
+#' stem analysis data and forest habitat type. Forest Science 30(4):943-965.
 #' @references 
-#' Salas C, Stage AR, and Robinson AP. Modeling effects of
-#' overstory density and competing vegetation on tree height growth. Forest
-#' Sci., 54(1):107-122, 2008.
+#' Salas C, Stage AR, and Robinson AP. 2008. Modeling effects of overstory density and competing 
+#' vegetation on tree height growth. Forest Science 54(1):107-122. \doi{10.1093/forestscience/54.1.107}
 #' @examples
-#' data(hgrowthDfir2)    
-#' head(hgrowthDfir2)
-"hgrowthDfir2"
-#' Edad y caracteristicas biometricas de osos salvajes. 
-#'
-#' @description
-#' Los osos salvajes fueron anestesiados y sus cuerpos fueron medidos y pesados. Uno de los objetivos del estudio fue hacer una
-#' tabla (o quizas un conjunto de tablas) para las personas interesadas en estimar el peso de un oso bas?ndose en otras medidas. 
-#' Esto se usaraa porque en el bosque es mas facil medir la longitud de un oso, por ejemplo, que pesarlo.
-#' Observe que faltan valores para algunas de las variables.
-#' @usage
-#' data(bears2)
-#' @format Contiene variables de nivel individual, como se describen a continuacion:
-#' \describe{
-#'   \item{id}{Identificador de oso}
-#' \item{age}{edad en meses}
-#' \item{month}{Diámetro a la altura del pecho, en cm}
-#' \item{sex}{1 = hombre, 2 = mujer}
-#' \item{headL}{longitud de la cabeza, en cm}
-#' \item{headW}{ancho de la cabeza, en cm}
-#' \item{neckG}{circunferencia del cuello, en cm}
-#' \item{length}{longitud del cuerpo, en cm}
-#' \item{chestG}{circunferencia del pecho, en cm}
-#' \item{weight}{peso corporal, en kg}
-#' \item{obs}{numero de observacion para el oso}
-#' \item{name}{nombre dado al oso}
-#'  }
-#' @source 
-#' Minitab, Inc. The data description is courtesy of Prof. Timothy Gregoire at
-#'  Yale University (USA).
-#' @references
-#' According to Prof. Gregoire, This data set was supplied by Gary Alt. Entertaining 
-#'  references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
-#' @examples
-#' data(bears2)    
-#' head(bears2) 
-'bears2'
+#' data(hgrdfir2)    
+#' head(hgrdfir2)
+#' unique(hgrdfir2$arbol.id)
+#' table(hgrdfir2$parcela,hgrdfir2$arbol.id)
+#' tapply(hgrdfir2$dap, hgrdfir2$arbol.id, mean) #dap de cada arbol muestra
+#' tapply(hgrdfir2$atot, hgrdfir2$arbol.id, mean) #atot de cada arbol muestra
+"hgrdfir2"
 #' Anaerobic potential of soccer players. 
 #'
 #' @description
@@ -2537,9 +2584,9 @@
 #' Height growth of Nothofagus alpina trees in Chile. 
 #'
 #' @description
-#' Time series data of height for Nothofagus alpina (rauli) trees in south-central Chile. These sampled trees are part of the ones
-#'  used in the following article:
-#'  * Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.
+#' Time series data of height for rauli (Nothofagus alpina) trees in south-central Chile. These sampled 
+#' trees are part of the ones used in Salas-Eljatib (2021, Ecological Applications). The full citation
+#' is provided below.
 #' @usage
 #' data(raulihg)
 #' @format The data frame contains four variables as follows:
@@ -2552,9 +2599,10 @@
 #' @source 
 #' Data were provided by Dr Christian Salas-Eljatib (Santiago, Chile).
 #' @references
-#' Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an
-#'  example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.
-#' Salas-Eljatib, C. 2021. Time series height-data for Nothofagus alpina trees. \doi{10.6084/m9.figshare.13521602.v5} 
+#' - Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an
+#'  example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.  \doi{10.1002/eap.2285}
+#' @references  
+#' - Salas-Eljatib, C. 2021. Time series height-data for Nothofagus alpina trees. \doi{10.6084/m9.figshare.13521602.v5} 
 #' @examples
 #' data(raulihg)    
 #' head(raulihg) 
@@ -2563,23 +2611,23 @@
 #'
 #' @description
 #' Datos de series de tiempo de altura para árboles muestreados de Nothofagus alpina (rauli) en el centro-sur de Chile. Estos árboles son parte
-#' de los usados en el siguiente articulo:
-#'  * Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.
+#' de los usados en Salas-Eljatib (2021, Ecological Applications). La cita completa se da en referencias.
 #' @usage
 #' data(raulihg2)
 #' @format Contiene variables de nivel individual, como se describen a continuacion::
 #' \describe{
-#' \item{tree.code}{Codigo del arbol}											
+#' \item{tree.code}{Codigo del árbol}											
 #' \item{spp}{Nombre comun especie}
 #' \item{bha.t}{Edad a la altura del pecho, en años.}
 #' \item{h.t}{Altura total, en m.}
 #'  }
 #' @source 
-#' Datos cedidos por el Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
+#' Datos cedidos por el Prof. Christian Salas-Eljatib.
 #' @references
-#' Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an
-#'  example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285.
-#' Salas-Eljatib, C. 2021. Time series height-data for Nothofagus alpina trees. \doi{10.6084/m9.figshare.13521602.v5} 
+#' - Salas-Eljatib C. 2021. An approach to quantify climate-productivity relationships: an
+#'  example from a widespread Nothofagus forest. Ecological Applications 31(4): e02285. \doi{10.1002/eap.2285}
+#' @references  
+#' - Salas-Eljatib C. 2021. Time series height-data for Nothofagus alpina trees. \doi{10.6084/m9.figshare.13521602.v5} 
 #' @examples
 #' data(raulihg2)    
 #' head(raulihg2) 
@@ -2689,7 +2737,7 @@
 #' data(standLleuque2)
 #' @format Variables se describen a continuacion::
 #' \describe{
-#' \item{rodal}{Numero de rodal}											
+#' \item{rodal}{Número de rodal}											
 #' \item{plot.id}{Codigo de parcela}
 #' \item{nha}{Densidad de parcela}
 #' \item{gha}{Area basal de parcela}
@@ -2792,20 +2840,20 @@
 #' \item{PlotSite}{Nombre del municipio de los 9 sitios de estudio}					
 #' \item{Y.Plot}{Latitud del grafico en grados decimales}
 #' \item{X.Plot}{Longitud de la grafica en grados decimales}
-#' \item{PhoroNo}{numero de identificacion de los árboles hospedantes muestreados en cada sitio}
+#' \item{PhoroNo}{número de identificacion de los árboles hospedantes muestreados en cada sitio}
 #' \item{EpiFam}{Familia taxonomica de epifitas}
 #' \item{EpiGen}{Genero taxonomico de epifitas}
 #' \item{cf.aff}{Abreviaturas de terminos latinos en el contexto de la taxonomia. cf. "conferir" que significa "comparar con". aff .: "affinis" que significa "similar a"}
 #' \item{Species}{Nombre de la especie epifita (morfo)}
 #' \item{Author}{Autor del nombre cientifico}
-#' \item{EpiAzi}{Azimut del individuo epifito en cada arbol huesped}
+#' \item{EpiAzi}{Azimut del individuo epifito en cada árbol huesped}
 #' \item{BraAzi}{Azimut de la rama en la que se encontro el individuo epifito}
 #' \item{EpiDisTru}{Distancia en metros desde el tronco hasta el sitio de union de la epifita en una rama}
 #' \item{EpiSize}{Tamaño estimado del individuo epifito en centimetros}
 #' \item{EpiAttHei}{Altura del accesorio de la epifita en metros}
 #' \item{Date0}{Fecha del primer censo}
 #' \item{Date1}{Fecha del censo final}
-#' \item{Location}{Seccion (raices, troncos, ramas) del arbol anfitrion en el que se encontro el individuo epifito}
+#' \item{Location}{Seccion (raices, troncos, ramas) del árbol anfitrion en el que se encontro el individuo epifito}
 #' \item{Mortality}{Variable dicotomica. 0 si el individuo epifito estaba muerto en el censo final y 1 si no}
 #' \item{MorCat}{Causa de mortalidad mecanica o no mecanica}
 #' \item{Elevation}{Elevacion (msnm) de la parcela}
@@ -2819,18 +2867,18 @@
 #' \item{BasAre}{Area basal de árboles con DAP mayor o igual a 5 cm (AB) en la parcela (m\eqn{^{2}}{^2}/ha)}
 #' \item{BasAre5_10}{Area basal de árboles con DAP mayor o igual a 5 y menor a 10 cm en la parcela (m\eqn{^{2}}{^2}/ha)}
 #' \item{BasAre10}{Area basal de árboles con DAP mayor o igual a 10 cm en la parcela (m\eqn{^{2}}{^2}/ha)}
-#' \item{Ind10}{Numero de árboles del dosel (con un DAP superior o igual a 10 cm) en la parcela}
-#' \item{Ind5}{Numero de árboles de sotobosque (con DAP mayor o igual a 5 y menor a 10 cm) en la parcela}
-#' \item{Ind5_10}{Numero de árboles con un DAP mayor o igual a 5 y menos de 10 cm en la parcela}
-#' \item{Ind10_15}{Numero de árboles con un DAP mayor o igual a 10 y menos de 15 cm en la parcela}
-#' \item{Ind15_20}{Numero de árboles con un DAP mayor o igual a 15 y menos de 20 cm en la parcela}
-#' \item{Ind20_25}{Numero de árboles con un DAP mayor o igual a 20 y menos de 25 cm en la parcela}
-#' \item{Ind25_30}{Numero de árboles con un DAP mayor o igual a 25 y menos de 30 cm en la parcela}
-#' \item{Ind30}{Numero de árboles con DAP mayor o igual a 30 cm en la parcela}
-#' \item{TreeHei}{Altura total del arbol en metros}
+#' \item{Ind10}{Número de árboles del dosel (con un DAP superior o igual a 10 cm) en la parcela}
+#' \item{Ind5}{Número de árboles de sotobosque (con DAP mayor o igual a 5 y menor a 10 cm) en la parcela}
+#' \item{Ind5_10}{Número de árboles con un DAP mayor o igual a 5 y menos de 10 cm en la parcela}
+#' \item{Ind10_15}{Número de árboles con un DAP mayor o igual a 10 y menos de 15 cm en la parcela}
+#' \item{Ind15_20}{Número de árboles con un DAP mayor o igual a 15 y menos de 20 cm en la parcela}
+#' \item{Ind20_25}{Número de árboles con un DAP mayor o igual a 20 y menos de 25 cm en la parcela}
+#' \item{Ind25_30}{Número de árboles con un DAP mayor o igual a 25 y menos de 30 cm en la parcela}
+#' \item{Ind30}{Número de árboles con DAP mayor o igual a 30 cm en la parcela}
+#' \item{TreeHei}{Altura total del árbol en metros}
 #' \item{MedHei}{Altura media de los árboles en cada parcela}
 #' \item{MaxHei}{Altura maxima de los árboles en cada parcela}
-#' \item{BranchNumb}{Numero de ramas del arbol anfitrion}
+#' \item{BranchNumb}{Número de ramas del árbol anfitrion}
 #' \item{Obs}{Observaciones y notas en español}
 #'  }
 #' @source 
@@ -2895,21 +2943,21 @@
 #' tomo al menos un vuelo de la Encuesta de deteccion aerea (ADS) entre 2009 y 2015, por lo que cada posicion
 #' de celda de la cuadricula tiene entre 1 y 7 años de datos (reflejados como 1 a 7 filas en el archivo de datos
 #' por posicion de celda de cuadricula). Las principales variables de respuesta son mort.bin (presencia de alguna mortalidad)
-#'  y mort.tph (numero de árboles muertos /ha dentro de la celda de la cuadricula por año).
+#'  y mort.tph (número de árboles muertos /ha dentro de la celda de la cuadricula por año).
 #' @usage
 #' data(deadForestCA2)
 #' @format Variables se describen a continuacion::
 #' \describe{
 #' \item{live.bah}{Area basal viva del conjunto de datos GNN}											
-#' \item{live.tph}{Arboles vivos por hectarea del conjunto de datos GNN}
+#' \item{live.tph}{Árboles vivos por hectarea del conjunto de datos GNN}
 #' \item{pos.x}{posicion x del orden de clasificacion de la celda de la cuadricula (la posicion 1 es la mas occidental)}
 #' \item{pos.y}{posicion y del orden de clasificacion de la celda de la cuadricula (la posicion 1 es la mas al norte)}
 #' \item{alb.x}{coordenada x del centroide de la celda de la cuadricula en California Albers (EPSG 3310)}
 #' \item{alb.y}{coordenada y del centroide de la celda de la cuadricula en California Albers (EPSG 3310)}
 #' \item{mort.bin}{1 = árboles muertos observados en la celda de la cuadricula. 0 = no se observaron árboles muertos}
-#' \item{mort.tph}{Arboles muertos por hectarea del conjunto de datos ADS agregado}
-#' \item{mort.tpa}{Arboles muertos por acre del conjunto de datos ADS agregado}
-#' \item{year}{año del vuelo de ADS. La mayoria de los vuelos se realizaron entre mayo y agosto}
+#' \item{mort.tph}{Árboles muertos por hectarea del conjunto de datos ADS agregado}
+#' \item{mort.tpa}{Árboles muertos por acre del conjunto de datos ADS agregado}
+#' \item{year}{año del vuelo de ADS. La mayoría de los vuelos se realizaron entre mayo y agosto}
 #' \item{Defnorm}{Deficit hidrico climatico anual medio para la celda de la cuadricula, para el año hidrico del 1 de octubre al 31 de septiembre, promediado de 1981 a 2015}
 #' \item{Def0}{Deficit de agua climatica para la celda de la cuadricula durante el año hidrologico de octubre a septiembre que se superpone al vuelo ADS de verano del año dado}
 #' \item{Defz0}{Puntaje Z para el deficit hidrico climatico para la celda de cuadricula / año hidrico dado. Calculado como (Def0-Defnorm) / (desviacion estandar en el deficit entre todos los años 1981-2015 para la celda de la cuadricula dada}
@@ -3021,57 +3069,56 @@
 #' data(forestFire2)    
 #' head(forestFire2) 
 'forestFire2'
-#' Tree-level measurements and spatial coordinates in rucamanque property 
+#' Tree spatial coordinates in the Rucamanque forest 
 #'
 #' @description
-#' Tree level measurements and spatial coordinates in a permanent sample plot of 1 ha (100 x 100m) in the Rucamanque 
-#' Experimental Forests, near Temuco, Chile.
+#' Tree-level variables and spatial coordinates in a permanent sample plot of 1 ha (100 x 100m) in the Rucamanque 
+#'  experimental forest, near Temuco, Chile. 
 #' @usage
 #' data(pspRuca)
-#' @format The data frame contains four variables as follows:
+#' @format The data frame contains four variables for the standing-alive trees as follows:
 #' \describe{
 #' \item{tree.no}{tree number}											
-#' \item{spp}{Species name, "N. obliqua" is Nothofagus obliqua, "Ap" is Aexitocicum puncatatum, etc.}
-#' \item{status}{1 alive, 0 standing-dead}
+#' \item{species}{Species name, "N. obliqua" is Nothofagus obliqua, "Ap" is Aexitocicum puncatatum, etc.}
+#' \item{crown.class}{Crown class (1: superior, 2: intermediate, 3; inferior)}
 #' \item{dbh}{diameter at breast-height, in cm}
 #' \item{x.coord}{Cartesian position at the X-axis, in m}
 #' \item{y.coord}{Cartesian position at the Y-axis, in m}
-#' \item{crown.class}{Crown class (1: superior, 2: intermediate, 3; inferior)}
 #'  }
 #' @source 
 #' Data were provided by Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
 #' @references
 #' Salas C, LeMay V, Nunez P, Pacheco P, and Espinosa A. 2006. Spatial patterns in an old-growth Nothofagus obliqua forest in 
-#' south-central Chile. Forest Ecology and Management 231(1-3): 38-46.
+#' south-central Chile. Forest Ecology and Management 231(1-3): 38-46. \doi{10.1016/j.foreco.2006.04.037}
 #' @examples
 #' data(pspRuca)    
 #' head(pspRuca) 
+#' table(pspRuca$species) 
 'pspRuca'
-#' Medidas a nivel de arbol y coordenadas espaciales en predio rucamanque  
+#' Ubicación espacial de árboles en el bosque de Rucamanque  
 #'
 #' @description
-#' Medidas a nivel de arbol y coordenadas espaciales en un parcela de muestreo permanente de 1 ha (100 x 100m) en el Rucamanque 
-#' Bosques experimentales, cerca de Temuco, Chile.
+#' Medidas a nivel de árbol y coordenadas espaciales en un parcela de muestreo permanente de 1 ha (100 x 100m) en el
+#'  bosque de Rucamanque, cerca de Temuco, Chile. Mayores antecedentes en las referencias.
 #' @usage
 #' data(pspRuca2)
-#' @format Variables se describen a continuacion::
+#' @format Las columnas describen características de los árboles vivos en pie, como sigue:
 #' \describe{
-#' \item{tree.no}{Numero de arbol}											
-#' \item{spp}{Nombre de la especie, "N. obliqua" es Nothofagus obliqua, "Ap" es Aexitocicum puncatatum, etc.}
-#' \item{status}{1 vivo, 0 muerto en pie}
-#' \item{dbh}{Diámetro a la altura del pecho, en cm}
-#' \item{x.coord}{Posicion cartesiana en el eje X, en m}
-#' \item{y.coord}{Posicion cartesiana en el eje Y, en m}
-#' \item{crown.class}{Clase de corona (1: superior, 2: intermedio, 3; inferior)}
+#' \item{arbol}{Número del árbol}											
+#' \item{especie}{Nombre de la especie, "N. obliqua" es Nothofagus obliqua, "Ap" es Aexitocicum puncatatum, etc.}
+#' \item{clase.copa}{Clase de copa (1: superior, 2: intermedio, 3; inferior)}
+#' \item{dap}{Diámetro a la altura del pecho, en cm}
+#' \item{coord.x}{Posicion cartesiana en el eje X, en m}
+#' \item{coord.y}{Posicion cartesiana en el eje Y, en m}
 #'  }
 #' @source 
 #' Los datos fueron cedidos por el Dr Christian Salas-Eljatib (Santiago, Chile).
 #' @references
 #' Salas C, LeMay V, Nunez P, Pacheco P, and Espinosa A. 2006. Spatial patterns in an old-growth Nothofagus obliqua forest in 
-#' south-central Chile. Forest Ecology and Management 231(1-3): 38-46.
+#' south-central Chile. Forest Ecology and Management 231(1-3): 38-46. \doi{10.1016/j.foreco.2006.04.037}
 #' @examples
 #' data(pspRuca2)    
-#' head(pspRuca2) 
+#' table(pspRuca2$especie) 
 'pspRuca2'																							
 #' About the R-Squared statistics: the Anscombe quartet dataset
 #'
@@ -3097,14 +3144,14 @@
 #' data(aboutrsq)    
 #' head(aboutrsq) 
 'aboutrsq'
-#' Sobre el estadistico R2: los datos del cuarteto de Anscombe  
+#' Sobre el estadístico R2: los datos del cuarteto de Anscombe  
 #'
 #' @description
-#' Dataset que contiene 4 pares de columnas con la mismos estadisticos descriptivos,
-#'  sin embargo si existe diferencia al representar los puntos mediante un grafico. 
+#' Dataset que contiene cuatro pares de columnas con la mismos estadísticos descriptivos,
+#'  sin embargo, si existe diferencia al representar los puntos mediante un gráfico. 
 #' @usage
 #' data(aboutrsq2)
-#' @format Variables se describen a continuacion::
+#' @format Variables se describen a continuación::
 #' \describe{
 #' \item{X1}{Valores enteros que representan el eje X para las columnas Y1, Y2 e Y3}								
 #' \item{Y1}{Valores flotantes que representan el eje Y para la columna X1}
@@ -3150,20 +3197,20 @@
 #' Biomasa  
 #'
 #' @description
-#' Dataset que contiene 9 pares de columnas con informacion sobre la biomasa de 40 árboles. 
+#' Dataset que contiene nueve pares de columnas con informacion sobre la biomasa de 40 árboles. 
 #' @usage
 #' data(slashpine2)
-#' @format Variables se describen a continuacion::
+#' @format Variables se describen a continuación:
 #' \describe{
-#' \item{tree_id}{Identifcador arbol}											
+#' \item{tree_id}{Identifcador del árbol}											
 #' \item{dbh}{diámetro}
 #' \item{h}{altura total}
 #' \item{lcl}{largo de copa}
-#' \item{age}{edad arbol}
+#' \item{age}{edad árbol}
 #' \item{wood}{biomasa madera}
 #' \item{bark}{biomasa corteza}
 #' \item{crown}{biomasa copa}
-#' \item{tree}{biomasa arbol}
+#' \item{tree}{biomasa total}
 #'  }
 #' @source 
 #' Datos fueron contribuidos por el Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).

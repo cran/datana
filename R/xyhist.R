@@ -1,24 +1,11 @@
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# Function: "xyHist"                                             #
-# It creates a scattterplot with histograms in both axys      #
-# How this function works?:                                            #
-# > xyHist(x, y, col.x, col.y,...)   #
-#                                                                      #
-# Where:                                                               #
-# - x: vector of variable X, or the predictor variable                                                   #
-# - y: vector of variable Y, or the response variable
-# - col.x: string with color for the histogram of variable X   #
-# - col.y: string with color for the histogram of variable Y   #
-# - ylab, xlab:  these options can be specified as usual in R          #
-#                                                                      #
-# Created  by: Christian Salas-Eljatib                                 #
-# Date: oct8, 2021                                                   # 
-# Santiago, Chile                                                      #
-#----------------------------------------------------------------------#
-#' xyHist: Function for a scatter-plot with marginal histograms
-#'
-#' It creates a scattter-plot with histograms in both axys.
-#'
+#' The function produces a scatterplot between the 'y'-axis variable and
+#'  the 'x'-axis variable, but also adding the marginal histograms
+#'  for both variables.
+#'  
+#' @details Both the response variable (Y-axis) and the predictor variable (X-axis) must be
+#'  numeric.
+#' 
+#' @title A scatterplot with marginal histograms
 #' @param x A numeric vector representing the X-axis variable
 #' @param y A numeric vector representing the Y-axis variable
 #' @param col.x (optional) A string specifying the color of the histogram of the X-variable. Default is "blue".
@@ -28,19 +15,23 @@
 #' @param y.lim (optional) A vector of two elements with the limits of the Y-axis. Default is the range of the Y-variable.
 #' @param x.lim (optional) A vector of two elements with the limits of the Y-axis. Default is the range of the X-variable.
 #'
-#' @return Result of calculation
+#' @references
+#' - Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una introducción aplicada. 
+#' Ediciones Universidad Mayor. Santiago, Chile. \url{https://eljatib.com}
+#' @return The function returns the above described graph.
+#' @author Christian Salas-Eljatib 
 #' @export
 #' @importFrom graphics hist
 #'
-#' @examples library(datana)
+#' @examples 
 #' data(treevolroble)
 #' df <- treevolroble
 #' head(df)
-#' xyHist(x=df$dbh,y=df$htot) 
-#' xyHist(x=df$dbh,y=df$htot, xlab="Variable X",  ylab="Variable Y") 
-#' xyHist(x=df$dbh,y=df$htot, xlab="Variable X", ylab="Variable Y", 
+#' xyhist(x=df$dbh,y=df$toth) 
+#' xyhist(x=df$dbh,y=df$toth, xlab="Variable X",  ylab="Variable Y") 
+#' xyhist(x=df$dbh,y=df$toth, xlab="Variable X", ylab="Variable Y", 
 #'   col.x = "gray",col.y="white")
-xyHist<-function(x=x, y=y, col.x="blue",col.y="red",
+xyhist<-function(x=x, y=y, col.x="blue",col.y="red",
                  xlab=NULL, ylab=NULL,x.lim=NULL,y.lim=NULL){
   
   xvar<-x; yvar <- y;
@@ -72,12 +63,3 @@ xyHist<-function(x=x, y=y, col.x="blue",col.y="red",
   graphics::barplot(yhist$counts, axes=FALSE, xlim=c(0, top), space=0,
           horiz=TRUE,  col=col.y)
 }
-#---------------------------
-##how to use this funcion?
-#
-#library(datana)
-#data(treevolroble)
-#df <- treevolroble
-##using the function
-#xyHist(x=df$dbh,x=df$htot)
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

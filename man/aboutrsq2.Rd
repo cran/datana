@@ -3,9 +3,9 @@
 \docType{data}
 \name{aboutrsq2}
 \alias{aboutrsq2}
-\title{Sobre el estadistico R2: los datos del cuarteto de Anscombe}
+\title{Sobre el estadístico R2: los datos del cuarteto de Anscombe}
 \format{
-Variables se describen a continuacion::
+Variables se describen a continuación::
 \describe{
 \item{X1}{Valores enteros que representan el eje X para las columnas Y1, Y2 e Y3}								
 \item{Y1}{Valores flotantes que representan el eje Y para la columna X1}
@@ -22,8 +22,8 @@ Datos fueron contribuidos por el Prof. Christian Salas-Eljatib (Universidad de C
 data(aboutrsq2)
 }
 \description{
-Dataset que contiene 4 pares de columnas con la mismos estadisticos descriptivos,
- sin embargo si existe diferencia al representar los puntos mediante un grafico.
+Dataset que contiene cuatro pares de columnas con la mismos estadísticos descriptivos,
+ sin embargo, si existe diferencia al representar los puntos mediante un gráfico.
 }
 \examples{
 data(aboutrsq2)    

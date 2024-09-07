@@ -3,13 +3,13 @@
 \docType{data}
 \name{beetles2}
 \alias{beetles2}
-\title{Crecimiento poblacional de escarabajos.}
+\title{Crecimiento poblacional de escarabajos}
 \format{
 \describe{
-  \item{dias}{Numero de dias.}
+  \item{dias}{Número de dias.}
   \item{dieta}{La cantidad de harina (en gramos) de ambientes donde crecen los escarabajos.  Seis niveles del factor Dieta.}
   \item{tipo}{Estados de desarrollo de los escarabajos, i.e., huevos, larvas, pupas, y adultos.}
-  \item{densidad}{Numero total de individuos por ambiente de crecimiento.}
+  \item{densidad}{Número total de individuos por ambiente de crecimiento.}
  }
 }
 \source{

@@ -3,7 +3,7 @@
 \docType{data}
 \name{corkoak2}
 \alias{corkoak2}
-\title{Datos de biomasa de corcho en árboles de Encino en Portugal.}
+\title{Datos de biomasa de corcho en árboles de Encino en Portugal}
 \format{
 \describe{
   \item{arbol}{A correlative number for each sample tree.}

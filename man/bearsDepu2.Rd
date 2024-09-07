@@ -3,43 +3,43 @@
 \docType{data}
 \name{bearsDepu2}
 \alias{bearsDepu2}
-\title{Age and physical measurement data for wild bears. Dataframe same as "bears" but without missing values.}
+\title{Edad y características biométricas de osos salvajes (sin datos faltantes)}
 \format{
 Contiene variables de nivel individual, como se describen a continuacion:
 \describe{
-  \item{id}{Identificador de oso}
-\item{age}{edad en meses}
-\item{month}{diámetro a la altura del pecho, en cm}
-\item{sex}{1 = hombre, 2 = mujer}
-\item{headL}{longitud de la cabeza, en cm}
-\item{headW}{ancho de la cabeza, en cm}
-\item{neckG}{circunferencia del cuello, en cm}
-\item{length}{longitud del cuerpo, en cm}
-\item{chestG}{circunferencia del pecho, en cm}
-\item{weight}{peso corporal, en kg}
-\item{obs}{numero de observacion para el oso}
-\item{name}{nombre dado al oso}
+  \item{id}{Identificador del oso.}
+\item{edad}{edad en meses.}
+\item{mes}{Diámetro a la altura del pecho, en cm.}
+\item{sexo}{1 = hombre, 2 = mujer.}
+\item{cabezaL}{longitud de la cabeza, en cm.}
+\item{cabezaA}{ancho de la cabeza, en cm.}
+\item{cuelloP}{circunferencia del cuello, en cm.}
+\item{largo}{longitud del cuerpo, en cm.}
+\item{pechoG}{circunferencia del pecho, en cm.}
+\item{peso}{peso corporal, en kg.}
+\item{obs}{número de observación temporal para el oso.}
+\item{nombre}{nombre dado al oso.}
  }
 }
 \source{
-Minitab, Inc. The data description is courtesy of Prof. Timothy Gregoire at
- Yale University (New Haven, CT, USA).
+Segun el Prof. Timothy Gregoire de Yale University (New Haven, CT, USA), los datos fueron
+ cedidos por Gary Alt. Minitab, Inc. La descripcion de los datos fue dada por el .
 }
 \usage{
 data(bearsDepu2)
 }
 \description{
-Los osos salvajes fueron anestesiados y sus cuerpos fueron medidos y pesados. Uno de los objetivos del estudio fue hacer una 
+Los osos salvajes fueron anestesiados y sus cuerpos medidos. Uno de los objetivos del estudio fue hacer una 
 tabla (o quizas un conjunto de tablas) para las personas interesadas en estimar el peso de un oso basandose en otras medidas.
-Esto se usara porque es mas facil medir la longitud de un oso, por ejemplo, que pesarlo.
-Observe que faltan valores para algunas de las variables.
+Esta dataframe es igual que "bears" pero sin valores perdidos.
 }
 \examples{
 data(bearsDepu2)    
 head(bearsDepu2)
+table(bearsDepu2$sexo)
+boxplot(cabezaL~sexo, data=bearsDepu2) 
 }
 \references{
-According to Prof. Gregoire, This data set was supplied by Gary Alt. Entertaining 
- references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
+Algunas referencias generales estan en el Reader's Digest de Abril, 1979, y Sports Afield de Septiembre, 1981.
 }
 \keyword{datasets}

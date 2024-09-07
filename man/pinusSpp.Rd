@@ -15,7 +15,7 @@ Contains eight variables, as follows:
 \item{stem.id}{Stem identificator number in each plot.}
 \item{spp}{Specie.}
 \item{dbh}{Diameter at breast-height, in cm.}
-\item{h}{Height, in m.}
+\item{toth}{Total height, in m.}
 \item{hcb}{Height to crown base, in m.}
 \item{crown.lenght}{Crown lenght, in m.}
 }

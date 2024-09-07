@@ -7,7 +7,7 @@
 \format{
 Variables se describen a continuacion::
 \describe{
-\item{rodal}{Numero de rodal}											
+\item{rodal}{Número de rodal}											
 \item{plot.id}{Codigo de parcela}
 \item{nha}{Densidad de parcela}
 \item{gha}{Area basal de parcela}

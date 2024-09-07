@@ -3,7 +3,7 @@
 \docType{data}
 \name{primary}
 \alias{primary}
-\title{2021 primary election for the president of Chile.}
+\title{2021 primary election for the president of Chile}
 \format{
 The dataframe contains the following columns:
 \describe{

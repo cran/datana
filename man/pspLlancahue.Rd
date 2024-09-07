@@ -3,12 +3,12 @@
 \docType{data}
 \name{pspLlancahue}
 \alias{pspLlancahue}
-\title{Tree locations for a sample plot in the Llancahue experimental forest, near Valdivia, Chile.}
+\title{Tree locations for a sample plot in the Llancahue experimental forest}
 \format{
 Contains tree-level variables, as follows:
 \describe{
   \item{tree.code}{Tree identificator}
-\item{spp.name}{species abreviation as follows: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
+\item{spp}{species abreviation as follows: AP= Aextocicon puncatatum, EC=Eucryphia cordifolia, GA=Gevuina avellana, 
  LP= Laureliopsis philippiana, LS= Laurelia sempervirens, ND=Nothofagus dombeyi, Ot=Other, PS=Podocarpus saligna}
 \item{dbh}{diameter at breast height, in cm}
 \item{x.coord}{Cartesian position in the X-axis, in m}
@@ -28,6 +28,8 @@ The Cartesian position, species, and diameter of trees within a plot were measur
 \examples{
 data(pspLlancahue)    
 head(pspLlancahue) 
+descstat(pspLlancahue$dbh)
+boxplot(dbh~spp, data=pspLlancahue)
 }
 \references{
 - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y espacial de un bosque mixto dominado por

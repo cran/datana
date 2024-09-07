@@ -3,42 +3,43 @@
 \docType{data}
 \name{bearsDepu}
 \alias{bearsDepu}
-\title{Age and physical measurement data for wild bears. Dataframe same as "bears" but without missing values.}
+\title{Age and physical measurement data for wild bears (without missing values)}
 \format{
-Contiene variables de nivel individual, como se describen a continuacion:
+Individual-level variables, as follows:
 \describe{
-  \item{id}{Bear identificator}
-\item{age}{age in months}
-\item{month}{Diameter at breast height, in cm}
-\item{sex}{1 =male, 2 = female}
-\item{headL}{length of head, in cm}
-\item{headW}{width of head, in cm}
-\item{neckG}{girth of neck, in cm}
-\item{length}{body length, in cm}
-\item{chestG}{girth of chest, in cm}
-\item{weight}{body weight, in kg}
-\item{obs}{observation number for bear}
+  \item{id}{Bear identificator.}
+\item{age}{Age in total number of months.}
+\item{month}{Month number within a given year.}
+\item{sex}{Sex code: 1 =male, 2 = female.}
+\item{headL}{Length of head, in cm.}
+\item{headW}{Width of head, in cm.}
+\item{neckG}{Girth of neck, in cm.}
+\item{length}{Body length, in cm.}
+\item{chestG}{Girth of chest, in cm.}
+\item{weight}{Body weight, in kg.}
+\item{obs}{Temporal observation number for bear.}
 \item{name}{name given to bear}
  }
 }
 \source{
-Minitab, Inc. The data description is courtesy of Prof. Timothy Gregoire at
- Yale University (New Haven, CT, USA).
+According to Prof. Timothy Gregoire at Yale University (New Haven, CT, USA), the
+ data set was supplied by Gary Alt.
 }
 \usage{
 data(bearsDepu)
 }
 \description{
-Wild bears were anaesthetised, and their bodies were measured and weighed. One goal of the study
+Wild bears were anesthetized, and their bodies were measured and weighed. One goal of the study
  was to make a table (or perhaps a set of tables) for people interested in estimating the weight of a
  bear based on other measurements.
 }
 \examples{
 data(bearsDepu)    
 head(bearsDepu)
+table(bearsDepu$sex)
+boxplot(headL~sex, data=bearsDepu) 
 }
 \references{
-According to Prof. Gregoire, This data set was supplied by Gary Alt. Entertaining 
- references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
+Entertaining references are in Reader's Digest April, 1979, and Sports Afield September, 1981.
 }
 \keyword{datasets}

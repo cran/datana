@@ -3,18 +3,18 @@
 \docType{data}
 \name{pinaster2}
 \alias{pinaster2}
-\title{Datos de volumen individual de árboles de Pinus pinaster en Galicia, España.}
+\title{Volumen individual de árboles de Pinus pinaster en Galicia, España.}
 \format{
-Contiene las siguientes variables a nivel de arbol:
+Contiene las siguientes variables a nivel de árbol:
 \describe{
-  \item{rodal}{Rodal desde donde el arbol fue muestreado}
+  \item{rodal}{Rodal desde donde el árbol fue muestreado}
 \item{ind.sitio}{Indice de sitio del rodal, en m.}
-\item{arbol}{Numero del arbol.}
-\item{dbh}{Diámetro a la altura del pecho, en cm.}
-\item{htot}{Altura total, en m.}
+\item{arbol}{Número del árbol.}
+\item{dap}{Diámetro a la altura del pecho, en cm.}
+\item{atot}{Altura total, en m.}
  \item{d4}{Diámetro fustal a los 4 m, en cm.}
-\item{vt.cc}{Volumen bruto total con corteza, en m\eqn{^{3}}{^3}.}
-\item{vt.sc}{Volumen bruto total sin corteza, en m\eqn{^{3}}{^3}.}
+\item{vtcc}{Volumen bruto total con corteza, en m\eqn{^{3}}{^3}.}
+\item{vtsc}{Volumen bruto total sin corteza, en m\eqn{^{3}}{^3}.}
  }
 }
 \source{
@@ -24,7 +24,7 @@ Los datos fueron cedidos por el Dr Christian Salas (Chile).
 data(pinaster2)
 }
 \description{
-Variables de volumen y otras a nivel de arbol para una muestra de árboles
+Variables de volumen y otras a nivel de árbol para una muestra de árboles
  de Pinus pinaster en la comarca del Baixo-Mino en Galicia, España.
 }
 \examples{

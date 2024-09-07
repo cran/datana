@@ -22,7 +22,7 @@ data(eucaplot)
 }
 \description{
 Tree-level data collected within a sample plot in a forestry plantation of Eucalyptus globulus near Gorbea, 
-Southern Chile. The plot size is 500 square meters. The plantation is 15 yr-old and
+Southern Chile. The plot size is 500 m\eqn{^{2}}{^2}. The plantation is 15 yr-old and
 had been subject to three thinnings.
 }
 \examples{

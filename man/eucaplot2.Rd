@@ -3,27 +3,27 @@
 \docType{data}
 \name{eucaplot2}
 \alias{eucaplot2}
-\title{Arboles dentro de parcelas de muestreo en una plantacion de Eucalyptus globulus, Chile.}
+\title{Árboles dentro de parcelas de muestreo en una plantación de Eucalyptus globulus, Chile.}
 \format{
-The dataframe contains four variables as follows:
+Los datos contienen las siguientes cuatro columnas:
 \describe{
-  \item{dbh}{Diameter at breast height, in cm.}
-  \item{health}{health status (1: good, 2: medium, 3: bad).}
-  \item{shape}{stem shape for timber purposes (1: good, 2: medium, 3: bad).}
-  \item{crown.class}{Crown class (1: superior, 2: intermedium, 3: lower).}
-  \item{toth}{Total height, in m.}
+  \item{dap}{Diámetro a la altura del pecho, en cm.}
+  \item{sanidad}{Evaluación cualitativa de la sanidad del árbol (1: buena, 2: media, 3: mala).}
+  \item{forma}{Evaluación cualtitativa de la forma del fuste (1: buena, 2: media, 3: mala).}
+  \item{clase.copa}{Clase de copa (1: superior, 2: intermedio, 3: inferior).}
+  \item{atot}{Altura total, en m.}
  }
 }
 \source{
-The data were provided courtesy of Dr Christian Salas (Universidad de Chile, Santiago, Chile).
+Los datos fueron cedidos por el Prof. Christian Salas (Universidad de Chile, Santiago, Chile).
 }
 \usage{
 data(eucaplot2)
 }
 \description{
-Tree-level data collected within a sample plot in a forestry plantation of Eucalyptus globulus near Gorbea, 
-Southern Chile. The plot size is 500 square meters. The plantation is 15 yr-old and
-had been subject to three thinnings.
+Datos a nivel de árbol colectados dentro de una parcela de muestreo en una plantación
+  forestal de Eucalyptus globulus cerca de Gorbea, Sur de Chile. La superficie de la parcela es de 500 m\eqn{^{2}}{^2}.
+  La plantación tiene 15 años de edad y ha estado sujeta a tres raleos.
 }
 \examples{
 data(eucaplot2)    

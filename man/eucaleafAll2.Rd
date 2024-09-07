@@ -8,7 +8,7 @@
 Contiene variables a nivel de hoja, como sigue:
 \describe{
   \item{tiempo}{factor a dos niveles: Temprano o Tardio}
-\item{arbol}{un identificador del arbol muestra}
+\item{arbol}{un identificador del árbol muestra}
 \item{meristema}{descripcion del meristema}
 \item{largo}{largo de la hoja, en mm}
 \item{ancho}{ancho de la hoja, en mm}
@@ -16,7 +16,7 @@ Contiene variables a nivel de hoja, como sigue:
  }
 }
 \source{
-Aunque la fuente original de estas mediciones proviene de la tesis del Dr Candy (1999), 
+Aunque la fuente original de estas mediciones proviene de la tesis del Dr. Candy (1999), 
  el archivo de datos fue cortesia del Prof. Timothy Gregoire de
  Yale University (New Haven, CT, USA).
 }

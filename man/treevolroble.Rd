@@ -3,15 +3,15 @@
 \docType{data}
 \name{treevolroble}
 \alias{treevolroble}
-\title{Contains tree-level variables for roble (Nothofagus obliqua) in the Rucamanque experimental forest, near Temuco, Chile.}
+\title{Tree volume of roble (Nothofagus obliqua) in the Rucamanque forest}
 \format{
 Contains tree-level variables, as follows:
 \describe{
   \item{tree.no}{Tree id}
 \item{dbh}{Diameter at breast height, in cm}
-\item{htot}{Total height, in m.}
+\item{toth}{Total height, in m.}
  \item{d6}{Upper-stem diameter at 6 m, in cm}
-\item{vtot}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
+\item{totv}{Tree gross volume, in m\eqn{^{3}}{^3} with bark.}
  }
 }
 \source{

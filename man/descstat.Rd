@@ -2,34 +2,39 @@
 % Please edit documentation in R/descstat.R
 \name{descstat}
 \alias{descstat}
-\title{A descriptive statistics table for continuous variables}
+\title{Creates a descriptive statistics table for continuous variables}
 \usage{
-descstat(data = data, decnum = NA)
+descstat(data = data, decnum = 4, full = FALSE)
 }
 \arguments{
-\item{data}{a dataframe containing variables as columns}
+\item{data}{a dataframe containing numeric variables as columns.}
 
-\item{decnum}{the number of decimals to be used in the output}
+\item{decnum}{the number of decimals to be used in the output.}
+
+\item{full}{TRUE for a longer output (i.e. more descriptive statistics). The default is to FALSE.}
 }
 \value{
 This function wraps descriptive statistics into a summarize table having the following
-  descriptive statistics: sample size, minimum, maximum, mean, median, SD, and coefficient of variation (%).
+  descriptive statistics: sample size, minimum, maximum, mean, median, SD, and coefficient of variation. 
+  If the full option is set to TRUE, the following statistics are added to the table: 25th and 75th 
+  percentiles, the interquartile range, skewness, and kurtosis.
 }
 \description{
-descstat: Function that creates a descriptive statistics table for all continuous variables in a dataframe excluding missing values.
+Function to create a descriptive statistics table for continuous 
+ variables from a dataframe.
 }
 \details{
-As always, please check the output after applying the function.
+The resulting table offers the main central and dispersion statistics.
 }
 \examples{
 
-#creating a fake dataframe
+#creating a ficticiuos dataframe
 set.seed(1234)
 df <- as.data.frame(cbind(variable1=rnorm(5, 0), variable2=rnorm(5, 2)))
 ## adding one missing value
 df[3,1] <- NA
 df
-#using the function
+#' #using the function
 descstat(data=df)
 descstat(data=df,decnum=1)
 descstat(df,2)

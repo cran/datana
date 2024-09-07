@@ -3,7 +3,7 @@
 \docType{data}
 \name{sludge}
 \alias{sludge}
-\title{ludge data are at different cities, with a value of concentration zinc.}
+\title{Sludge data are at different cities, with a value of concentration zinc.}
 \format{
 Contains four variables, as follows:
 \describe{

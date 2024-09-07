@@ -11,20 +11,20 @@ Variables se describen a continuacion::
 \item{PlotSite}{Nombre del municipio de los 9 sitios de estudio}					
 \item{Y.Plot}{Latitud del grafico en grados decimales}
 \item{X.Plot}{Longitud de la grafica en grados decimales}
-\item{PhoroNo}{numero de identificacion de los árboles hospedantes muestreados en cada sitio}
+\item{PhoroNo}{número de identificacion de los árboles hospedantes muestreados en cada sitio}
 \item{EpiFam}{Familia taxonomica de epifitas}
 \item{EpiGen}{Genero taxonomico de epifitas}
 \item{cf.aff}{Abreviaturas de terminos latinos en el contexto de la taxonomia. cf. "conferir" que significa "comparar con". aff .: "affinis" que significa "similar a"}
 \item{Species}{Nombre de la especie epifita (morfo)}
 \item{Author}{Autor del nombre cientifico}
-\item{EpiAzi}{Azimut del individuo epifito en cada arbol huesped}
+\item{EpiAzi}{Azimut del individuo epifito en cada árbol huesped}
 \item{BraAzi}{Azimut de la rama en la que se encontro el individuo epifito}
 \item{EpiDisTru}{Distancia en metros desde el tronco hasta el sitio de union de la epifita en una rama}
 \item{EpiSize}{Tamaño estimado del individuo epifito en centimetros}
 \item{EpiAttHei}{Altura del accesorio de la epifita en metros}
 \item{Date0}{Fecha del primer censo}
 \item{Date1}{Fecha del censo final}
-\item{Location}{Seccion (raices, troncos, ramas) del arbol anfitrion en el que se encontro el individuo epifito}
+\item{Location}{Seccion (raices, troncos, ramas) del árbol anfitrion en el que se encontro el individuo epifito}
 \item{Mortality}{Variable dicotomica. 0 si el individuo epifito estaba muerto en el censo final y 1 si no}
 \item{MorCat}{Causa de mortalidad mecanica o no mecanica}
 \item{Elevation}{Elevacion (msnm) de la parcela}
@@ -38,18 +38,18 @@ Variables se describen a continuacion::
 \item{BasAre}{Area basal de árboles con DAP mayor o igual a 5 cm (AB) en la parcela (m\eqn{^{2}}{^2}/ha)}
 \item{BasAre5_10}{Area basal de árboles con DAP mayor o igual a 5 y menor a 10 cm en la parcela (m\eqn{^{2}}{^2}/ha)}
 \item{BasAre10}{Area basal de árboles con DAP mayor o igual a 10 cm en la parcela (m\eqn{^{2}}{^2}/ha)}
-\item{Ind10}{Numero de árboles del dosel (con un DAP superior o igual a 10 cm) en la parcela}
-\item{Ind5}{Numero de árboles de sotobosque (con DAP mayor o igual a 5 y menor a 10 cm) en la parcela}
-\item{Ind5_10}{Numero de árboles con un DAP mayor o igual a 5 y menos de 10 cm en la parcela}
-\item{Ind10_15}{Numero de árboles con un DAP mayor o igual a 10 y menos de 15 cm en la parcela}
-\item{Ind15_20}{Numero de árboles con un DAP mayor o igual a 15 y menos de 20 cm en la parcela}
-\item{Ind20_25}{Numero de árboles con un DAP mayor o igual a 20 y menos de 25 cm en la parcela}
-\item{Ind25_30}{Numero de árboles con un DAP mayor o igual a 25 y menos de 30 cm en la parcela}
-\item{Ind30}{Numero de árboles con DAP mayor o igual a 30 cm en la parcela}
-\item{TreeHei}{Altura total del arbol en metros}
+\item{Ind10}{Número de árboles del dosel (con un DAP superior o igual a 10 cm) en la parcela}
+\item{Ind5}{Número de árboles de sotobosque (con DAP mayor o igual a 5 y menor a 10 cm) en la parcela}
+\item{Ind5_10}{Número de árboles con un DAP mayor o igual a 5 y menos de 10 cm en la parcela}
+\item{Ind10_15}{Número de árboles con un DAP mayor o igual a 10 y menos de 15 cm en la parcela}
+\item{Ind15_20}{Número de árboles con un DAP mayor o igual a 15 y menos de 20 cm en la parcela}
+\item{Ind20_25}{Número de árboles con un DAP mayor o igual a 20 y menos de 25 cm en la parcela}
+\item{Ind25_30}{Número de árboles con un DAP mayor o igual a 25 y menos de 30 cm en la parcela}
+\item{Ind30}{Número de árboles con DAP mayor o igual a 30 cm en la parcela}
+\item{TreeHei}{Altura total del árbol en metros}
 \item{MedHei}{Altura media de los árboles en cada parcela}
 \item{MaxHei}{Altura maxima de los árboles en cada parcela}
-\item{BranchNumb}{Numero de ramas del arbol anfitrion}
+\item{BranchNumb}{Número de ramas del árbol anfitrion}
 \item{Obs}{Observaciones y notas en español}
  }
 }

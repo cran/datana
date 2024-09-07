@@ -10,7 +10,7 @@ The dataframe has the following columns:
   \item{tree.code}{Tree number identification. The first letter of the ID represents
   a cohort. Six cohorts representing a chronosequence were sampled.}
   \item{dbh}{Initial stem diameter, in cm.}
-  \item{htot}{Total height, in m.}
+  \item{toth}{Total height, in m.}
   \item{crown.area}{Crown outline area, in square meters.}
   \item{comp.ind}{Competition index (Basal area of nearest neighbor divided by square of distance to nearest neighbor plus
          basal area of second nearest neighbor divided by square of distance to second nearest neighbor).}
