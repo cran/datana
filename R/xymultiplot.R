@@ -1,48 +1,79 @@
-#' The function produces a panel of multiple scatterplots and histograms, showing 
+#' The function produces a panel of multiple scatterplots and histograms, 
+#' showing 
 #' the correlation coefficient among all pairs of variables. Notice that 
 #' the data must contain only numeric variables.
 #' 
 #' @details
-#' Generates a multipanel (matrix) of scatterplots and histograms to explore potential relationships among variables. 
+#' Generates a multipanel (matrix) of scatterplots and histograms to explore 
+#' potential relationships among variables. 
 #' 
-#' @title Figure of a matrix of scatterplots and histograms for several variables.
-#' @param x is a dataframe containing all the numeric variables to be used for drawing the panel plot
-#' @param smooth a logical value for drawing smooth curves. The default is set to TRUE.
-#' @param scale scales the correlation font by the size of the absolute correlation. The default is set to FALSE.
-#' @param density a logical value for drawing a density curve. The default is set to TRUE.
-#' @param col.densi.curve a string with the name of the color to be used for the density curve. The default is set to "black".
-#' @param ellipses an optional logical value for drawing an ellipse for the scatter-plots. The default is set to FALSE.
-#' @param col.ellip a string giving the color to be used for the ellipse of the scatterplot. The default is set to "blue".
-#' @param col.cent.point a string giving the color to be used for the centroid point of the ellipse of the scatterplot. The default is set to "blue".
-#' @param digits an optional numeric value for the digits to be used for drawing the correlation coefficient in the panel.
+#' @title Figure of a matrix of scatterplots and histograms for several 
+#' variables.
+#' @param x is a dataframe containing all the numeric variables to be used 
+#' for drawing the panel plot
+#' @param smooth a logical value for drawing smooth curves. The default is 
+#' set to TRUE.
+#' @param scale scales the correlation font by the size of the absolute 
+#' correlation. The default is set to FALSE.
+#' @param density a logical value for drawing a density curve. The default
+#'  is set to TRUE.
+#' @param col.densi.curve a string with the name of the color to be used for
+#'  the density curve. The default is set to "black".
+#' @param ellipses an optional logical value for drawing an ellipse for the
+#'  scatter-plots. The default is set to FALSE.
+#' @param col.ellip a string giving the color to be used for the ellipse of 
+#' the scatterplot. The default is set to "blue".
+#' @param col.cent.point a string giving the color to be used for the centroid
+#'  point of the ellipse of the scatterplot. The default is set to "blue".
+#' @param digits an optional numeric value for the digits to be used for 
+#' drawing the correlation coefficient in the panel.
 #'   Defaults is set to 2.
-#' @param method a string giving the method to be used for computing the correlation coefficient. Default is set to "pearson".
+#' @param method a string giving the method to be used for computing the
+#'  correlation coefficient. Default is set to "pearson".
 #' @param pch The plot character (The default is 20, which looks like '.').
-#' @param lm Plot the linear fit rather than the LOESS smoothed fits. The default is FALSE.
-#' @param cor If plotting regressions, should correlations be reported? The default is TRUE.
-#' @param jiggle Should the points be jittered before plotting? The default is FALSE.
-#' @param factor factor for jittering (1-5), therefore only needed if "jiggle" is set to TRUE.
-#' @param col.hist a string giving the color to be used for the histograms of the panel. Default is set to "cyan".
-#' @param show.points a logical value for drawing the points in the scatter-plots. Defauls is set to TRUE.
-#' @param col.points a string giving the color to be used for the data points. Default is set to "gray".
-#' @param col.smooth a string giving the color to be used for the smoothed curve of the scatterplot. Default is set to "red".
-#' @param rug  a logical value for drawing the rugs in the histograms. Defauls is set to TRUE.
-#' @param breaks a string giving the method to be used for obtaining the breaks of the histogram. Defauls is set to "Sturges".
-#' @param cex.cor If this is specified, this will change the size of the text in the correlations. this 
-#'  allows one to also change the size of the points in the plot by specifying the normal cex values. If just
-#'  specifying cex, it will change the character size, if cex.cor is specified, then cex will function to change the point size.
-#' @param smoother If TRUE, then smooth.scatter the data points – slow but pretty with lots of subjects
-#' @param ci Draw confidence intervals for the linear model or for the loess fit, defaults to ci=FALSE. If confidence
+#' @param lm Plot the linear fit rather than the LOESS smoothed fits. 
+#' The default is FALSE.
+#' @param cor If plotting regressions, should correlations be reported? 
+#' The default is TRUE.
+#' @param jiggle Should the points be jittered before plotting? 
+#' The default is FALSE.
+#' @param factor factor for jittering (1-5), therefore only needed 
+#' if "jiggle" is set to TRUE.
+#' @param col.hist a string giving the color to be used for the histograms
+#'  of the panel. Default is set to "cyan".
+#' @param show.points a logical value for drawing the points in the
+#'  scatter-plots. Defauls is set to TRUE.
+#' @param col.points a string giving the color to be used for the data points. 
+#' Default is set to "gray".
+#' @param col.smooth a string giving the color to be used for the smoothed
+#'  curve of the scatterplot. Default is set to "red".
+#' @param rug  a logical value for drawing the rugs in the histograms.
+#'  Defauls is set to TRUE.
+#' @param breaks a string giving the method to be used for obtaining the 
+#' breaks of the histogram. Defauls is set to "Sturges".
+#' @param cex.cor If this is specified, this will change the size of the 
+#' text in the correlations. this 
+#'  allows one to also change the size of the points in the plot by 
+#'  specifying the normal cex values. If just
+#'  specifying cex, it will change the character size, if cex.cor is
+#'   specified, then cex will function to change the point size.
+#' @param smoother If TRUE, then smooth.scatter the data points-slow but
+#'  pretty with lots of subjects
+#' @param ci Draw confidence intervals for the linear model or for the 
+#' loess fit, defaults to ci=FALSE. If confidence
 #'   intervals are not drawn, the fitting function is lowess.
-#' @param alpha an optional numeric value for the significance level. Defauls is set to 0.05.
+#' @param alpha an optional numeric value for the significance level.
+#'  Defauls is set to 0.05.
 #' @inheritParams graphics::plot
 #' @importFrom methods is
 #' 
 #' @references
-#' - Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una introducción aplicada. 
-#' Ediciones Universidad Mayor. Santiago, Chile. \url{https://eljatib.com}
+#' - Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: 
+#' una introducción aplicada. Ediciones Universidad Mayor. Santiago, Chile. 
+#' \url{https://eljatib.com}
 #' @return This function returns a multipanel of scatterplots and histograms
-#' @author A modification of Christian Salas-Eljatib of the function pairs.panels of the package "psych".
+#' @author A modification of Christian Salas-Eljatib of the 
+#' function pairs.panels of the package \eqn{psych}.
 #' @examples
 #' ##First example
 #' data(bears2)
@@ -91,7 +122,6 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
     if (density) {
       tryd <- try(d <- density(x, na.rm = TRUE, bw = "nrd", 
                                adjust = 1.2), silent = TRUE)
-      #if #(class(tryd) != "try-error") {
         if(methods::is(tryd,"try-error")==FALSE){
         d$y <- d$y/max(d$y)
         graphics::lines(d,col=col.densi.curve)
@@ -104,26 +134,11 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
     usr <- graphics::par("usr")
     on.exit(graphics::par(usr=usr))
     graphics::par(usr = c(0, 1, 0, 1))
-    #if (is.null(wt)) { ##esto lo desactive para no calcular R ponderado por sample size
       r <- stats::cor(x, y, use = "pairwise", method = method)
-    #}
-    #else {
-      #r <- cor.wt(data.frame(x, y), w = wt[, c(1:2)])$r[1, 2]
-    #}
-##y lo mismo hice en colocarlo en los argumentos, como sigue      
-#### ' @param wt If specified, then weight the correlations by a weights matrix (see note for some comments)      
     txt <- format(c(round(r, digits), 0.123456789), digits = digits)[1]
     txt <- paste(prefix, txt, sep = "")
-    #if (stars) {  ##esto lo desactive para no calcular R ponderado por sample size
-     # #pval <- r.test(sum(!is.na(x * y)), r)$p ##lo desactive no me gusta
-    #  pval<-0.9
-     # symp <- stats::symnum(pval, corr = FALSE, cutpoints = c(0, 
-#                                                       0.001, 0.01, 0.05, 1), symbols = c("***", "**",                                                                                           "*", " "), legend = FALSE)
-    #  txt <- paste0(txt, symp)
-    #}
-##y lo mismo hice en colocarlo en los argumentos, como sigue      
-##### ' @param stars a logical value for drawing starts for the significance of the correlation coefficient. Defauls is set to FALSE.    
-    cex <- cex.cor * 0.8/(max(graphics::strwidth("0.12***"), graphics::strwidth(txt)))
+cex <- cex.cor * 0.8/(max(graphics::strwidth("0.12***"),
+                          graphics::strwidth(txt)))
     if (scale) {
       cex1 <- cex * abs(r)
       if (cex1 < 0.25) 
@@ -164,9 +179,9 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
           lowerci <- pred$fit - confid * pred$se.fit
           graphics::polygon(c(tempx$x, rev(tempx$x)), c(lowerci, 
             rev(upperci)), 
-            col = grDevices::adjustcolor("light grey", alpha.f = 0.8), border = NA)
+      col = grDevices::adjustcolor("light grey", alpha.f = 0.8), border = NA)
         }
-        graphics::lines(tempx$x, pred$fit, col = col.ellip, ...)#smooth, ...)
+    graphics::lines(tempx$x, pred$fit, col = col.ellip, ...)#smooth, ...)
       }
       else {
         if (smooth) 
@@ -175,7 +190,7 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
       }
     }
     if (ellipses) #dibuja el punto medio
-      draw.ellipse(xm, ym, xs, ys, r, col="yellow",#col.smooth = "yellow",#col.smooth, 
+draw.ellipse(xm, ym, xs, ys, r, col="yellow",#col.smooth = "yellow",#col.smooth, 
                    ...)
   }
   "panel.lm" <- function(x, y, pch = graphics::par("pch"), col.lm = "red", 
@@ -233,7 +248,7 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
         theta <- sign(r)/sqrt(2)
       else theta = 1/sqrt(2)
       shape <- diag(c(sqrt(1 + r), sqrt(1 - r))) %*% matrix(c(theta, 
-                                                              theta, -theta, theta), ncol = 2, byrow = TRUE)
+              theta, -theta, theta), ncol = 2, byrow = TRUE)
       ellipse <- unit.circle %*% shape
       ellipse[, 1] <- ellipse[, 1] * xs + x
       ellipse[, 2] <- ellipse[, 2] * ys + y
@@ -274,11 +289,11 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
         theta <- sign(r)/sqrt(2)
       else theta = 1/sqrt(2)
       shape <- diag(c(sqrt(1 + r), sqrt(1 - r))) %*% matrix(c(theta, 
-                                                              theta, -theta, theta), ncol = 2, byrow = TRUE)
+                theta, -theta, theta), ncol = 2, byrow = TRUE)
       ellipse <- unit.circle %*% shape
       ellipse[, 1] <- ellipse[, 1] * xs + xm
       ellipse[, 2] <- ellipse[, 2] * ys + ym
-      graphics::points(xm, ym, pch = 19, col = col.ellip,#col.smooth, 
+      graphics::points(xm, ym, pch = 19, col = col.ellip,
              cex = 1.5)
       if (ellipses) 
         graphics::lines(ellipse, ...)
@@ -298,21 +313,25 @@ xymultiplot <- function (x, smooth = TRUE, scale = FALSE, density = TRUE,
   confid <- stats::qt(1 - alpha/2, n.obs - 2)
   if (!lm) {
     if (cor) {
-      graphics::pairs(x, diag.panel = panel.hist.density, upper.panel = panel.cor, 
+graphics::pairs(x, diag.panel = panel.hist.density, 
+                upper.panel = panel.cor, 
             lower.panel = panel.smoother, las=1,pch = pch, ...)
     }
     else {
-      graphics::pairs(x, diag.panel = panel.hist.density, upper.panel = panel.smoother, 
+graphics::pairs(x, diag.panel = panel.hist.density, 
+                upper.panel = panel.smoother, 
             lower.panel = panel.smoother, las=1,pch = pch, ...)
     }
   }
   else {
     if (!cor) {
-      graphics::pairs(x, diag.panel = panel.hist.density, upper.panel = panel.lm, 
+      graphics::pairs(x, diag.panel = panel.hist.density, 
+                      upper.panel = panel.lm, 
             lower.panel = panel.lm, pch = pch, ...)
     }
     else {
-      graphics::pairs(x, diag.panel = panel.hist.density, upper.panel = panel.cor, 
+      graphics::pairs(x, diag.panel = panel.hist.density, 
+                      upper.panel = panel.cor, 
             lower.panel = panel.lm, pch = pch, ...)
     }
   }

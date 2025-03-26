@@ -1,3 +1,5 @@
-export("cdf", "contrast", "deleteRight", "descstat", "findColumn.byname",
-       "gmean", "kurto", "lrt", "moda", "pvalt", "pvalz", "skew",
-       "timeserplot", "xyboxplot", "xyhist", "xymultiplot")
+export("cdf", "contrast", "deleteRight",
+       "descstat", "findColumn.byname", "gmean",
+       "kurto", "lrt", "moda", "pvalt", "pvalz",
+       "skew", "timeserplot", "xyboxplot",
+       "xyhist", "xymultiplot")

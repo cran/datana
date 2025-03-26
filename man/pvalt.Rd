@@ -7,21 +7,26 @@
 pvalt(t.value, df, decnum = 5)
 }
 \arguments{
-\item{t.value}{A numeric random variable following a t-student pdf distribution.}
+\item{t.value}{A numeric random variable following a t-student pdf 
+distribution.}
 
-\item{df}{degrees of freedom of the random variable following a t-student pdf distribution.}
+\item{df}{degrees of freedom of the random variable following a 
+t-student pdf distribution.}
 
-\item{decnum}{the number of decimals to be used in the output. The default is set to 5.}
+\item{decnum}{the number of decimals to be used in the output. 
+The default is set to 5.}
 }
 \value{
-The function returns the P-value or probability of getting a value as large as t.value.
+The function returns the P-value or probability of getting a 
+value as large as t.value.
 }
 \description{
 Function to compute the P-value for a Standard t-distributed random variable.
 }
 \details{
-It is suited to compute the P-value for any random variable following a Standard 
- t probability density function. For instance, to obtain the p-value in a t-test.
+It is suited to compute the P-value for any random variable following a
+ Standard  t probability density function. For instance, to obtain 
+ the p-value in a t-test.
 }
 \examples{
 ## Load dataset

@@ -2,27 +2,43 @@
 % Please edit documentation in R/cdf.R
 \name{cdf}
 \alias{cdf}
-\title{Computes the cumulative distribution for a given random variable}
+\title{Function to compute the cumulative distribution of a variable}
 \usage{
-cdf(y = y)
+cdf(y = y, step = 0.05)
 }
 \arguments{
 \item{y}{a vector of a random variable}
+
+\item{step}{a numeric proportion of the data used as increment interval 
+for building
+the cdf of the random variable. The default value for 'step' is 0.05, 
+representing a 5\%.}
 }
 \value{
-The function returns a dataframe having two columns: the first contains 
-the random variable values and the second the cumulative distribution for the variable.
+returns a dataframe having two columns: the first contains 
+the random variable values and the second the cumulative distribution
+ for the variable.
 }
 \description{
-Cumulative distribution for a given random variable.
+Builds the cumulative distribution of a vector, using
+ a step\% of
+ the data as fixed-intervals.
 }
 \details{
-The cumulative distribution of the random variable is build every 5% of
- the data at hand, that is to say, from 0.05 (i.e., 5%) to 0.95 (i.e., 95%).
+By default the cumulative distribution is build using 5\% of
+ the data as intervals, that is to say, from 0.05 (i.e., 5\%) to 
+ 0.95 (i.e., 95\%).
 }
 \examples{
 y.var <- rnorm(10)
 cdf(y.var)
+cdf(y.var, step=0.1)
+}
+\references{
+Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R:
+ una introducción
+ aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p.
+  \url{https://eljatib.com/rlibro}
 }
 \author{
 Christian Salas-Eljatib

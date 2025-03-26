@@ -1,14 +1,19 @@
 #' Function to compute the P-value for a Standard t-distributed random variable.
 #' 
-#' It is suited to compute the P-value for any random variable following a Standard 
-#'  t probability density function. For instance, to obtain the p-value in a t-test.
+#' It is suited to compute the P-value for any random variable following a
+#'  Standard  t probability density function. For instance, to obtain 
+#'  the p-value in a t-test.
 #'  
 #' @title Obtain the P-value for a Standard t-distributed random variable
-#' @param t.value A numeric random variable following a t-student pdf distribution.
-#' @param df degrees of freedom of the random variable following a t-student pdf distribution.
-#' @param decnum the number of decimals to be used in the output. The default is set to 5. 
+#' @param t.value A numeric random variable following a t-student pdf 
+#' distribution.
+#' @param df degrees of freedom of the random variable following a 
+#' t-student pdf distribution.
+#' @param decnum the number of decimals to be used in the output. 
+#' The default is set to 5. 
 #' 
-#' @return The function returns the P-value or probability of getting a value as large as t.value.
+#' @return The function returns the P-value or probability of getting a 
+#' value as large as t.value.
 #' @author Christian Salas-Eljatib          
 #' 
 #' @examples

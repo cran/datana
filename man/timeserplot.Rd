@@ -17,84 +17,116 @@ timeserplot(
   linetype.lab = NA,
   factor2.line = TRUE,
   factor2.col = FALSE,
+  col.lines = "black",
   max.y.all = NA,
   levels.i.want = FALSE,
-  col.lev.i.want = FALSE,
-  col.lines = FALSE
+  col.lev.i.want = FALSE
 )
 }
 \arguments{
-\item{data}{a dataframe with at least tree columns representing the response variable ("y"),
-the main predictor variable ("x"), and a variable indicating the observational unit ("obs.unit").}
+\item{data}{a dataframe with at least tree columns representing the 
+response variable ("y"),
+  the main predictor variable ("x"), and a variable indicating the 
+  observational unit ("obs.unit").}
 
-\item{y}{a character giving the column name of the response variable or variable of interest.}
+\item{y}{a character giving the column name of the response variable
+or variable of interest.}
 
-\item{x}{a character giving the column name of the main predictor variable. Generally this variable
+\item{x}{a character giving the column name of the main predictor 
+variable. Generally this variable
 is time.}
 
-\item{obs.unit}{a character giving the column name containing the info of the observational unit.}
+\item{obs.unit}{a character giving the column name containing the info 
+of the observational unit.}
 
-\item{factor1}{an optional character having the name of a column having a factor variable (e.g., treatment). The
-detault value is set to NULL.}
+\item{factor1}{an optional character having the name of a column having 
+a factor variable (e.g., treatment). The
+ detault value is set to NULL.}
 
-\item{factor2}{an optional character having the name of a column having another factor variable (e.g., species). The
-detault value is set to NULL.}
+\item{factor2}{an optional character having the name of a column having 
+another factor variable (e.g., species). The
+ detault value is set to NULL.}
 
-\item{only.lines}{a logic value if only lines, but not including dots, are going to be drwan in the plot. The detault
+\item{only.lines}{a logic value if only lines, but not including dots,
+are going to be drwan in the plot. The detault
 value is set to FALSE.}
 
 \item{ylab}{Label for the Y-axis}
 
 \item{xlab}{Label for the X-axis}
 
-\item{linetype.lab}{is an optional string to be used as the title of the factor being represented by lines. It is only
+\item{linetype.lab}{is an optional string to be used as the title of the
+factor being represented by lines. It is only
 needed if factor1 and factor2 are defined. See example.}
 
-\item{factor2.line}{a logic value if the second factor, factor2, is going to be segregated according to the
+\item{factor2.line}{a logic value if the second factor, factor2, is going
+to be segregated according to the
 type of lines. The detault  value is set to TRUE.}
 
-\item{factor2.col}{a logic value if the second factor, factor2, is going to be segregated according to the
+\item{factor2.col}{a logic value if the second factor, factor2, is going to
+be segregated according to the
 color of the lines only. The detault  value is set to FALSE.}
 
-\item{max.y.all}{A number representing the maximum level of Y-axis for all classes}
+\item{col.lines}{A string specifying the single color to be used for the
+lines of the timeseries}
+
+\item{max.y.all}{A number representing the maximum level of Y-axis for all 
+classes}
 
 \item{levels.i.want}{A vector having the levels for the factor under study}
 
-\item{col.lev.i.want}{A vector having the colors to be used for the factor under study}
-
-\item{col.lines}{A string specifying the single color to be used for the lines of the timeseries}
+\item{col.lev.i.want}{A vector having the colors to be used for the factor
+under study}
 }
 \value{
 This function returns a time series plot
 }
 \description{
-Produces a time series plot, of variable 'y' as a function of 'x' by an observational unit factor.
+Produces a time series plot, of variable 'y' as a function of 'x' by 
+an observational unit factor.
 }
 \details{
-Both 'y' and 'x' must be numeric variables, and the column representing the observational unit, must be
-  a factor. This factor identifies the longitudinal context of the data, for instance, a student
-  being measured on time. Besides, two more factors can be added to the plotting details, in order
+Both 'y' and 'x' must be numeric variables, and the column representing 
+  the observational unit, must be
+  a factor. This factor identifies the longitudinal context of the data,
+   for instance, a student
+  being measured on time. Besides, two more factors can be added to the 
+  plotting details, in order
    to represent the potential variability among them.
 }
 \note{
-Please, uses with caution, and run first the examples to understand it better.
+Please, uses the function with caution, and run first the examples to
+ understand it better.
 }
 \examples{
-
-#data(ficdiamgr)
-# df <- ficdiamgr
+data(ficdiamgr, package="datana")
+df <- ficdiamgr
+head(df)
+str(df)
+df$site<-as.factor(df$site)
+df$species<-as.factor(df$species)
+table(df$tree,df$species)
+table(df$species,df$site)
 # 
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree")
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree", only.lines = T)
+timeserplot(df, y="dbh", x="time", obs.unit = "tree")
+timeserplot(df, y="dbh", x="time", obs.unit = "tree", only.lines = TRUE)
 # 
-# # dos opciones de lo solicitado
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree", col.lines = T, only.lines = T)
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree", col.lines = T, only.lines = F)
+## Otros ejemplos de uso de la funcion
+timeserplot(df, y="dbh", x="time", obs.unit = "tree", col.lines = "blue",
+only.lines = TRUE)
+timeserplot(df, y="dbh", x="time", obs.unit = "tree", only.lines = FALSE)
 # 
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site")
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site", factor2= "species")
-# timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site", factor2= "species",
-#             factor2.col = T, only.lines = T)
+timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site")
+timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site",
+factor2= "species")
+timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site",
+ factor2= "species", factor2.col = TRUE, only.lines = TRUE)
+}
+\references{
+Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R: 
+una introducción
+ aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p.
+  \url{https://eljatib.com/rlibro}
 }
 \author{
 Christian Salas-Eljatib

@@ -1,8 +1,10 @@
 #' Sometimes in data manipulation we face the task of locating the position
-#' of a specific variable within a dataframe.  The function finds the position in 
+#' of a specific variable within a dataframe.  The function finds the position
+#'  in 
 #' which a column name is within an object.
 #' 
-#' @details Although the function finds the position of a specific variable, can also 
+#' @details Although the function finds the position of a specific variable, 
+#' can also 
 #' be used for more than one variable.
 #'  
 #' @title Finds the position of a specific variable.
@@ -11,10 +13,16 @@
 #'
 #' @return This function returns the number of a specific column-name. 
 #' @author Christian Salas-Eljatib
+#' @references
+#' Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R:
+#'  una introducción
+#'  aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p. 
+#'  \url{https://eljatib.com/rlibro}
 #' @note It can be used for a vector of specified column-names as well.
 #' @examples
 #'
-#' df <- data.frame(varX=1:5, varY=letters[1:5], varZ=rep("a",5), varK=rep("b",5))
+#' df <- data.frame(varX=1:5, varY=letters[1:5], varZ=rep("a",5), 
+#' varK=rep("b",5))
 #' df
 #' #using the function
 #' findColumn.byname(df, c("varY","varZ"))

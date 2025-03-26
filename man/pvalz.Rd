@@ -7,19 +7,22 @@
 pvalz(zval, decnum = 5)
 }
 \arguments{
-\item{zval}{A numeric random variable following a Standard Gaussian distribution.}
+\item{zval}{A numeric random variable following a Standard Gaussian
+distribution.}
 
-\item{decnum}{the number of decimals to be used in the output. The default is set to 5.}
+\item{decnum}{the number of decimals to be used in the output.
+The default is set to 5.}
 }
 \value{
-This function returns the P-value or probability of getting a value as large as 'zval'.
+This function returns the P-value or probability of getting a 
+value as large as 'zval'.
 }
 \description{
 Function to computes the P-value for a Standard Gaussian random variable.
 }
 \details{
-It is suited to compute the P-value for any random variable following a Standard 
- Gaussian probability density function.
+It is suited to compute the P-value for any random variable following a 
+Standard  Gaussian probability density function.
 }
 \examples{
 

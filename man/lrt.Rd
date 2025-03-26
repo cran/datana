@@ -2,7 +2,8 @@
 % Please edit documentation in R/lrt.R
 \name{lrt}
 \alias{lrt}
-\title{Computes a likelihood ratio test between a reduced model and a full model}
+\title{Computes a likelihood ratio test between a reduced model and a full 
+model}
 \usage{
 lrt(modr, modf)
 }
@@ -13,17 +14,20 @@ lrt(modr, modf)
 }
 \value{
 This function returns an object having the following elements:
-"loglik.Modr" maximized log-likelihood of modr; "loglik.Modf" maximized log-likelihood of modf;
+"loglik.Modr" maximized log-likelihood of modr; "loglik.Modf" maximized
+ log-likelihood of modf;
  "dif.loglik"  difference in log-likelihood between both models, and 
  "dif.df" difference in degrees of freedong of both models, and 
  "p-value" is the p-value for the LRT.
 }
 \description{
-Computes a likelihood ratio test between a reduced model (modr) and a full model (modf). Both models must be
+Computes a likelihood ratio test between a reduced model (modr) and a 
+full model (modf). Both models must be
  previously fitted by maximum likelihood.
 }
 \details{
-Double-check the order of the reduced and full model, before of using the model
+Double-check the order of the reduced and full model, before of 
+using the model
 }
 \examples{
 

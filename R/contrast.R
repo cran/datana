@@ -1,13 +1,14 @@
-#' The function computes the statistics for inference in a given contrast, subject to
+#' @title Function to compute the needed statistics for a given contrast
+#' 
+#' @description The function computes the statistics for inference in a given contrast, subject to
 #'  a given significance level. Those statistics are as follows: estimated contrast, 
-#'  standard error of the contrast, and confidence interval of the contrast. 
+#'  standard error of the contrast, and the confidence interval of the contrast. 
 #'         
 #' @details The contrast is established based upon an already fitted statistical model that
-#'  describe the relationship among variables. The significance level (alpha) is defined
-#'  by the user, although by default has been set to 0.05, that is to say, a 95% of
+#'  describe the relationship among variables. The significance level ('alpha') is defined
+#'  by the user, although by default has been set to 0.05, that is to say, a 95\% of
 #'  statistical confidence.
 #' 
-#' @title Computes statistics for inference in a given contrast
 #' @param model object containing the fitted model
 #' @param coef.cont vector with the coefficients to establish the contrasts
 #' @param grp.m a vector having the sample mean per each group, or level of the factor under study.
@@ -36,8 +37,10 @@
 #' contrast(m1,C1.coeff,grp.m=means.trt,grp.n=ns.trt)
 #' 
 #' @references
-#' Stage AR. 1963. A mathematical approach to polymorphic site index curves for 
-#'  Grand fir. Forest Science 9(2):167–180.
+#' - Salas-Eljatib C. 2025. datana: Datasets and Functions to Accompany 
+#' Análisis de Datos con R.
+#'  R package version 1.0.7, \doi{10.32614/CRAN.package.datana},
+#'   \url{https://CRAN.R-project.org/package=datana} 
 #' @rdname contrast
 #' @export
 #' 
@@ -68,7 +71,8 @@ contrast <- function(model=model,coef.cont=coef.cont,grp.m=grp.m,
      names(output)=c('Est.Contrast','SE.Cont','p-value')
    } else {
   output=c(c.est,se.c.est,c.est.lower,c.est.upper,p.value)
-names(output)=c('Est.Contrast','SE.Cont','Lower.bound.Cont','Upper.bound.Cont','p-value')
+names(output)=c('Est.Contrast','SE.Cont','Lower.bound.Cont',
+                'Upper.bound.Cont','p-value')
 }
   output
 }

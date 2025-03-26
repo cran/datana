@@ -20,17 +20,21 @@ xyhist(
 
 \item{y}{A numeric vector representing the Y-axis variable}
 
-\item{col.x}{(optional) A string specifying the color of the histogram of the X-variable. Default is "blue".}
+\item{col.x}{(optional) A string specifying the color of the histogram 
+of the X-variable. Default is "blue".}
 
-\item{col.y}{(optional) A string specifying the color of the histogram of the Y-variable. Default is "red".}
+\item{col.y}{(optional) A string specifying the color of the histogram 
+of the Y-variable. Default is "red".}
 
 \item{xlab}{(optional) A string specifying X-axis label. Default is "xvar".}
 
 \item{ylab}{(optional) A string specifying Y-axis label. Default is "yvar".}
 
-\item{x.lim}{(optional) A vector of two elements with the limits of the Y-axis. Default is the range of the X-variable.}
+\item{x.lim}{(optional) A vector of two elements with the limits of the
+Y-axis. Default is the range of the X-variable.}
 
-\item{y.lim}{(optional) A vector of two elements with the limits of the Y-axis. Default is the range of the Y-variable.}
+\item{y.lim}{(optional) A vector of two elements with the limits of the
+Y-axis. Default is the range of the Y-variable.}
 }
 \value{
 The function returns the above described graph.
@@ -41,7 +45,8 @@ The function produces a scatterplot between the 'y'-axis variable and
  for both variables.
 }
 \details{
-Both the response variable (Y-axis) and the predictor variable (X-axis) must be
+Both the response variable (Y-axis) and the predictor
+ variable (X-axis) must be
  numeric.
 }
 \examples{
@@ -54,8 +59,10 @@ xyhist(x=df$dbh,y=df$toth, xlab="Variable X", ylab="Variable Y",
   col.x = "gray",col.y="white")
 }
 \references{
-- Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una introducción aplicada. 
-Ediciones Universidad Mayor. Santiago, Chile. \url{https://eljatib.com}
+- Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R:
+ una introducción aplicada. 
+Ediciones Universidad Mayor. Santiago, Chile.
+ \url{https://eljatib.com}
 }
 \author{
 Christian Salas-Eljatib

@@ -11,7 +11,8 @@ xyboxplot(x = x, y = y, col.dots = "blue", xlab = NULL, ylab = NULL)
 
 \item{y}{A numeric vector representing the response variable (Y-axis).}
 
-\item{col.dots}{(optional) A string specifying the dot colors. Default is "blue".}
+\item{col.dots}{(optional) A string specifying the dot colors. 
+Default is "blue".}
 
 \item{xlab}{(optional) A string specifying X-axis label.}
 
@@ -21,16 +22,23 @@ xyboxplot(x = x, y = y, col.dots = "blue", xlab = NULL, ylab = NULL)
 The function returns the above described graph.
 }
 \description{
-The function creates a scatterplot with superposing boxplots for the Y-axis variable. To a
- simple scatterplot between the response variable 'y' and the predictor variable 'x', 
- this function superposes boxplots of the response by groups of the predictor variable. 
- The main aim of the above described graph is to get a sense of the distribution of the 
+The function creates a scatterplot with superposing boxplots for the Y-axis
+ variable. To a
+ simple scatterplot between the response variable 'y' and the predictor 
+ variable 'x', 
+ this function superposes boxplots of the response by groups of the 
+ predictor variable. 
+ The main aim of the above described graph is to get a sense of the
+  distribution of the 
  response variable depending upon the  predictor variable.
 }
 \details{
-Notice that the superposing boxplots for the Y-axis variable are computed
- by grouping the X-axis variable in 10 classes. Those classes are set by computing the ten percentiles
- of the X-axis variable, therefore each group has the same number of observations.
+Notice that the superposing boxplots for the Y-axis variable are 
+computed
+ by grouping the X-axis variable in 10 classes. Those classes are set by
+  computing the ten percentiles
+ of the X-axis variable, therefore each group has the same number of
+  observations.
 }
 \examples{
 data(fishgrowth)
@@ -39,11 +47,15 @@ xyboxplot(x=df$age,y=df$length)
 xyboxplot(x=df$age,y=df$length)
 }
 \references{
-- Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una introducción aplicada. 
-Ediciones Universidad Mayor. Santiago, Chile. \url{https://eljatib.com}
+- Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: 
+una introducción aplicada. 
+Ediciones Universidad Mayor. Santiago, Chile. 170 p.
+ \url{https://eljatib.com}
 
-- Salas C, Stage AR, and Robinson AP. 2008. Modeling effects of overstory density and competing 
-vegetation on tree height growth. Forest Science 54(1):107-122. \doi{10.1093/forestscience/54.1.107}
+- Salas C, Stage AR, and Robinson AP. 2008. Modeling effects of 
+overstory density and competing 
+vegetation on tree height growth. Forest Science 54(1):107-122.
+ \doi{10.1093/forestscience/54.1.107}
 }
 \author{
 Christian Salas-Eljatib

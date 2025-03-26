@@ -11,12 +11,16 @@ descstat(data = data, decnum = 4, full = FALSE)
 
 \item{decnum}{the number of decimals to be used in the output.}
 
-\item{full}{TRUE for a longer output (i.e. more descriptive statistics). The default is to FALSE.}
+\item{full}{TRUE for a longer output (i.e. more descriptive statistics).
+The default is to FALSE.}
 }
 \value{
-This function wraps descriptive statistics into a summarize table having the following
-  descriptive statistics: sample size, minimum, maximum, mean, median, SD, and coefficient of variation. 
-  If the full option is set to TRUE, the following statistics are added to the table: 25th and 75th 
+This function wraps descriptive statistics into a summarize table 
+having the following
+  descriptive statistics: sample size, minimum, maximum, mean, median, SD, 
+  and coefficient of variation. 
+  If the full option is set to TRUE, the following statistics are added to
+   the table: 25th and 75th 
   percentiles, the interquartile range, skewness, and kurtosis.
 }
 \description{
@@ -24,11 +28,12 @@ Function to create a descriptive statistics table for continuous
  variables from a dataframe.
 }
 \details{
-The resulting table offers the main central and dispersion statistics.
+The resulting table offers the main central and dispersion 
+statistics.
 }
 \examples{
 
-#creating a ficticiuos dataframe
+#creating a fictitious dataframe
 set.seed(1234)
 df <- as.data.frame(cbind(variable1=rnorm(5, 0), variable2=rnorm(5, 2)))
 ## adding one missing value
@@ -38,6 +43,12 @@ df
 descstat(data=df)
 descstat(data=df,decnum=1)
 descstat(df,2)
+}
+\references{
+Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R:
+ una introducción
+ aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p. 
+ \url{https://eljatib.com/rlibro}
 }
 \author{
 Christian Salas-Eljatib and Tomas Cayul.

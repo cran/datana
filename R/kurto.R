@@ -1,13 +1,17 @@
-#' The kurtosis is about the tailedness, or the degree of heaviness of the tails, in the frequency 
+#' The kurtosis is about the tailedness, or the degree of heaviness of the 
+#' tails, in the frequency 
 #' distribution. The function computes an estimator of the kurtosis. 
 #' 
-#' @details The kurtosis of a random variable is the fourth moment of the standardized variable.
-#'  There are several ways of parameterizing a kurtosis estimator, such as depending on the 
+#' @details The kurtosis of a random variable is the fourth moment of the 
+#' standardized variable.
+#'  There are several ways of parameterizing a kurtosis estimator, such as
+#'   depending on the 
 #'  fourth moment and the standard deviation of the random variable.
 #' 
 #' @title Computes the sample kurtosis of a distribution
 #' @param x a numeric vector of a random variable. 
-#' @param na.rm logical operator to remove NA values. The default is set to TRUE.
+#' @param na.rm logical operator to remove NA values. The default is set 
+#' to TRUE.
 #' 
 #' @return  An estimator of the kurtosis.
 #'  

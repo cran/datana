@@ -1,14 +1,18 @@
-#' Computes a likelihood ratio test between a reduced model (modr) and a full model (modf). Both models must be
+#' Computes a likelihood ratio test between a reduced model (modr) and a 
+#' full model (modf). Both models must be
 #'  previously fitted by maximum likelihood. 
 #'  
-#' @details Double-check the order of the reduced and full model, before of using the model
+#' @details Double-check the order of the reduced and full model, before of 
+#' using the model
 #' 
-#' @title Computes a likelihood ratio test between a reduced model and a full model
+#' @title Computes a likelihood ratio test between a reduced model and a full 
+#' model
 #' @param modr is a previously fitted model having less parameters than modf
 #' @param modf is a previously fitted model having more parameters than modr
 #'
 #' @return This function returns an object having the following elements:
-#' "loglik.Modr" maximized log-likelihood of modr; "loglik.Modf" maximized log-likelihood of modf;
+#' "loglik.Modr" maximized log-likelihood of modr; "loglik.Modf" maximized
+#'  log-likelihood of modf;
 #'  "dif.loglik"  difference in log-likelihood between both models, and 
 #'  "dif.df" difference in degrees of freedong of both models, and 
 #'  "p-value" is the p-value for the LRT.
