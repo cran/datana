@@ -1,3 +1,98 @@
+#' Resultados elecciones presidenciales en Argentina segunda vuelta
+#' 2023.
+#' @description Corresponde a los datos públicos entregados por el
+#'     ministerio del interior de Argentina, referentes a las
+#'     elecciones presidenciales efectuadas el año 2023
+#' @usage data(argsegundavuelta23)
+#' @format Este set de datos contiene las siguientes columnas:
+#'     \describe{ \item{año}{Es el año calendario en el cual se lleva
+#'     a cabo la elección.}  \item{recuento_id}{Indica el
+#'     identificador numérico del tipo de recuento.}
+#'     \item{distrito_id}{Indica el identificador numérico del
+#'     distrito origen de los datos.}  \item{seccion_nombre}{Indica el
+#'     nombre de la sección origen de los datos.}
+#'     \item{mesa_id}{Identificador de la mesa origen de los datos.}
+#'     \item{cargo_id}{Identificador del cargo para el cual se han
+#'     contado los votos.}  \item{agrupacion_nombre}{Indica nombre de
+#'     la agrupación política a la cual se han consignado los
+#'     votos. Puede ser nulo en el caso de votos no positivos.}
+#'     \item{estado_final}{Indica si el telegrama ha sido totalizado
+#'     en el recuento provisional. Este campo podrá ser nulo para los
+#'     recuentos definitivos.}  
+#'     \item{eleccion_tipo}{Es el tipo de
+#'     elección.}  
+#'     \item{recuento_tipo}{Indica el tipo de recuento
+#'     origen de los datos.}  
+#'     \item{distrito_nombre}{Indica el nombre
+#'     del distrito origen de los datos.}  
+#'     \item{circuito_id}{Indica
+#'     el identificador numérico o alfanumérico del circuito origen de
+#'     los datos.}  
+#'     \item{mesa_tipo}{Indicador del tipo de mesa origen
+#'     de los datos.}  
+#'     \item{cargo_nombre}{Indica el nombre del cargo
+#'     para el cual se han contado los votos.}
+#'     \item{votos_tipo}{Indica el tipo de votos que se han
+#'     contabilizado.}  
+#'     \item{seccionprovincial_id}{Indica el
+#'     identificador numérico de la sección provincial origen de los
+#'     datos.}  
+#'     \item{eleccion_id}{Indica el identificador numérico
+#'     del tipo de elección.}  
+#'     \item{padron_tipo}{Indica el tipo de
+#'     padrón del cual provienen los datos.}  
+#'     \item{seccion_id}{Indica
+#'     el identificador numérico de la sección origen de los datos.}
+#'     \item{circuito_nombre}{Indica el identificador numérico o
+#'     alfanumérico del circuito origen de los datos.}
+#'     \item{mesa_electores}{Cantidad de electores de la mesa origen
+#'     de los datos.}  
+#'     \item{agrupacion_id}{Indicador de la agrupación
+#'     política. Puede ser nulo en el caso de votos no positivos.}
+#'     \item{votos_cantidad}{Cantidad de votos contabilizados.}
+#'     \item{seccionprovincial_nombre}{Indica el nombre de la sección
+#'     provincial origen de los datos.}
+#'     }
+#' @source Los datos fueron obtenidos de la Direccion Nacional
+#'     Electoral (DINE) de Argentina
+#' @examples
+#' data(argsegundavuelta23)
+#' df<-argsegundavuelta23    
+#' head(df) 
+#' table(df$distrito_nombre)
+#' table(df$mesa_tipo,df$distrito_nombre)
+#' tapply(df$votos_cantidad, df$distrito_nombre, summary)
+'argsegundavuelta23'
+#' Productividad científica de estudiantes de postgrado  
+#' @description
+#' Corresponde a un estudio realizado en xxxx, sobre el numero
+#' de papers publicados por estudiantes egresados de programas
+#' de doctorado luego de 3 años.
+#' @usage
+#' data(papersdocstu)
+#' @format Este set de datos contiene las siguientes columnas:
+#' \describe{
+#'   \item{papers}{Es el número de artículos cientificos publicados
+#'   luego de 3 años de egresado.}
+#'   \item{genero}{Hombre/mujer.}
+#'   \item{est.civil}{Estado civil del egresado.}
+#'   \item{nin.men5}{Número de hijos menores a 5 años que dependen del
+#'   egresado.}
+#'   \item{prog.prest}{Puntaje asignado al prestigio del programa de 
+#'   postgrado.}
+#'   \item{papers.guia}{Número de papers publicados por el profesor(a)
+#'   guía del egresado, en el mismo periodo de tiempo.}
+#'  }
+#' @source 
+#' Los datos fueron obtenidos desde el paquete 'pslp' de R
+#' @examples
+#' data(papersdocstu)
+#' df<-papersdocstu    
+#' head(df) 
+#' table(df$genero)
+#' table(df$est.civil,df$genero)
+#' tapply(df$papers,df$est.civil,summary)
+'papersdocstu'
 #' CO2 emissions and temperature at country-level.  
 #' @description
 #' Data obtained from the \eqn{hockeystick} package, which
@@ -1984,43 +2079,6 @@
 #' data(pinaster2)    
 #' head(pinaster2) 
 'pinaster2'
-#' Simulated yield of forestry plantations of exotic species in Chile. 
-#'
-#' @description
-#' The yield tables of simulated plantations of Pinus radiata,
-#'  Eucalyptus globulus, and Eucalyptus nitens
-#'  are obtained from the Radiata simulator and EucaSim simulator built
-#'   in Chile. Several stand-level variables 
-#'  are part of the output.
-#' @usage
-#' data(simula)
-#' @format Contains stand-level variables, as follows:
-#' \describe{
-#'   \item{species}{"P. radiata" is Pinus radiata, "E. globulus" 
-#'   is Eucalyptus globulus, and "E. nitens" is
-#'   Eucalyptus nitens.}
-#' \item{age}{plantation age, in years.}
-#'   \item{tph }{Tree density, in trees/ha.}
-#'  \item{gha }{Basal area, in m\eqn{^{2}}{^2}/ha.}
-#' \item{toph}{Dominant height, in m.}
-#'  \item{qmd}{quadratic mean diameter, in cm.}
-#' \item{totvol}{gross stand volume, in m\eqn{^{3}}{^3}/ha} 
-#' \item{viu.10}{stand volume below an utilizacion index of 10 cm,
-#'  in m\eqn{^{3}}{^3}/ha.} 
-#' \item{viu.15}{stand volume below an utilizacion index of 15 cm, 
-#' in m\eqn{^{3}}{^3}/ha.} 
-#' \item{viu.20}{stand volume below an utilizacion index of 20 cm, 
-#' in m\eqn{^{3}}{^3}/ha.} 
-#' \item{viu.25}{stand volume below an utilizacion index of 25 cm, 
-#' in m\eqn{^{3}}{^3}/ha.} 
-#'  }
-#' @source 
-#'  The data were obtained as outputs for plantations without
-#'   management in Chile. The academic
-#'  version of the simulator was used. You can visit mnssimulacion.cl
-#' @examples
-#' data(simula)    
-'simula'
 #' Tree locations for a sample plot in the Llancahue experimental forest 
 #'
 #' @description
@@ -2782,10 +2840,11 @@
 #' head(biomass)
 #' tapply(biomass$totbiom,biomass$spp,summary)  
 "biomass"
-#' Biomasa a nivel de árbol para especies arboreas de Canada.
+#' Biomasa a nivel de árbol para especies arboreas de Canadá
 #'
 #' @description
-#' These are tree-level variables for several species in Canada.
+#' Biomasa a nivel de árbol y otras variables, para varias
+#' especies que crecen en bosques de Canadá.
 #' 
 #' @format 
 #' \describe{
@@ -2799,7 +2858,7 @@
 #'   \item{whojas}{Biomasa del follaje, en kg.}
 #'  }
 #' @source  
-#' The data are provided courtesy of Prof. Timothy Gregoire at
+#' Los datos fueron The data are provided courtesy of Prof. Timothy Gregoire at
 #' the School of Forestry and Environmental Studies at Yale 
 #' University (New Haven, CT, USA).
 #' @examples
@@ -2807,45 +2866,44 @@
 #' head(biomass2) 
 #' tapply(biomass2$wtot,biomass2$spp,summary)  
 "biomass2"
-#' Tree locations for several plots of Norway spruce in Austria
+#' Tree locations for several plots of Norway spruce (Picea abies) in Austria
 #'
 #' @description
-#' The Cartesian position, species, year, ID tree , and diameter of 
-#' trees within a plot were measured. 
+#' The Austrian Research Center for Forests established a spacing experiment
+#'  with Norway spruce (Picea abies) in the Vienna Woods. In the 'Hauersteig' 
+#'  experiment, several tree-level variables were measured within four sample 
+#'  plots over time. The current dataframe has only the measurements
+#'   carried out in 1944.
 #' @usage
 #' data(spataustria)
 #' @format Contains cartesian position of trees, and covariates, 
 #' in sample plots, as follows:
 #' \describe{
-#' \item{plot.code}{Plot identificator}
-#'   \item{tree.code}{Tree identificator}
-#' \item{spp.name}{species abreviation as follows: 
-#' PCAB=Picea abies, 
-#' FASY= Fagus sylvatica,
-#' QCPE=Quercus petraea , 
-#' PNSY= Pinus Sylvestris, 
-#' LADC=Larix decidua}
-#' \item{x.coord}{Cartesian position in the X-axis, in m}
-#' \item{y.coord}{Cartesian position in the Y-axis, in m}
-#' \item{year}{Measurement year}
-#' \item{dbh}{diameter at breast-height, in cm}
+#' \item{plot}{Plot number.}
+#'   \item{tree}{Tree number.}
+#'   \item{species}{Species code as follows:
+#'   PCAB=Picea abies, LADC=Larix decidua, PNSY=Pinus sylvestris, 
+#'   FASY=Fagus Sylvatica, QCPE=Quercus petraea, BTPE=Betula pendula.}
+#' \item{x.coord}{Cartesian position in the X-axis, in m.}
+#' \item{y.coord}{Cartesian position in the Y-axis, in m.}
+#' \item{year}{Measurement year.}
+#' \item{dbh}{diameter at breast-height, in cm.}
 #'  }
 #' @references
 #' - Kindermann G. Kristofel F, Neumann M, Rossler G, Ledermann T & Schueler. 
 #' 2018. 109 years  of forest growth measurements from individual Norway
-#'  spruce trees. 
-#' Sci. Data 5:180077 \doi{10.1038/sdata.2018.77}
+#'  spruce trees. Sci. Data 5:180077 \doi{10.1038/sdata.2018.77}
 #' @examples
 #' data(spataustria)    
 #' head(spataustria)
-#' pos<-spataustria
+#' df<-spataustria
 #' oldpar<-par(mar=c(4,4,0,0))
 #' bord<-data.frame(
-#'  x=c(min(pos$x.coord),max(pos$x.coord),min(pos$x.coord),max(pos$x.coord)),
-#'  y=c(min(pos$y.coord),min(pos$y.coord),max(pos$y.coord),min(pos$y.coord))
+#'  x=c(min(df$x.coord),max(df$x.coord),min(df$x.coord),max(df$x.coord)),
+#'  y=c(min(df$y.coord),min(df$y.coord),max(df$y.coord),min(df$y.coord))
 #'  )
 #' plot(bord,type="n", xlab="x (m)", ylab="y (m)", asp=1, bty='n')
-#' points(pos$x.coord,pos$y.coord,col=pos$plot.code,cex=0.5) 
+#' points(df$x.coord,df$y.coord,col=df$plot,cex=0.5) 
 #' par(oldpar)
 "spataustria"
 #' Functional traits of vegetative species in Chile.
@@ -3871,61 +3929,3 @@
 #' data(aboutrsq2)    
 #' head(aboutrsq2) 
 'aboutrsq2'																							
-#' Biomass dataset
-#'
-#' @description
-#' Dataset that contains nine pairs of columns with information 
-#' about biomass of 40 samples.
-#' @usage
-#' data(slashpine)
-#' @format The data frame contains nine variables as follows:
-#' \describe{
-#' \item{tree_id}{tree code}											
-#' \item{dbh}{diameter}
-#' \item{h}{heigth}
-#' \item{lcl}{live crown lenght}
-#' \item{age}{age tree}
-#' \item{wood}{wood biomass}
-#' \item{bark}{bark biomass}
-#' \item{crown}{crown biomass}
-#' \item{tree}{tree biomass}
-#'  }
-#' @source 
-#' Data were provided by Dr Christian Salas-Eljatib 
-#' (Universidad de Chile, Santiago, Chile).
-#' @references
-#' Parresol BR. 2001. Additivity of nonlinear biomass equations. 
-#' Canadian Journal of Forest Research, 31:865-878.
-#' @examples
-#' data(slashpine)    
-#' head(slashpine) 
-'slashpine'
-#' Biomasa  
-#'
-#' @description
-#' Dataset que contiene nueve pares de columnas con informacion sobre
-#'  la biomasa de 40 árboles. 
-#' @usage
-#' data(slashpine2)
-#' @format Variables se describen a continuación:
-#' \describe{
-#' \item{tree_id}{Identifcador del árbol}											
-#' \item{dbh}{diámetro}
-#' \item{h}{altura total}
-#' \item{lcl}{largo de copa}
-#' \item{age}{edad árbol}
-#' \item{wood}{biomasa madera}
-#' \item{bark}{biomasa corteza}
-#' \item{crown}{biomasa copa}
-#' \item{tree}{biomasa total}
-#'  }
-#' @source 
-#' Datos fueron contribuidos por
-#'  el Dr Christian Salas-Eljatib (Universidad de Chile, Santiago, Chile).
-#' @references
-#' Parresol BR. 2001. Additivity of nonlinear biomass equations. 
-#' Canadian Journal of Forest Research, 31:865-878.
-#' @examples
-#' data(slashpine2)    
-#' head(slashpine2) 
-'slashpine2'																							

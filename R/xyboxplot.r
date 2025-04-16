@@ -15,7 +15,7 @@
 #'  of the X-axis variable, therefore each group has the same number of
 #'   observations.
 #'  
-#' @title Creates a scatterplot with superposing boxplots
+#' @title Function for building a scatterplot with superposing boxplots
 #'
 #' @param x A numeric vector representing the time variable (X-axis).
 #' @param y A numeric vector representing the response variable (Y-axis).

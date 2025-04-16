@@ -47,13 +47,12 @@ to individual data frames and functions: see credits in help pages.
 
 Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: una 
 introducción aplicada. Santiago, Chile: Ediciones Universidad Mayor. 
-ISBN: 9789566086109. 
-\url{https://www.buscalibre.cl/libro-analisis-de-datos-con-el-programa-estadistico-r/9789566086109/p/53775485}
+ISBN: 9789566086109. \url{https://www.buscalibre.cl/libro-analisis-de-datos-con-el-programa-estadistico-r/9789566086109/p/53775485}
 
 }
 %https://tienda.zigzag.cl/9789566086109-analisis-de-datos-con-el-programa-estadistico-r.html
 
-\keyword{ package }
+\keyword{datana}
 \examples{%#simple examples of the most important functions
 ##Scatter-plot and marginal histograms
 data(treevolroble)
