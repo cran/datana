@@ -1,26 +1,26 @@
 #' @title Function to compute the needed statistics for a given contrast
-#' 
+#'
 #' @description The function computes the statistics for inference in a given contrast, subject to
-#'  a given significance level. Those statistics are as follows: estimated contrast, 
-#'  standard error of the contrast, and the confidence interval of the contrast. 
-#'         
+#'  a given significance level. Those statistics are as follows: estimated contrast,
+#'  standard error of the contrast, and the confidence interval of the contrast.
+#'
 #' @details The contrast is established based upon an already fitted statistical model that
 #'  describe the relationship among variables. The significance level ('alpha') is defined
-#'  by the user, although by default has been set to 0.05, that is to say, a 95\% of
+#'  by the user, although by default has been set to 0.05, that is to say, a 95% of
 #'  statistical confidence.
-#' 
+#'
 #' @param model object containing the fitted model
 #' @param coef.cont vector with the coefficients to establish the contrasts
 #' @param grp.m a vector having the sample mean per each group, or level of the factor under study.
 #' @param grp.n a vector having the sample size per each group, or level of the factor under study.
-#' @param alpha is the significance level for building the confidence intervals. Default value is 0.05, which is 95\% confidence level.
+#' @param alpha is the significance level for building the confidence intervals. Default value is 0.05, which is 95% confidence level.
 #' @param full FALSE if want short output, TRUE for longer (i.e. more details). Default is TRUE.
 #'
 #' @return This function returns the above described statistics for a given contrast.
-#'  
+#'
 #' @author Christian Salas-Eljatib
 #' @examples
-#' 
+#'
 #' data(fertiliza)
 #' table(fertiliza$treat)
 #' means.trt <- tapply(fertiliza$volume,fertiliza$treat,mean);means.trt
@@ -35,15 +35,15 @@
 #' contrast(model=m1,C1.coeff,grp.m=means.trt,grp.n=ns.trt,alpha=0.1,full=FALSE)
 #' contrast(m1,C1.coeff,grp.m=means.trt,grp.n=ns.trt,alpha=0.05,full=TRUE)
 #' contrast(m1,C1.coeff,grp.m=means.trt,grp.n=ns.trt)
-#' 
+#'
 #' @references
-#' - Salas-Eljatib C. 2025. datana: Datasets and Functions to Accompany 
+#' - Salas-Eljatib C. 2025. datana: Datasets and Functions to Accompany
 #' Análisis de Datos con R.
 #'  R package version 1.0.7, \doi{10.32614/CRAN.package.datana},
-#'   \url{https://CRAN.R-project.org/package=datana} 
+#'   \url{https://CRAN.R-project.org/package=datana}
 #' @rdname contrast
 #' @export
-#' 
+#'
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 contrast <- function(model=model,coef.cont=coef.cont,grp.m=grp.m,
                      grp.n=grp.n,alpha=0.05,full=TRUE){
@@ -52,20 +52,20 @@ contrast <- function(model=model,coef.cont=coef.cont,grp.m=grp.m,
   c.est <- t(coef.cont)%*%grp.m#g.means
   # computing the s(C).
   mse=(summary(model)$sigma)^2
-  df.res=stats::df.residual(model) 
+  df.res=stats::df.residual(model)
   se.c.est <- sqrt( mse* t(coef.cont^2)%*%(1/grp.n) )
 
   tscore=stats::qt(1-alpha/2,df.res)
 
-# confidence interval for the estimated contrast  
+# confidence interval for the estimated contrast
   c.est.lower <- c.est-tscore*se.c.est;
   c.est.upper <- c.est+tscore*se.c.est;
- 
+
 # t-statistics for the estimated contrast
   t.comp=c.est/se.c.est
 #  p.value=pvalueT(t.comp,df.res) #p.value for the t-statistics (my.Functiont)
    p.value=round(((1-stats::pt(abs(t.comp),df.res))*2),4)
-  
+
  if(full==FALSE){
      output=c(c.est,se.c.est,p.value)
      names(output)=c('Est.Contrast','SE.Cont','p-value')

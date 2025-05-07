@@ -4,20 +4,20 @@
 \alias{pvalt}
 \title{Obtain the P-value for a Standard t-distributed random variable}
 \usage{
-pvalt(t.value, df, decnum = 5)
+pvalt(t.value, df, decnum = 14)
 }
 \arguments{
-\item{t.value}{A numeric random variable following a t-student pdf 
+\item{t.value}{A numeric random variable following a t-student pdf
 distribution.}
 
-\item{df}{degrees of freedom of the random variable following a 
+\item{df}{degrees of freedom of the random variable following a
 t-student pdf distribution.}
 
-\item{decnum}{the number of decimals to be used in the output. 
+\item{decnum}{the number of decimals to be used in the output.
 The default is set to 5.}
 }
 \value{
-The function returns the P-value or probability of getting a 
+The function returns the P-value or probability of getting a
 value as large as t.value.
 }
 \description{
@@ -25,20 +25,20 @@ Function to compute the P-value for a Standard t-distributed random variable.
 }
 \details{
 It is suited to compute the P-value for any random variable following a
- Standard  t probability density function. For instance, to obtain 
- the p-value in a t-test.
+Standard  t probability density function. For instance, to obtain
+the p-value in a t-test.
 }
 \examples{
 ## Load dataset
-df <- datana::araucaria
-#
-## Computes the t-test statistics (from the 'stats' package)
-t.value <- stats::t.test(df$hdom)
-t.v <- as.numeric(t.value$statistic)
-deg.f <- as.numeric(t.value$parameter)
+ df <- datana::fertiliza2
+ head(df)
+ ## Computes the t-test statistics (from the 'stats' package)
+t.value <- stats::t.test(df$vol)
+t.value
+ t.v <- as.numeric(t.value$statistic);t.v
+ deg.f <- as.numeric(t.value$parameter);deg.f
 
-## Obtaining the p value
-pvalt(t.v,deg.f)
+ ## Obtaining the p ##  pvalt(t.v,deg.f)
 
 }
 \author{

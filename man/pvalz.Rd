@@ -14,14 +14,14 @@ distribution.}
 The default is set to 5.}
 }
 \value{
-This function returns the P-value or probability of getting a 
+This function returns the P-value or probability of getting a
 value as large as 'zval'.
 }
 \description{
 Function to computes the P-value for a Standard Gaussian random variable.
 }
 \details{
-It is suited to compute the P-value for any random variable following a 
+It is suited to compute the P-value for any random variable following a
 Standard  Gaussian probability density function.
 }
 \examples{

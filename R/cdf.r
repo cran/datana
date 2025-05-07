@@ -1,18 +1,18 @@
 #' @title Function to compute the cumulative distribution of a variable
 #' 
 #' @description Builds the cumulative distribution of a vector, using
-#'  a step\% of
+#'  a step% of
 #'  the data as fixed-intervals. 
 #'  
-#' @details By default the cumulative distribution is build using 5\% of
-#'  the data as intervals, that is to say, from 0.05 (i.e., 5\%) to 
-#'  0.95 (i.e., 95\%).
+#' @details By default the cumulative distribution is build using 5% of
+#'  the data as intervals, that is to say, from 0.05 (i.e., 5%) to 
+#'  0.95 (i.e., 95%).
 #'  
 #' @param y a vector of a random variable
 #' @param step a numeric proportion of the data used as increment interval 
 #' for building
 #' the cdf of the random variable. The default value for 'step' is 0.05, 
-#' representing a 5\%. 
+#' representing a 5%. 
 #' 
 #' @return returns a dataframe having two columns: the first contains 
 #' the random variable values and the second the cumulative distribution

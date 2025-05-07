@@ -1,0 +1,34 @@
+#' Leaf measurements for Eucalyptus nitens trees in Tasmania, Australia. 
+#'
+#' @description
+#' The length, width, and area of Eucalyptus nitens leaves were measured. 
+#' @usage
+#' data(eucaleaf)
+#' @format Contains leaf-level variables, as follows:
+#' \describe{
+#'   \item{time}{Time factor, in two levels: early or Late.}
+#' \item{tree}{Sample tree code identificator.}
+#' \item{shoot}{Shoot description factor, in three levels.}
+#' \item{l}{Length of the leaf, in mm.}
+#' \item{w}{Width of the leaf, in mm.}
+#' \item{la}{leaf area, in cm\eqn{^{2}}{^2}.}
+#'  }
+#' @source 
+#' Although the original source of the measurements is the Dissertation 
+#' of Dr Candy (1999), 
+#'  the data file used here was courtesy of Prof. Timothy Gregoire at
+#'  Yale University (New Haven, CT, USA). Furthermore, these data were used by
+#'  Gregoire and Salas (2009).
+#' @references
+#' - Candy SG. 1999. Predictive models for integrated pest management of the
+#' leaf beetle *Chrysophtharta bimaculata* in *Eucalyptus nitens* in Tasmania.
+#'  Doctoral dissertation,
+#'  University of Tasmania, Hobart, Australia. 
+#' @references
+#' - Gregoire TG, and Salas C. 2009. Ratio estimation with measurement
+#' error in the auxiliary variate. Biometrics 65(2):590-598 
+#' \doi{10.1111/j.1541-0420.2008.01110.x}
+#' @examples
+#' data(eucaleaf)    
+#' head(eucaleaf) 
+'eucaleaf'

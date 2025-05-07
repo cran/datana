@@ -1,0 +1,54 @@
+#' Data of forest fire occurrence
+#'
+#' @description
+#' Data of forest fire occurrence from Altamirano et al. (2013) as our
+#'  population, containing 7210 total observations (N), with only
+#' 890 cases of fire occurrence (N 1 ) and 6320 cases of non occurrence (N0).
+#' The binary variable (Y) is the occurrence of forest
+#' fire, where Y equal to 1 denotes occurrence and Y equal to 0  otherwise.
+#' @usage
+#' data(forestfire)
+#' @format The data frame contains four variables as follows:
+#' \describe{
+#' \item{fire}{Presence of forest fire (1 yes, 0 no)}
+#' \item{xcoord}{Geographic coordinate x.utm}
+#' \item{ycoord}{Geographic coordinate y.utm}
+#' \item{aspect}{Exposure (degrees from north)}
+#' \item{eleva}{Elevation (m)}
+#' \item{slope}{Slope (degrees)}
+#' \item{distr}{Distance to dirt roads}
+#' \item{distcity}{Distance to cities}
+#' \item{distriver}{Distance to paved roads}
+#' \item{covera}{Land use classifications according to a polygon}
+#' \item{coverb}{Land use classifications according to a polygon}
+#' \item{tempe}{Minimum temperature of the coldest month}
+#' \item{ppan}{Annual precipitation}
+#' \item{ndii}{Normalized difference infrared index}
+#' \item{nvdi}{Normalized difference vegetation index}
+#' \item{tempe2}{Minimum temperature of the warmest month}
+#' \item{ppan2}{Precipitation of the driest month}
+#' \item{frec.fire}{Frequency of fires}
+#' \item{perc.fire}{Percentage of fire frequency}
+#' \item{fireClass}{Class for frecuency fire}
+#' \item{asp.class}{Class of variable exposure}
+#' \item{eleva.class}{Class of numerical variable elevation}
+#' \item{slope.class}{Class of numerical variable slope}
+#' \item{ndii.class}{Normalized difference infrared index class}
+#' \item{nvdi.class}{Normalized difference vegetation index class}
+#'  }
+#' @source
+#' Data were provided by Dr Adison Altamirano at the Universidad de La
+#'  Frontera (Temuco, Chile).
+#' @references
+#' - Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, Avila A. 2013.
+#' Infuencia de la heterogeneidad
+#' del paisaje en la ocurrencia de incendios forestales en Chile Central.
+#' Revista de Geografia del Norte Grande, 55:157-170, 2013.
+#' -Salas-Eljatib C, Fuentes-Ramírez A, Gregoire TG, Altamirano A,
+#' Yaitul V. 2018. A study on the effects of unbalanced data when
+#'      fitting logistic regression models in ecology.
+#'      Ecological Indicators 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
+#' @examples
+#' data(forestfire)
+#' head(forestfire)
+'forestfire'

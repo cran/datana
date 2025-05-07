@@ -1,0 +1,37 @@
+#' Tree height growth of Douglas-fir sample trees in the Northwest of
+#' the United States
+#' @description
+#' Data contains 148 observations on the height growth of dominant trees of
+#'  Pseudotsguga mensiezzi in the Northwest of the United States.
+#' @usage
+#' data(hgrdfir)
+#' @format The data frame contains seven variables as follows:
+#' \describe{
+#'   \item{natfor.id}{Code identifier.}
+#'   \item{plot.code}{Plot number identification}
+#'   \item{tree.code}{Tree number identification.}
+#'   \item{dbh}{Diameter at breast height at sampling, in in.}
+#'   \item{toth}{Total height at sa,pling, in ft.}
+#'   \item{age}{Age of tree, yr.}
+#'   \item{height}{Height at a given age, in ft.}
+#'  }
+#' @source
+#' The data were provided by Dr Christian Salas.
+#' @references
+#' - Monserud RA. 1984. Height growth and site index curves for Inland
+#' Douglas-fir based on
+#' stem analysis data and forest habitat type. Forest Science 30(4):943-965.
+#' @references
+#' - Salas C, Stage AR, and Robinson AP. 2008. Modeling effects of
+#' overstory density and competing
+#' vegetation on tree height growth. Forest Science 54(1):107-122.
+#'  \doi{10.1093/forestscience/54.1.107}
+#' @examples
+#' data(hgrdfir)
+#' head(hgrdfir)
+#' unique(hgrdfir$tree.code)
+#' table(hgrdfir$plot.code,hgrdfir$tree.code)
+#' tapply(hgrdfir$dbh, hgrdfir$tree.code, mean)
+#' tapply(hgrdfir$dbh, hgrdfir$tree.code, mean) #dbh of each sample tree
+#' tapply(hgrdfir$toth, hgrdfir$tree.code, mean) #toth of each sample tree
+"hgrdfir"

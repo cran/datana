@@ -1,0 +1,29 @@
+#' Chicken growth data.  
+#' @description
+#' The body weights of the chicks were measured at birth and every second day 
+#' thereafter until day 20. They were 
+#' also measured on day 21. There were four groups on chicks on different
+#'  protein diets.  
+#' @usage
+#' data(chicksw)
+#' @format Contains four variables, as follows:
+#' \describe{
+#' \item{chick}{An ordered factor with levels different giving a unique 
+#' identifier for the chick. The ordering of the
+#'             levels groups chicks on the same diet together and orders 
+#'             them according to their final weight 
+#'             (lightest to heaviest) within diet.}
+#' \item{diet}{A factor with levels 1,2,3 and 4 indicating which experimental 
+#' diet the chick received.}
+#'   \item{time}{A numeric vector giving the number of days since birth when 
+#'   the measurement was made.}
+#'   \item{weight}{A numeric vector giving the body weight of the chick (gm).}
+#'  }
+#' @source 
+#' The data were obtained from the \eqn{alr4} library.  
+#' @references
+#' Crowder M, Hand D. 1990. Analysis of Repeated Measures. Chapman and Hall
+#' @examples
+#' data(chicksw)    
+#' head(chicksw) 
+'chicksw'

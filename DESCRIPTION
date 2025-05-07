@@ -1,32 +1,28 @@
 Package: datana
-Version: 1.0.7
-Date: 2025-04-11
 Title: Datasets and Functions to Accompany Analisis De Datos Con R
+Version: 1.0.8
 Authors@R: c(person("Christian Salas-Eljatib", email = "cseljatib@gmail.com",role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8468-0829")),
-             person("Campos", "Nicolas", role = "ctb"),
+             person("Campos", "Nicolás", role = "ctb", comment = c(ORCID = "0009-0001-9534-9808")),
              person("Pino", "Nicolas", role = "ctb", comment = "up to 2020"),
              person("Riquelme", "Joaquin", role = "ctb", comment = "up to 2020"))
 Description: Datasets and functions to accompany the book 'Analisis de datos con el programa
     estadistico R: una introduccion aplicada' by Salas-Eljatib (2021, ISBN: 9789566086109).     
     The package helps carry out data management, exploratory analyses, and model fitting.
-License: GPL-3
-URL: https://eljatib.com/rlibro
-Depends: R (>= 3.5.0)
-Imports: lattice, ggplot2, stats, graphics, methods
-Suggests: foreign, gdata, car, agricolae, multcomp
+License: GPL (>= 3)
 Encoding: UTF-8
-Language: en-US
 RoxygenNote: 7.3.2
-BuildResaveData: best
+Depends: R (>= 3.5)
 LazyData: true
 LazyDataCompression: xz
+Imports: ggplot2, methods, stats
+Suggests: lattice
 NeedsCompilation: no
-Packaged: 2025-04-16 16:45:36 UTC; christian
-Author: Christian Salas-Eljatib [aut, cre]
-    (<https://orcid.org/0000-0002-8468-0829>),
-  Campos Nicolas [ctb],
+Packaged: 2025-05-07 19:27:32 UTC; christian
+Author: Christian Salas-Eljatib [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-8468-0829>),
+  Campos Nicolás [ctb] (ORCID: <https://orcid.org/0009-0001-9534-9808>),
   Pino Nicolas [ctb] (up to 2020),
   Riquelme Joaquin [ctb] (up to 2020)
 Maintainer: Christian Salas-Eljatib <cseljatib@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-04-16 17:50:09 UTC
+Date/Publication: 2025-05-07 20:00:02 UTC

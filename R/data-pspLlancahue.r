@@ -1,0 +1,42 @@
+#' Ubicación cartesiana de árboles en el bosque de Llancahue para uso
+#' del libro.
+#'
+#' @description
+#' Corresponde a la posición cartesiana, especie, y diámetro de árboles 
+#' en una parcela de muestreo
+#'  en el bosque de Llancahue, cerca de Valdivia, Chile. La parcela 
+#'  es rectangular con
+#'  dimensiones de 130 m por 70 m. Mayores antecedentes aparecen en 
+#'  las referencias. 
+#' @usage
+#' data(pspLlancahue)
+#' @format Contains tree-level variables, as follows:
+#' \describe{
+#'  \item{arb.id}{Identificador del árbol.}
+#' \item{spp}{Codificación de la especie como sigue: 
+#' AP= Aextocicon puncatatum, 
+#' EC=Eucryphia cordifolia, 
+#' GA=Gevuina avellana, 
+#' LP=Laureliopsis philippiana, 
+#' LS=Laurelia sempervirens, 
+#' ND=Nothofagus dombeyi, Ot=Other, 
+#' PS=Podocarpus saligna.}
+#' \item{dap}{Diámetro a la altura del pecho, en cm.}
+#' \item{coord.x}{Posición cartesiana en el eje-X, en m.}
+#' \item{coord.y}{Posición cartesiana en el eje-Y, en m.}
+#'  }
+#' @source 
+#'  Los datos fueron cedidos por el Prof. Daniel Soto de Universidad
+#'  de Aysen (Coyhaique, Chile). 
+#' @references
+#' - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y 
+#' espacial de 
+#' un bosque mixto dominado por Nothofagus dombeyi después de un disturbio
+#'  parcial. 
+#' Revista Chilena de Historia Natural 83(3): 335-347.
+#' @examples
+#' data(pspLlancahue)    
+#' head(pspLlancahue) 
+#' descstat(pspLlancahue$dap)
+#' boxplot(dap~spp, data=pspLlancahue)
+'pspLlancahue'

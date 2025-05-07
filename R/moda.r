@@ -2,11 +2,11 @@
 #'
 #' @details The mode is an statistics representing the most "used" value of
 #' the random variable as a way of central position.
-#'  
+#'
 #' @title Computes the mode
 #' @param y is a numeric vector.
 #'
-#' @return The function returns the mode, a numeric scalar. 
+#' @return The function returns the mode, a numeric scalar.
 #' @author Christian Salas-Eljatib.
 #' @examples
 #'
@@ -17,7 +17,7 @@
 #' moda(variable)
 #' @rdname moda
 #' @export
-#' 
+#'
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 moda <- function(y=y) {
   uniqv <- unique(y)

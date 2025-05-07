@@ -1,0 +1,40 @@
+#' Tree locations for several plots of Norway spruce (Picea abies) in Austria
+#'
+#' @description
+#' The Austrian Research Center for Forests established a spacing experiment
+#'  with Norway spruce (Picea abies) in the Vienna Woods. In the 'Hauersteig'
+#'  experiment, several tree-level variables were measured within four sample
+#'  plots over time. The current dataframe has only the measurements
+#'   carried out in 1944.
+#' @usage
+#' data(spataustria)
+#' @format Contains cartesian position of trees, and covariates,
+#' in sample plots, as follows:
+#' \describe{
+#' \item{plot}{Plot number.}
+#'   \item{tree}{Tree number.}
+#'   \item{species}{Species code as follows:
+#'   PCAB=Picea abies, LADC=Larix decidua, PNSY=Pinus sylvestris,
+#'   FASY=Fagus Sylvatica, QCPE=Quercus petraea, BTPE=Betula pendula.}
+#' \item{x.coord}{Cartesian position in the X-axis, in m.}
+#' \item{y.coord}{Cartesian position in the Y-axis, in m.}
+#' \item{year}{Measurement year.}
+#' \item{dbh}{diameter at breast-height, in cm.}
+#'  }
+#' @references
+#' - Kindermann G. Kristofel F, Neumann M, Rossler G, Ledermann T & Schueler.
+#' 2018. 109 years  of forest growth measurements from individual Norway
+#'  spruce trees. Sci. Data 5:180077 \doi{10.1038/sdata.2018.77}
+#' @examples
+#' data(spataustria)
+#' head(spataustria)
+#' df<-spataustria
+#' oldpar<-par(mar=c(4,4,0,0))
+#' bord<-data.frame(
+#'  x=c(min(df$x.coord),max(df$x.coord),min(df$x.coord),max(df$x.coord)),
+#'  y=c(min(df$y.coord),min(df$y.coord),max(df$y.coord),min(df$y.coord))
+#'  )
+#' plot(bord,type="n", xlab="x (m)", ylab="y (m)", asp=1, bty='n')
+#' points(df$x.coord,df$y.coord,col=df$plot,cex=0.5)
+#' par(oldpar)
+'spataustria'

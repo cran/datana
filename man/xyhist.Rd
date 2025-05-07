@@ -20,10 +20,10 @@ xyhist(
 
 \item{y}{A numeric vector representing the Y-axis variable}
 
-\item{col.x}{(optional) A string specifying the color of the histogram 
+\item{col.x}{(optional) A string specifying the color of the histogram
 of the X-variable. Default is "blue".}
 
-\item{col.y}{(optional) A string specifying the color of the histogram 
+\item{col.y}{(optional) A string specifying the color of the histogram
 of the Y-variable. Default is "red".}
 
 \item{xlab}{(optional) A string specifying X-axis label. Default is "xvar".}
@@ -41,28 +41,30 @@ The function returns the above described graph.
 }
 \description{
 The function produces a scatterplot between the 'y'-axis variable and
- the 'x'-axis variable, but also adding the marginal histograms
- for both variables.
+the 'x'-axis variable, but also adding the marginal histograms
+for both variables.
 }
 \details{
 Both the response variable (Y-axis) and the predictor
- variable (X-axis) must be
- numeric.
+variable (X-axis) must be
+numeric.
 }
 \examples{
 data(treevolroble)
 df <- treevolroble
 head(df)
-xyhist(x=df$dbh,y=df$toth) 
-xyhist(x=df$dbh,y=df$toth, xlab="Variable X",  ylab="Variable Y") 
-xyhist(x=df$dbh,y=df$toth, xlab="Variable X", ylab="Variable Y", 
+xyhist(x=df$dbh,y=df$toth)
+xyhist(x=df$dbh,y=df$toth, xlab="Variable X",  ylab="Variable Y")
+xyhist(x=df$dbh,y=df$toth, xlab="Variable X", ylab="Variable Y",
   col.x = "gray",col.y="white")
 }
 \references{
-- Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R:
- una introducción aplicada. 
+\itemize{
+\item Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R:
+una introducción aplicada.
 Ediciones Universidad Mayor. Santiago, Chile.
- \url{https://eljatib.com}
+\url{https://eljatib.com}
+}
 }
 \author{
 Christian Salas-Eljatib

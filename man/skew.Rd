@@ -15,20 +15,20 @@ skew(x, na.rm = TRUE)
 The value of the the skewness of given vector
 }
 \description{
-The skewness is about the departure from symmetry of a frequency 
+The skewness is about the departure from symmetry of a frequency
 distribution. Therefore,
- It is about asymmetry. One way to assess asymmetry of a random
-  variable is to compute
- an statistics representing its skewness. The current function
-  an dimensionless statistics
- of the skewness of given vector.
+It is about asymmetry. One way to assess asymmetry of a random
+variable is to compute
+an statistics representing its skewness. The current function
+an dimensionless statistics
+of the skewness of given vector.
 }
 \details{
-The skewness of a random variable is the third moment 
+The skewness of a random variable is the third moment
 of the standardized variable.
- There are several ways of parameterizing an skewness estimator,
-  such as depending on the 
- third moment and the standard deviation of the random variable.
+There are several ways of parameterizing an skewness estimator,
+such as depending on the
+third moment and the standard deviation of the random variable.
 }
 \examples{
 y.var<-rnorm(100);x.var<-rbeta(100,.2,2)

@@ -25,7 +25,7 @@
 #' @export
 #' 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-kurto <- function(x, na.rm=TRUE) {  
+kurto <- function(x, na.rm=TRUE){  
 m4 <- mean((x-mean(x, na.rm=na.rm))^4, na.rm=na.rm) 
 out <- m4/(stats::sd(x, na.rm=na.rm)^4)-3  
 out

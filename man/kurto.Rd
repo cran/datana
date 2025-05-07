@@ -9,23 +9,23 @@ kurto(x, na.rm = TRUE)
 \arguments{
 \item{x}{a numeric vector of a random variable.}
 
-\item{na.rm}{logical operator to remove NA values. The default is set 
+\item{na.rm}{logical operator to remove NA values. The default is set
 to TRUE.}
 }
 \value{
 An estimator of the kurtosis.
 }
 \description{
-The kurtosis is about the tailedness, or the degree of heaviness of the 
-tails, in the frequency 
+The kurtosis is about the tailedness, or the degree of heaviness of the
+tails, in the frequency
 distribution. The function computes an estimator of the kurtosis.
 }
 \details{
-The kurtosis of a random variable is the fourth moment of the 
+The kurtosis of a random variable is the fourth moment of the
 standardized variable.
- There are several ways of parameterizing a kurtosis estimator, such as
-  depending on the 
- fourth moment and the standard deviation of the random variable.
+There are several ways of parameterizing a kurtosis estimator, such as
+depending on the
+fourth moment and the standard deviation of the random variable.
 }
 \examples{
 y.var<-rnorm(100);x.var<-rbeta(100,.2,2)

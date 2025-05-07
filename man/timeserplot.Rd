@@ -24,28 +24,28 @@ timeserplot(
 )
 }
 \arguments{
-\item{data}{a dataframe with at least tree columns representing the 
+\item{data}{a dataframe with at least tree columns representing the
 response variable ("y"),
-  the main predictor variable ("x"), and a variable indicating the 
-  observational unit ("obs.unit").}
+the main predictor variable ("x"), and a variable indicating the
+observational unit ("obs.unit").}
 
 \item{y}{a character giving the column name of the response variable
 or variable of interest.}
 
-\item{x}{a character giving the column name of the main predictor 
+\item{x}{a character giving the column name of the main predictor
 variable. Generally this variable
 is time.}
 
-\item{obs.unit}{a character giving the column name containing the info 
+\item{obs.unit}{a character giving the column name containing the info
 of the observational unit.}
 
-\item{factor1}{an optional character having the name of a column having 
+\item{factor1}{an optional character having the name of a column having
 a factor variable (e.g., treatment). The
- detault value is set to NULL.}
+detault value is set to NULL.}
 
-\item{factor2}{an optional character having the name of a column having 
+\item{factor2}{an optional character having the name of a column having
 another factor variable (e.g., species). The
- detault value is set to NULL.}
+detault value is set to NULL.}
 
 \item{only.lines}{a logic value if only lines, but not including dots,
 are going to be drwan in the plot. The detault
@@ -70,7 +70,7 @@ color of the lines only. The detault  value is set to FALSE.}
 \item{col.lines}{A string specifying the single color to be used for the
 lines of the timeseries}
 
-\item{max.y.all}{A number representing the maximum level of Y-axis for all 
+\item{max.y.all}{A number representing the maximum level of Y-axis for all
 classes}
 
 \item{levels.i.want}{A vector having the levels for the factor under study}
@@ -82,21 +82,21 @@ under study}
 This function returns a time series plot
 }
 \description{
-Produces a time series plot, of variable 'y' as a function of 'x' by 
+Produces a time series plot, of variable 'y' as a function of 'x' by
 an observational unit factor.
 }
 \details{
-Both 'y' and 'x' must be numeric variables, and the column representing 
-  the observational unit, must be
-  a factor. This factor identifies the longitudinal context of the data,
-   for instance, a student
-  being measured on time. Besides, two more factors can be added to the 
-  plotting details, in order
-   to represent the potential variability among them.
+Both 'y' and 'x' must be numeric variables, and the column representing
+the observational unit, must be
+a factor. This factor identifies the longitudinal context of the data,
+for instance, a student
+being measured on time. Besides, two more factors can be added to the
+plotting details, in order
+to represent the potential variability among them.
 }
 \note{
 Please, uses the function with caution, and run first the examples to
- understand it better.
+understand it better.
 }
 \examples{
 data(ficdiamgr, package="datana")
@@ -107,15 +107,15 @@ df$site<-as.factor(df$site)
 df$species<-as.factor(df$species)
 table(df$tree,df$species)
 table(df$species,df$site)
-# 
+#
 timeserplot(df, y="dbh", x="time", obs.unit = "tree")
 timeserplot(df, y="dbh", x="time", obs.unit = "tree", only.lines = TRUE)
-# 
+#
 ## Otros ejemplos de uso de la funcion
 timeserplot(df, y="dbh", x="time", obs.unit = "tree", col.lines = "blue",
 only.lines = TRUE)
 timeserplot(df, y="dbh", x="time", obs.unit = "tree", only.lines = FALSE)
-# 
+#
 timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site")
 timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site",
 factor2= "species")
@@ -123,10 +123,10 @@ timeserplot(df, y="dbh", x="time", obs.unit = "tree", factor1="site",
  factor2= "species", factor2.col = TRUE, only.lines = TRUE)
 }
 \references{
-Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R: 
+Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R:
 una introducción
- aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p.
-  \url{https://eljatib.com/rlibro}
+aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p.
+\url{https://eljatib.com/rlibro}
 }
 \author{
 Christian Salas-Eljatib

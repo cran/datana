@@ -1,0 +1,36 @@
+#' Crecimiento en altura de una muestra de árboles en los Estados Unidos
+#' @description
+#' Data contiene 148 obserrvaciones sobre el crecimiento en altura de
+#' árboles dominantes de Pseudotsguga mensiezzi en el Nor-Oeste de los
+#'  Estados Unidos
+#' @usage
+#' data(hgrdfir2)
+#' @format La data frame contiene siete variables:
+#' \describe{
+#'   \item{bosque.id}{Codigo identificador del bosque.}
+#'   \item{parcela}{Codigo identificador de la parcela.}
+#'   \item{arbol}{Número de identificacion árbol.}
+#'   \item{dap}{Diámetro a la altura del pecho, en  pulgadas.}
+#'   \item{atot}{Altura total, en pies}
+#'   \item{edad}{Edad, en os}
+#'   \item{altura}{Altura para cada edad del árbol, en pies}
+#'  }
+#' @source
+#' La data fue cedida por el Dr Christian Salas-Eljatib.
+#' @references
+#' Monserud RA. 1984. Height growth and site index curves for Inland
+#' Douglas-fir based on
+#' stem analysis data and forest habitat type. Forest Science 30(4):943-965.
+#' @references
+#' Salas C, Stage AR, and Robinson AP. 2008. Modeling effects of overstory
+#' density and competing
+#' vegetation on tree height growth. Forest Science 54(1):107-122.
+#'  \doi{10.1093/forestscience/54.1.107}
+#' @examples
+#' data(hgrdfir2)
+#' head(hgrdfir2)
+#' unique(hgrdfir2$arbol.id)
+#' table(hgrdfir2$parcela,hgrdfir2$arbol.id)
+#' tapply(hgrdfir2$dap, hgrdfir2$arbol.id, mean) #dap de cada arbol muestra
+#' tapply(hgrdfir2$atot, hgrdfir2$arbol.id, mean) #atot de cada arbol muestra
+"hgrdfir2"

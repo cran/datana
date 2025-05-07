@@ -2,7 +2,7 @@
 % Please edit documentation in R/xymultiplot.r
 \name{xymultiplot}
 \alias{xymultiplot}
-\title{Figure of a matrix of scatterplots and histograms for several 
+\title{Figure of a matrix of scatterplots and histograms for several
 variables.}
 \usage{
 xymultiplot(
@@ -35,37 +35,37 @@ xymultiplot(
 )
 }
 \arguments{
-\item{x}{is a dataframe containing all the numeric variables to be used 
+\item{x}{is a dataframe containing all the numeric variables to be used
 for drawing the panel plot}
 
-\item{smooth}{a logical value for drawing smooth curves. The default is 
+\item{smooth}{a logical value for drawing smooth curves. The default is
 set to TRUE.}
 
-\item{scale}{scales the correlation font by the size of the absolute 
+\item{scale}{scales the correlation font by the size of the absolute
 correlation. The default is set to FALSE.}
 
 \item{density}{a logical value for drawing a density curve. The default
 is set to TRUE.}
 
-\item{digits}{an optional numeric value for the digits to be used for 
+\item{digits}{an optional numeric value for the digits to be used for
 drawing the correlation coefficient in the panel.
-  Defaults is set to 2.}
+Defaults is set to 2.}
 
 \item{method}{a string giving the method to be used for computing the
 correlation coefficient. Default is set to "pearson".}
 
 \item{pch}{The plot character (The default is 20, which looks like '.').}
 
-\item{lm}{Plot the linear fit rather than the LOESS smoothed fits. 
+\item{lm}{Plot the linear fit rather than the LOESS smoothed fits.
 The default is FALSE.}
 
-\item{cor}{If plotting regressions, should correlations be reported? 
+\item{cor}{If plotting regressions, should correlations be reported?
 The default is TRUE.}
 
-\item{jiggle}{Should the points be jittered before plotting? 
+\item{jiggle}{Should the points be jittered before plotting?
 The default is FALSE.}
 
-\item{factor}{factor for jittering (1-5), therefore only needed 
+\item{factor}{factor for jittering (1-5), therefore only needed
 if "jiggle" is set to TRUE.}
 
 \item{col.hist}{a string giving the color to be used for the histograms
@@ -77,7 +77,7 @@ the density curve. The default is set to "black".}
 \item{show.points}{a logical value for drawing the points in the
 scatter-plots. Defauls is set to TRUE.}
 
-\item{col.points}{a string giving the color to be used for the data points. 
+\item{col.points}{a string giving the color to be used for the data points.
 Default is set to "gray".}
 
 \item{smoother}{If TRUE, then smooth.scatter the data points-slow but
@@ -89,7 +89,7 @@ curve of the scatterplot. Default is set to "red".}
 \item{ellipses}{an optional logical value for drawing an ellipse for the
 scatter-plots. The default is set to FALSE.}
 
-\item{col.ellip}{a string giving the color to be used for the ellipse of 
+\item{col.ellip}{a string giving the color to be used for the ellipse of
 the scatterplot. The default is set to "blue".}
 
 \item{col.cent.point}{a string giving the color to be used for the centroid
@@ -98,19 +98,19 @@ point of the ellipse of the scatterplot. The default is set to "blue".}
 \item{rug}{a logical value for drawing the rugs in the histograms.
 Defauls is set to TRUE.}
 
-\item{breaks}{a string giving the method to be used for obtaining the 
+\item{breaks}{a string giving the method to be used for obtaining the
 breaks of the histogram. Defauls is set to "Sturges".}
 
-\item{cex.cor}{If this is specified, this will change the size of the 
-text in the correlations. this 
- allows one to also change the size of the points in the plot by 
- specifying the normal cex values. If just
- specifying cex, it will change the character size, if cex.cor is
-  specified, then cex will function to change the point size.}
+\item{cex.cor}{If this is specified, this will change the size of the
+text in the correlations. this
+allows one to also change the size of the points in the plot by
+specifying the normal cex values. If just
+specifying cex, it will change the character size, if cex.cor is
+specified, then cex will function to change the point size.}
 
-\item{ci}{Draw confidence intervals for the linear model or for the 
+\item{ci}{Draw confidence intervals for the linear model or for the
 loess fit, defaults to ci=FALSE. If confidence
-  intervals are not drawn, the fitting function is lowess.}
+intervals are not drawn, the fitting function is lowess.}
 
 \item{alpha}{an optional numeric value for the significance level.
 Defauls is set to 0.05.}
@@ -122,13 +122,13 @@ Defauls is set to 0.05.}
 This function returns a multipanel of scatterplots and histograms
 }
 \description{
-The function produces a panel of multiple scatterplots and histograms, 
-showing 
-the correlation coefficient among all pairs of variables. Notice that 
+The function produces a panel of multiple scatterplots and histograms,
+showing
+the correlation coefficient among all pairs of variables. Notice that
 the data must contain only numeric variables.
 }
 \details{
-Generates a multipanel (matrix) of scatterplots and histograms to explore 
+Generates a multipanel (matrix) of scatterplots and histograms to explore
 potential relationships among variables.
 }
 \examples{
@@ -143,11 +143,13 @@ xymultiplot(df,ellipses=TRUE,col.cent.point = "yellow",
  col.densi.curve = "dark green",col.hist = "white")
 }
 \references{
-- Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R: 
-una introducción aplicada. Ediciones Universidad Mayor. Santiago, Chile. 
+\itemize{
+\item Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R:
+una introducción aplicada. Ediciones Universidad Mayor. Santiago, Chile.
 \url{https://eljatib.com}
 }
+}
 \author{
-A modification of Christian Salas-Eljatib of the 
+A modification of Christian Salas-Eljatib of the
 function pairs.panels of the package \eqn{psych}.
 }
