@@ -51,7 +51,7 @@ numeric.
 }
 \examples{
 data(treevolroble)
-df <- treevolroble
+df <- datana::treevolroble
 head(df)
 xyhist(x=df$dbh,y=df$toth)
 xyhist(x=df$dbh,y=df$toth, xlab="Variable X",  ylab="Variable Y")

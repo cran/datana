@@ -10,8 +10,8 @@ continuacion:
 \describe{
 \item{id}{Identificador del oso.}
 \item{edad}{edad en meses.}
-\item{mes}{Diámetro a la altura del pecho, en cm.}
-\item{sexo}{1 = hombre, 2 = mujer.}
+\item{mes}{identificador del mes,dentro del año.}
+\item{sexo}{1 = macho, 2 = hembra.}
 \item{cabezaL}{longitud de la cabeza, en cm.}
 \item{cabezaA}{ancho de la cabeza, en cm.}
 \item{cuelloP}{circunferencia del cuello, en cm.}

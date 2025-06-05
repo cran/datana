@@ -3,11 +3,11 @@
 \docType{data}
 \name{forestfire}
 \alias{forestfire}
-\title{Data of forest fire occurrence}
+\title{Forest fire occurrence in central Chile}
 \format{
 The data frame contains four variables as follows:
 \describe{
-\item{fire}{Presence of forest fire (1 yes, 0 no)}
+\item{fire}{Occurrence of forest fire (1 yes, 0 no)}
 \item{xcoord}{Geographic coordinate x.utm}
 \item{ycoord}{Geographic coordinate y.utm}
 \item{aspect}{Exposure (degrees from north)}
@@ -42,26 +42,28 @@ Frontera (Temuco, Chile).
 data(forestfire)
 }
 \description{
-Data of forest fire occurrence from Altamirano et al. (2013) as our
-population, containing 7210 total observations (N), with only
-890 cases of fire occurrence (N 1 ) and 6320 cases of non occurrence (N0).
-The binary variable (Y) is the occurrence of forest
-fire, where Y equal to 1 denotes occurrence and Y equal to 0  otherwise.
+Data of forest fire occurrence in central Chile having  7210
+observations, with 890 cases of fire occurrence and
+6320 cases of non-occurrence.
+The binary variable (\eqn{Y}) is the occurrence of forest
+fire, where \eqn{Y=1} to denotes occurrence and \eqn{Y=0},
+otherwise.
 }
 \examples{
 data(forestfire)
 head(forestfire)
 }
 \references{
+-Salas-Eljatib C, Fuentes-Ramírez A, Gregoire TG, Altamirano A,
+Yaitul V. 2018. A study on the effects of unbalanced data when
+fitting logistic regression models in ecology. Ecological
+Indicators 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
 \itemize{
 \item Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, Avila A. 2013.
 Infuencia de la heterogeneidad
-del paisaje en la ocurrencia de incendios forestales en Chile Central.
-Revista de Geografia del Norte Grande, 55:157-170, 2013.
--Salas-Eljatib C, Fuentes-Ramírez A, Gregoire TG, Altamirano A,
-Yaitul V. 2018. A study on the effects of unbalanced data when
-fitting logistic regression models in ecology.
-Ecological Indicators 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
+del paisaje en la ocurrencia de incendios forestales en
+Chile Central.
+Revista de Geografia del Norte Grande, 55:157-170.
 }
 }
 \keyword{datasets}

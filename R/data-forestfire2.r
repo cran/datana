@@ -1,12 +1,12 @@
-#' Datos de ocurrencia de incendios forestales
+#' Ocurrencia de incendios forestales
 #'
 #' @description
-#' Datos de ocurrencia de incendios forestales de Altamirano et al. (2013)
-#' como nuestra poblacion, que contiene 7210 observaciones
-#' totales (N), con solo 890 casos de ocurrencia de incendios (N1) y
-#' 6320 casos de no ocurrencia (N0). La variable binaria (Y)
-#' es la ocurrencia de un incendio forestal, donde Y igual a 1 denota
-#' ocurrencia e igual a 0 en caso contrario.
+#' Datos de ocurrencia de incendios forestales en la zona central
+#' de Chile. Se tienen 7210 observaciones, de las cuales 
+#'  890 tienen ocurrencia de incendios y
+#' 6320 casos de no ocurrencia. La variable binaria (\eqn{Y})
+#' es la ocurrencia de un incendio forestal, donde \eqn{Y=1}  denota
+#' ocurrencia y \eqn{Y=0}, lo contrario.
 #' @usage
 #' data(forestfire2)
 #' @format Variables se describen a continuacion:
@@ -38,16 +38,20 @@
 #' \item{nvdi.class}{Clase de indice de vegetacion de diferencia normalizado}
 #'  }
 #' @source
-#' Datos fueron cedidos por el Dr Christian Salas-Eljatib (Santiago, Chile).
+#' Datos fueron cedidos por el Dr. Adison Altamirano, Universidad
+#'  de La Frontera, Temuco, Chile.
 #' @references
-#' - Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, Avila A. 2013.
-#' Infuencia de la heterogeneidad
-#' del paisaje en la ocurrencia de incendios forestales en Chile Central.
-#' Revista de Geografia del Norte Grande, 55:157-170, 2013.
 #' -Salas-Eljatib C, Fuentes-Ramírez A, Gregoire TG, Altamirano A,
 #' Yaitul V. 2018. A study on the effects of unbalanced data when
-#'      fitting logistic regression models in ecology.
-#'       Ecological Indicators 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
+#' fitting logistic regression models in ecology. Ecological
+#' Indicators 85:502-508. \doi{10.1016/j.ecolind.2017.10.030}
+#' 
+#' - Altamirano A, Salas C, Yaitul V, Smith-Ramirez C, Avila A. 2013.
+#' Infuencia de la heterogeneidad
+#' del paisaje en la ocurrencia de incendios forestales en
+#' Chile Central. Revista de Geografia del Norte Grande,
+#' 55:157-170.
+#' 
 #' @examples
 #' data(forestfire2)
 #' head(forestfire2)

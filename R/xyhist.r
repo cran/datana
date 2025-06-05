@@ -32,12 +32,13 @@
 #'
 #' @examples
 #' data(treevolroble)
-#' df <- treevolroble
+#' df <- datana::treevolroble
 #' head(df)
 #' xyhist(x=df$dbh,y=df$toth)
 #' xyhist(x=df$dbh,y=df$toth, xlab="Variable X",  ylab="Variable Y")
 #' xyhist(x=df$dbh,y=df$toth, xlab="Variable X", ylab="Variable Y",
 #'   col.x = "gray",col.y="white")
+#+=========================================================== 
 xyhist<-function(x=x, y=y, col.x="blue",col.y="red",
                  xlab=NULL, ylab=NULL,x.lim=NULL,y.lim=NULL){
 
@@ -71,3 +72,4 @@ xyhist<-function(x=x, y=y, col.x="blue",col.y="red",
   graphics::barplot(yhist$counts, axes=FALSE, xlim=c(0, top), space=0,
           horiz=TRUE,  col=col.y)
 }
+#+=========================================================== 

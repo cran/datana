@@ -13,19 +13,20 @@ Contiene tres variables, como sigue:
 }
 }
 \source{
-Datos obtenidos desde el paquete \eqn{alr4} de R.
+Datos obtenidos desde el paquete \eqn{alr4} de R, de la dataframe
+\eqn{wblake} qie incluye peces de hasta 8 años.
 }
 \usage{
 data(fishgrowth2)
 }
 \description{
-Data on samples of small mouth bass collected in West Bearskin Lake,
-Minnesota, in 1991. The
-file wblake includes only fish of ages 8 or younger.
+Variables de crecimiento de peces en el lago West Bearskin del estado de
+Minnesota, en 1991.
 }
 \examples{
 data(fishgrowth2)    
-head(fishgrowth2) 
+head(fishgrowth2)
+plot(largo~edad,data=fishgrowth2)
 }
 \references{
 Weisberg S. 2014. Applied Linear Regression. 4th edition. Hoboken NJ: Wiley

@@ -4,42 +4,42 @@
 #' @details The resulting table offers the main central and dispersion 
 #' statistics.
 #' 
-#' @title Creates a descriptive statistics table for continuous variables
+#' @title Creates a descriptive statistics table for continuous
+#' variables.
 #' @param data a dataframe containing numeric variables as columns.
-#' @param decnum the number of decimals to be used in the output. 
-#' @param full TRUE for a longer output (i.e. more descriptive statistics).
-#'  The default is to FALSE.
+#' @param decnum the number of decimals to be used in the output. The
+#' default is set to 3.
+#' @param eng logical; if "TRUE" (by default), the language of the
+#' statistics will be in English; if "FALSE" will be in Spanish.
+#' descriptive statistics. The default is to "FALSE".
+#' @param full logical; if "TRUE", the output includes some extra
+#' descriptive statistics. The default is to "FALSE".
 #'
-#' @return This function wraps descriptive statistics into a summarize table 
-#' having the following
-#'   descriptive statistics: sample size, minimum, maximum, mean, median, SD, 
-#'   and coefficient of variation. 
-#'   If the full option is set to TRUE, the following statistics are added to
-#'    the table: 25th and 75th 
+#' @return This function wraps descriptive statistics into a
+#' summarize table having the following statistics: sample size,
+#' minimum, maximum, mean, median, SD, and coefficient of variation. 
+#'  If the "full" option is set to "TRUE", the following
+#' statistics will be added to the table: 25th and 75th 
 #'   percentiles, the interquartile range, skewness, and kurtosis.
 #' @author Christian Salas-Eljatib and Tomas Cayul.
 #' @references
-#' Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R:
-#'  una introducción
-#'  aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p. 
-#'  \url{https://eljatib.com/rlibro}
+#' - Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R:
+#' una introducción aplicada. Ediciones Universidad Mayor. Santiago, Chile.
+#' \url{https://eljatib.com}
 #' @examples
 #'
-#' #creating a fictitious dataframe
-#' set.seed(1234)
-#' df <- as.data.frame(cbind(variable1=rnorm(5, 0), variable2=rnorm(5, 2)))
-#' ## adding one missing value
-#' df[3,1] <- NA
-#' df
-#' #' #using the function
-#' descstat(data=df)
-#' descstat(data=df,decnum=1)
-#' descstat(df,2)
+#' df <- datana::idahohd
+#' head(df)
+#' df.h<-df[,c("dbh","height")]
+#' ## using the function
+#' descstat(data=df.h)
+#' descstat(data=df.h,decnum=1,eng=FALSE)
+#' descstat(df.h,2)
 #' @rdname descstat
 #' @export
 #' 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-descstat <- function(data=data,decnum=4,full=FALSE){
+descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE){
   data <- as.data.frame(data)
   if(prod(is.na(decnum))){decnum=3}
   n <- apply(data, 2, function(x){length(x[!is.na(x)])})
@@ -50,8 +50,15 @@ descstat <- function(data=data,decnum=4,full=FALSE){
   Desv.Est. <- apply(data, 2, stats::sd, na.rm=TRUE)
   CV <- abs(100*Desv.Est./Media)
   output=(rbind(n,Minimo,Maximo,Media,Mediana,Desv.Est., CV))
-  names.out.here<-c("n","Minimum","Maximum","Mean","Median",
+  stat.names<-c("n","Minimum","Maximum","Mean","Median",
                     "Std. Dev.","CV(%)")
+  if(eng==FALSE){
+    stat.names<-c("n","Minimo","Maximo","Media","Mediana",
+                    "Desv. St.","CV(%)")
+  }
+
+  names.out.here<-stat.names
+
   row.names(output) <- names.out.here
   output=data.frame(output)
   names(output)=names(data)   
@@ -68,9 +75,12 @@ descstat <- function(data=data,decnum=4,full=FALSE){
                   CV,percentiles,iqr,sk,kurto))
     row.names(output) <- c(names.out.here,"25th Percentile",
                 "75th Percentile",'Interq. range',"Skewness","Kurtosis")
+     if(eng==FALSE){
+    row.names(output) <- c(names.out.here,"Percentil 25",
+                "Percentil 75",'Rango Interc.',"Asimetria","Curtosis")}
     output=data.frame(output)
     names(output)=names(data)   
     output=round(output,decnum)  
   }
-  output
+output
 }

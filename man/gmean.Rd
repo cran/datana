@@ -2,7 +2,7 @@
 % Please edit documentation in R/gmean.r
 \name{gmean}
 \alias{gmean}
-\title{Function to compute the geometric mean of a vector}
+\title{Function to compute the geometric mean of a numeric vector}
 \usage{
 gmean(v)
 }
@@ -13,13 +13,12 @@ gmean(v)
 This function returns the geometric mean, a numeric scalar.
 }
 \description{
-Computes the geometric mean of a numeric vector. It is the n-th root of the
-product of n numbers, as follows.
+Computes the geometric mean of a numeric vector. It is the n-th
+root of the product of n numbers, as follows.
 \deqn{y_g = \left(\prod_{i=1}^{n} y_i\right)^{1/n}}
-for \eqn{y_i > 0}. It can also be understood as
-the average of the logarithmic values of a data set, converted back to a
-base 10 number.
-The geometric mean is a central position statistics of a random variable.
+for \eqn{y_i > 0}.
+The geometric mean can be used a central position statistics of
+a random variable.
 }
 \details{
 Notice that can only be computed for positive values. For
@@ -32,9 +31,9 @@ y.var <- runif(10, min=10, max=45)
 gmean(y.var)
 }
 \references{
-Salas-Eljatib, C. 2021. Análisis de datos con el programa estadístico R:
-una introducción
-aplicada. Ediciones Universidad Mayor, Santiago, Chile. 170 p.
+Salas-Eljatib, C. 2021. Análisis de datos con el programa
+estadístico R: una introducción  aplicada. Ediciones
+Universidad Mayor, Santiago, Chile. 170 p.
 \url{https://eljatib.com/rlibro}
 }
 \author{

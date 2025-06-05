@@ -2,7 +2,8 @@
 % Please edit documentation in R/pvalt.r
 \name{pvalt}
 \alias{pvalt}
-\title{Obtain the P-value for a Standard t-distributed random variable}
+\title{Obtain the P-value for a Standard t-distributed random
+variable}
 \usage{
 pvalt(t.value, df, decnum = 14)
 }
@@ -21,15 +22,16 @@ The function returns the P-value or probability of getting a
 value as large as t.value.
 }
 \description{
-Function to compute the P-value for a Standard t-distributed random variable.
+Function to compute the P-value for a Standard t-distributed
+random variable.
 }
 \details{
-It is suited to compute the P-value for any random variable following a
-Standard  t probability density function. For instance, to obtain
-the p-value in a t-test.
+It is suited to compute the P-value for any random variable
+following a Standard  t probability density function (pdf). For
+instance, to obtain the p-value in a t-test.
 }
 \examples{
-## Load dataset
+# Load dataset
  df <- datana::fertiliza2
  head(df)
  ## Computes the t-test statistics (from the 'stats' package)

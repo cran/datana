@@ -3,9 +3,9 @@
 \docType{data}
 \name{fishgrowth}
 \alias{fishgrowth}
-\title{Data on fish growth.}
+\title{Fish growth variables.}
 \format{
-Contains 3 variables, as follows:
+Contains three variables, as follows:
 \describe{
 \item{years}{Year at capture.}
 \item{length}{Length at capture (mm).}
@@ -13,19 +13,20 @@ Contains 3 variables, as follows:
 }
 }
 \source{
-The data were obtained from the \eqn{alr4} library of R.
+The data were obtained from the \eqn{alr4} library of R, specifically
+from the dataframe \eqn{wblake} that includes only fish of ages 8 or younger.
 }
 \usage{
 data(fishgrowth)
 }
 \description{
-Data on samples of small mouth bass collected in West Bearskin Lake,
-Minnesota, in 1991. The
-file wblake includes only fish of ages 8 or younger.
+Variables of small mouth bass (i.e, a fish) collected in West Bearskin Lake,
+Minnesota, in 1991.
 }
 \examples{
 data(fishgrowth)    
 head(fishgrowth) 
+plot(length~age, data=fishgrowth) 
 }
 \references{
 Weisberg S. 2014. Applied Linear Regression. 4th edition. Hoboken NJ: Wiley

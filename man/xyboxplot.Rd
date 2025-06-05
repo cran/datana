@@ -4,33 +4,51 @@
 \alias{xyboxplot}
 \title{Function for building a scatterplot with superposing boxplots}
 \usage{
-xyboxplot(x = x, y = y, col.dots = "blue", xlab = NULL, ylab = NULL)
+xyboxplot(
+  x = x,
+  y = y,
+  col.dots = "blue",
+  xlab = NULL,
+  ylab = NULL,
+  try.x.ascategory = FALSE,
+  transp.dots = 0.2,
+  transp.boxp = 0.1
+)
 }
 \arguments{
-\item{x}{A numeric vector representing the time variable (X-axis).}
+\item{x}{A numeric vector representing the X-axis variable.}
 
-\item{y}{A numeric vector representing the response variable (Y-axis).}
+\item{y}{A numeric vector representing the Y-axis variable (response).}
 
-\item{col.dots}{(optional) A string specifying the dot colors.
-Default is "blue".}
+\item{col.dots}{A string specifying the dot colors. The default is
+set to "blue".}
 
 \item{xlab}{(optional) A string specifying X-axis label.}
 
 \item{ylab}{(optional) A string specifying Y-axis label.}
+
+\item{try.x.ascategory}{A logical statement, if set to TRUE, the X-axis variable
+will be treated as categorical for the drawing od the boxplots. The default
+is set to FALSE.}
+
+\item{transp.dots}{A numeric value to be used as transparency for the
+dots of the figure to be produced. The defauls is set to 0.2}
+
+\item{transp.boxp}{A numeric value to be used as transparency for the
+boxpot of the figure to be produced. The defauls is set to 0.1}
 }
 \value{
 The function returns the above described graph.
 }
 \description{
-The function creates a scatterplot with superposing boxplots for the Y-axis
-variable. To a
-simple scatterplot between the response variable 'y' and the predictor
-variable 'x',
+The function creates a scatterplot with superposing boxplots
+for the Y-axis variable. To a scatterplot between
+a response variable 'y' and a predictor variable 'x',
 this function superposes boxplots of the response by groups of the
 predictor variable.
 The main aim of the above described graph is to get a sense of the
-distribution of the
-response variable depending upon the  predictor variable.
+distribution of the response variable depending upon
+the  predictor variable.
 }
 \details{
 Notice that the superposing boxplots for the Y-axis variable are
@@ -41,14 +59,19 @@ of the X-axis variable, therefore each group has the same number of
 observations.
 }
 \examples{
-data(fishgrowth)
-df <- fishgrowth
-xyboxplot(x=df$age,y=df$length)
-xyboxplot(x=df$age,y=df$length)
+df <- datana::fishgrowth
+xyboxplot(x=df$length,y=df$scale)
+xyboxplot(x=df$length,y=df$scale,col.dots = "red",
+xlab="Variable X")
+xyboxplot(x=df$length,y=df$scale,xlab="Variable X")
+xyboxplot(x=df$length,y=df$scale,xlab="Variable X",
+transp.dots = 0.4)
+xyboxplot(x=df$age,y=df$length,try.x.ascategory = TRUE)
 }
 \references{
 \itemize{
-\item Salas-Eljatib C. 2021. Análisis de datos con el programa estadístico R:
+\item Salas-Eljatib C. 2021. Análisis de datos con el programa
+estadístico R:
 una introducción aplicada.
 Ediciones Universidad Mayor. Santiago, Chile. 170 p.
 \url{https://eljatib.com}

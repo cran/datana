@@ -2,40 +2,90 @@
 % Please edit documentation in R/lrt.r
 \name{lrt}
 \alias{lrt}
-\title{Computes a likelihood ratio test between a reduced model and a full
-model}
+\title{Performs a likelihood ratio test between two models being
+fitted by maximum likelihood.}
 \usage{
-lrt(modr, modf)
+lrt(
+  llma = llma,
+  llmb = llmb,
+  qa = qa,
+  qb = qb,
+  nfit = nfit,
+  modA = "modA",
+  modB = "modB",
+  alpha = 0.05
+)
 }
 \arguments{
-\item{modr}{is a previously fitted model having less parameters than modf}
+\item{llma}{maximized log-likelihood of the reduced model (or
+modA).}
 
-\item{modf}{is a previously fitted model having more parameters than modr}
+\item{llmb}{maximized log-likelihood of the more-complex model (or
+modB).}
+
+\item{qa}{the number of parameters of the reduced model.}
+
+\item{qb}{the number of parameters of the more-complex model.}
+
+\item{nfit}{the sample size used for fitted both models.}
+
+\item{modA}{is a character with a name to be assigned to object
+modA.}
+
+\item{modB}{is a character with a name to be assigned to object
+modB.}
+
+\item{alpha}{is the level of sifnificance to used for computing
+as a reference only, the tabulated value of the respective
+Chi-Squared statistic. By the defaul is set to 0.05.}
 }
 \value{
-This function returns an object having the following elements:
-"loglik.Modr" maximized log-likelihood of modr; "loglik.Modf" maximized
-log-likelihood of modf;
-"dif.loglik"  difference in log-likelihood between both models, and
-"dif.df" difference in degrees of freedong of both models, and
-"p-value" is the p-value for the LRT.
+This function wraps two outputs: (i) a table that computes
+the AIC, BIC and AICc goodness-of-fit statistics for both models,
+and (ii) the result of the likelihood ratio test, such as the
+value of the statistic being computed, its respective p-value,
+and the tabulated value of the statistics using the a defined
+alpha significance of level.
 }
 \description{
-Computes a likelihood ratio test between a reduced model (modr) and a
-full model (modf). Both models must be
-previously fitted by maximum likelihood.
+Function to perform a likelihood ratio test (LRT) between a
+reduced model (modA) versus a more complex model (modB),
+provided both models were fitted by maximum likelihood. The
+function requires to be filled with the needed values used
+to perform a LRT.
 }
 \details{
-Double-check the order of the reduced and full model, before of
-using the model
+The resulting output offers statistical inference
+estimates of the LRT, as well as other maximum likelihood-based
+statistics. Notice that the function only works if the number
+of parameters for modA is lower than the ones of modB.
 }
 \examples{
 
-#not yet implemented
+#Maximized values for two probability mass functions
+max.ll.pois<- -39.86337; max.ll.bneg<--33.823003
+c(max.ll.pois,max.ll.bneg)
+sample.size<-26
+#Number of parameters
+num.para.pois<- 1; num.para.bneg<- 3
+c(num.para.pois, num.para.bneg)
+#Names to be used for each model
+ modA="Poisson"; modB="hiper"
+outall<-lrt(llma=max.ll.pois,llmb=max.ll.bneg,qa=num.para.pois,
+qb=num.para.bneg,nfit = sample.size,modA = "Poisson",
+modB = "Hipergeometrico")
+#Output1: A comparative table 
+tab.out<-outall$tab.models
+tab.out
+#Output2: the results of the LRT
+out<-outall$lrt.out
+out$r.tab
+out$Ldif
 }
 \references{
-Pinheiro JC, and Bates DM. 2000. Mixed-effects models in S
-and Splus. Springer-Verlag, New York, NY. 528 p.
+Salas-Eljatib, C. 2025. Estadística Aplicada e Inferencial.
+Borrador de libro, Universidad de Chile, Santiago, Chile.
+\url{https://eljatib.com/rlibro}
 }
 \author{
 Christian Salas-Eljatib.
