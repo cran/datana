@@ -27,7 +27,8 @@
 #' set to "Variables".
 #' @param decnum the number of decimals to be used in the output. The
 #' default is set to 3.
-#' @param font.size.tab The defauls is set to "footnotesize".
+#' @param font.size.tab The defauls is set to "normalsize". You could
+#'  also try with "footnotesize". 
 #' @param font.type.tab The defauls is set to "normalfont".
 #' @importFrom utils head
 #'
@@ -62,12 +63,10 @@
 tabtexdescstat<-function(data=data,colnames=colnames,
                          varnames=varnames,cap=cap,nametab=nametab,
                          save.file=FALSE,filename="tabdescdata.tex",
-   eng=TRUE,rowlab="Variable",decnum=3,font.size.tab="footnotesize",
+   eng=TRUE,rowlab="Variable",decnum=3,font.size.tab="normalsize",
    font.type.tab="normalfont"){
 
 df.h<-data[,colnames]
-#head(df.h)
-#str(df.h)
 
 tab.h <- t(datana::descstat(df.h,decnum = decnum))
 tab.h
@@ -81,9 +80,7 @@ colnames(tab.h)<-stat.names
 tab.h
 
 if(save.file==TRUE){    
-#filetab<-paste("tab.",nametab,sep = "")
-fileNametex<-filename#paste(filetab,'.tex',sep='')
-#    fileNametex<-filetabtex
+fileNametex<-filename
 }
 
 rowlabel.h <-rowlab

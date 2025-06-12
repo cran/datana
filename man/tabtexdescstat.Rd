@@ -16,7 +16,7 @@ tabtexdescstat(
   eng = TRUE,
   rowlab = "Variable",
   decnum = 3,
-  font.size.tab = "footnotesize",
+  font.size.tab = "normalsize",
   font.type.tab = "normalfont"
 )
 }
@@ -52,7 +52,8 @@ set to "Variables".}
 \item{decnum}{the number of decimals to be used in the output. The
 default is set to 3.}
 
-\item{font.size.tab}{The defauls is set to "footnotesize".}
+\item{font.size.tab}{The defauls is set to "normalsize". You could
+also try with "footnotesize".}
 
 \item{font.type.tab}{The defauls is set to "normalfont".}
 }
