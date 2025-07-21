@@ -66,7 +66,7 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE){
   #gm <- apply(data, 2,datana::gmean),na.rm=TRUE)  
   percentiles<-apply(data, 2, stats::quantile,probs=c(0.25,0.75), na.rm=TRUE)
   iqr <- apply(data, 2, stats::IQR, na.rm=TRUE)
-  sk <- apply(data, 2,datana::skew,na.rm=TRUE)
+  sk <- apply(data, 2,datana::skewn,na.rm=TRUE)
   kurto <- apply(data, 2,datana::kurto,na.rm=TRUE)
   if(full==FALSE){
    output
@@ -78,9 +78,9 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE){
      if(eng==FALSE){
     row.names(output) <- c(names.out.here,"Percentil 25",
                 "Percentil 75",'Rango Interc.',"Asimetria","Curtosis")}
-    output=data.frame(output)
-    names(output)=names(data)   
-    output=round(output,decnum)  
+    output<-data.frame(output)
+    names(output)<-names(data)   
+    output<-round(output,decnum)  
   }
 output
 }

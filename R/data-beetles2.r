@@ -6,19 +6,19 @@
 #' 
 #' @format 
 #' \describe{
-#'   \item{dias}{Número de dias.}
+#'   \item{dias}{Número de días.}
 #'   \item{dieta}{La cantidad de harina (en gramos) de ambientes donde crecen 
-#'   los escarabajos.  Seis niveles del factor Dieta.}
-#'   \item{tipo}{Estados de desarrollo de los escarabajos, i.e., huevos, 
+#'   los escarabajos.  Seis niveles del factor `dieta`.}
+#'   \item{tipo}{Estados de desarrollo de los escarabajos, _i.e._, huevos, 
 #'   larvas, pupas, y adultos.}
 #'   \item{densidad}{Número total de individuos por ambiente de crecimiento.}
 #'  }
 #' @source  
 #' Datos del Cuadro No. 1, page 116, de Chapman (1928). Serie de experimentos 
 #' bajo condiciones controladas
-#'  donde escarabajos (Tribolium confusum) se mantienen en ambientes de tamaño 
+#'  donde escarabajos (_Tribolium confusum_) se mantienen en ambientes de tamaño 
 #'  conocido. 
-#'  El periodo desde huevo a adulto es de aproximadamente de cuarenta dias a 
+#'  El periodo desde huevo a adulto es de aproximadamente de cuarenta días a 
 #'  27 grados Celsius. Los datos fueron digitados por la Srta. Yamara
 #'   Arancibia, una estudiante del Prof. Christian Salas-Eljatib.
 #'  

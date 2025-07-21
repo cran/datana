@@ -1,0 +1,27 @@
+#' Puntaje SIMCE 2023 en matemática 4to Básico por RBD
+#'
+#' @description
+#' Puntaje promedio por establecimiento del SIMCE 2023 en matemática de 4to Básico. Se tienen 6534 observaciones.
+#' La variable binaria (\eqn{Y}) es la presencia de convenio PIE en el establecimiento,
+#' donde \eqn{Y=1}  denota presencia y \eqn{Y=0}, lo contrario.
+#' @usage
+#' data(simce2)
+#' @format Variables se describen a continuación:
+#' \describe{
+#' \item{rbd}{Rol Base de Datos del establecimiento}
+#' \item{region}{Región del establecimiento}
+#' \item{comuna}{Comuna del estableciimento}
+#' \item{dependencia}{Dependencia administrativa del establecimiento}
+#' \item{prom.mate4b}{Puntaje promedio del establecimiento en la prueba de matemática
+#' del SIMCE de 4to básico en 2023}
+#' \item{mat.total}{Cantidad de estudiantes matriculados en el establecimiento}
+#' \item{convenio.pie}{Establecimiento tiene convenio PIE (1 si, 0 no)}
+#'  }
+#' @source
+#' Datos obtenidos desde la Agencia de Calidad de la Educación
+#' del Mineduc y desde el portal de DatosAbiertos del Mineduc (datosabiertos.mineduc.cl).
+#' Los datos fueron digitados por Diego Fernández, estudiante del Prof. Christian Salas-Eljatib.
+#' @examples
+#' data(simce2)
+#' head(simce2)
+'simce2'

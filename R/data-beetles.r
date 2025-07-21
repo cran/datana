@@ -8,15 +8,15 @@
 #' \describe{
 #'   \item{days}{Number of days.}
 #'   \item{diet}{The quantities of flour (in grams) of the environments where
-#'    the beetles were growing.  Six levels of the factor Diet.}
-#'   \item{type}{The various stage of beetles, i.e., eggs, larvae, pupae, 
+#'    the beetles were growing.  Six levels of the factor `diet`.}
+#'   \item{type}{The various stage of beetles, _i.e._, eggs, larvae, pupae, 
 #'   and adults.}
 #'   \item{density}{The number of insects per environment.}
 #'  }
 #' @source  
 #' Data from Table No. 1, page 116, of Chapman (1928). Series of experiments 
 #' under controlled
-#'  conditions in which flour beetles (Tribolium confusum) are kept in 
+#'  conditions in which flour beetles (_Tribolium confusum_) are kept in 
 #'  environments of known size. 
 #'  The period from egg to adult is approximately forty days at 27C degrees. 
 #'  The data were entered by Miss Yamara Arancibia, a former 

@@ -8,11 +8,24 @@ xyboxplot(
   x = x,
   y = y,
   col.dots = "blue",
+  transp.dots = 0.1,
   xlab = NULL,
   ylab = NULL,
-  try.x.ascategory = FALSE,
-  transp.dots = 0.2,
-  transp.boxp = 0.1
+  num.classes = 10,
+  segre.type = "percentile",
+  limi.classes = NA,
+  x.category = FALSE,
+  pch.dots = 19,
+  col.box = "red",
+  transp.boxp = 0.07,
+  xlim = NA,
+  ylim = NA,
+  class.ticks.lwd = 1,
+  class.ticks.col = "red",
+  class.marks.col = "black",
+  cex.dots = 0.7,
+  class.marks = FALSE,
+  class.ticks = TRUE
 )
 }
 \arguments{
@@ -20,30 +33,75 @@ xyboxplot(
 
 \item{y}{A numeric vector representing the Y-axis variable (response).}
 
-\item{col.dots}{A string specifying the dot colors. The default is
-set to "blue".}
+\item{col.dots}{A string specifying the dot colors. The default
+value is "blue".}
+
+\item{transp.dots}{A numeric value to be used as transparency for the
+dots of the figure to be produced. The defauls is set to 0.2}
 
 \item{xlab}{(optional) A string specifying X-axis label.}
 
 \item{ylab}{(optional) A string specifying Y-axis label.}
 
-\item{try.x.ascategory}{A logical statement, if set to TRUE, the X-axis variable
-will be treated as categorical for the drawing od the boxplots. The default
+\item{num.classes}{The number of classes to be used for computing
+the prediction capabilities. The default
+is set to \code{10}.}
+
+\item{segre.type}{A string specifying the type of segregation
+to build the classes. The types are: (a) \code{percentile} implies to
+segregate with the same amount, or close, of observations to each
+of the defined \code{num.classes}. (b) \code{user.defined} implies that
+the user must provided the limits of the \code{num.classes}-1. The
+default is set to \code{percentile}. Notice if \code{user.defined} is
+specified, the option}
+
+\item{limi.classes}{A vector of size \code{num.classes-1} containing
+the limits to be used for defining the classes.}
+
+\item{x.category}{A logical statement, if set to TRUE, the X-axis variable
+will be treated as categorical for the drawing of the boxplots. The default
 is set to FALSE.}
 
-\item{transp.dots}{A numeric value to be used as transparency for the
-dots of the figure to be produced. The defauls is set to 0.2}
+\item{pch.dots}{A numeric factor altering the shape of the dots.}
+
+\item{col.box}{A string specifying the boxplot color. The default
+is "red"}
 
 \item{transp.boxp}{A numeric value to be used as transparency for the
 boxpot of the figure to be produced. The defauls is set to 0.1}
+
+\item{xlim}{(optional) A numeric vector having the minimum and maximum,
+respectively for the X-axis variable.}
+
+\item{ylim}{(optional) A numeric vector having the minimum and maximum,
+respectively for the Y-axis variable.}
+
+\item{class.ticks.lwd}{The numeric width of the tick line for each of the
+X-axis variable classes. By default is set to 1.}
+
+\item{class.ticks.col}{A string with the color of the tick line for each of the
+X-axis variable classes. By default is set to "red".}
+
+\item{class.marks.col}{A string with the color of the mark value for each of the
+X-axis variable classes. By default is set to "black".}
+
+\item{cex.dots}{A numeric factor altering the size of the dots. The
+default value is 0.7.}
+
+\item{class.marks}{Whether (logic: TRUE or FALSE) the number value of each of
+the X-axis variable classes should be printed. By default is set to FALSE.}
+
+\item{class.ticks}{Whether (logic: TRUE or FALSE) the number tick of each of
+the X-axis variable classes should be printed. By default is set to TRUE.}
 }
 \value{
 The function returns the above described graph.
 }
 \description{
 The function creates a scatterplot with superposing boxplots
-for the Y-axis variable. To a scatterplot between
-a response variable 'y' and a predictor variable 'x',
+for the Y-axis variable segregated by classes (i.e., groups) of
+the X-axis variable. For a scatterplot between
+a response variable \code{Y} and a predictor variable \code{X},
 this function superposes boxplots of the response by groups of the
 predictor variable.
 The main aim of the above described graph is to get a sense of the
@@ -54,9 +112,10 @@ the  predictor variable.
 Notice that the superposing boxplots for the Y-axis variable are
 computed
 by grouping the X-axis variable in 10 classes. Those classes are set by
-computing the ten percentiles
+computing the 0.1, 0.2, ..., 0.9-percentiles
 of the X-axis variable, therefore each group has the same number of
-observations.
+observations. The wide of the boxplot represent the extend of the
+respective X-axis variable used for drawwing each boxplot.
 }
 \examples{
 df <- datana::fishgrowth
@@ -64,9 +123,69 @@ xyboxplot(x=df$length,y=df$scale)
 xyboxplot(x=df$length,y=df$scale,col.dots = "red",
 xlab="Variable X")
 xyboxplot(x=df$length,y=df$scale,xlab="Variable X")
+
+## dots with alpha channel
 xyboxplot(x=df$length,y=df$scale,xlab="Variable X",
 transp.dots = 0.4)
-xyboxplot(x=df$age,y=df$length,try.x.ascategory = TRUE)
+
+## with categorical x
+xyboxplot(x=df$age,y=df$length,x.category = TRUE)
+
+## fixed x axis limits
+xyboxplot(x=df$age,y=df$length,x.category = TRUE, xlim = c(0,10))
+
+## x marks width to .5
+xyboxplot(x=df$age,y=df$length,x.category = TRUE, xlim = c(0,10),
+          class.ticks.lwd = .5)
+
+## x marks red and width 2
+xyboxplot(x=df$age,y=df$length,x.category = TRUE, xlim = c(0,10),
+          class.ticks.lwd = 2, class.ticks.col = "red")
+
+## larger dots
+xyboxplot(x=df$age,y=df$length,x.category = TRUE, xlim = c(0,10),
+          cex.dots = 1.5)
+
+## print classes ticks
+xyboxplot(x=df$age,y=df$length,x.category = TRUE, xlim = c(0,10),
+          class.marks = FALSE, class.ticks.col = "green")
+
+### the x-variable not recorded such as a categorical variable
+df <- datana::fishgrowth
+## print classes ticks, by default with red color
+xyboxplot(x=df$length, y=df$scale)
+
+## don't print ticks
+xyboxplot(x=df$length, y=df$scale, class.ticks=FALSE)
+
+## print classes marks values
+xyboxplot(x=df$length, y=df$scale, class.marks=TRUE)
+
+## print classes marks values without ticks
+xyboxplot(x=df$length, y=df$scale, class.marks=TRUE, class.ticks=FALSE)
+
+## change class marks and ticks colors
+xyboxplot(x=df$length, y=df$scale, class.marks=TRUE,
+          class.marks.col = "red",
+          class.ticks.col = "blue")
+
+## bigger ticks
+xyboxplot(x=df$length, y=df$scale, class.marks=TRUE,
+          class.marks.col = "red",
+          class.ticks.col = "blue", class.ticks.lwd=3)
+
+## Changing the number of the X-variable classes
+xyboxplot(x=df$length,y=df$scale,num.classes=5)
+
+## Defining the classes not by percentiles, but by fixed values
+xyboxplot(x=df$length,y=df$scale,xlim=c(0,410),
+ylim=c(0,20),num.classes=4,
+segre.type="fixed",limi.classes=c(140,195,250))
+
+## Note that the limits must be in agreement with the num.classes
+xyboxplot(x=df$length,y=df$scale,xlim=c(0,410),ylim=c(0,20),
+num.classes=5,segre.type="fixed",limi.classes=c(100,160,200,250))
+
 }
 \references{
 \itemize{

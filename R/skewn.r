@@ -21,14 +21,14 @@
 #' @author Christian Salas-Eljatib.
 #' @examples
 #' y.var<-rnorm(100);x.var<-rbeta(100,.2,2)
-#' skew(y.var)
-#' skew(x.var)
+#' skewn(y.var)
+#' skewn(x.var)
 #'
-#' @rdname skew
+#' @rdname skewn
 #' @export
 #' 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-skew <-  function(x, na.rm=TRUE){#}, pearson=FALSE){
+skewn <-  function(x, na.rm=TRUE){#}, pearson=FALSE){
   m3 <- mean((x-mean(x,na.rm=na.rm))^3,na.rm=na.rm)
   out <- m3/(stats::sd(x,na.rm=na.rm)^3)
 #   if(pearson==TRUE){

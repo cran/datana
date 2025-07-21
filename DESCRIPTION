@@ -1,6 +1,6 @@
 Package: datana
 Title: Datasets and Functions to Accompany Analisis De Datos Con R
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(person("Christian Salas-Eljatib", email = "cseljatib@gmail.com",role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8468-0829")),
              person("Campos", "Nicolás", role = "ctb", comment = c(ORCID = "0009-0001-9534-9808")),
              person("Pino", "Nicolas", role = "ctb", comment = "up to 2020"),
@@ -14,10 +14,11 @@ RoxygenNote: 7.3.2
 Depends: R (>= 3.5)
 LazyData: true
 LazyDataCompression: xz
-Imports: ggplot2, Hmisc, methods, stats, utils
-Suggests: lattice
+Imports: ggplot2, graphics, Hmisc, methods, scales, stats, utils
+Suggests: lattice, testthat (>= 3.0.0)
+Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2025-06-12 22:39:56 UTC; christian
+Packaged: 2025-07-21 21:21:46 UTC; christian
 Author: Christian Salas-Eljatib [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-8468-0829>),
   Campos Nicolás [ctb] (ORCID: <https://orcid.org/0009-0001-9534-9808>),
@@ -25,4 +26,4 @@ Author: Christian Salas-Eljatib [aut, cre] (ORCID:
   Riquelme Joaquin [ctb] (up to 2020)
 Maintainer: Christian Salas-Eljatib <cseljatib@gmail.com>
 Repository: CRAN
-Date/Publication: 2025-06-12 23:00:02 UTC
+Date/Publication: 2025-07-21 22:40:02 UTC
