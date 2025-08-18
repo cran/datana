@@ -5,7 +5,14 @@
 \title{Creates a descriptive statistics table for continuous
 variables.}
 \usage{
-descstat(data = data, decnum = 3, eng = TRUE, full = FALSE)
+descstat(
+  data = data,
+  decnum = 3,
+  eng = TRUE,
+  full = FALSE,
+  reduced = FALSE,
+  all.outputs = FALSE
+)
 }
 \arguments{
 \item{data}{a dataframe containing numeric variables as columns.}
@@ -19,6 +26,13 @@ descriptive statistics. The default is to "FALSE".}
 
 \item{full}{logical; if "TRUE", the output includes some extra
 descriptive statistics. The default is to "FALSE".}
+
+\item{reduced}{logical; if "TRUE", the output includes the same
+descriptive statistics as using the summary() basis R function.}
+
+\item{all.outputs}{logical; if "TRUE", the returns several elements
+as results of the function, which can be of importance for
+further analyses later on. The default is to "FALSE".}
 }
 \value{
 This function wraps descriptive statistics into a
@@ -37,14 +51,15 @@ The resulting table offers the main central and dispersion
 statistics.
 }
 \examples{
-
 df <- datana::idahohd
 head(df)
-df.h<-df[,c("dbh","height")]
+df.h<-df[,c("dbh","toth")]
 ## using the function
 descstat(data=df.h)
 descstat(data=df.h,decnum=1,eng=FALSE)
 descstat(df.h,2)
+descstat(df.h,2,full=TRUE)
+descstat(df.h,2,reduced=TRUE)
 }
 \references{
 \itemize{

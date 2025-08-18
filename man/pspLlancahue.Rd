@@ -3,53 +3,37 @@
 \docType{data}
 \name{pspLlancahue}
 \alias{pspLlancahue}
-\title{Ubicación cartesiana de árboles en el bosque de Llancahue para uso
-del libro.}
+\title{Ubicación cartesiana de árboles en un bosque (solo como
+referencia para uso del libro).}
 \format{
 Contains tree-level variables, as follows:
 \describe{
 \item{arb.id}{Identificador del árbol.}
-\item{spp}{Codificación de la especie como sigue:
-AP= Aextocicon puncatatum,
-EC=Eucryphia cordifolia,
-GA=Gevuina avellana,
-LP=Laureliopsis philippiana,
-LS=Laurelia sempervirens,
-ND=Nothofagus dombeyi, Ot=Other,
-PS=Podocarpus saligna.}
+\item{spp}{Codificación de la especie. Detalles en  \code{llancahue2}.}
 \item{dap}{Diámetro a la altura del pecho, en cm.}
 \item{coord.x}{Posición cartesiana en el eje-X, en m.}
 \item{coord.y}{Posición cartesiana en el eje-Y, en m.}
 }
 }
 \source{
-Los datos fueron cedidos por el Prof. Daniel Soto de Universidad
-de Aysen (Coyhaique, Chile).
+Detalles en  \code{llancahue2}.
 }
 \usage{
 data(pspLlancahue)
 }
 \description{
-Corresponde a la posición cartesiana, especie, y diámetro de árboles
-en una parcela de muestreo
-en el bosque de Llancahue, cerca de Valdivia, Chile. La parcela
-es rectangular con
-dimensiones de 130 m por 70 m. Mayores antecedentes aparecen en
-las referencias.
+Esta dataframe solo se mantiene para ser de utilidad a quienes
+usan el libro de Salas-eljatib (2021), ya que la nueva
+versión se encuentra en la dataframe \code{llancahue2}.
 }
 \examples{
-data(pspLlancahue)    
-head(pspLlancahue) 
+data(pspLlancahue) 
 descstat(pspLlancahue$dap)
 boxplot(dap~spp, data=pspLlancahue)
 }
 \references{
 \itemize{
-\item Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y
-espacial de
-un bosque mixto dominado por Nothofagus dombeyi después de un disturbio
-parcial.
-Revista Chilena de Historia Natural 83(3): 335-347.
+\item Detalles en \code{llancahue2}.
 }
 }
 \keyword{datasets}

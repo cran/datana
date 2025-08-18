@@ -12,6 +12,10 @@
 #' @param varnames a string having the name of each of the variables
 #' to be used in the LaTeX table.
 #' @param cap a string having the caption of the LaTeX table.
+#' @param variable.row A logical option specifying whether the
+#' variables are used in the rows of the output. The default is
+#' to FALSE, thus, the variables are used as the main colum of the
+#' table. 
 #' @param nametab a string having a brief name to be used in
 #' both the label of the table and the file name. For instance,
 #' if "=descdata", the table can be refered in your LaTeX
@@ -49,13 +53,17 @@
 #' head(df)
 #' ##example 1
 #' tabtexdescstat(data=df,nametab="idaho",
-#' cap="Descriptive statistics table",
-#' colnames=c("dbh","height"),varnames = c("Diameter","Height"))
+#'  cap="Descriptive statistics table",
+#' colnames=c("dbh","toth"),varnames = c("Diameter","Height"))
 #' ##example 2
 #' tabtexdescstat(data=df,nametab="idaho",
 #' cap="Cuadro con estadistica descriptiva",
-#'  colnames=c("dbh","height"),varnames = c("Diametro","Altura"),
+#'  colnames=c("dbh","toth"),varnames = c("Diametro","Altura"),
 #'  eng=FALSE)
+#' ##! Example 3: variables as columns
+#' tabtexdescstat(data=df,nametab="idaho",
+#'  cap="Descriptive statistics table",colnames=c("dbh","toth"),
+#' varnames = c("Diameter","Height"),variable.row=FALSE)
 #' @rdname tabtexdescstat
 #' @export
 #' 
@@ -64,19 +72,23 @@ tabtexdescstat<-function(data=data,colnames=colnames,
                          varnames=varnames,cap=cap,nametab=nametab,
                          save.file=FALSE,filename="tabdescdata.tex",
    eng=TRUE,rowlab="Variable",decnum=3,font.size.tab="normalsize",
-   font.type.tab="normalfont"){
+   font.type.tab="normalfont",variable.row=FALSE){
 
 df.h<-data[,colnames]
 
-tab.h <- t(datana::descstat(df.h,decnum = decnum))
-tab.h
-    row.names(tab.h)<-varnames
-stat.names<-c("n","Minimum","Maximum","Mean","Median","Std. Dev.","CV (\\%)")    
-if(eng==FALSE){    
-stat.names<-
-   c("n","M\\'inimo","M\\'aximo","Media","Mediana","Desv.est\\'andar","CV (\\%)")}
+all.out<-datana::descstat(df.h,decnum = decnum,all.outputs = TRUE,eng=TRUE)
 
-colnames(tab.h)<-stat.names    
+stat.names<-all.out$stat.names
+    
+if(variable.row==TRUE){tab.h <- t(all.out$output)}
+if(variable.row==FALSE){tab.h <- all.out$output}   
+tab.h
+if(variable.row==TRUE){row.names(tab.h)<-varnames}    
+if(variable.row==TRUE){colnames(tab.h)<-stat.names}
+    
+if(variable.row==FALSE){rowlab<-"Statistics"}    
+if(variable.row==FALSE & eng==FALSE){rowlab<-"Estadistico"}
+    
 tab.h
 
 if(save.file==TRUE){    

@@ -9,13 +9,14 @@ Contains tree-level variables, as follows:
 \describe{
 \item{arb.id}{Identificador del árbol.}
 \item{spp}{Codificación de la especie como sigue:
-AP= Aextocicon puncatatum,
-EC=Eucryphia cordifolia,
-GA=Gevuina avellana,
-LP=Laureliopsis philippiana,
-LS=Laurelia sempervirens,
-ND=Nothofagus dombeyi, Ot=Other,
-PS=Podocarpus saligna.}
+"AP" es \emph{Aextoxicon punctatum},
+"EC" es \emph{Eucryphia cordifolia},
+"GA" es \emph{Gevuina avellana},
+"LP" es \emph{Laureliopsis philippiana},
+"LS" es \emph{Laurelia sempervirens},
+"ND" es \emph{Nothofagus dombeyi}, "PS" es \emph{Podocarpus saligna},
+y "Ot" representa a cualquier especie distintat a cualquiera
+de las ya definidas.}
 \item{dap}{Diámetro a la altura del pecho, en cm.}
 \item{coord.x}{Posición cartesiana en el eje-X, en m.}
 \item{coord.y}{Posición cartesiana en el eje-Y, en m.}
@@ -44,10 +45,9 @@ boxplot(dap~spp, data=llancahue2)
 }
 \references{
 \itemize{
-\item Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y
-espacial de
-un bosque mixto dominado por Nothofagus dombeyi después de un disturbio
-parcial.
+\item Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad
+estructural y espacial de un bosque mixto dominado por
+\emph{Nothofagus dombeyi} después de un disturbio parcial.
 Revista Chilena de Historia Natural 83(3): 335-347.
 }
 }

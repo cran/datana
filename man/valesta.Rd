@@ -4,30 +4,38 @@
 \alias{valesta}
 \title{Function to compute prediction statistics based on observed values}
 \usage{
-valesta(y.obs = y.obs, y.pred = y.pred)
+valesta(y.obs = y.obs, y.pred = y.pred, want.percent = TRUE)
 }
 \arguments{
 \item{y.obs}{observed values of the variable of interest}
 
 \item{y.pred}{predicted values of the variable of interest}
+
+\item{want.percent}{A logic option for requesting to also
+computed the prediction statistics as a percentage of the sample
+mean of \code{y.obs}. By default is set to TRUE.}
 }
 \value{
-The main output  following six prediction statistics as a vector:
-(RMSD, RMSD.p, AD, AD.p, AAD, AAD.p); where RMSD.p stands for RMSD
-expressed as a percentage, and the same applies to AD.p and AAD.p.
+The main output depends on the \code{want.percent}; if \code{TRUE},
+then it has the following six prediction statistics as a vector:
+(\code{rmsd}, \code{rmsd.p},\code{ad}, \code{ad.p},  \code{aad}, \code{aad.p}); where
+\code{rmsd.p} stands for \code{RMSD} expressed as a percentage, and the
+same applies to \code{AD.p} and \code{AAD.p}. Meanwhile,
+if \code{want.percent=FALSE}, then it has the following three
+prediction statistics as a vector: (\code{rmsd},\code{ad},\code{aad})
 }
 \description{
-Computes three prediction statistics as a way to compare observed
-versus predicted values of a response variable of interest. The statistics are:
-the aggregated difference (\eqn{AD}),
-the root mean square differences (\eqn{RMSD}), and
-the aggregated of the absolute value differences (\eqn{AAD}).
-All of them area based on
+Computes three prediction statistics as a way to compare
+observed versus predicted values of a response variable
+of interest. The statistics are: the root mean square
+differences (\eqn{RMSD}), the aggregated difference
+(\eqn{AD}), and the absolute aggregated differences (\eqn{AAD}).
+All of them are based on
 \deqn{r_i = y_i - \widehat{y}_i}
 where \eqn{y_i} and \eqn{\widehat{y}_i} are the observed and the
 predicted value of the response variable \eqn{y} for
-the \eqn{i}-th observation, respectively. Both the observed and predicted values
-must be expressed in the same units.
+the \eqn{i}-th observation, respectively. Both the observed
+and predicted values must be expressed in the same units.
 }
 \details{
 The function computes the three aforementioned statistics expressed

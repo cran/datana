@@ -17,7 +17,8 @@ tabtexdescstat(
   rowlab = "Variable",
   decnum = 3,
   font.size.tab = "normalsize",
-  font.type.tab = "normalfont"
+  font.type.tab = "normalfont",
+  variable.row = FALSE
 )
 }
 \arguments{
@@ -56,6 +57,11 @@ default is set to 3.}
 also try with "footnotesize".}
 
 \item{font.type.tab}{The defauls is set to "normalfont".}
+
+\item{variable.row}{A logical option specifying whether the
+variables are used in the rows of the output. The default is
+to FALSE, thus, the variables are used as the main colum of the
+table.}
 }
 \value{
 This function creates a LaTeX file having
@@ -79,13 +85,17 @@ df <- datana::idahohd
 head(df)
 ##example 1
 tabtexdescstat(data=df,nametab="idaho",
-cap="Descriptive statistics table",
-colnames=c("dbh","height"),varnames = c("Diameter","Height"))
+ cap="Descriptive statistics table",
+colnames=c("dbh","toth"),varnames = c("Diameter","Height"))
 ##example 2
 tabtexdescstat(data=df,nametab="idaho",
 cap="Cuadro con estadistica descriptiva",
- colnames=c("dbh","height"),varnames = c("Diametro","Altura"),
+ colnames=c("dbh","toth"),varnames = c("Diametro","Altura"),
  eng=FALSE)
+##! Example 3: variables as columns
+tabtexdescstat(data=df,nametab="idaho",
+ cap="Descriptive statistics table",colnames=c("dbh","toth"),
+varnames = c("Diameter","Height"),variable.row=FALSE)
 }
 \references{
 Salas-Eljatib, C. 2021. Análisis de datos con el programa

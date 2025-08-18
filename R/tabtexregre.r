@@ -44,10 +44,10 @@
 #' datana::descstat(df[,c("largo","edad")])
 #' graphics::plot(largo ~ edad, data=df)
 #' mod1<-stats::lm(largo ~ edad, data=df)
-#' ##example 1
+#' ## Example 1
 #' tabtexregre(mod=mod1,nametab="basicmodel",
 #' cap="Parameter estimates of the fitted regression model")
-#' ##example 2
+#' ## Example 2
 #' tabtexregre(mod=mod1,nametab="basicmodel",
 #' cap="Cuadro con parametros estimados del modelo de regresion",
 #' eng=FALSE)
@@ -60,23 +60,22 @@ tabtexregre<-function(mod=mod,nametab=nametab,cap=cap,
     rowlab="Parameter",decnum=3,font.size.tab="normalsize",
    font.type.tab="normalfont"){
 
-tab.h<-summary(mod)[["coefficients"]]
+out.mod<-modresults(mod)
+ncoef<-out.mod$ncoef
+sigma.mod.aca<-round(out.mod$sigma.e,decnum)
+sigma.mod.aca    
+tab.h<-out.mod$modsumm[["coefficients"]]
 tab.h<-round(tab.h,decnum)
-coef.aju<-tab.h[,1];coef.aju
-se.coef<-summary(mod)$coefficients[,2]
-tcal.coef<-summary(mod)$coefficients[,3]
-vp.tcal.coef<-summary(mod)$coefficients[,4]
-
 dim(tab.h)
 ncol.aca<-ncol(tab.h)
-tab.h[tab.h[,ncol.aca]==0,ncol.aca]="<2e-16"
-tab.h<-as.data.frame(tab.h)
-sigma.mod.aca <- round((summary(mod))$sigma,decnum)
+
+tab.h    
+    tab.h<-as.data.frame(tab.h)
+    tab.h[tab.h[,ncol.aca]==0,ncol.aca]="<2e-16"    
 ncol.aca<-ncol.aca-1
 new.row <- c(sigma.mod.aca,rep("",ncol.aca))
-tab.h <- rbind(tab.h,new.row)
-r2 <-summary(mod)$r.squared; r2
-ncoef<-length(stats::coef(mod))
+    tab.h <- rbind(tab.h,new.row)
+class(tab.h)    
 sufix.coef<-(1:ncoef)-1;sufix.coef
 beta.names<-paste("$\\beta_",sufix.coef,"$",sep = "")
 row.names(tab.h)<-c(beta.names,"$\\sigma_{\\varepsilon}$")
@@ -113,19 +112,4 @@ Hmisc::latex(tab.h,file="",
 message("=======End of the output=======","\n")                  
     }  else {nada=99}
 
-message("=======Storing some regression outputs=======")    
-beta.hats<-coef.aju
-names(beta.hats)<-paste("beta.hat",0:(ncoef-1),sep="")        
-sigma.e <- (summary(mod))$sigma
-mse.m <- stats::deviance(mod)/stats::df.residual(mod)
-r2.m <-summary(mod)$r.squared
-fcal<-summary(mod)$fstatistic[1]
-gl.num<-summary(mod)$fstatistic[2]
-gl.mod<-summary(mod)$fstatistic[3]
-vp.fcal<-stats::anova(mod)["Pr(>F)"][1,1]
-out<-list(coef.aju=coef.aju,sigma.e=sigma.e,mse=mse.m,
-   beta.hats=beta.hats, fcal=fcal,gl.num=gl.num,gl.mod=gl.mod,
-   vp.fcal=vp.fcal,se.coef=se.coef,
-   tcal.coef=tcal.coef,vp.tcal.coef=vp.tcal.coef,r2=r2)
-out    
 }

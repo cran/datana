@@ -11,8 +11,16 @@
 #' pie, como sigue:
 #' \describe{
 #' \item{arbol}{Número del árbol}
-#' \item{especie}{Nombre de la especie, "N. obliqua" es Nothofagus obliqua,
-#' "Ap" es Aexitocicum puncatatum, etc.}
+#'   \item{spp}{Codificación de la especie como sigue: 
+#'   "A. punctatum" es *Aextoxicon punctatum*, 
+#' "E. cordifolia" es *Eucryphia cordifolia*, 
+#' "G. avellana" es *Gevuina avellana*, 
+#' "L. dentata" es *Lomatia dentata*, 
+#' "L. philippiana" es *Laureliopsis philippiana*, 
+#' "L. sempervirens" es *Laurelia sempervirens*, 
+#' "N. obliqua" es *Nothofagus obliqua*, "P. lingue" es *Persea lingue*, 
+#' y "Other" representa a cualquier especie distinta a cualquiera
+#' de las ya definidas.}
 #' \item{clase.copa}{Clase de copa (1: superior, 2: intermedio, 3; inferior)}
 #' \item{dap}{Diámetro a la altura del pecho, en cm}
 #' \item{coord.x}{Posicion cartesiana en el eje X, en m}
@@ -22,10 +30,10 @@
 #' Los datos fueron cedidos por el Dr Christian Salas-Eljatib (Santiago, Chile).
 #' @references
 #' Salas C, LeMay V, Nunez P, Pacheco P, and Espinosa A. 2006.
-#'  Spatial patterns in an old-growth Nothofagus obliqua forest in
+#'  Spatial patterns in an old-growth *Nothofagus obliqua* forest in
 #' south-central Chile. Forest Ecology and Management 231(1-3): 38-46.
 #'  \doi{10.1016/j.foreco.2006.04.037}
 #' @examples
 #' data(pspruca2)
-#' table(pspruca2$especie)
+#' table(pspruca2$spp)
 'pspruca2'

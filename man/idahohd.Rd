@@ -9,11 +9,15 @@ Contains five variables, as follows:
 \describe{
 \item{plot}{Plot number.}
 \item{tree}{Tree within plot.}
-\item{species}{A factor with levels DF = Douglas-fir, GF = Grand fir,
-SF = Subalpine fir, WL = Western larch,
-WC = Western red cedar, WP = White pine.}
+\item{spp}{Tree species. A factor variable having the following levels:
+"DF" is Douglas-fir (\emph{Pseudotsuga menziesii}),
+"GF" is Grand fir (\emph{Abies grandis}),
+"SF" is Subalpine fir (\emph{Abies lasiocarpa}),
+"WL" is Western larch (\emph{Larix occidentalis}),
+"WC" is Western red cedar (\emph{Thuja plicata}), and
+"WP" is White pine (\emph{Pinus strobus}).}
 \item{dbh}{Diameter 137 cm perpendicular to the bole, cm.}
-\item{height}{Height of the tree, in m.}
+\item{toth}{Height of the tree, in m.}
 }
 }
 \source{
@@ -29,7 +33,7 @@ of the University of Idaho Experimental Forest, dated 1991.
 \examples{
 data(idahohd)    
 head(idahohd) 
-plot(height~dbh, data=idahohd)
+plot(toth~dbh, data=idahohd)
 }
 \references{
 Weisberg S. 2014. Applied Linear Regression. 4th edition. New York: Wiley.

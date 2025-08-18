@@ -8,14 +8,15 @@
 Contains tree-level variables, as follows:
 \describe{
 \item{tree.code}{Tree identificator}
-\item{spp}{species abreviation as follows:
-AP=Aextocicon puncatatum,
-EC=Eucryphia cordifolia,
-GA=Gevuina avellana,
-LP=Laureliopsis philippiana,
-LS=Laurelia sempervirens,
-ND=Nothofagus dombeyi, Ot=Other,
-PS=Podocarpus saligna}
+\item{spp}{Tree species abreviation as follows:
+"AP" is \emph{Aextoxicon punctatum},
+"EC" is \emph{Eucryphia cordifolia},
+"GA" is \emph{Gevuina avellana},
+"LP" is \emph{Laureliopsis philippiana},
+"LS" is \emph{Laurelia sempervirens},
+"ND" is \emph{Nothofagus dombeyi}, "PS" is \emph{Podocarpus saligna},
+and "Ot" represents other species different from the above
+described.}
 \item{dbh}{diameter at breast height, in cm.}
 \item{x.coord}{Cartesian position in the X-axis, in m.}
 \item{y.coord}{Cartesian position in the Y-axis, in m.}
@@ -42,9 +43,8 @@ boxplot(dbh~spp, data=llancahue)
 \references{
 \itemize{
 \item Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad
-estructural y espacial de
-un bosque mixto dominado por Nothofagus dombeyi después de un
-disturbio parcial.
+estructural y espacial de un bosque mixto dominado por
+\emph{Nothofagus dombeyi} después de un disturbio parcial.
 Revista Chilena de Historia Natural 83(3): 335-347.
 }
 }

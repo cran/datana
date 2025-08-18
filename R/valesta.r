@@ -1,14 +1,14 @@
-#' Computes three prediction statistics as a way to compare observed
-#'  versus predicted values of a response variable of interest. The statistics are: 
-#'  the aggregated difference (\eqn{AD}),
-#'   the root mean square differences (\eqn{RMSD}), and
-#'    the aggregated of the absolute value differences (\eqn{AAD}).
-#'  All of them area based on 
+#' Computes three prediction statistics as a way to compare
+#' observed versus predicted values of a response variable
+#' of interest. The statistics are: the root mean square
+#' differences (\eqn{RMSD}), the aggregated difference
+#' (\eqn{AD}), and the absolute aggregated differences (\eqn{AAD}).
+#'  All of them are based on 
 #' \deqn{r_i = y_i - \widehat{y}_i}
 #' where \eqn{y_i} and \eqn{\widehat{y}_i} are the observed and the 
 #' predicted value of the response variable \eqn{y} for 
-#' the \eqn{i}-th observation, respectively. Both the observed and predicted values 
-#' must be expressed in the same units. 
+#' the \eqn{i}-th observation, respectively. Both the observed
+#' and predicted values must be expressed in the same units. 
 #'  
 #' @details The function computes the three aforementioned statistics expressed
 #'  in both (a) the units of the response variable and (b) the percentage. 
@@ -17,11 +17,18 @@
 #' 
 #' @title Function to compute prediction statistics based on observed values 
 #' @param y.pred predicted values of the variable of interest
-#' @param y.obs observed values of the variable of interest 
+#' @param y.obs observed values of the variable of interest
+#' @param want.percent A logic option for requesting to also
+#' computed the prediction statistics as a percentage of the sample
+#' mean of `y.obs`. By default is set to TRUE.
 #'
-#' @return The main output  following six prediction statistics as a vector: 
-#' (RMSD, RMSD.p, AD, AD.p, AAD, AAD.p); where RMSD.p stands for RMSD 
-#' expressed as a percentage, and the same applies to AD.p and AAD.p.
+#' @return The main output depends on the `want.percent`; if `TRUE`,
+#' then it has the following six prediction statistics as a vector: 
+#' (`rmsd`, `rmsd.p`,`ad`, `ad.p`,  `aad`, `aad.p`); where
+#' `rmsd.p` stands for `RMSD` expressed as a percentage, and the
+#' same applies to `AD.p` and `AAD.p`. Meanwhile,
+#' if `want.percent=FALSE`, then it has the following three
+#' prediction statistics as a vector: (`rmsd`,`ad`,`aad`)
 #'  
 #' @author Christian Salas-Eljatib.
 #' @references
@@ -45,8 +52,8 @@
 #' @rdname valesta
 #' @export
 #' 
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-valesta <- function(y.obs=y.obs,y.pred=y.pred){
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+valesta <- function(y.obs=y.obs,y.pred=y.pred,want.percent=TRUE){
   n=length(y.pred)
   res.y=y.obs-y.pred
   res.y.2=(y.obs-y.pred)^2
@@ -59,6 +66,12 @@ valesta <- function(y.obs=y.obs,y.pred=y.pred){
   aad=sum(abs(res.y))/n #aggregated of the absolute value differences 
   aad.p=(aad/(mean(y.obs)))*100
   AAD=c(aad,aad.p)
-  output=c(AD,RMSD,AAD)
-  names(output)=c('AD','AD.p','RMSD','RMSD.p','AAD','AAD.p')
-  output}   
+  output=c(RMSD,AD,AAD)
+  names(output)=c('rmsd','rmsd.p','ad','ad.p','aad','aad.p')
+
+  if(want.percent==FALSE){
+      output=c(rmsd,ad,aad)
+     names(output)=c('rmsd','ad','aad')      
+  }
+  output
+}   

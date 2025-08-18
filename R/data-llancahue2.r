@@ -12,14 +12,15 @@
 #' @format Contains tree-level variables, as follows:
 #' \describe{
 #'  \item{arb.id}{Identificador del árbol.}
-#' \item{spp}{Codificación de la especie como sigue: 
-#' AP= Aextocicon puncatatum, 
-#' EC=Eucryphia cordifolia, 
-#' GA=Gevuina avellana, 
-#' LP=Laureliopsis philippiana, 
-#' LS=Laurelia sempervirens, 
-#' ND=Nothofagus dombeyi, Ot=Other, 
-#' PS=Podocarpus saligna.}
+#'   \item{spp}{Codificación de la especie como sigue: 
+#'   "AP" es *Aextoxicon punctatum*, 
+#' "EC" es *Eucryphia cordifolia*, 
+#' "GA" es *Gevuina avellana*, 
+#' "LP" es *Laureliopsis philippiana*, 
+#' "LS" es *Laurelia sempervirens*, 
+#' "ND" es *Nothofagus dombeyi*, "PS" es *Podocarpus saligna*, 
+#' y "Ot" representa a cualquier especie distintat a cualquiera
+#' de las ya definidas.}
 #' \item{dap}{Diámetro a la altura del pecho, en cm.}
 #' \item{coord.x}{Posición cartesiana en el eje-X, en m.}
 #' \item{coord.y}{Posición cartesiana en el eje-Y, en m.}
@@ -28,10 +29,9 @@
 #'  Los datos fueron cedidos por el Prof. Daniel Soto de Universidad
 #'  de Aysen (Coyhaique, Chile). 
 #' @references
-#' - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad estructural y 
-#' espacial de 
-#' un bosque mixto dominado por Nothofagus dombeyi después de un disturbio
-#'  parcial. 
+#' - Soto DP, Salas C, Donoso PJ, Uteau D. 2010. Heterogeneidad
+#' estructural y espacial de un bosque mixto dominado por
+#' *Nothofagus dombeyi* después de un disturbio parcial. 
 #' Revista Chilena de Historia Natural 83(3): 335-347.
 #' @examples
 #' data(llancahue2)    

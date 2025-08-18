@@ -8,11 +8,15 @@
 #' \describe{
 #'   \item{plot}{Plot number.}
 #'   \item{tree}{Tree within plot.}
-#' \item{species}{A factor with levels DF = Douglas-fir, GF = Grand fir, 
-#' SF = Subalpine fir, WL = Western larch,
-#'                 WC = Western red cedar, WP = White pine.}
+#'   \item{spp}{Tree species. A factor variable having the following levels:
+#' "DF" is Douglas-fir (*Pseudotsuga menziesii*), 
+#' "GF" is Grand fir (*Abies grandis*), 
+#' "SF" is Subalpine fir (*Abies lasiocarpa*), 
+#' "WL" is Western larch (*Larix occidentalis*), 
+#' "WC" is Western red cedar (*Thuja plicata*), and 
+#' "WP" is White pine (*Pinus strobus*).}
 #' \item{dbh}{Diameter 137 cm perpendicular to the bole, cm.}
-#' \item{height}{Height of the tree, in m.}
+#' \item{toth}{Height of the tree, in m.}
 #'  }
 #' @source 
 #' The data were assembled from the 'ufc' dataframe from the \eqn{alr4} library.  
@@ -21,5 +25,5 @@
 #' @examples
 #' data(idahohd)    
 #' head(idahohd) 
-#' plot(height~dbh, data=idahohd)
+#' plot(toth~dbh, data=idahohd)
 'idahohd'

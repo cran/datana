@@ -21,7 +21,7 @@
 #' @source 
 #' Los datos fueron obtenidos desde el paquete 'AER'.
 #' @references
-#' Long, J.S. (1997). The Origin of Sex Differences in Science.
+#' Long JS. 1997. The Origin of Sex Differences in Science.
 #  \emph{Social Forces}, \bold{68}, 1297--1315.
 #' @examples
 #' data(papersdocstu)

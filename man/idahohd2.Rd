@@ -9,15 +9,19 @@ Contiene cinco variables detalladas a continuación:
 \describe{
 \item{parce}{Número de la parcela de muestreo.}
 \item{arbol}{Número del árbol dentro de la parcela.}
-\item{spp}{Especie del árbol, una variable factor  con niveles
-DF = Douglas-fir, GF = Grand fir, SF = Subalpine fir, WL = Western larch,
-WC = Western red cedar, WP = White pine.}
+\item{spp}{Especie del árbol. Una variable factor con los siguientes
+niveles: "DF" es Douglas-fir (\emph{Pseudotsuga menziesii}),
+"GF" es Grand fir (\emph{Abies grandis}),
+"SF" es Subalpine fir (\emph{Abies lasiocarpa}),
+"WL" es Western larch (\emph{Larix occidentalis}),
+"WC" es Western red cedar (\emph{Thuja plicata}), y
+"WP" es White pine (\emph{Pinus strobus}).}
 \item{dap}{Diámetro del fuste a los 1.3 m sobre el suelo, en cm.}
-\item{atot}{Altura del árbol, en m.}
+\item{atot}{Altura total  del árbol, en m.}
 }
 }
 \source{
-Los datos fueron obtenidos desde la dataframe 'ufc' de la librería \eqn{alr4}.
+Los datos fueron obtenidos desde la dataframe \code{ufc} de la librería \code{alr4}.
 }
 \usage{
 data(idahohd2)

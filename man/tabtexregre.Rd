@@ -104,10 +104,10 @@ head(df)
 datana::descstat(df[,c("largo","edad")])
 graphics::plot(largo ~ edad, data=df)
 mod1<-stats::lm(largo ~ edad, data=df)
-##example 1
+## Example 1
 tabtexregre(mod=mod1,nametab="basicmodel",
 cap="Parameter estimates of the fitted regression model")
-##example 2
+## Example 2
 tabtexregre(mod=mod1,nametab="basicmodel",
 cap="Cuadro con parametros estimados del modelo de regresion",
 eng=FALSE)

@@ -9,9 +9,17 @@
 #' @format The data frame contains four variables for the standing-alive
 #' trees as follows:
 #' \describe{
-#' \item{tree.no}{tree number}
-#' \item{species}{Species name, "N. obliqua" is Nothofagus obliqua,
-#'  "Ap" is Aexitocicum puncatatum, etc.}
+#' \item{tree}{Tree number identification.}
+#'   \item{spp}{Codificación de la especie como sigue: 
+#'   "A. punctatum" es *Aextoxicon punctatum*, 
+#' "E. cordifolia" es *Eucryphia cordifolia*, 
+#' "G. avellana" es *Gevuina avellana*, 
+#' "L. dentata" es *Lomatia dentata*, 
+#' "L. philippiana" es *Laureliopsis philippiana*, 
+#' "L. sempervirens" es *Laurelia sempervirens*, 
+#' "N. obliqua" es *Nothofagus obliqua*, "P. lingue" es *Persea lingue*, 
+#' y "Other" representa a cualquier especie distinta a cualquiera
+#' de las ya definidas.}
 #' \item{crown.class}{Crown class (1: superior, 2: intermediate, 3; inferior)}
 #' \item{dbh}{diameter at breast-height, in cm}
 #' \item{x.coord}{Cartesian position at the X-axis, in m}

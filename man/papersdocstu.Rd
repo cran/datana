@@ -41,6 +41,6 @@ table(df$est.civil,df$genero)
 tapply(df$papers,df$est.civil,summary)
 }
 \references{
-Long, J.S. (1997). The Origin of Sex Differences in Science.
+Long JS. 1997. The Origin of Sex Differences in Science.
 }
 \keyword{datasets}

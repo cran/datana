@@ -14,6 +14,11 @@
 #' descriptive statistics. The default is to "FALSE".
 #' @param full logical; if "TRUE", the output includes some extra
 #' descriptive statistics. The default is to "FALSE".
+#' @param reduced logical; if "TRUE", the output includes the same 
+#' descriptive statistics as using the summary() basis R function.
+#' @param all.outputs logical; if "TRUE", the returns several elements
+#' as results of the function, which can be of importance for
+#' further analyses later on. The default is to "FALSE".
 #'
 #' @return This function wraps descriptive statistics into a
 #' summarize table having the following statistics: sample size,
@@ -27,21 +32,22 @@
 #' una introducción aplicada. Ediciones Universidad Mayor. Santiago, Chile.
 #' \url{https://eljatib.com}
 #' @examples
-#'
 #' df <- datana::idahohd
 #' head(df)
-#' df.h<-df[,c("dbh","height")]
+#' df.h<-df[,c("dbh","toth")]
 #' ## using the function
 #' descstat(data=df.h)
 #' descstat(data=df.h,decnum=1,eng=FALSE)
 #' descstat(df.h,2)
+#' descstat(df.h,2,full=TRUE)
+#' descstat(df.h,2,reduced=TRUE)
 #' @rdname descstat
 #' @export
 #' 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE){
+descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE,
+                     reduced=FALSE,all.outputs=FALSE){
   data <- as.data.frame(data)
-  if(prod(is.na(decnum))){decnum=3}
   n <- apply(data, 2, function(x){length(x[!is.na(x)])})
   Minimo <- apply(data, 2, min, na.rm=TRUE)
   Maximo <- apply(data, 2, max, na.rm=TRUE)
@@ -57,30 +63,64 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE){
                     "Desv. St.","CV(%)")
   }
 
-  names.out.here<-stat.names
+  if(full==TRUE){reduced=FALSE}
 
+  if(reduced==TRUE){full=FALSE}
+  
+  names.out.here<-stat.names
+  names.out.here
+  
   row.names(output) <- names.out.here
   output=data.frame(output)
   names(output)=names(data)   
-  output=round(output,decnum)  
+  output=round(output,decnum)
+  output
   #gm <- apply(data, 2,datana::gmean),na.rm=TRUE)  
   percentiles<-apply(data, 2, stats::quantile,probs=c(0.25,0.75), na.rm=TRUE)
+  q1<-percentiles[1];  q2<-percentiles[2];  q3<-percentiles[3];
   iqr <- apply(data, 2, stats::IQR, na.rm=TRUE)
   sk <- apply(data, 2,datana::skewn,na.rm=TRUE)
   kurto <- apply(data, 2,datana::kurto,na.rm=TRUE)
-  if(full==FALSE){
-   output
-  } else {
+
+# #!  the output
+  if(full==TRUE){
     output=(rbind(n,Minimo,Maximo,Media,Mediana,Desv.Est., 
                   CV,percentiles,iqr,sk,kurto))
-    row.names(output) <- c(names.out.here,"25th Percentile",
-                "75th Percentile",'Interq. range',"Skewness","Kurtosis")
-     if(eng==FALSE){
-    row.names(output) <- c(names.out.here,"Percentil 25",
-                "Percentil 75",'Rango Interc.',"Asimetria","Curtosis")}
-    output<-data.frame(output)
-    names(output)<-names(data)   
-    output<-round(output,decnum)  
   }
-output
+
+  if(reduced==TRUE){
+  output=rbind(Minimo,q1,Mediana,q3,Maximo)
+  }
+
+# #!  the names for the output  
+  if(full==TRUE & reduced==FALSE){
+    stat.names<-c(stat.names,"25th Percentile",
+                "75th Percentile",'Interq. range',"Skewness","Kurtosis")
+  }
+
+  if(full==TRUE & eng==FALSE & reduced==FALSE){
+    stat.names<-c(stat.names,"Percentil 25",
+              "Percentil 75",'Rango Interc.',"Asimetria","Curtosis")
+  }
+
+# #!  the names for the output  
+  if(full==FALSE & reduced==TRUE){
+      stat.names<-c("Minimum","25th Percentile","Median",
+                    "75th Percentile","Maximum")
+  }
+
+  if(full==FALSE & reduced==TRUE &eng==FALSE){
+      stat.names<-c("Minimo","Percentil 25","Mediana",
+                    "Percentil 75","Maximo")
+  }  
+  
+  stat.names
+  variable.names<-names(data)
+    row.names(output) <- stat.names  
+  output<-data.frame(output)
+  names(output)<-names(data)   
+  output<-round(output,decnum)  
+if(all.outputs==TRUE){
+  output<-list(output=output,stat.names=stat.names,variable.names=variable.names)}
+  output
 }
