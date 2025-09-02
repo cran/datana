@@ -18,7 +18,7 @@ tabtexdescstat(
   decnum = 3,
   font.size.tab = "normalsize",
   font.type.tab = "normalfont",
-  variable.row = FALSE
+  landscape = FALSE
 )
 }
 \arguments{
@@ -58,10 +58,13 @@ also try with "footnotesize".}
 
 \item{font.type.tab}{The defauls is set to "normalfont".}
 
-\item{variable.row}{A logical option specifying whether the
-variables are used in the rows of the output. The default is
-to FALSE, thus, the variables are used as the main colum of the
-table.}
+\item{landscape}{logical; this option is passed to the
+function \code{descstat()} that is call from this current function. By
+default is set to \code{FALSE}, thus the output table will have the
+statistics as rows, and in each column the variables.
+Otherwise, if \code{TRUE} the variables will be the rows, and each
+statistics the columns. Therefore this last option is only
+advisable when \code{full=FALSE}.}
 }
 \value{
 This function creates a LaTeX file having
@@ -95,7 +98,7 @@ cap="Cuadro con estadistica descriptiva",
 ##! Example 3: variables as columns
 tabtexdescstat(data=df,nametab="idaho",
  cap="Descriptive statistics table",colnames=c("dbh","toth"),
-varnames = c("Diameter","Height"),variable.row=FALSE)
+varnames = c("Diameter","Height"),landscape=TRUE)
 }
 \references{
 Salas-Eljatib, C. 2021. Análisis de datos con el programa

@@ -12,10 +12,13 @@
 #' @param varnames a string having the name of each of the variables
 #' to be used in the LaTeX table.
 #' @param cap a string having the caption of the LaTeX table.
-#' @param variable.row A logical option specifying whether the
-#' variables are used in the rows of the output. The default is
-#' to FALSE, thus, the variables are used as the main colum of the
-#' table. 
+#' @param landscape logical; this option is passed to the
+#' function `descstat()` that is call from this current function. By
+#' default is set to `FALSE`, thus the output table will have the
+#' statistics as rows, and in each column the variables.
+#' Otherwise, if `TRUE` the variables will be the rows, and each
+#' statistics the columns. Therefore this last option is only
+#' advisable when `full=FALSE`.
 #' @param nametab a string having a brief name to be used in
 #' both the label of the table and the file name. For instance,
 #' if "=descdata", the table can be refered in your LaTeX
@@ -63,7 +66,7 @@
 #' ##! Example 3: variables as columns
 #' tabtexdescstat(data=df,nametab="idaho",
 #'  cap="Descriptive statistics table",colnames=c("dbh","toth"),
-#' varnames = c("Diameter","Height"),variable.row=FALSE)
+#' varnames = c("Diameter","Height"),landscape=TRUE)
 #' @rdname tabtexdescstat
 #' @export
 #' 
@@ -72,22 +75,25 @@ tabtexdescstat<-function(data=data,colnames=colnames,
                          varnames=varnames,cap=cap,nametab=nametab,
                          save.file=FALSE,filename="tabdescdata.tex",
    eng=TRUE,rowlab="Variable",decnum=3,font.size.tab="normalsize",
-   font.type.tab="normalfont",variable.row=FALSE){
+   font.type.tab="normalfont",landscape=FALSE){
 
 df.h<-data[,colnames]
+all.out<-datana::descstat(df.h,decnum = decnum,all.outputs = TRUE,
+      eng=eng,landscape=landscape)
 
-all.out<-datana::descstat(df.h,decnum = decnum,all.outputs = TRUE,eng=TRUE)
+stat.names<-all.out$stat.names;stat.names
+    
+#if(landscape==TRUE){tab.h <- t(all.out$table)}  ##$output
+#if(landscape==FALSE){tab.h <- all.out$table}   
+    tab.h <- all.out$table;tab.h
+    varnames
+if(landscape==TRUE){row.names(tab.h)<-varnames}    
+if(landscape==TRUE){colnames(tab.h)<-stat.names}
 
-stat.names<-all.out$stat.names
+if(eng==TRUE){statistics.name<-"Statistics"}
+if(eng==FALSE){statistics.name<-"Estadistico"}
     
-if(variable.row==TRUE){tab.h <- t(all.out$output)}
-if(variable.row==FALSE){tab.h <- all.out$output}   
-tab.h
-if(variable.row==TRUE){row.names(tab.h)<-varnames}    
-if(variable.row==TRUE){colnames(tab.h)<-stat.names}
-    
-if(variable.row==FALSE){rowlab<-"Statistics"}    
-if(variable.row==FALSE & eng==FALSE){rowlab<-"Estadistico"}
+if(landscape==FALSE){rowlab<-statistics.name}
     
 tab.h
 

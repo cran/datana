@@ -11,7 +11,8 @@ descstat(
   eng = TRUE,
   full = FALSE,
   reduced = FALSE,
-  all.outputs = FALSE
+  all.outputs = FALSE,
+  landscape = FALSE
 )
 }
 \arguments{
@@ -20,25 +21,31 @@ descstat(
 \item{decnum}{the number of decimals to be used in the output. The
 default is set to 3.}
 
-\item{eng}{logical; if "TRUE" (by default), the language of the
+\item{eng}{logical; if \code{TRUE} (by default), the language of the
 statistics will be in English; if "FALSE" will be in Spanish.
-descriptive statistics. The default is to "FALSE".}
+descriptive statistics. The default is to \code{FALSE}.}
 
-\item{full}{logical; if "TRUE", the output includes some extra
-descriptive statistics. The default is to "FALSE".}
+\item{full}{logical; if \code{TRUE}, the output includes some extra
+descriptive statistics. The default is to \code{FALSE}.}
 
-\item{reduced}{logical; if "TRUE", the output includes the same
+\item{reduced}{logical; if \code{TRUE}, the output includes the same
 descriptive statistics as using the summary() basis R function.}
 
-\item{all.outputs}{logical; if "TRUE", the returns several elements
+\item{all.outputs}{logical; if \code{TRUE}, the returns several elements
 as results of the function, which can be of importance for
-further analyses later on. The default is to "FALSE".}
+further analyses later on. The default is to \code{FALSE}.}
+
+\item{landscape}{logical; the default is set to \code{FALSE}, thus
+the output table will have the statistics as rows, and in each
+column the variables. Otherwise, if \code{TRUE} the variables will
+be the rows, and each statistics the columns. Therefore this last
+option is only advisable when \code{full=FALSE}.}
 }
 \value{
 This function wraps descriptive statistics into a
 summarize table having the following statistics: sample size,
 minimum, maximum, mean, median, SD, and coefficient of variation.
-If the "full" option is set to "TRUE", the following
+If the \code{full} option is set to \code{TRUE}, the following
 statistics will be added to the table: 25th and 75th
 percentiles, the interquartile range, skewness, and kurtosis.
 }
@@ -60,6 +67,8 @@ descstat(data=df.h,decnum=1,eng=FALSE)
 descstat(df.h,2)
 descstat(df.h,2,full=TRUE)
 descstat(df.h,2,reduced=TRUE)
+descstat(df.h,2,reduced=TRUE,eng=FALSE)
+descstat(data=df.h[,"dbh"],decnum=1,eng=FALSE,landscape = FALSE)
 }
 \references{
 \itemize{

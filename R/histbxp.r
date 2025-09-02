@@ -10,11 +10,16 @@
 #' @param y A numeric vector representing the random variable.
 #' @param varlab (optional) A string specifying the random variable
 #' label. The default is set to "Variable".
+#' @param freq A logical option for plotting the histograma. By
+#' default it is set to `NULL`, thus uses the actual
+#' frequencies. Meanwhile, when is `TRUE` the percentual
+#' frequencies are plot, and if `FALSE` a density is
+#' is used. Further details can be found in the function `hist()`.
+#' @param freqlab (optional) A string specifying the frequency label.
+#' The default is set to "Frequency". 
 #' @param cex.varlab A numeric value for the `cex` option of plotting
 #' to the assigned `varlab` element. The default value is set
 #' to `1.2` .
-#' @param freqlab (optional) A string specifying the frequency label.
-#' The default is set to "Frequency". 
 #' @param freqlim (optional) A numeric vector having the minimum and
 #' maximum, respectively for the frequency axis.
 #' @param varlim (optional) A numeric vector having the minimum and
@@ -65,6 +70,13 @@
 #' @examples
 #' df <- datana::fishgrowth
 #' histbxp(y=df$length)
+#' histbxp(y=df$length,freq = TRUE)
+#' histbxp(y=df$length,freq = FALSE)
+#' 
+#' ## Now in Spanish
+#' histbxp(y=df$length,eng=FALSE)
+#' histbxp(y=df$length,freq = TRUE,eng=FALSE)
+#' histbxp(y=df$length,freq = FALSE,eng=FALSE)
 #' 
 #' ### distribution of 'length'
 #' ## with mean refval
@@ -75,11 +87,11 @@
 #' 
 #' ## changing labels
 #' histbxp(y=df$length, print.refval = TRUE, refval = 250,
-#'         freqlab = "FREQ", varlab = "LENGTH")
+#'         freqlab = "Freq", varlab = "Length")
 #' 
 #' ## changing colors
 #' histbxp(y=df$length, print.refval = TRUE, refval = 250,
-#'         freqlab = "FREQ", varlab = "LENGTH",
+#'         freqlab = "Freq", varlab = "Length",
 #'         col.hist = "blue",
 #'         col.bxp = "green",
 #'         col.refval = "red")
@@ -98,41 +110,28 @@
 #'         varlim = c(0, max(df$scale)))
 #' 
 #+===========================================================
-histbxp<-function(y=y, freqlab="Frequency", varlab="Variable",
+histbxp<-function(y=y, freq=NULL, freqlab="Frequency", varlab="Variable",
     eng=TRUE,refval=NA,print.refval=FALSE,col.hist="gray",
     col.bxp="gray",portrait=TRUE,oma=c(3, .5, 2, 0),
     mar=c(1, 4.0, 0.2, 1),cex.varlab=1.2,
     refval.symbol=expression(bar(y)),
     col.refval="blue",varlim=NA,freqlim=NA){
-    ## ## ##@@@@@@@@@@@ ---- Internal review ---- @@@@@@@@@@@@
-    ## ## (a), source to the function
-    ## ## (b), run example 1
-    ## db <- datana::fishgrowth;x=db$length;y=db$scale;
-    ## col.hist<-"gray";col.bxp="gray";varlab="Variable";
-    ## refval=NA;varlim=NA;freqlim=NA;
-    ## col.refval="blue";print.refval=FALSE;
-    ## refval.symbol=expression(bar(y))
-    ## oma=c(3, .5, 2, 0);mar= c(1, 4.0, 0.2, 1)
-    ## freqlab<-"Frecuency";eng=TRUE
-    ## portrait=TRUE;cex.varlab=1.2
-    ## histbxp(y=y,eng=FALSE)
-    ##  #    xyboxplot(x=x,y=y,xlim=c(0,410),ylim=c(0,20),xlab="xx",ylab="yy")
-  # # #   # # # ## ## ## ## Thirdly, run a second example
-  ## ## (c), run example 2
-     ## db <- datana::fishgrowth;y=db$length;x=db$age;
-     ## plot(y~x)
-     ##  x.category=TRUE;xlim=NA;ylim=NA;xlab<-NULL;ylab<-NULL
-     ##     xyboxplot(x=x,y=y,x.category = TRUE)
-  # # # # #   # # # # #  
-  #  xyboxplot(x=x,y=y,x.category = TRUE,xlim=c(0,10),ylim=c(0,390))
-  #   xyboxplot(x=x,y=y,x.category = TRUE,xlim=c(0,10),ylim=c(0,500),         
-  #                     xlab="loco-x",ylab="yyyy")
-    ## ## ##@@@@@@@@@@@ ---- End of: internal review ---- @@@@@@@@@@@@
-         
-#  ylab.h
-###===========================================
-freq.labh<-freqlab
-if(eng==FALSE){freq.labh<-"Frecuencia"}
+##! ===========================================
+freq.aca<-freq        
+    freq.labh<-freqlab
+#if(class(freq.aca)=="NULL"){        
+if(inherits(freq.aca, "NULL")){
+    if(eng==FALSE){freq.labh<-"Frecuencia"}
+}
+    
+#if(class(freq.aca)=="logical"){    
+if(inherits(freq.aca, "logical")){
+    if(eng==TRUE & freq.aca==TRUE){freq.labh<-"Frecuency (%)"}
+if(eng==FALSE & freq.aca==TRUE){freq.labh<-"Frecuencia (%)"}
+if(eng==TRUE & freq.aca==FALSE){freq.labh<-"Probability densities"}
+if(eng==FALSE & freq.aca==FALSE){freq.labh<-"Densidad de probabilidades"}
+}
+    
 freq.labh
 
 h<-hist(y, plot=F);h$counts <- h$counts;
@@ -165,7 +164,8 @@ op <- par(mfcol=c(2,1),las=1,oma = oma,mar =mar)
         
 ##+(a)
 graphics::hist(y,xlab=varlab,ylab = freq.labh,main='',las=1,
-         ylim=freqlim.h,xlim=varlim.h, col=col.hist)
+                                        #ylim=freqlim.h,
+               xlim=varlim.h, col=col.hist,freq=freq.aca)
 
 if(print.refval==TRUE){
     graphics::segments(refval.h, 0, refval.h, freq.max,

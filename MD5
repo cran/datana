@@ -1,4 +1,4 @@
-5eb3a5e4d76fcf5e15f3093ecf9540f0 *DESCRIPTION
+9b84b0396d864f350e5b52953dbf7031 *DESCRIPTION
 90adb9b33a7e66a3ed2b1669c598fd98 *NAMESPACE
 cea82cd7c8651217e83ca0094d431dda *R/assigncl.r
 7047c9003416f23b6ae47c8d2d6644d2 *R/cdf.r
@@ -90,12 +90,12 @@ e508d8534e2a125f524a414c11d8c857 *R/data-soiltreat2.r
 a0870337ce00901a694022e3fd5182df *R/datana-package.R
 6df2766b89398cbe733c328b3b6588ac *R/deleteLeft.r
 73153a5f7f30fe24f4e180699f779a4b *R/deleteRight.r
-1eefb05fc2c0b13d871768356d604b03 *R/descstat.r
+cb71bae9d3339a5205dfaaa46006ce70 *R/descstat.r
 a0e8c6e1826e549edd291c46f10f60f1 *R/extractLeft.r
 35228a72a0d5f131464913150e8f6bd2 *R/extractRight.r
 cca7cc9e8d248e96debbba5380981070 *R/findColumn.byname.r
 09e2548b4c82fa6e32c5e89d6209c246 *R/gmean.r
-cda4536b05ed4d7547e02467d47a9c91 *R/histbxp.r
+31db6c398075234b995958f298259a70 *R/histbxp.r
 cc2558393012043b7f0873a8d672e5cc *R/hmean.r
 e1add5c06dd27959e2a72bc29527976a *R/kurto.r
 a8e431a0cd7ab4b837a46c6694ef0a90 *R/lrt.glm.r
@@ -111,7 +111,7 @@ ef3f2fdabaf8fa7ff800627c9853e050 *R/rankmod.r
 ceecd79279e0dc0602cd41ef400e78bc *R/skewn.r
 bea58ee0b76022ed5bac6a37ea419f06 *R/smoothfit.r
 66096bdc47d54e8c6e7b95a977e11005 *R/tabtexanova.r
-e051cb076b95f4437998a61efcbd4a90 *R/tabtexdescstat.r
+5341f6d9c425f607d888fa72e3511947 *R/tabtexdescstat.r
 f17f359d73e755e9fcc6b8d26a0cb57d *R/tabtexregre.r
 26bd52a1266d95ec9ae04c7a94ac47f3 *R/timeserplot.r
 af0c784d8c1b0d33ee58d1935cfa85aa *R/upperleft.r
@@ -206,7 +206,7 @@ d33ae208da6db8937f32307b561d2667 *data/spataustria.rda
 71fec38bb465d0b5dc6488453d2c464c *data/treevol2.rda
 1668487c07a16cd9849404bbd9a74e99 *data/treevolroble.rda
 60690f0ce65375ac0489f3accd26d79a *data/treevolroble2.rda
-68313147e65b4fabf65741b8f448fc95 *inst/CITATION
+1d8853e207a2487d00d118ef514a6d40 *inst/CITATION
 d3b21759347d414892ae2b4f4892608b *man/aboutrsq.Rd
 d4cf1f51944dd3d15df367e25fc10b2c *man/aboutrsq2.Rd
 bceaf81d70dc9734268f076022f88803 *man/airnyc.Rd
@@ -236,7 +236,7 @@ b33a5ae164b61a786378d02eda404e6b *man/contrast.Rd
 dde2268d8db2c2327eb45c997f556b72 *man/datana-package.Rd
 ead386fbf49db3f6984bcaecd9b881e5 *man/deleteLeft.Rd
 c620f58a9a81a30f24edbfb86acb7675 *man/deleteRight.Rd
-e464d61050a16d6d5157dbb443cc4686 *man/descstat.Rd
+cd950911752129893f7dd6ccaa44a9f2 *man/descstat.Rd
 af37cf720db9b73ab1f14c5673ce8aa7 *man/education.Rd
 79615125cb0ea5cd45d13fd552625b8c *man/election.Rd
 c2d04871d41a04d76df8df935ad3ce99 *man/election2.Rd
@@ -264,7 +264,7 @@ d1e3b16705b47ac4d64bdf0aa18843b0 *man/gdpcap.Rd
 7c092a6d0f975404f8f5bef4064f134e *man/gmean.Rd
 d7f9bb504e1886bdc2e8a7b727575234 *man/hgrdfir.Rd
 bad836842b87d7ed5a49410df920f72c *man/hgrdfir2.Rd
-f4864f5c24e13e07f4d3a4db4dead900 *man/histbxp.Rd
+971b0c709a7b244869f7ebb76e2a9cac *man/histbxp.Rd
 52d11492bf997c826e04bdb6c97e2265 *man/hmean.Rd
 a5a45a0e218e4137b40755367d9ba77e *man/idahohd.Rd
 16f45217755615ea0306872424ed86e3 *man/idahohd2.Rd
@@ -313,7 +313,7 @@ f5e5e2c7f431964b313f4cd938957198 *man/skewn.Rd
 3923f1a47ad7e3592e27d9029de501c8 *man/soiltreat.Rd
 b99813a1b83b678894c2ed88a561dfc5 *man/soiltreat2.Rd
 2001c5c68562d71c347661f2134fcb7c *man/spataustria.Rd
-88ac05d90cec939bfadfbc31aa401d33 *man/tabtexdescstat.Rd
+7b69d08c2b5dd9730fe0c368b5ac1cde *man/tabtexdescstat.Rd
 e917f56b0f408d25501f6398a6dc7fc9 *man/tabtexregre.Rd
 304efd36d01c04baa1aa96157ac31fd2 *man/timeserplot.Rd
 c9ad3f98179d06a5e90276daf5b2dfc6 *man/treevol.Rd

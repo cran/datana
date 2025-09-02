@@ -9,21 +9,26 @@
 #' @param data a dataframe containing numeric variables as columns.
 #' @param decnum the number of decimals to be used in the output. The
 #' default is set to 3.
-#' @param eng logical; if "TRUE" (by default), the language of the
+#' @param eng logical; if `TRUE` (by default), the language of the
 #' statistics will be in English; if "FALSE" will be in Spanish.
-#' descriptive statistics. The default is to "FALSE".
-#' @param full logical; if "TRUE", the output includes some extra
-#' descriptive statistics. The default is to "FALSE".
-#' @param reduced logical; if "TRUE", the output includes the same 
+#' descriptive statistics. The default is to `FALSE`.
+#' @param full logical; if `TRUE`, the output includes some extra
+#' descriptive statistics. The default is to `FALSE`.
+#' @param reduced logical; if `TRUE`, the output includes the same 
 #' descriptive statistics as using the summary() basis R function.
-#' @param all.outputs logical; if "TRUE", the returns several elements
+#' @param landscape logical; the default is set to `FALSE`, thus
+#' the output table will have the statistics as rows, and in each
+#' column the variables. Otherwise, if `TRUE` the variables will
+#' be the rows, and each statistics the columns. Therefore this last
+#' option is only advisable when `full=FALSE`.
+#' @param all.outputs logical; if `TRUE`, the returns several elements
 #' as results of the function, which can be of importance for
-#' further analyses later on. The default is to "FALSE".
+#' further analyses later on. The default is to `FALSE`.
 #'
 #' @return This function wraps descriptive statistics into a
 #' summarize table having the following statistics: sample size,
 #' minimum, maximum, mean, median, SD, and coefficient of variation. 
-#'  If the "full" option is set to "TRUE", the following
+#'  If the `full` option is set to `TRUE`, the following
 #' statistics will be added to the table: 25th and 75th 
 #'   percentiles, the interquartile range, skewness, and kurtosis.
 #' @author Christian Salas-Eljatib and Tomas Cayul.
@@ -41,13 +46,18 @@
 #' descstat(df.h,2)
 #' descstat(df.h,2,full=TRUE)
 #' descstat(df.h,2,reduced=TRUE)
+#' descstat(df.h,2,reduced=TRUE,eng=FALSE)
+#' descstat(data=df.h[,"dbh"],decnum=1,eng=FALSE,landscape = FALSE)
 #' @rdname descstat
 #' @export
 #' 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE,
-                     reduced=FALSE,all.outputs=FALSE){
-  data <- as.data.frame(data)
+                     reduced=FALSE,all.outputs=FALSE,landscape=FALSE){
+    data <- as.data.frame(data)
+#caso de una sola columna    
+    if(inherits(dim(data), "NULL")){warning("Because a single variable was used, the name to be used in the output table will be 'data'")}
+    
   n <- apply(data, 2, function(x){length(x[!is.na(x)])})
   Minimo <- apply(data, 2, min, na.rm=TRUE)
   Maximo <- apply(data, 2, max, na.rm=TRUE)
@@ -59,7 +69,7 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE,
   stat.names<-c("n","Minimum","Maximum","Mean","Median",
                     "Std. Dev.","CV(%)")
   if(eng==FALSE){
-    stat.names<-c("n","Minimo","Maximo","Media","Mediana",
+    stat.names<-c("n","M\u00Ednimo","M\u00E1ximo","Media","Mediana",
                     "Desv. St.","CV(%)")
   }
 
@@ -100,7 +110,7 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE,
 
   if(full==TRUE & eng==FALSE & reduced==FALSE){
     stat.names<-c(stat.names,"Percentil 25",
-              "Percentil 75",'Rango Interc.',"Asimetria","Curtosis")
+              "Percentil 75",'Rango Interc.',"Asimetr\u00Eda","Curtosis")
   }
 
 # #!  the names for the output  
@@ -110,8 +120,8 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE,
   }
 
   if(full==FALSE & reduced==TRUE &eng==FALSE){
-      stat.names<-c("Minimo","Percentil 25","Mediana",
-                    "Percentil 75","Maximo")
+      stat.names<-c("M\u00Ednimo","Percentil 25","Mediana",
+                    "Percentil 75","M\u00E1ximo")
   }  
   
   stat.names
@@ -119,8 +129,11 @@ descstat <- function(data=data,decnum=3,eng=TRUE,full=FALSE,
     row.names(output) <- stat.names  
   output<-data.frame(output)
   names(output)<-names(data)   
-  output<-round(output,decnum)  
+  output<-round(output,decnum)
+  if(landscape==TRUE){output<-t(output)}
+  if(landscape==TRUE & nrow(output)==1){row.names(output)<-variable.names}
+  
 if(all.outputs==TRUE){
-  output<-list(output=output,stat.names=stat.names,variable.names=variable.names)}
+  output<-list(table=output,stat.names=stat.names,variable.names=variable.names)}
   output
 }

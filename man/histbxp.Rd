@@ -7,6 +7,7 @@ and a boxplot for a single random variable}
 \usage{
 histbxp(
   y = y,
+  freq = NULL,
   freqlab = "Frequency",
   varlab = "Variable",
   eng = TRUE,
@@ -26,6 +27,12 @@ histbxp(
 }
 \arguments{
 \item{y}{A numeric vector representing the random variable.}
+
+\item{freq}{A logical option for plotting the histograma. By
+default it is set to \code{NULL}, thus uses the actual
+frequencies. Meanwhile, when is \code{TRUE} the percentual
+frequencies are plot, and if \code{FALSE} a density is
+is used. Further details can be found in the function \code{hist()}.}
 
 \item{freqlab}{(optional) A string specifying the frequency label.
 The default is set to "Frequency".}
@@ -93,6 +100,13 @@ The variable must be numeric.
 \examples{
 df <- datana::fishgrowth
 histbxp(y=df$length)
+histbxp(y=df$length,freq = TRUE)
+histbxp(y=df$length,freq = FALSE)
+
+## Now in Spanish
+histbxp(y=df$length,eng=FALSE)
+histbxp(y=df$length,freq = TRUE,eng=FALSE)
+histbxp(y=df$length,freq = FALSE,eng=FALSE)
 
 ### distribution of 'length'
 ## with mean refval
@@ -103,11 +117,11 @@ histbxp(y=df$length, print.refval = TRUE, refval = 250)
 
 ## changing labels
 histbxp(y=df$length, print.refval = TRUE, refval = 250,
-        freqlab = "FREQ", varlab = "LENGTH")
+        freqlab = "Freq", varlab = "Length")
 
 ## changing colors
 histbxp(y=df$length, print.refval = TRUE, refval = 250,
-        freqlab = "FREQ", varlab = "LENGTH",
+        freqlab = "Freq", varlab = "Length",
         col.hist = "blue",
         col.bxp = "green",
         col.refval = "red")
