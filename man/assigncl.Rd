@@ -2,52 +2,61 @@
 % Please edit documentation in R/assigncl.r
 \name{assigncl}
 \alias{assigncl}
-\title{Function to assign validation classes}
+\title{Function to assign classes based upon a variable of interest.}
 \usage{
 assigncl(
   data = data,
   variable = variable,
   num.class = 4,
   breaks = NULL,
+  wclass = NULL,
   mincl = NULL,
-  wclass = NULL
+  name.class = NULL
 )
 }
 \arguments{
-\item{data}{a dataframe having the validation-variable for each
+\item{data}{a dataframe having the variable of interest for each
 observation.}
 
-\item{variable}{a character giving the column name of the variable
-to be used for definning the limits of each validation class.}
+\item{variable}{a character giving the column name of the
+numeric variable to be used for defining the limits
+of each class.}
 
 \item{num.class}{the number of classes to be build. The default
-is set to 4. Regardless, the percentiles are used for defining
+is set to 4. Regardless, the percentiles are used to set
 the limits of each class.}
 
 \item{breaks}{is a vector having the numbers to be used
 as breakpoints, by default is set to \code{NULL}, therefore the
 breakpoints will be determined by the \code{num.class}.}
 
+\item{wclass}{a number defining the width or amplitud of the
+classes. By default is set to \code{NULL}, otherwise, the width is
+determined by the previous explained options, such as, \code{breaks} or
+\code{num.clases}.}
+
 \item{mincl}{the number of the minimum class to be
 used. By default is set to \code{NULL}, otherwise, this
 option is used to define the breaks.}
 
-\item{wclass}{the number to be used for defining the
-width or amplitud of the classes. By default is
-set to \code{NULL}, otherwise, this option and \code{mincl} are
-used to define the breaks.}
+\item{name.class}{a character giving the column name of the new
+class variable. By default is set to \code{NULL}, then, the column
+name will be a composite-name merging the character provided
+in \code{variable} followed by ".class". Otherwise, will
+be \code{name.class}.}
 }
 \value{
 The main output is the data including a new column having
-a composited name merging the character provided in \code{variable} and
-".class". See the examples.
+the created class variable.
 }
 \description{
 Assigns class of each observation in a dataframe
 }
 \details{
-The function assign a class or category to be used for validation
-purposes based upon a variable defined by the user.
+The function assign a class or category to a random
+variable of interest. Several alternatives are implemented
+to define the way on which the allocation to a respective class
+is carried out.
 }
 \examples{
 
@@ -68,10 +77,9 @@ df<-assigncl(data=maple,variable="dbh",
              breaks = c(25.60,36.44,40.12,42.3))
 table(df$dbh.class)
 tapply(df$dbh,df$dbh.class,range)
-# Example 4, giving the minimum and amplitude
+# Example 4, giving the amplitude
 # of the classes
-df<-assigncl(data=llancahue,variable="dbh",mincl=5,
-             wclass = 5)
+df<-assigncl(data=llancahue,variable="dbh",wclass = 5)
 table(df$dbh.class)
 tapply(df$dbh,df$dbh.class,range)
 }

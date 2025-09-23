@@ -27,6 +27,7 @@
 #' @param font.size.tab The defauls is set to "normalsize". You could
 #'  also try with "footnotesize". 
 #' @param font.type.tab The defauls is set to "normalfont".
+#' @param ... Other options of the main functions being used here.
 #' @importFrom utils head
 #'
 #' @return This function creates a LaTeX file having 
@@ -57,7 +58,7 @@
 tabtexanova<-function(mod=mod,nametab=nametab,cap=cap,
        save.file=FALSE,filename="tabregre.tex",eng=TRUE,
     rowlab="Source of variation",decnum=3,font.size.tab="normalsize",
-   font.type.tab="normalfont"){
+   font.type.tab="normalfont",...){
 
     tab.h.ori<-stats::anova(mod)
     #source of variation

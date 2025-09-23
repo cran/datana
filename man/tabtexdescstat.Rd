@@ -18,7 +18,8 @@ tabtexdescstat(
   decnum = 3,
   font.size.tab = "normalsize",
   font.type.tab = "normalfont",
-  landscape = FALSE
+  landscape = FALSE,
+  ...
 )
 }
 \arguments{
@@ -65,6 +66,8 @@ statistics as rows, and in each column the variables.
 Otherwise, if \code{TRUE} the variables will be the rows, and each
 statistics the columns. Therefore this last option is only
 advisable when \code{full=FALSE}.}
+
+\item{...}{Other options of the main functions being used here.}
 }
 \value{
 This function creates a LaTeX file having
@@ -86,11 +89,11 @@ added to your main LaTeX document by using \verb{\\input\{filename\}}.
 
 df <- datana::idahohd
 head(df)
-##example 1
+##! Example 1
 tabtexdescstat(data=df,nametab="idaho",
  cap="Descriptive statistics table",
-colnames=c("dbh","toth"),varnames = c("Diameter","Height"))
-##example 2
+ colnames=c("dbh","toth"),varnames = c("Diameter","Height"))
+##! Example 2
 tabtexdescstat(data=df,nametab="idaho",
 cap="Cuadro con estadistica descriptiva",
  colnames=c("dbh","toth"),varnames = c("Diametro","Altura"),

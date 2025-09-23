@@ -13,9 +13,9 @@ Datasets and functions to accompany the book 'Analisis de datos con el programa 
 
 Other contributors:
 \itemize{
-  \item Campos Nicolás (\href{https://orcid.org/0009-0001-9534-9808}{ORCID}) [contributor]
-  \item Pino Nicolas (up to 2020) [contributor]
-  \item Riquelme Joaquin (up to 2020) [contributor]
+  \item Nicolás Campos (\href{https://orcid.org/0009-0001-9534-9808}{ORCID}) (since 2025) [contributor]
+  \item Joaquín Riquelme (up to 2020) [contributor]
+  \item Nicolás Pino (up to 2020) [contributor]
 }
 
 }

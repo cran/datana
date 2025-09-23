@@ -37,6 +37,7 @@
 #' @param font.size.tab The defauls is set to "normalsize". You could
 #'  also try with "footnotesize". 
 #' @param font.type.tab The defauls is set to "normalfont".
+#' @param ... Other options of the main functions being used here.
 #' @importFrom utils head
 #'
 #' @return This function creates a LaTeX file having 
@@ -54,11 +55,11 @@
 #'
 #' df <- datana::idahohd
 #' head(df)
-#' ##example 1
+#' ##! Example 1
 #' tabtexdescstat(data=df,nametab="idaho",
 #'  cap="Descriptive statistics table",
-#' colnames=c("dbh","toth"),varnames = c("Diameter","Height"))
-#' ##example 2
+#'  colnames=c("dbh","toth"),varnames = c("Diameter","Height"))
+#' ##! Example 2
 #' tabtexdescstat(data=df,nametab="idaho",
 #' cap="Cuadro con estadistica descriptiva",
 #'  colnames=c("dbh","toth"),varnames = c("Diametro","Altura"),
@@ -72,10 +73,10 @@
 #' 
 ##@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 tabtexdescstat<-function(data=data,colnames=colnames,
-                         varnames=varnames,cap=cap,nametab=nametab,
-                         save.file=FALSE,filename="tabdescdata.tex",
+   varnames=varnames,cap=cap,nametab=nametab,
+   save.file=FALSE,filename="tabdescdata.tex",
    eng=TRUE,rowlab="Variable",decnum=3,font.size.tab="normalsize",
-   font.type.tab="normalfont",landscape=FALSE){
+   font.type.tab="normalfont",landscape=FALSE,...){
 
 df.h<-data[,colnames]
 all.out<-datana::descstat(df.h,decnum = decnum,all.outputs = TRUE,
@@ -105,20 +106,20 @@ rowlabel.h <-rowlab
 labtab.h <- paste("tab:",nametab,sep = "")
 
 if(save.file==TRUE){
-l <-Hmisc::latex(tab.h,
+l <-Hmisc::latex(tab.h,#table=table,center=center,
  size=font.size.tab, cgroupTexCmd=font.type.tab,rowlabel=rowlabel.h, 
  file=fileNametex, col.just=rep("c",ncol(tab.h)),
  first.hline.double=FALSE,double.slash=FALSE,caption=cap,
- caption.loc="top",label=labtab.h,where="!h")}
+ caption.loc="top",label=labtab.h,where="!h",...)}
     
     if(save.file==FALSE){
 message("=======Start of the output=======")                
 message("The following is the LaTeX output table","\n")        
-Hmisc::latex(tab.h,file="",
+Hmisc::latex(tab.h,file="",#table=FALSE,center=center,
  size=font.size.tab, cgroupTexCmd=font.type.tab,rowlabel=rowlabel.h, 
   col.just=rep("c",ncol(tab.h)),
  first.hline.double=FALSE,double.slash=FALSE,caption=cap,
- caption.loc="top",label=labtab.h,where="!h")        
+ caption.loc="top",label=labtab.h,where="!h",...)        
 message("=======End of the output=======","\n")                  
     }
 }

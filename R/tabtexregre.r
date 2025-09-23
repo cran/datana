@@ -28,6 +28,7 @@
 #' @param font.size.tab The defauls is set to "normalsize". You could
 #'  also try with "footnotesize". 
 #' @param font.type.tab The defauls is set to "normalfont".
+#' @param ... Other options of the main functions being used here.
 #' @importFrom utils head
 #'
 #' @return This function creates a LaTeX file having 
@@ -58,7 +59,7 @@
 tabtexregre<-function(mod=mod,nametab=nametab,cap=cap,
        save.file=FALSE,filename="tabregre.tex",eng=TRUE,
     rowlab="Parameter",decnum=3,font.size.tab="normalsize",
-   font.type.tab="normalfont"){
+   font.type.tab="normalfont",...){
 
 out.mod<-modresults(mod)
 ncoef<-out.mod$ncoef

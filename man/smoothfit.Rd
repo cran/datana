@@ -4,21 +4,22 @@
 \alias{smoothfit}
 \title{Function to produce a smooth curve over a scatterplot}
 \usage{
-smoothfit(x = x, y = y, linecol = "blue", lty = 2, lwd = 1)
+smoothfit(x, y, linecol = "red", lty = 2, ...)
 }
 \arguments{
 \item{x}{A numeric vector representing the X-axis variable.}
 
-\item{y}{A numeric vector representing the Y-axis variable (response).}
+\item{y}{A numeric vector representing the Y-axis
+variable (response).}
 
-\item{linecol}{A string specifying the smooth line color. The default
-is set to "blue".}
+\item{linecol}{A string specifying the smooth line color.
+The default is set to "red".}
 
 \item{lty}{The type of line to be draw according to the R plot
 parameters. By default is set to \code{2} which is a dashed line.}
 
-\item{lwd}{The wide of the line to be draw according to the
-R plot parameters. By default is set to \code{1}.}
+\item{...}{other graphical parameters (see par and
+section 'Details' below).}
 }
 \value{
 The function returns the above described curve, but in
@@ -40,7 +41,7 @@ smoothfit(x=df$year, y=df$annual.pp)
 # Example 2
 df2<-subset(df,city=="Chillan")
 plot(annual.pp~year, data=df2, col="gray")
-smoothfit(x=df2$year, y=df2$annual.pp, linecol="red",lwd=3)
+smoothfit(x=df2$year, y=df2$annual.pp, linecol="red",lwd=2)
 }
 \references{
 \itemize{

@@ -15,9 +15,9 @@
 #'  Notice that to represent each statistic in percentual terms, we divided
 #'   them by the mean observed value of the response variable.
 #' 
-#' @title Function to compute prediction statistics based on observed values 
-#' @param y.pred predicted values of the variable of interest
+#' @title Function to compute prediction statistics based on observed values
 #' @param y.obs observed values of the variable of interest
+#' @param y.pred predicted values of the variable of interest
 #' @param want.percent A logic option for requesting to also
 #' computed the prediction statistics as a percentage of the sample
 #' mean of `y.obs`. By default is set to TRUE.

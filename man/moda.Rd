@@ -16,16 +16,23 @@ The function returns the mode, a numeric scalar.
 Computes the mode of a random variable.
 }
 \details{
-The mode is an statistics representing the most "used" value of
-the random variable as a way of central position.
+The mode is an statistics representing the most "used"
+value of a random variable as a measurement of central position.
+We use the Spanish name of mode, i.e., "moda", to avoid any
+confution with the \code{mode} function of R, wich was programmed
+for a different use.
 }
 \examples{
 
-set.seed(1234)
-variable <- rnorm(10, mean=45,sd=6)
-#using the function
-moda(y=variable)
-moda(variable)
+library(datana)
+data(casen)
+head(casen)
+df<-casen
+#Compare 
+mean(df$edad)
+median(df$edad)
+# Using the function
+moda(df$edad)
 }
 \author{
 Christian Salas-Eljatib.

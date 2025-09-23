@@ -16,7 +16,8 @@ tabtexanova(
   rowlab = "Source of variation",
   decnum = 3,
   font.size.tab = "normalsize",
-  font.type.tab = "normalfont"
+  font.type.tab = "normalfont",
+  ...
 )
 
 tabtexregre(
@@ -29,7 +30,8 @@ tabtexregre(
   rowlab = "Parameter",
   decnum = 3,
   font.size.tab = "normalsize",
-  font.type.tab = "normalfont"
+  font.type.tab = "normalfont",
+  ...
 )
 }
 \arguments{
@@ -63,6 +65,8 @@ default is set to 3.}
 also try with "footnotesize".}
 
 \item{font.type.tab}{The defauls is set to "normalfont".}
+
+\item{...}{Other options of the main functions being used here.}
 }
 \value{
 This function creates a LaTeX file having
